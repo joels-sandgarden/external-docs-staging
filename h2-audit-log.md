@@ -2,13 +2,13 @@
 
 ## Where it lives
 
-Open **Audit Log** at `/logs` to see who changed what. Only admins can access this page.
+Open **Audit Log** at `/logs` to see who changed what. Only admins can open it.
 
 ## What each entry shows
 
-The table shows **EVENT**, **TARGET**, **TIME**, and **USER**. Select a row to open a side sheet with **Source:**, **Source Type:**, **Publication:**, **API Key**, **Event:**, **Time:**, and **User:**. When present, the sheet also shows the summary and delta text.
+The table shows **EVENT**, **TARGET**, **TIME**, and **USER**. Select a row to open a details sheet with **Source:**, **Source Type:**, **Publication:**, **API Key**, **Event:**, **Time:**, and **User:**. When present, the sheet also shows the summary and delta text.
 
-The row list and the side sheet use these event names: **Created**, **Updated**, **Deleted**, **Source Healthcheck**, and **Publication Healthcheck**.
+The table and details sheet show event text as **Created**, **Updated**, **Deleted**, **Source Healthcheck**, and **Publication Healthcheck**.
 
 ## Event filters
 
@@ -21,7 +21,7 @@ The row list and the side sheet use these event names: **Created**, **Updated**,
 | **Source Healthcheck** | Source healthcheck entries. |
 | **Publication Healthcheck** | Publication healthcheck entries. |
 
-Audit Log also includes system-generated assessment entries for writing work.
+Audit Log also includes system-generated entries that track writing work.
 
 ## Next
 
