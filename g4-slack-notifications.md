@@ -1,4 +1,4 @@
-# Set up Slack notifications
+# Slack notifications
 
 This guide sets up Slack notifications for a Publication. Use it when you want Doc Holiday to send a Slack message after work merges.
 
