@@ -18,6 +18,12 @@ The table uses `—` deliberately. It marks rows with no parent and rows with no
 
 Atlassian Forge follows the same split as GitLab and Bitbucket. One row names the app parent, and the other row names the Jira project source. The parent row stays triggerless, and the project row carries the event set.
 
+GitHub keeps two repository paths in view. The GitHub App path uses `GitHub App` in the Requires column. The GitHub personal access token path leaves Requires empty. Both rows expose `pullRequests`, `newIssues`, `issueComments`, and `releases`.
+
+GitLab and Bitbucket follow the same split between provider and project rows. The provider rows stay parent only. The project rows carry the trigger set. Atlassian Forge follows the same shape with Atlassian Forge App and Atlassian Forge Jira project.
+
+Linear stays the only standalone context source that emits events. It uses `newIssues` and `issueComments`. Jira project and Atlassian Forge Jira project use `sendToDoc` and `issueStatusChange`, which keeps the context source family and the issue-tracking family visible in the same register.
+
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
 | GitHub App | `githubApp` | `git provider` | — | — |
