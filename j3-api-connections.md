@@ -17,7 +17,7 @@ Use this reference when an integration needs the public Connections endpoints. S
 ```json
 {
   "githubRepo": {
-    "githubAppConnectionId": "12",
+    "githubAppConnectionId": "cnn-0123456789abcdef",
     "repositoryUrl": "https://github.com/example/docs"
   }
 }
@@ -28,7 +28,7 @@ Use this reference when an integration needs the public Connections endpoints. S
 ```json
 {
   "notion": {
-    "integrationKey": "secret-key"
+    "integrationKey": "********"
   }
 }
 ```
@@ -38,7 +38,7 @@ Use this reference when an integration needs the public Connections endpoints. S
 ```json
 {
   "slackChannel": {
-    "slackAppConnectionId": "9",
+    "slackAppConnectionId": "cnn-0123456789abcdef",
     "channelId": "C01234567"
   }
 }
