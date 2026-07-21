@@ -1,6 +1,6 @@
 # Manage connections
 
-Keep your Sources healthy, repair a broken Source, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, repair access, edit details, or remove a Source or provider.
+Keep your Sources healthy, fix a broken Source, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, restore access, edit details, or remove a Source or provider.
 
 ```
 SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
@@ -15,7 +15,7 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
    - **Healthy** means Doc Holiday can read the Source.
    - **Unhealthy** means Doc Holiday skips it until you fix the problem.
    - **Checking...** means Doc Holiday is still checking it.
-5. Doc Holiday re-reads connected sources regularly. When a Source stays **Unhealthy**, its information can go stale while other Sources keep updating.
+5. Doc Holiday reads connected Sources regularly. When a Source stays **Unhealthy**, its information can go stale while other Sources keep updating.
 
 ## Fix an unhealthy Source
 
