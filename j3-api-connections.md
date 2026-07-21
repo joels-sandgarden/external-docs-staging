@@ -78,34 +78,11 @@ The `config` field uses a single-variant object with one sub-object per connecti
 
 ### `POST /api/v1/connections`
 
-Create a new connection record.
-
 | Key | Value |
 | --- | --- |
-| Body | `name`, `config` |
+| Body | `name`, `config`, `paused`, `sync` |
 | Success | `201 Created` |
-| Common errors | `400` when `config` is missing or more than one connection variant appears |
-
-```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections" \
-  -H "Authorization: Bearer $SFS_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Docs GitHub","config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/example/docs"}}}'
-```
-
-```json
-{
-  "name": "Docs GitHub",
-  "config": {
-    "githubRepo": {
-      "githubAppConnectionId": "12",
-      "repositoryUrl": "https://github.com/example/docs"
-    }
-  }
-}
-```
-
-The API validates that `config` contains exactly one variant before it stores the record. A request that omits `config` or includes more than one variant fails with `400`.
+| Notes | `config` must set exactly one variant; missing or ambiguous config returns `400` |
 
 ### `GET /api/v1/connections`
 
