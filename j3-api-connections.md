@@ -187,36 +187,12 @@ curl "https://api.doc.holiday/api/v1/connections/123" \
 
 ### `PUT /api/v1/connections/{id}`
 
-Replace a connection record.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Body | `name`, `paused`, `config` |
 | Success | `200 OK` |
-| Common errors | `400` when `config` is missing or more than one connection variant appears |
-
-```bash
-curl -X PUT "https://api.doc.holiday/api/v1/connections/123" \
-  -H "Authorization: Bearer $SFS_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Docs GitHub","paused":false,"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/example/docs"}}}'
-```
-
-```json
-{
-  "name": "Docs GitHub",
-  "paused": false,
-  "config": {
-    "githubRepo": {
-      "githubAppConnectionId": "12",
-      "repositoryUrl": "https://github.com/example/docs"
-    }
-  }
-}
-```
-
-The API replaces the stored fields with the request body. It uses the same one-of validation as create.
+| Notes | `config` must set exactly one variant; missing or ambiguous config returns `400` |
 
 ### `DELETE /api/v1/connections/{id}`
 
