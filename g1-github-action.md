@@ -4,7 +4,7 @@
 
 Doc Holiday's GitHub Action files a documentation work request through the Conversations API. Use it when CI should ask Doc Holiday to prepare documentation work on a schedule or after a release.
 
-It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a reviewable result for review before it lands.
+It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a result you review before it lands.
 
 ## Prerequisites
 
