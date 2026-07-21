@@ -34,7 +34,7 @@ If you selected several comments, finish with `Send Batch to Doc`.
 
 ## Excluding files
 
-Use **Discard** to remove a file from the final request, and **Restore** to bring it back. The approval dialog updates to show how many files stay in the request and how many are permanently discarded.
+Use the icon-only buttons whose tooltips read "Discard file" and "Restore file" to remove a file from the final request or bring it back. The approval dialog updates to show how many files stay in the request and how many are permanently discarded.
 
 ## Approving and opening the PR/MR
 
