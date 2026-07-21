@@ -1,6 +1,6 @@
 # Review and revise
 
-When a Work History entry reaches Ready for Review, open its sheet and review the draft file by file. From there, you can check the request details, comment on changes, and open the final pull request or merge request.
+When a Work History entry reaches Ready for Review, open its sheet and review each file. From there, you can confirm the request details, leave comments, and open the final request.
 
 ## Opening the entry
 
@@ -38,7 +38,7 @@ Use **Discard** to remove a file from the final request, and **Restore** to brin
 
 ## Approving and opening the PR/MR
 
-When the draft looks right, use **Open Pull Request** on GitHub or **Open Merge Request** on GitLab. The confirmation dialog shows the number of files that will be committed and the number that will be permanently discarded.
+When the draft looks right, use **Open Pull Request** on GitHub or **Open Merge Request** on GitLab. The confirmation dialog shows how many files will be committed and how many will be permanently discarded.
 
 ```text
 SCREENSHOT PLACEHOLDER: quickstart/open-pr-dialog.png
