@@ -18,11 +18,13 @@ The table uses `—` deliberately. It marks rows with no parent and rows with no
 
 Atlassian Forge follows the same split as GitLab and Bitbucket. One row names the app parent, and the other row names the Jira project source. The parent row stays triggerless, and the project row carries the event set.
 
-GitHub keeps two repository paths in view. The GitHub App path uses `GitHub App` in the Requires column. The GitHub personal access token path leaves Requires empty. Both rows expose `pullRequests`, `newIssues`, `issueComments`, and `releases`.
+The table keeps parent-only rows near the top, event-bearing rows in the middle, and the notifier row at the end. That order matches the way the product model groups families.
 
-GitLab and Bitbucket follow the same split between provider and project rows. The provider rows stay parent only. The project rows carry the trigger set. Atlassian Forge follows the same shape with Atlassian Forge App and Atlassian Forge Jira project.
+GitHub keeps both a parent app path and a direct token path. That gives the family one parent-backed repository row and one direct repository row.
 
-Linear stays the only standalone context source that emits events. It uses `newIssues` and `issueComments`. Jira project and Atlassian Forge Jira project use `sendToDoc` and `issueStatusChange`, which keeps the context source family and the issue-tracking family visible in the same register.
+GitLab and Bitbucket use the same provider-and-project pattern. The provider rows stay parent only, and the project rows carry the trigger set. Atlassian Forge uses the same pattern across its app and Jira project rows.
+
+Linear stays the only standalone context source that emits events. Jira project and Atlassian Forge Jira project carry `sendToDoc` and `issueStatusChange`. Slack Channel remains the only notifier row.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
