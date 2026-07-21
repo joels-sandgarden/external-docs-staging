@@ -2,7 +2,9 @@
 
 Use this page to manage the OpenAI keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. OpenAI is the only supported provider on this page. The page applies to organizations on Bring Your Own Key and Open Source Software plans. Doc Holiday manages enterprise inference; see [Billing and plans](/h4-billing-and-plans.md).
 
+```
 SCREENSHOT PLACEHOLDER: add-your-openai-key/keys-page.png
+```
 
 If no keys exist, the page shows **No AI Provider Keys yet**.
 
@@ -15,12 +17,21 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 
 ## Manage active and failover keys
 
-Each key card shows the **Active** badge, and the overflow menu includes **Test**, **Set Active**, and **Delete**.
+The active key card shows the **Active** badge. Every key card menu includes **Test** and **Delete**. Inactive key card menus also include **Set Active**.
 
 1. The first OpenAI key becomes active automatically.
 2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key to failover.
-3. If Doc Holiday rejects the active key, it uses a failover key on the next piece of work.
-4. Doc Holiday resolves key state for each request, so changes apply to the next piece of work, including work already in flight.
+3. If your provider rejects the active key, Doc Holiday fails over to another stored key within the same request. If every key fails, the work errors.
+
+Doc Holiday only ever uses keys your organization has added — there is no fallback to any other key.
+
+## Rotate a key
+
+1. Add the new key.
+2. Select **Set Active** on it.
+3. Delete the old key.
+
+Key changes apply immediately, even to work already in flight.
 
 ## Test and delete a key
 
@@ -33,5 +44,3 @@ Each key card shows the **Active** badge, and the overflow menu includes **Test*
 
 - Start setup in [Add your OpenAI key](/b6-add-your-openai-key.md).
 - Review [Billing and plans](/h4-billing-and-plans.md) for plan coverage and Enterprise inference.
-
-If every key fails, the work errors.
