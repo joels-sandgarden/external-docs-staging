@@ -1,12 +1,12 @@
 # Request work from GitHub, GitLab, Bitbucket, or Linear threads
 
-Mention `@doc.holiday` in the thread you are already using. Doc Holiday starts the request there. Put `@doc.holiday` first or within the first few words, then describe what you want updated.
+Mention `@doc.holiday` in the thread you are already using. Doc Holiday starts the request there. Put `@doc.holiday` first or within the first few words, then describe the change.
 
 ## Where it works
 
 - GitHub issue comments and pull request comments.
 - GitHub pull request review bodies and pull request review comments.
-- GitHub new issue bodies.
+- GitHub new issue bodies that start with `@doc.holiday`.
 - GitLab issue notes and merge request notes.
 - Bitbucket pull request comments.
 - Linear issue comments. If Linear is not connected yet, see [Connect Linear](/c4-connect-linear.md).
@@ -27,4 +27,4 @@ Use `@doc.holiday help` when a short reminder is enough. Doc Holiday returns inl
 
 ## Verify
 
-Open [Work History](/f4-work-history.md) and confirm the request appears there.
+The request appears in [Work History](/f4-work-history.md).
