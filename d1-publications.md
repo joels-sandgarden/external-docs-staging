@@ -22,6 +22,12 @@ A Publication lets Doc Holiday keep several kinds of output in one place without
 
 The boundary also makes the setup easier to understand at a glance. A team can see which Sources drive the content, which destination receives it, and which instructions shape the writing. That shared contract gives everyone the same frame for judging whether the Publication matches the work it is meant to cover.
 
+## How people read a Publication
+
+A Publication gives product managers, writers, support engineers, and software engineers the same frame for the same documentation set. A person reviewing the Publication can see the Sources that drive it, the destination that receives output, and the kinds of content it may create. That shared view makes it easier to understand why one request turns into a new guide while another turns into a release note or a changelog entry.
+
+The Publications area also makes access visible. When the right people can see the same configuration, they can judge whether the Publication still matches the work it covers before they start a new request. That helps the Publication act as a clear contract instead of a loose collection of settings.
+
 ## What work looks like under a Publication
 
 Every request becomes a Work History entry for one Publication. That entry gathers the context for the work, the drafts that Doc Holiday proposes, and the outcome that follows. The Publication gives each request a clear home and keeps the record of the work attached to the right documentation set.
@@ -33,6 +39,8 @@ Work History also helps readers understand continuity. When the same Publication
 Publication health gives a quick read on whether Doc Holiday can work with the Publication’s configured Sources and documentation destination. A healthy Publication signals that the connected inputs and destination are ready for work. When something is wrong, the health badge helps readers spot it quickly.
 
 Health does not promise that every request will succeed. It only tells whether Doc Holiday can reach the configured Sources and destination now. That makes it a fast check for access issues, missing setup, or a destination that no longer matches the Publication.
+
+The run test action adds a quick confirmation that the current setup still fits together. It helps surface a problem early, before a new request depends on it.
 
 In the Publications area, the details and status panels show the inputs, the target destination, the optional notifier, the enabled outputs, the last updated time, user access, and the health badge with its run test action. That view gives a concise picture of what the Publication controls and whether it is ready.
 
