@@ -1,47 +1,41 @@
 # Connect Confluence and Jira
 
-Use this guide when you want Doc Holiday to read Confluence for context and connect Jira for work started by triggers. Confluence stays read only. Jira can use the app backed path or the read only path.
+Use this guide when Doc Holiday needs Confluence for read-only context or Jira for work that starts from Publication triggers. For a broader Sources overview, see [Sources](/c1-sources.md).
 
 ## Confluence
 
-Confluence gives Doc Holiday context for writing. It never starts work on its own.
+Confluence adds read-only context and never starts work.
 
-1. In **Sources**, choose `Confluence`.
-2. Enter **Source Name**.
-3. If the control appears, turn on **Pause Background Work for Source** to pause updates.
-4. Enter **URL**, **Username**, and **API Token**.
-5. Save the Source.
+1. Open **Sources**, select **Add Source**, and choose **Confluence**.
+2. Enter **Source Name**, **URL**, **Username**, and **API Token**.
+3. Select **Save Changes**.
 
-## Jira
+## Jira app-backed setup
 
-Use the `Atlassian Application` + `Jira Project` path when you can install the app and Jira should take part in work started by triggers; use `Jira Read-Only` when a token based setup fits better.
+Note: Both Jira paths use the same Publication triggers, **Send to Doc** and **Issue status changes**. Configure those triggers on the Publication, then open [Configure triggers](/d2-configure-triggers.md).
 
-### App backed path
+Use the app-backed path when Jira connects through an **Atlassian Application**.
 
-1. In **Sources**, choose `Atlassian Application`.
-2. Enter **Provider Name**.
-3. Enter **Atlassian Site URL**.
-4. Choose **Register Site**.
-5. Finish setup with **Install Atlassian Application**.
-6. Share the installation link with **Share Installation Link** if another site admin needs to complete the install.
-7. Add a new Source and choose `Jira Project`.
-8. Enter **Source Name**.
-9. Select **Atlassian Application**, then choose the app from **Select an Atlassian Application...**.
-10. Select **Jira Project** by searching with **Search projects...** and choosing **Select a project...**.
-11. If Jira should trigger work, set up the trigger on the Publication in [Configure triggers](/d2-configure-triggers.md) and use `Send to Doc` or issue status changes.
+1. Open **Providers**, select **Add Provider**, and choose **Atlassian Application**.
+2. Enter **Atlassian Site URL** and select **Register Site**.
+3. Select **Install Atlassian Application**.
+4. If another Atlassian Site Admin must complete installation, copy the read-only installation link shown in the form and share it with that admin.
+5. Open **Sources**, select **Add Source**, and choose **Jira Project**.
+6. Complete **Source Name** and **Jira Project**. When more than one application exists, the form also shows the **Atlassian Application** selector.
+7. Select **Save Changes**.
 
-### Read only path
+## Jira token-based setup
 
-1. In **Sources**, choose `Jira Read-Only`.
-2. Enter **Source Name**.
-3. If the control appears, turn on **Pause Background Work for Source** to pause updates.
-4. Enter **URL**, **Email Address**, **API Token**, and **Project Key**.
-5. Save the Source.
+Use the token-based path when Jira connects without an **Atlassian Application**.
+
+1. Open **Sources**, select **Add Source**, and choose **Jira Read-Only**.
+2. Enter **Source Name**, **URL**, **Email Address**, **API Token**, and **Project Key**.
+3. Select **Save Changes**.
 
 ## Verify
 
-Verify that both sources show `Healthy` on the `Sources` page.
+Open **Sources** and confirm the Source status reads **Healthy**.
 
 ## Next
 
-See [Sources](/c1-sources.md).
+See [Sources](/c1-sources.md) or [Configure triggers](/d2-configure-triggers.md).
