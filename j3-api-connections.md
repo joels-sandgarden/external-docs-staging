@@ -226,13 +226,9 @@ Starts a background summary for one merged pull request on a connection.
 - Key parameters: `id`, `number`
 - curl:
 ```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections/12/merges/summarize" \
+curl -X POST "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/merges/summarize" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
   -d '{"number":123}'
 ```
-- JSON:
-```json
-{"number":123}
-```
-- Behaviors: Requires an SFS token. Returns `202 Accepted`; missing or invalid `number` values return `400`. 
+- Behaviors: Requires an SFS token. Returns `202 Accepted` with no response body; missing or invalid `number` values return `400`.
