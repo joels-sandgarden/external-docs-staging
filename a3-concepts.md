@@ -7,7 +7,7 @@ Read this page first whenever the rest of the documentation starts using those w
 
 An Organization is the top-level account for a workspace, and it gives every other concept a shared home for settings, content, and guidance that need to stay together as the workspace grows, with a structure that stays simple to follow.
 It owns Publications, Sources, and the Library, so those pieces stay under one boundary instead of drifting into separate spaces as several teams work in the same place.
-That ownership makes the rest of the model easier to read because every child concept belongs to the same Organization before it takes on its own role, scope, and relationship.
+That ownership makes the rest of the model easier to read because every child concept belongs to the same Organization before it takes on its own role, scope, and relationship, and the owner remains clear even when the workspace grows.
 
 ## Publication
 
