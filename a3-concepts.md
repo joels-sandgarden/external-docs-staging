@@ -18,7 +18,7 @@ A Publication points at Sources instead of owning them, so it defines what the d
 ## Sources
 
 Sources are the connected systems that feed Doc Holiday and receive its output, including places that supply background, places that hold the work, and places that do both for a Publication when the work needs more context.
-One Source can provide context for a Publication, another can accept documentation updates, and another can keep the publication tied to the system that matters most to the team.
+One Source can provide context for a Publication, another can accept documentation updates, and another can keep the publication tied to the system that matters most to the team as the request moves through review.
 A Publication points to Sources rather than owning them, so [Sources](/c1-sources.md) tell Doc Holiday what it can verify, what it can write, and how the finished work should appear.
 
 ## The Library and instructions
