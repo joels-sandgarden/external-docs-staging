@@ -41,11 +41,11 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 ## Delete a connection
 
 1. Update any Publication that still points at the Source before you delete it.
-2. If you delete a provider, move the Sources that depend on it first.
+2. If you delete a provider, move dependent Sources first.
 3. Open the Source or provider.
 4. Select **Delete this source** or **Delete this provider**.
 5. Review the warning, then confirm the delete.
-6. Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation, when that setup applies.
-7. The repository itself stays in place, and already merged documentation stays unchanged.
+6. Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation.
+7. The repository itself stays in place, and already merged documentation stays as it is.
 
 Next: [Sources](/c1-sources.md).
