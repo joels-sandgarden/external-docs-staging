@@ -43,7 +43,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `id`.
 - Response: `202 Accepted` with `ModelsAnnotateConversationResponse`.
 - Notes: Doc Holiday schedules background annotation work and returns immediately.
-- `curl`: `curl -X POST /api/v1/conversations/conv_123/annotate`
+- `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversations/conv_123/annotate"`
 - `json`: `{}`
 
 ### `POST /api/v1/conversations/{id}/comments`
