@@ -15,7 +15,6 @@ GitHub, GitLab, and Bitbucket all use the same basic shape. Doc Holiday installs
 The grouped list in the app makes that relationship obvious. A provider row shows the shared Source, and the rows below it show the child Sources that depend on it. GitHub starts with a GitHub App Source and then adds repository Sources. GitLab starts with a GitLab provider Source and then adds project Sources. Bitbucket follows the same pattern with provider, repository, and project Sources. Slack uses the same logic for notifications: Doc Holiday connects a Slack app first, then selects a channel Source underneath it for the messages that should reach a team.
 
 This split gives a useful boundary between shared access and specific content. One provider can support more than one child Source, and the child Source can belong to a different Publication if the access and purpose fit. The app still keeps the provider visible at the top of the group, which helps when several Publications rely on the same starting point.
-That split matters when a single provider supports several repositories, projects, or channels at once. Shared access stays in one place, so Doc Holiday can manage it once while each child Source keeps its own name and scope. That keeps the provider easy to maintain and leaves each Publication tied to the exact Source it needs.
 
 ## Freshness and health
 
