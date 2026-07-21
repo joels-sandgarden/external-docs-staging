@@ -77,7 +77,7 @@ curl "https://api.doc.holiday/api/v1/connections?type=githubRepo&healthy=true" \
 ```
 - JSON:
 ```json
-{"connections":[{"id":"12","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}],"nextPageToken":"eyJ..."}
+{"connections":[{"id":"cnn-0123456789abcdef","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}],"nextPageToken":"eyJ..."}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for invalid filters.
 
