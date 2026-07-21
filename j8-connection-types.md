@@ -28,33 +28,33 @@ Linear stays the only standalone context source that emits events. Jira project 
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
-| GitHub App | `githubApp` | `git provider` | — | — |
-| GitLab provider | `gitlabProvider` | `git provider` | — | — |
-| Bitbucket provider | `bitbucketProvider` | `git provider` | — | — |
-| Slack App | `slackApp` | `context source` | — | — |
-| Atlassian Forge App | `atlassianForgeApp` | `context source` | — | — |
-| GitHub repository | `githubRepo` | `git repository` | `GitHub App` | `pullRequests`, `newIssues`, `issueComments`, `releases` |
-| GitHub personal access token | `githubAccessToken` | `git repository` | — | `pullRequests`, `newIssues`, `issueComments`, `releases` |
-| GitLab repository | `gitlab` | `git repository` | — | `pullRequests`, `newIssues`, `issueComments`, `releases` |
-| GitLab project | `gitlabProject` | `git repository` | `GitLab provider` | `pullRequests`, `newIssues`, `issueComments`, `releases` |
-| Bitbucket repository | `bitbucketRepo` | `git repository` | — | `pullRequests`, `issueComments` |
-| Bitbucket project | `bitbucketProject` | `git repository` | `Bitbucket provider` | `pullRequests`, `issueComments` |
-| Documentation | `documentation` | `context source` | — | — |
+| GitHub Application | `githubApp` | `git provider` | — | — |
+| GitLab Access Token | `gitlabProvider` | `git provider` | — | — |
+| Bitbucket Workspace Access Token | `bitbucketProvider` | `git provider` | — | — |
+| Slack Application | `slackApp` | `provider` | — | — |
+| Atlassian Application | `atlassianForgeApp` | `provider` | — | — |
+| GitHub Repository | `githubRepo` | `git repository` | `GitHub Application` | `pullRequests`, `newIssues`, `issueComments`, `releases` |
+| GitHub Repository (personal access token) | `githubAccessToken` | `git repository` | — | `pullRequests`, `newIssues`, `issueComments`, `releases` |
+| GitLab (multi-project access token) | `gitlab` | `git repository` | — | `pullRequests`, `newIssues`, `issueComments`, `releases` |
+| GitLab Project | `gitlabProject` | `git repository` | `GitLab Access Token` | `pullRequests`, `newIssues`, `issueComments`, `releases` |
+| Bitbucket Repository (repository access token) | `bitbucketRepo` | `git repository` | — | `pullRequests`, `issueComments` |
+| Bitbucket Project | `bitbucketProject` | `git repository` | `Bitbucket Workspace Access Token` | `pullRequests`, `issueComments` |
+| External Documentation | `documentation` | `context source` | — | — |
 | Notion | `notion` | `context source` | — | — |
 | Google Drive | `gcp` | `context source` | — | — |
-| AWS | `aws` | `context source` | — | — |
+| AWS (S3) | `aws` | `context source` | — | — |
 | Linear | `linear` | `context source` | — | `newIssues`, `issueComments` |
 | Confluence | `confluence` | `context source` | — | — |
-| Jira project | `jiraProject` | `context source` | — | `sendToDoc`, `issueStatusChange` |
-| Azure Blob | `azureBlob` | `context source` | — | — |
-| Atlassian Forge Jira project | `atlassianForgeJiraProject` | `context source` | `Atlassian Forge App` | `sendToDoc`, `issueStatusChange` |
-| Slack Channel | `slackChannel` | `notifier` | `Slack App` | — |
+| Jira Read-Only | `jiraProject` | `context source` | — | `sendToDoc`, `issueStatusChange` |
+| Azure Blob Storage | `azureBlob` | `context source` | — | — |
+| Jira Project | `atlassianForgeJiraProject` | `context source` | `Atlassian Application` | `sendToDoc`, `issueStatusChange` |
+| Slack Channel | `slackChannel` | `notifier` | `Slack Application` | — |
 
 ## Footnotes
 
-1. GitHub App and GitHub personal access token are the two GitHub auth paths.
-2. GitLab provider and GitLab project split provider-backed and direct access.
-3. Bitbucket provider and Bitbucket project split provider-backed and direct access.
+1. GitHub Repository ↔ GitHub Repository (personal access token)
+2. GitLab Project ↔ GitLab (multi-project access token)
+3. Bitbucket Project ↔ Bitbucket Repository (repository access token)
 4. `gcp` appears in the UI as Google Drive.
 5. Slack Channel is the only Publication notifier.
 
