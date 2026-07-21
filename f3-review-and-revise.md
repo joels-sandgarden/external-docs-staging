@@ -44,8 +44,8 @@ When the draft looks right, use **Open Pull Request** on GitHub or **Open Merge 
 SCREENSHOT PLACEHOLDER: quickstart/open-pr-dialog.png
 ```
 
-After approval, the opened request is a normal pull request or merge request in the docs repo, and the standard merge flow applies.
+After approval, the opened request is a normal pull request or merge request in the docs repo, and the standard merge flow applies. If Slack notifications are configured, Doc Holiday posts the Slack notification after merge. See [Slack notifications](/g4-slack-notifications.md).
 
 ## Next steps
 
-Continue with [Work History](/f4-work-history.md) or review [Slack notifications](/g4-slack-notifications.md).
+Continue with [Work History](/f4-work-history.md).
