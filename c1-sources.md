@@ -68,11 +68,11 @@ That wording prevents confusion when the UI asks for a documentation source, a P
 
 When a team needs to add a new source, the provider page shows the fields, validation, and workspace selection specific to that system. These pages cover setup, so this list stays short.
 
-- [GitHub](/c2-github.md)
-- [GitLab](/c3-gitlab.md)
-- [Bitbucket](/c4-bitbucket.md)
-- [Notion](/c5-notion.md)
-- [Confluence and Jira](/c6-confluence-jira.md)
-- [Linear](/c8-linear.md)
-- [Google Drive](/c9-google-drive.md)
-- [Cloud storage](/c10-cloud-storage.md)
+- [GitHub](/b2-connect-github.md)
+- [GitLab](/b3-connect-gitlab.md)
+- [Bitbucket](/b4-connect-bitbucket.md)
+- [Notion](/c2-connect-notion.md)
+- [Confluence and Jira](/c3-connect-confluence-and-jira.md)
+- [Linear](/c4-connect-linear.md)
+- [Google Drive](/c5-connect-google-drive.md)
+- [Cloud storage](/c6-connect-cloud-storage.md)
