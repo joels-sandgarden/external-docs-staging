@@ -1,4 +1,4 @@
-# Publications API reference
+# API: Publications
 
 This page covers direct integration with Doc Holiday's API.
 
