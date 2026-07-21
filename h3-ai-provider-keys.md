@@ -24,7 +24,7 @@ Each key card shows **Active** and the overflow menu actions **Test**, **Set Act
 
 ## Test and delete a key
 
-1. Open the overflow menu on any key card and select **Test** whenever needed.
+1. Open the overflow menu on any key card and select **Test** when needed.
 2. Review the result. Doc Holiday shows **Key is valid** when the key works and **Key test failed** when it does not.
 3. Open the overflow menu again and select **Delete** to remove a key.
 4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday deletes the stored key and scrubs the secret.
