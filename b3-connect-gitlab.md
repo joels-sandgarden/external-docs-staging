@@ -19,7 +19,7 @@ If you need the supported publishing systems, see [Publishing systems](/d4-publi
 
 Use this option when one project needs its own token.
 
-1. In the **Add Source** sheet with **GitLab Project** selected, use the helper link to switch to the standalone GitLab form.
+1. In the **Add Source** sheet with **GitLab Project** selected, use the **Click here ...** helper link to switch to the standalone GitLab form.
 2. Enter **Source Name**, **Access Token**, **Project**, **Branch**, and **Publishing System**.
 3. Save the Source.
 
