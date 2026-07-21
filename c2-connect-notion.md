@@ -1,6 +1,6 @@
 # Connect Notion
 
-Use this page when Notion should supply background context for Doc Holiday. Connecting Notion adds a read-only Source so Doc Holiday can read your pages instead of starting work on its own. See [Sources](/c1-sources.md) for the broader model.
+Use this page when Notion should supply background context for Doc Holiday. Notion adds a read-only Source so Doc Holiday can read your pages as context instead of starting work on its own. See [Sources](/c1-sources.md) for the broader model.
 
 ## Connect Notion
 
