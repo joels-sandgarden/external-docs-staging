@@ -4,7 +4,11 @@ This reference lists every supported Doc Holiday connection type, its role, pare
 
 Doc Holiday treats connection types as a closed set. Git provider rows sit above repository rows, and the repository rows are the triggerable connections for pull request, issue, and release events. Context source rows cover documentation systems and other external content sources. Slack Channel is the only notifier connection, and Slack App and Atlassian Forge App are the parent rows that support other connections.
 
-The Type column uses the user-facing label shown in the app. The API value column keeps the wire identifier from the connection model. The Requires column shows the parent connection only when the source config points to one; otherwise it is `—`. The Automatic triggers column shows the exact event identifiers used by Doc Holiday, or `—` when a connection type does not emit events.
+GitHub, GitLab, and Bitbucket each appear as a provider row plus one or more repository rows. Provider rows are the parent layer. Repository rows are the direct or provider-backed source connections that can emit pull request, issue, and release events.
+
+Documentation, Notion, Google Drive, AWS, Confluence, and Azure Blob are standalone context sources. Linear is the standalone context source with issue events. Jira project and Atlassian Forge Jira project are the issue-tracking rows with send-to-doc and issue-status-change events. Slack App and Atlassian Forge App are parent rows only; Slack Channel is the notifier row and depends on Slack App.
+
+The Type column uses the user-facing label shown in the app. The API value column keeps the wire identifier from the connection model. The Requires column shows the parent connection only when the source config points to one; otherwise it is `—`. The Automatic triggers column shows the exact event identifiers used by Doc Holiday, or `—` when a connection type does not emit events. Rows without a parent or trigger use `—` to keep the register compact.
 
 The supported trigger event identifiers are `pullRequests`, `newIssues`, `issueComments`, `releases`, `sendToDoc`, and `issueStatusChange`. In the current model, only the repository and issue-tracking types in the table expose those events. Repository rows use the pull-request, issue, and release events; Jira project rows use the send-to-doc and issue-status-change events; Linear uses issue creation and comments.
 
