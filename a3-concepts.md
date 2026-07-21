@@ -31,7 +31,7 @@ The Library shapes how Doc Holiday writes by giving each Publication the same so
 
 Work History is the record of one documentation request from the first signal to the final result, so it preserves the path of a single piece of work from start to finish and makes later review easier.
 Each entry belongs to one Publication and one Source, which shows exactly which documentation set and which connected system started the work and why it matters there at review time, handoff time, and follow-up time.
-A single entry opens when something triggers it, moves through review and revision, and settles into a result such as finished, closed, cancelled, or waiting for more attention; [Work History](/f4-work-history.md) keeps that path visible when the request needs another round of comments or another follow-up pass.
+A single entry opens when something triggers it, moves through review and revision, and settles into a result such as finished, closed, cancelled, or waiting for more attention; [Work History](/f4-work-history.md) keeps that path visible when the request needs another round of comments, another follow-up pass, or another look.
 
 Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, the Library guides the writing, and Work History records the result in one continuous loop.
 This model keeps the vocabulary connected from input to outcome, so the rest of the documentation can stay consistent even when a request needs several passes before it settles.
