@@ -105,14 +105,14 @@ Updates the connection name, pause state, and exactly one connection config vari
 - Key parameters: `id`, `name`, `paused`, `config`
 - curl:
 ```bash
-curl -X PUT "https://api.doc.holiday/api/v1/connections/12" \
+curl -X PUT "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
-  -d '{"name":"Docs source","paused":true,"config":{"notion":{"integrationKey":"secret-key"}}}'
+  -d '{"name":"Docs source","paused":true,"config":{"notion":{"integrationKey":"********"}}}'
 ```
 - JSON:
 ```json
-{"id":"12","name":"Docs source","type":"notion","healthy":true,"paused":true,"allowedTriggerEvents":[],"config":{"notion":{"integrationKey":"secret-key"}}}
+{"id":"cnn-0123456789abcdef","name":"Docs source","type":"notion","healthy":true,"paused":true,"allowedTriggerEvents":[],"config":{"notion":{"integrationKey":"********"}}}
 ```
 - Behaviors: Requires an SFS token. Returns `400` when `config` is missing, ambiguous, or fails validation.
 
