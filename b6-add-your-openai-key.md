@@ -23,7 +23,7 @@ SCREENSHOT PLACEHOLDER: add-your-openai-key/keys-page.png
 
 ## Verify
 
-The key appears with status **Active**, and **Test** confirms it works.
+The key appears with status **Active**, and **Test** in the key's menu confirms it works.
 
 ## Next
 
