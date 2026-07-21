@@ -34,4 +34,4 @@ Each entry belongs to one Publication and one Source, which shows exactly which 
 A single entry opens when something triggers it, moves through review and revision, and settles into a result such as finished, closed, cancelled, or waiting for more attention; [Work History](/f4-work-history.md) keeps that path visible when the request needs another round of comments, another follow-up pass, or another look.
 
 Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, the Library guides the writing, and Work History records the result in one continuous loop from the first request to the final page.
-This model keeps the vocabulary connected from input to outcome, so the rest of the documentation can stay consistent even when a request needs several passes before it settles.
+This model keeps the vocabulary connected from input to outcome, so the rest of the documentation can stay consistent even when a request needs several passes before it settles, and the relationships remain easy to trace.
