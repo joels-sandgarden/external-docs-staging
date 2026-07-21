@@ -21,7 +21,7 @@ The table and details sheet show event text as **Created**, **Updated**, **Delet
 | **Source Healthcheck** | Source healthcheck entries. |
 | **Publication Healthcheck** | Publication healthcheck entries. |
 
-Audit Log also includes system-generated entries that track writing work.
+Audit Log also includes system-generated entries for writing work.
 
 ## Next
 
