@@ -38,7 +38,7 @@ Returns `ModelsListUsersResponse` for users in the authenticated org, with `user
 | shared pagination | Shared pagination fields from the API. |
 
 ```bash
-curl "https://api.doc.holiday/api/v1/users?email=string"
+curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/users?email=string"
 ```
 
 ```json
