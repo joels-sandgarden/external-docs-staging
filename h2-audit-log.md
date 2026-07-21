@@ -25,4 +25,4 @@ Audit Log also includes system-generated entries for writing work.
 
 ## Next
 
-Next: [Work History](/work-history)
+Next: [Work History](/f4-work-history.md)
