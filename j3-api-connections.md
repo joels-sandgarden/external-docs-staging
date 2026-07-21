@@ -269,29 +269,10 @@ The API accepts the request and starts background work. `wait` controls whether 
 
 ### `GET /api/v1/connections/{id}/health`
 
-Check the connection status.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
-| Returns | `id`, `status`, `message`, `error` |
 | Success | `200 OK` |
-
-```bash
-curl "https://api.doc.holiday/api/v1/connections/123/health" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
-```json
-{
-  "id": "123",
-  "status": "healthy",
-  "message": "Connection is healthy",
-  "error": ""
-}
-```
-
-The response tells you whether Doc Holiday can use the connection as configured.
 
 ### `GET /api/v1/connections/{id}/channels`
 
