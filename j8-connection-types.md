@@ -10,19 +10,15 @@ The Requires column names the parent connection when one exists. A blank entry m
 
 Read the catalog as an index rather than a procedure. Each row identifies one supported type, its exact API value, the visible label, the role group, any parent requirement, and the trigger events linked to that type. When two rows share the same label, the table and footnotes separate the alternative API values and parent relationships that keep them distinct.
 
-The table uses a compact, comparison first layout. Provider and child rows sit together, which keeps each parent requirement next to the dependent type. Blank cells carry meaning here: a blank Requires cell marks a type with no parent, and a blank Automatic triggers cell marks a type with no automatic event list.
+The table keeps provider and child rows adjacent so the parent requirement stays visible at a glance. That arrangement helps readers compare each type with its upstream connection without scanning across the page.
 
 The catalog does not restate the separate source, trigger, or API pages. Those pages define the broader model, while this page keeps the connection type list, the visible labels, and the structural differences that matter when selecting a type.
 
 The footnotes preserve overlapping labels that the product uses for multiple API values. They keep the shared names readable without adding a second table, and they point out the notifier role that only one connection type can fill.
 
-The table keeps provider and child rows adjacent so the parent requirement stays visible at a glance. A dash in Requires means the type needs no upstream connection, and a dash in Automatic triggers means the type does not participate in automatic event mapping.
-
-This page stays narrow on purpose. It records the supported catalog, not the full configuration rules or event definitions. The linked source, trigger, and API pages carry those details, while this page keeps the short reference for name, value, role, parent, and trigger coverage.
-
 The same label can point to more than one API value. The table and footnotes keep those pairs distinct without adding extra narrative, which helps the page remain a lookup reference rather than a guided workflow.
 
-This layout also keeps future additions predictable. New rows can follow the same five column pattern, and the surrounding prose can stay stable because it only explains how to read the catalog.
+This layout keeps the page stable as the supported list changes, because new rows can fit the same five column pattern.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
@@ -56,6 +52,6 @@ Footnotes:
 - `gcp` is the API value behind `Google Drive`.
 - `slackChannel` is the only connection type that can serve as a Publication notifier.
 
-This footnote set keeps the shared labels readable without repeating the full catalog in prose. It also captures the alternate API values that map to the same visible name and the single notifier type that serves publications. Together with the cross-links below, it places the page beside the source, trigger, and API references that supply the surrounding detail.
+The cross-links below place this page beside the source, trigger, and API references, so the catalog stays compact while still connecting to the surrounding documentation.
 
 See also: [Sources](/c1-sources.md), [trigger and event types](/j9-trigger-and-event-types.md), and [API connections](/j3-api-connections.md).
