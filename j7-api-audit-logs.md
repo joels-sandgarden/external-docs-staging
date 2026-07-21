@@ -42,6 +42,7 @@ Notes:
 - SFS token auth follows the standard flow in [/j1-api-overview.md](/j1-api-overview.md).
 - When list permission is missing, Doc Holiday limits results to permitted audit-log IDs.
 - The get endpoint performs a per-ID permission check.
+
 ## Get an audit log
 `GET /api/v1/audit_logs/{id}`
 
