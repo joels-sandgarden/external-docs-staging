@@ -2,7 +2,7 @@
 
 This page covers direct integration with Doc Holiday's API.
 
-Deprecated `/api/v1/automations/*` aliases appear in `/j1-api-overview.md`.
+Deprecated `/api/v1/automations/*` aliases are covered in `/j1-api-overview.md`.
 
 ## Endpoints
 
@@ -16,7 +16,7 @@ Creates a publication and returns it with resolved instructions.
 
 `curl`: `curl -X POST https://api.doc.holiday/api/v1/publications -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]}}'`
 `JSON`: `{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]},"instructions":[]}`
-`Notes`: Permissions gate the call; validation rejects missing docs destinations and duplicate names.
+`Notes`: Permissions gate the call; invalid configs and duplicate names stop the save.
 
 ### `GET /api/v1/publications/{id}`
 Retrieves one publication with config, health, sync time, and resolved instructions.
@@ -53,7 +53,7 @@ Replaces a publication's full configuration and instruction set.
 
 `curl`: `curl -X PUT https://api.doc.holiday/api/v1/publications/pub_1 -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]}}'`
 `JSON`: `{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]},"instructions":[]}`
-`Notes`: Permissions gate the call; validation runs again, and duplicate names fail the save.
+`Notes`: Permissions gate the call; invalid configs and name clashes stop replacement.
 
 ### `DELETE /api/v1/publications/{id}`
 Removes a publication.
@@ -65,7 +65,7 @@ Removes a publication.
 
 `curl`: `curl -X DELETE -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1`
 `JSON`: `{"id":"pub_1"}`
-`Notes`: Permission checks apply; deletion also clears linked instruction records and orphaned local instructions.
+`Notes`: Permission checks apply; removal also clears linked instruction records and orphaned local instructions.
 
 ### `GET /api/v1/publications/{id}/health`
 Reports whether a publication is misconfigured.
@@ -77,7 +77,7 @@ Reports whether a publication is misconfigured.
 
 `curl`: `curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1/health`
 `JSON`: `{"id":"pub_1"}`
-`Notes`: The check can surface unhealthy docs or source connections and returns a message with the failure.
+`Notes`: The check can surface unhealthy docs or source connections and returns a message for the failure.
 
 ### `POST /api/v1/publications/{id}/sync`
 Queues a sync run for the publication.
@@ -94,15 +94,15 @@ Queues a sync run for the publication.
 
 ## ModelsPublicationConfig
 
-- `sourceRepos`: Connection IDs for the sources a publication reads from.
-- `docsRepo`: The docs destination; validation requires this field.
+- `sourceRepos`: Connection IDs for sources that feed a publication.
+- `docsRepo`: The docs destination; validation requires it.
 - `inputTriggers`: A map keyed by Connection ID, with events limited by connection type.
-- `writeDocumentation`: Controls documentation output.
-- `writeReleaseNotes`: Controls release notes output.
-- `writeChangelogs`: Controls changelog output.
-- `styleGuide`: Nested per-type settings for documentation, release notes, and changelogs.
-- `planningInstructions`: Text used in publication configuration for planning guidance.
-- `prCommitInstructions`: Text used in publication configuration for pull request commit guidance.
+- `writeDocumentation`: Controls whether the publication writes documentation.
+- `writeReleaseNotes`: Controls whether the publication writes release notes.
+- `writeChangelogs`: Controls whether the publication writes changelogs.
+- `styleGuide`: Nested per type settings for documentation, release notes, and changelogs.
+- `planningInstructions`: Text field used in publication configuration for planning guidance.
+- `prCommitInstructions`: Text field used in publication configuration for pull request commit guidance.
 - `notifierConnection`: The publication's notifier connection field.
 
 ## Behaviors
