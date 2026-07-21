@@ -34,4 +34,4 @@ Footnotes:
 - `gcp` is the API value behind `Google Drive`.
 - `slackChannel` is the only connection type that can serve as a Publication notifier.
 
-Related pages: [Sources](/c1-sources.md), [trigger and event types](/j9-trigger-and-event-types.md), and [API connections](/j3-api-connections.md).
+See also: [Sources](/c1-sources.md), [trigger and event types](/j9-trigger-and-event-types.md), and [API connections](/j3-api-connections.md).
