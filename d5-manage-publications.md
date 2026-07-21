@@ -27,12 +27,12 @@ Write access controls who can request work under the Publication. For broader ro
 
 1. Open **Status** for a quick health check.
 2. Read the **Health:** badge to see the current result.
-3. Select **Run Test** after a change or when the Publication needs a fresh check.
+3. Select **Run Test** after a change or when a fresh check is needed.
 4. If the check fails, look for **Health Check Failed** and open **View Troubleshooting Docs** for help.
 
 ## Danger Zone
 
-1. Open **Danger Zone** only when the Publication no longer needs to exist.
+1. Open **Danger Zone** only when the Publication is no longer needed.
 2. Select **Delete Publication**.
 3. Confirm **Permanently delete this publication.** and then **This cannot be undone.**
 
