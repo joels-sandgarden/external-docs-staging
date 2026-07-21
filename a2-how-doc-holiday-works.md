@@ -1,6 +1,6 @@
 # How Doc Holiday works
 
-Doc Holiday turns a request into a plan, a draft, a review, and a normal pull request.
+Doc Holiday turns a request into a plan, a draft, a review, and then a pull request.
 
 This is the loop at a glance.
 
