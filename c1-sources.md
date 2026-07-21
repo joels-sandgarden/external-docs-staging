@@ -15,6 +15,7 @@ GitHub, GitLab, and Bitbucket all use the same basic shape. Doc Holiday installs
 The grouped list in the app makes that relationship obvious. A provider row shows the shared Source, and the rows below it show the child Sources that depend on it. GitHub starts with a GitHub App Source and then adds repository Sources. GitLab starts with a GitLab provider Source and then adds project Sources. Bitbucket follows the same pattern with provider, repository, and project Sources. Slack uses the same logic for notifications: Doc Holiday connects a Slack app first, then selects a channel Source underneath it for the messages that should reach a team.
 
 This split gives a useful boundary between shared access and specific content. One provider can support more than one child Source, and the child Source can belong to a different Publication if the access and purpose fit. The app still keeps the provider visible at the top of the group, which helps when several Publications rely on the same starting point.
+That split matters when a single provider supports several repositories, projects, or channels at once. Shared access stays in one place, so Doc Holiday can manage it once while each child Source keeps its own name and scope. That keeps the provider easy to maintain and leaves each Publication tied to the exact Source it needs.
 
 ## Freshness and health
 
@@ -41,6 +42,7 @@ That clarity matters when one Publication depends on many Sources at once. Share
 It also helps when a team adds new Sources over time. The app does not force every new system into the same role, so the workspace can grow without blurring the difference between a provider, a context Source, and a notification Source.
 
 That structure also helps readers and reviewers tell context apart from output at a glance. A Publication can read one set of Sources for background and write into another Source for the published result, while the Library keeps the wording aligned across both.
+That distinction keeps the three meanings of documentation easy to tell apart. Context Source, output type, and destination each play a different part in the same workflow, so the page can show what supplies background, what names the result, and where the result ends up without making the reader guess.
 
 ## Set up a source
 
