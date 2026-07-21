@@ -31,15 +31,13 @@ After the app is installed, Doc Holiday can create repository Sources under it w
 3. If the form shows the missing-provider alert, install the GitHub App first and return to repository setup. That alert tells you the repository Source cannot finish until the organization app exists.
 4. Use the repository picker when you want to add several repositories at once. Use the single Source form when you only need one repository entry or when you want to review each field separately.
 
-The onboarding picker works well when a whole team or product area belongs in the same setup. The single Source form works well when one repository needs careful review before you save it.
-
-That means you can add several repositories now and leave the rest for later, or focus on one repository when you want a smaller change.
+The onboarding picker works well when a shared organization owns several repositories and you want to add them in one pass. The single Source form works well when you want a shorter review with one repository and one branch.
 
 ```
 SCREENSHOT PLACEHOLDER: connect-github/repo-connection-form.png
 ```
 
-The repository picker keeps setup simple when several repositories belong to the same organization. The single Source form helps when only one repository needs to connect, or when you want to confirm the branch before you save.
+The repository picker keeps setup simple when several repositories belong to the same organization. The single Source form helps when only one repository needs to connect and you want to confirm the branch before you save.
 
 ### Option B: Use a Personal Access Token
 
