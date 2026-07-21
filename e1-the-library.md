@@ -6,7 +6,7 @@ The Library is your organization's shared collection of reusable instructions. E
 
 ## Scope and reuse
 
-Some instructions apply everywhere. Others attach only to selected Publications. A global instruction gives Doc Holiday the same direction across every Source that shares that Publication, while a Publication-specific instruction narrows the guidance to the places that need it. When a Publication uses several linked instructions, Doc Holiday follows their order so the writing stays consistent.
+Some instructions apply everywhere. Others attach only to selected Publications. A global instruction gives Doc Holiday the same direction across every Source that shares that Publication, while an instruction for selected Publications narrows the guidance to the places that need it. When a Publication uses several linked instructions, Doc Holiday follows their order so the writing stays consistent.
 
 ## How the Library shapes writing
 
@@ -18,7 +18,7 @@ When a Source triggers work for a Publication, Doc Holiday first looks for linke
 
 In the dashboard, the Library lives in the instructions area. The list lets you search, sort, and filter by type, and it shows how many Publications use each instruction. The **New instruction** action opens a sheet for creating or editing an instruction.
 
-From that sheet, you can save drafted text into the Library, see the Publications already attached to an instruction, and add existing Library instructions when a Publication needs shared guidance.
+From that sheet, you can save drafted text into the Library, see the Publications already attached to an instruction, and add existing Library instructions when a Publication needs the same guidance.
 
 ```
 SCREENSHOT PLACEHOLDER: the-library/library-page.png
