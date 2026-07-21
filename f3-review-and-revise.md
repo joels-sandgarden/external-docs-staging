@@ -5,7 +5,7 @@ When a Work History entry reaches Ready for Review, open its sheet and review ea
 ## Opening the entry
 
 1. In Work History, select the entry marked Ready for Review.
-2. The sheet opens with **Details**, **Files**, and **Messages**.
+2. The sheet opens with "Details", "Files", and "Messages". The "Messages" tab shows the conversation thread and the reply box.
 3. In **Details**, confirm these labels:
    - `Summary:` the request title
    - `Created By:` who started the entry
