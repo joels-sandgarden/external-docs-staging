@@ -4,7 +4,7 @@ Authentication, pagination, and general API conventions live in [j1-api-overview
 
 ## Instructions
 
-Use Instructions to manage reusable text for a slot.
+Instructions store reusable text for a slot.
 
 | Method | Path | Purpose | Key parameters | Example | Notable behaviors |
 | --- | --- | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ Use Instructions to manage reusable text for a slot.
 
 ## Instruction links
 
-Use instruction links to attach an instruction to a publication slot. Slot types are `documentation`, `releaseNotes`, `changelog`, `commit`, `planning`, and `styleGuide`; `styleGuide` validates like the others but is not a publication slot. See [e2-instruction-slots-reference.md](/e2-instruction-slots-reference.md).
+Instruction links attach an instruction to a publication slot. Slot types are `documentation`, `releaseNotes`, `changelog`, `commit`, `planning`, and `styleGuide`; `styleGuide` validates like the others but is not a publication slot. See [e2-instruction-slots-reference.md](/e2-instruction-slots-reference.md).
 
 | Method | Path | Purpose | Key parameters | Example | Notable behaviors |
 | --- | --- | --- | --- | --- | --- |
