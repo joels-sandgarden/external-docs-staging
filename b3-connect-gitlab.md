@@ -1,27 +1,33 @@
-# Connect GitLab sources in Doc Holiday
+# Connect GitLab
 
-Use this guide when GitLab needs to feed Doc Holiday with project changes and keep documentation current. Doc Holiday uses Sources for GitLab projects; see [Concepts](/a3-concepts.md) for the shared model.
+Use this page when GitLab needs to feed Doc Holiday. For the shared model behind Sources, start with [Concepts](/a3-concepts.md) and [Sources](/c1-sources.md). On GitLab, Doc Holiday opens merge requests and keeps project Sources current.
 
-On GitLab, Doc Holiday opens merge requests rather than pull requests.
+## One token, many projects
 
-## Main path: create a GitLab Access Token and GitLab Project
+1. Open **Sources**, then the **Providers** tab, and select **Add Provider**.
+2. Choose **GitLab Access Token**.
+3. Enter **Token Name** and **Access Token**, then save the provider.
+4. Return to the **Sources** tab and select **Add Source**.
+5. Choose **GitLab Project**.
+6. Enter **Source Name**, **Project**, **Branch**, and **Publishing System**.
+7. Choose the project in **Project**. Doc Holiday infers the provider token from the project you pick.
+8. Repeat **Add Source** for each GitLab project that should use the same token.
 
-1. Open **Sources**, then add **GitLab Access Token**.
-2. Enter **Token Name** and **Access Token**, then save the access token.
-3. Add **GitLab Project** under that token.
-4. Fill in **Source Name**, **Project**, **Branch**, and **Publishing System**.
-5. Select the project and branch Doc Holiday should watch, then save the Source.
-6. Repeat the project step for each GitLab project that should use the same access token.
+If you need the supported publishing systems, see [Publishing systems](/d4-publishing-systems.md).
 
-If the **Publishing System** choice needs a refresher, see [Publishing systems](/d4-publishing-systems.md).
+## One project with its own token
 
-## Option: use one access token for multiple projects
+Use this option when one project needs its own token.
 
-Use **GitLab** and select **Connect with Personal Access Token** when one token should create Sources for multiple projects.
+1. In the **Add Source** sheet with **GitLab Project** selected, use the **Click here ...** helper link to switch to the standalone GitLab form.
+2. Enter **Source Name**, **Access Token**, **Project**, **Branch**, and **Publishing System**.
+3. Save the Source.
+
+This form covers exactly one project, and the token stays on that Source.
 
 ## Verify
 
-Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open [Manage connections](/c7-manage-connections.md) and update the Source before continuing.
+Open **Sources** and confirm that the Source shows **Healthy**. If it does not, open [Manage connections](/c7-manage-connections.md).
 
 ## Next
 
