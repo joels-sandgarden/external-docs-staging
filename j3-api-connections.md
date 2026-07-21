@@ -380,25 +380,8 @@ The response uses `statuses` and carries pagination tokens when needed.
 
 ### `POST /api/v1/connections/{id}/merges/summarize`
 
-Start background summarization for one merged pull request.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Body | `number` |
 | Success | `202 Accepted` |
-
-```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections/123/merges/summarize" \
-  -H "Authorization: Bearer $SFS_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"number":1234}'
-```
-
-```json
-{
-  "number": 1234
-}
-```
-
-The API accepts the merge number and starts background summarization.
