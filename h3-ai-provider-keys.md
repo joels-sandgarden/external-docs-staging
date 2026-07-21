@@ -4,7 +4,7 @@ Use this page to manage the OpenAI keys that power an organization’s writing r
 
 SCREENSHOT PLACEHOLDER: add-your-openai-key/keys-page.png
 
-When no keys exist, the page shows **No AI Provider Keys yet**.
+If no keys exist, the page shows **No AI Provider Keys yet**.
 
 ## Add a key
 
