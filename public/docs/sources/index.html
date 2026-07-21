@@ -302,9 +302,9 @@
 <p>For the shared vocabulary behind this page, see <a href="/external-docs-staging/docs/concepts/">Concepts</a>
 .</p>
 <h2 id="provider-connections-and-child-sources">Provider connections and child sources</h2>
-<p>Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared connection stays distinct from the child connection it powers.</p>
-<p>That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent connection again or changing the rest of the workspace.</p>
-<p>The parent connection usually holds the shared workspace or app access, while the child source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content sources.</p>
+<p>Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared source stays distinct from the child source it powers.</p>
+<p>That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent source again or changing the rest of the workspace.</p>
+<p>The parent provider usually holds the shared workspace or app access, while the child source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content sources.</p>
 <p>The pattern is the same across the supported providers:</p>
 <ul>
 <li>GitHub Application provides access for GitHub Repository sources.</li>
@@ -317,9 +317,8 @@
 <p>The pattern also keeps the setup story easy to follow. Once the provider exists, the child source only needs the fields that belong to that specific repository, project, or channel, which keeps repeated setup work to a minimum.</p>
 <h2 id="freshness-and-health">Freshness and health</h2>
 <p>Doc Holiday rereads connected sources on a background cadence, roughly every couple of hours for each source. That keeps it close to the current state of the connected systems without waiting for manual refreshes.</p>
-<p>Before it writes, Doc Holiday refreshes the stalest source first. That extra pass matters when several sources feed one Publication, because the first draft should start from the newest available material from every place it reads.</p>
-<p>Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday leaves it out of the write cycle until someone fixes the problem. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.</p>
-<p>The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, the source drops out of the write cycle until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.</p>
+<p>Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday stops re-reading that source until someone fixes the problem, so its information goes stale rather than fresh. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.</p>
+<p>The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, Doc Holiday stops re-reading that source until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.</p>
 <p>For the operational details around credentials, health, and deletion, see <a href="./c7-manage-connections.md">Manage connections</a>
 .</p>
 <p>That page covers the day to day maintenance work, while this page stays with the idea of what health means and why Doc Holiday skips an unhealthy source instead of guessing.</p>

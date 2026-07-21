@@ -11,7 +11,7 @@ Doc Holiday closes that gap continuously. It writes and maintains documentation 
 
 **A product manager or support engineer, from the app.** Type a plain-language request into [app.doc.holiday](https://app.doc.holiday) — "write release notes covering everything merged since v2.3" — and review the draft file by file when it's ready.
 
-**Nobody at all.** Configure a [Publication](./d1-publications.md) to react to merged pull requests or releases, and the affected pages get reconciled and the release notes written as part of shipping — with your team still approving every change.
+**Fully automated, as part of shipping.** Configure a [Publication](./d1-publications.md) to react to merged pull requests or releases, and the affected pages get reconciled and the release notes written without anyone having to ask — with your team still approving every change.
 
 ## What makes it different
 

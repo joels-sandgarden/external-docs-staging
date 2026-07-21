@@ -18,11 +18,11 @@ For the shared vocabulary behind this page, see [Concepts](./a3-concepts.md).
 
 ## Provider connections and child sources
 
-Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared connection stays distinct from the child connection it powers.
+Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared source stays distinct from the child source it powers.
 
-That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent connection again or changing the rest of the workspace.
+That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent source again or changing the rest of the workspace.
 
-The parent connection usually holds the shared workspace or app access, while the child source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content sources.
+The parent provider usually holds the shared workspace or app access, while the child source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content sources.
 
 The pattern is the same across the supported providers:
 
@@ -40,11 +40,9 @@ The pattern also keeps the setup story easy to follow. Once the provider exists,
 
 Doc Holiday rereads connected sources on a background cadence, roughly every couple of hours for each source. That keeps it close to the current state of the connected systems without waiting for manual refreshes.
 
-Before it writes, Doc Holiday refreshes the stalest source first. That extra pass matters when several sources feed one Publication, because the first draft should start from the newest available material from every place it reads.
+Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday stops re-reading that source until someone fixes the problem, so its information goes stale rather than fresh. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.
 
-Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday leaves it out of the write cycle until someone fixes the problem. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.
-
-The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, the source drops out of the write cycle until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.
+The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, Doc Holiday stops re-reading that source until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.
 
 For the operational details around credentials, health, and deletion, see [Manage connections](./c7-manage-connections.md).
 

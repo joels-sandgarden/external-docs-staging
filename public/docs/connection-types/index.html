@@ -319,84 +319,84 @@
 	</thead>
 	<tbody>
 			<tr>
-					<td>GitHub App</td>
+					<td>GitHub Application</td>
 					<td><code>githubApp</code></td>
 					<td><code>git provider</code></td>
 					<td>—</td>
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>GitLab provider</td>
+					<td>GitLab Access Token</td>
 					<td><code>gitlabProvider</code></td>
 					<td><code>git provider</code></td>
 					<td>—</td>
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>Bitbucket provider</td>
+					<td>Bitbucket Workspace Access Token</td>
 					<td><code>bitbucketProvider</code></td>
 					<td><code>git provider</code></td>
 					<td>—</td>
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>Slack App</td>
+					<td>Slack Application</td>
 					<td><code>slackApp</code></td>
-					<td><code>context source</code></td>
+					<td><code>provider</code></td>
 					<td>—</td>
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>Atlassian Forge App</td>
+					<td>Atlassian Application</td>
 					<td><code>atlassianForgeApp</code></td>
-					<td><code>context source</code></td>
+					<td><code>provider</code></td>
 					<td>—</td>
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>GitHub repository</td>
+					<td>GitHub Repository</td>
 					<td><code>githubRepo</code></td>
 					<td><code>git repository</code></td>
-					<td><code>GitHub App</code></td>
+					<td><code>GitHub Application</code></td>
 					<td><code>pullRequests</code>, <code>newIssues</code>, <code>issueComments</code>, <code>releases</code></td>
 			</tr>
 			<tr>
-					<td>GitHub personal access token</td>
+					<td>GitHub Repository (personal access token)</td>
 					<td><code>githubAccessToken</code></td>
 					<td><code>git repository</code></td>
 					<td>—</td>
 					<td><code>pullRequests</code>, <code>newIssues</code>, <code>issueComments</code>, <code>releases</code></td>
 			</tr>
 			<tr>
-					<td>GitLab repository</td>
+					<td>GitLab (multi-project access token)</td>
 					<td><code>gitlab</code></td>
 					<td><code>git repository</code></td>
 					<td>—</td>
 					<td><code>pullRequests</code>, <code>newIssues</code>, <code>issueComments</code>, <code>releases</code></td>
 			</tr>
 			<tr>
-					<td>GitLab project</td>
+					<td>GitLab Project</td>
 					<td><code>gitlabProject</code></td>
 					<td><code>git repository</code></td>
-					<td><code>GitLab provider</code></td>
+					<td><code>GitLab Access Token</code></td>
 					<td><code>pullRequests</code>, <code>newIssues</code>, <code>issueComments</code>, <code>releases</code></td>
 			</tr>
 			<tr>
-					<td>Bitbucket repository</td>
+					<td>Bitbucket Repository (repository access token)</td>
 					<td><code>bitbucketRepo</code></td>
 					<td><code>git repository</code></td>
 					<td>—</td>
 					<td><code>pullRequests</code>, <code>issueComments</code></td>
 			</tr>
 			<tr>
-					<td>Bitbucket project</td>
+					<td>Bitbucket Project</td>
 					<td><code>bitbucketProject</code></td>
 					<td><code>git repository</code></td>
-					<td><code>Bitbucket provider</code></td>
+					<td><code>Bitbucket Workspace Access Token</code></td>
 					<td><code>pullRequests</code>, <code>issueComments</code></td>
 			</tr>
 			<tr>
-					<td>Documentation</td>
+					<td>External Documentation</td>
 					<td><code>documentation</code></td>
 					<td><code>context source</code></td>
 					<td>—</td>
@@ -417,7 +417,7 @@
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>AWS</td>
+					<td>AWS (S3)</td>
 					<td><code>aws</code></td>
 					<td><code>context source</code></td>
 					<td>—</td>
@@ -438,40 +438,40 @@
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>Jira project</td>
+					<td>Jira Read-Only</td>
 					<td><code>jiraProject</code></td>
 					<td><code>context source</code></td>
 					<td>—</td>
 					<td><code>sendToDoc</code>, <code>issueStatusChange</code></td>
 			</tr>
 			<tr>
-					<td>Azure Blob</td>
+					<td>Azure Blob Storage</td>
 					<td><code>azureBlob</code></td>
 					<td><code>context source</code></td>
 					<td>—</td>
 					<td>—</td>
 			</tr>
 			<tr>
-					<td>Atlassian Forge Jira project</td>
+					<td>Jira Project</td>
 					<td><code>atlassianForgeJiraProject</code></td>
 					<td><code>context source</code></td>
-					<td><code>Atlassian Forge App</code></td>
+					<td><code>Atlassian Application</code></td>
 					<td><code>sendToDoc</code>, <code>issueStatusChange</code></td>
 			</tr>
 			<tr>
 					<td>Slack Channel</td>
 					<td><code>slackChannel</code></td>
 					<td><code>notifier</code></td>
-					<td><code>Slack App</code></td>
+					<td><code>Slack Application</code></td>
 					<td>—</td>
 			</tr>
 	</tbody>
 </table>
 <h2 id="footnotes">Footnotes</h2>
 <ol>
-<li>GitHub App and GitHub personal access token are the two GitHub auth paths.</li>
-<li>GitLab provider and GitLab project split provider-backed and direct access.</li>
-<li>Bitbucket provider and Bitbucket project split provider-backed and direct access.</li>
+<li>GitHub Repository ↔ GitHub Repository (personal access token)</li>
+<li>GitLab Project ↔ GitLab (multi-project access token)</li>
+<li>Bitbucket Project ↔ Bitbucket Repository (repository access token)</li>
 <li><code>gcp</code> appears in the UI as Google Drive.</li>
 <li>Slack Channel is the only Publication notifier.</li>
 </ol>
