@@ -1,6 +1,6 @@
-# Manage team access
+# User management
 
-Use this page to invite teammates, set organization roles, share a Publication, or remove access.
+Use this page to get your team in with the right access.
 
 ## 1. Invite teammates
 
