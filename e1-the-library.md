@@ -12,7 +12,7 @@ Some instructions apply everywhere. Others attach only to selected Publications.
 
 [Linked Library instructions govern how Doc Holiday writes for that Publication, but a specific ask in an individual request still wins for that request.](/p1-prompting-guide.md)
 
-When a Source triggers work for a Publication, Doc Holiday first looks for linked Library instructions. If none exist, it falls back to the inline writing text already stored on the Publication. That keeps the Library as the normal source of guidance while older Publication settings remain usable. Work History records the request with that choice attached to the result.
+When a Source triggers work for a Publication, Doc Holiday first looks for linked Library instructions. If none exist, it falls back to the inline writing text already stored on the Publication. That keeps the Library as the normal source of guidance while existing Publication settings stay usable. Work History records the request and keeps that choice visible with the result.
 
 ## The Library page
 
@@ -26,4 +26,4 @@ SCREENSHOT PLACEHOLDER: the-library/library-page.png
 
 ## What good instructions do
 
-Good instructions keep Doc Holiday's writing steady: the same Publication keeps the same voice, the same boundaries, and the same output shape every time. See [Writing style guides](/p3-writing-style-guides.md) for how those instructions stay clear and usable.
+Good instructions keep Doc Holiday's writing steady: the same Publication keeps a steady voice, clear boundaries, and a consistent output shape every time. See [Writing style guides](/p3-writing-style-guides.md) for how those instructions stay clear and usable.
