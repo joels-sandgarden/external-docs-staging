@@ -17,7 +17,7 @@ Use this reference when an integration needs the public Connections endpoints. S
 ```json
 {
   "githubRepo": {
-    "githubAppConnectionId": "12",
+    "githubAppConnectionId": "cnn-0123456789abcdef",
     "repositoryUrl": "https://github.com/example/docs"
   }
 }
@@ -28,7 +28,7 @@ Use this reference when an integration needs the public Connections endpoints. S
 ```json
 {
   "notion": {
-    "integrationKey": "secret-key"
+    "integrationKey": "********"
   }
 }
 ```
@@ -38,7 +38,7 @@ Use this reference when an integration needs the public Connections endpoints. S
 ```json
 {
   "slackChannel": {
-    "slackAppConnectionId": "9",
+    "slackAppConnectionId": "cnn-0123456789abcdef",
     "channelId": "C01234567"
   }
 }
@@ -56,11 +56,11 @@ Creates a connection that Doc Holiday can use to read from or write to an extern
 curl -X POST "https://api.doc.holiday/api/v1/connections" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
-  -d '{"name":"Docs repo","paused":false,"sync":true,"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}'
+  -d '{"name":"Docs repo","paused":false,"sync":true,"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}'
 ```
 - JSON:
 ```json
-{"id":"12","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}
+{"id":"cnn-0123456789abcdef","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}
 ```
 - Behaviors: Requires an SFS token. Returns `400` when `config` is missing or more than one connection type is set.
 
@@ -77,7 +77,7 @@ curl "https://api.doc.holiday/api/v1/connections?type=githubRepo&healthy=true" \
 ```
 - JSON:
 ```json
-{"connections":[{"id":"12","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}],"nextPageToken":"eyJ..."}
+{"connections":[{"id":"cnn-0123456789abcdef","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}],"nextPageToken":"eyJ..."}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for invalid filters.
 
@@ -89,12 +89,12 @@ Returns one connection record with the redacted configuration and trigger events
 - Returns: one connection record
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
 ```json
-{"id":"12","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}
+{"id":"cnn-0123456789abcdef","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for an invalid or missing `id`.
 
@@ -105,14 +105,14 @@ Updates the connection name, pause state, and exactly one connection config vari
 - Key parameters: `id`, `name`, `paused`, `config`
 - curl:
 ```bash
-curl -X PUT "https://api.doc.holiday/api/v1/connections/12" \
+curl -X PUT "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
-  -d '{"name":"Docs source","paused":true,"config":{"notion":{"integrationKey":"secret-key"}}}'
+  -d '{"name":"Docs source","paused":true,"config":{"notion":{"integrationKey":"********"}}}'
 ```
 - JSON:
 ```json
-{"id":"12","name":"Docs source","type":"notion","healthy":true,"paused":true,"allowedTriggerEvents":[],"config":{"notion":{"integrationKey":"secret-key"}}}
+{"id":"cnn-0123456789abcdef","name":"Docs source","type":"notion","healthy":true,"paused":true,"allowedTriggerEvents":[],"config":{"notion":{"integrationKey":"********"}}}
 ```
 - Behaviors: Requires an SFS token. Returns `400` when `config` is missing, ambiguous, or fails validation.
 
@@ -124,12 +124,8 @@ Removes a connection and can keep dependent records when needed.
 - Returns: no content
 - curl:
 ```bash
-curl -X DELETE "https://api.doc.holiday/api/v1/connections/12?preserveDependencies=true" \
+curl -X DELETE "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef?preserveDependencies=true" \
   -H "Authorization: Bearer {{sfsToken}}"
-```
-- JSON:
-```json
-null
 ```
 - Behaviors: Requires an SFS token. Returns `204 No Content` with no response body.
 
@@ -137,34 +133,30 @@ null
 
 Starts a background sync for the selected connection.
 
-- Key parameters: `id`, `wait`, `timeout`
+- Key parameters: `id`, `wait`
 - curl:
 ```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections/12/sync" \
+curl -X POST "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/sync" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
-  -d '{"wait":true,"timeout":300}'
+  -d '{"wait":true}'
 ```
-- JSON:
-```json
-{"wait":true,"timeout":300}
-```
-- Behaviors: Requires an SFS token. Returns `202 Accepted`; invalid `wait` or `timeout` values return `400`.
+- Behaviors: Requires an SFS token. Returns `202 Accepted` with no response body; invalid `wait` values return `400`.
 
 ### `GET /api/v1/connections/{id}/health`
 
-Checks whether a connection is healthy and reports any error message.
+Checks whether a connection is healthy and returns any message or error when present.
 
 - Key parameters: `id`
-- Returns: `id`, `status`, `message`, `error`
+- Returns: `id`, `status`, and optional `message`, `error`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12/health" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/health" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
 ```json
-{"id":"12","status":"healthy","message":"Healthy","error":""}
+{"id":"cnn-0123456789abcdef","status":"healthy"}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for an invalid or missing `id`.
 
@@ -176,7 +168,7 @@ Lists the channels that the selected connection can reach.
 - Returns: `channels`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12/channels" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/channels" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
@@ -187,20 +179,20 @@ curl "https://api.doc.holiday/api/v1/connections/12/channels" \
 
 ### `GET /api/v1/bitbucket/repos`
 
-Lists Bitbucket repositories for a workspace and optional connection.
+Lists Bitbucket repositories using either a connection ID or workspace credentials.
 
 - Key parameters: `connectionId`, `workspace`, `token`
 - Returns: `repos`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=12&workspace=acme&token={{bitbucketToken}}" \
+curl "https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=cnn-0123456789abcdef" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
 ```json
 {"repos":[{"fullName":"acme/docs","slug":"docs"}]}
 ```
-- Behaviors: Requires an SFS token. Returns `400` when `connectionId`, `workspace`, or `token` is missing or invalid.
+- Behaviors: Use `connectionId` alone, or provide `workspace` and `token` together. Requires an SFS token. Returns `400` for invalid parameters.
 
 ### `GET /api/v1/connections/{id}/jira/statuses`
 
@@ -210,7 +202,7 @@ Lists the Jira statuses that a connection can use.
 - Returns: `statuses`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12/jira/statuses" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/jira/statuses" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
@@ -226,13 +218,9 @@ Starts a background summary for one merged pull request on a connection.
 - Key parameters: `id`, `number`
 - curl:
 ```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections/12/merges/summarize" \
+curl -X POST "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/merges/summarize" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
   -d '{"number":123}'
 ```
-- JSON:
-```json
-{"number":123}
-```
-- Behaviors: Requires an SFS token. Returns `202 Accepted`; missing or invalid `number` values return `400`. 
+- Behaviors: Requires an SFS token. Returns `202 Accepted` with no response body; missing or invalid `number` values return `400`.
