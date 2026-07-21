@@ -3,10 +3,12 @@
 ## Overview
 
 A Publication is the defined set of documentation Doc Holiday writes and maintains. It gives shape to the work that stays current over time, so most requests begin by choosing the Publication they belong to. That choice matters because it ties together the Sources it reads, the destination it writes to, and the writing guidance that keeps the output consistent. A Publication is larger than a single page: it represents the connected body of documentation Doc Holiday is responsible for keeping in sync as the product changes. It also acts as the boundary for day to day documentation work, so changes, review, and follow up stay anchored to one place. That framing helps Doc Holiday keep one place current while the surrounding product continues to change.
+That makes the Publication the place where a team can track a whole documentation area, not only one page. When the product changes, Doc Holiday keeps that area current as one unit, so related pages stay aligned.
 
 ## What a Publication points at
 
 A Publication points at one or more Sources for context and change signals, exactly one docs destination for the writing output, and an optional Slack channel for notifications. The Sources can cover different parts of a product or even different systems, while the docs destination stays singular so the published documentation has one clear home. The Slack channel adds visibility for teams that want progress updates without sending the documentation to a second destination. That keeps notifications useful without turning them into another place where the content must live.
+That helps teams notice progress in the place they already use to coordinate work. See [Slack notifications](/g4-slack-notifications.md) for details.
 
 That structure lets one Publication gather information from several places without fragmenting the writing target. Doc Holiday can read code changes from one Source, product context from another, and supporting material from a third, then keep the resulting documentation together in one destination. The docs destination can also live in a repository separate from the code repository, which is a normal and fully supported setup. That separation helps teams keep the documentation site, the codebase, and the surrounding context in the places that fit their workflow. It also makes it easier to grow a Publication over time, because new Sources can join the same documentation destination without changing where readers find the result.
 
@@ -25,6 +27,7 @@ That narrow scope matters when a team wants to understand why a page changed, wh
 ## Publication health
 
 Publication health shows whether the Publication, its Sources, and its docs destination are ready for Doc Holiday to use. It gives a quick readiness signal before work starts and a more detailed view when someone opens the Publication itself. In the Publications list, health appears as a badge. On the publication details page, it appears in a status section that brings the current state into view.
+That visibility helps readers tell at a glance whether the Publication is ready for new work or needs a retry and a closer look at the troubleshooting guidance.
 
 That status makes the difference between a Publication that can accept work and one that needs attention easy to spot. A healthy Publication gives a clear signal that the docs destination and connected Sources are ready. When health is unhealthy, the details page shows a retry action and troubleshooting guidance so the next check stays visible and easy to understand. The result is a simple scan for the list view and a deeper explanation for the details view. In both places, the status turns a setup check into something visible and easy to act on.
 
