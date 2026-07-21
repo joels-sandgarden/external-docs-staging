@@ -93,7 +93,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `id`.
 - Response: `204 No Content`.
 - Notes: the same author and mutability rules apply here: only the author can remove a comment that is neither work-requested nor batched.
-- `curl`: `curl -X DELETE -H 'Authorization: Bearer …' /api/v1/conversation_comments/c1`
+- `curl`: `curl -X DELETE -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_comments/c1"`
 - `json`: `{}`
 
 ## `conversation_turns`
