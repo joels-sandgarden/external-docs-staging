@@ -17,7 +17,7 @@ curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/me
 ```
 
 ```json
-{"id":"string","authId":"string","email":"string","name":"string","sfsToken":"string","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
+{"id":"string","authId":"string","email":"string","name":"string","sfsToken":"","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
 Requires authenticated SFS token access. Common errors: `400`, `500`.
