@@ -16,9 +16,9 @@ A Publication points at Sources instead of owning them. That relationship matter
 
 ## Sources
 
-Sources are the connected systems that feed Doc Holiday and receive its output. A Source can provide background information, accept documentation updates, or do both, depending on its role in a Publication. Git repositories let Doc Holiday work from the source material itself, context systems add surrounding detail, and other connected systems keep the work tied to the right place.
-
-A Publication can point to more than one Source, which lets one documentation set combine code, context, and workflow signals. That keeps the roles clear: the Publication names the documentation set, and the Sources show what Doc Holiday can verify for it. A Publication may also use different Sources for reading and writing, so the same concept can cover both evidence and destination. [Sources](/c1-sources.md)
+Sources are the connected systems that feed Doc Holiday and receive its output, including places that supply background, places that hold the work, and places that do both for a Publication.
+One Source can provide context for a Publication, another can accept documentation updates, and another can keep the publication tied to the system that matters most to the team.
+A Publication points to Sources rather than owning them, so [Sources](/c1-sources.md) tell Doc Holiday what it can verify, what it can write, and how the finished work should appear.
 
 ## The Library and instructions
 
