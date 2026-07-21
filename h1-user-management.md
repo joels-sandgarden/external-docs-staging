@@ -1,6 +1,6 @@
 # Manage team access
 
-You use this page when you need to invite teammates, set organization roles, share a Publication, or remove access.
+Use this page to invite teammates, set organization roles, share a Publication, or remove access.
 
 ## 1. Invite teammates
 
@@ -60,4 +60,4 @@ After removal, you see **User removed**.
 
 ## Next
 
-[Manage publications](/d5-manage-publications.md)
+Next: [Manage publications](/d5-manage-publications.md)
