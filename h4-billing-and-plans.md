@@ -8,7 +8,7 @@ SCREENSHOT PLACEHOLDER: billing-and-plans/tier-cards.png
 
 ## Open Source Software
 
-Open Source Software is free for public open-source projects. Doc Holiday uses the reader's own OpenAI key for inference; see [Add your OpenAI key](/b6-add-your-openai-key.md) and [AI provider keys](/h3-ai-provider-keys.md) for setup context.
+Open Source Software is free for public open-source projects and uses the reader's own OpenAI key for inference. See [Add your OpenAI key](/b6-add-your-openai-key.md) and [AI provider keys](/h3-ai-provider-keys.md) for setup context.
 
 The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
 
