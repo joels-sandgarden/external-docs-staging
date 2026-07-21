@@ -184,7 +184,6 @@ curl "https://api.doc.holiday/api/v1/connections/123" \
 }
 ```
 
-The response includes `allowedTriggerEvents`, a redacted `config`, `healthy`, `paused`, and timestamps.
 
 ### `PUT /api/v1/connections/{id}`
 
