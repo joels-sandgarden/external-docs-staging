@@ -13,7 +13,7 @@ Cloud storage Sources provide read-only context from a bucket or container. They
 7. Enter **Region**.
 8. Select **Save Changes**.
 
-## Option B: Azure Blob Storage
+## Option B — Azure Blob Storage
 
 1. Open **Sources** and select **Add Source**.
 2. Choose **Azure Blob Storage**.
