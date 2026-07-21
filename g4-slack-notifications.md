@@ -20,7 +20,7 @@ When work merges, Doc Holiday sends a Slack message with a summary and a link to
 
 ## Verify
 
-Merge a small change, such as a one-line typo fix, and confirm that the Slack message arrives in the channel. Check that the message includes the summary and link.
+Merge a small change, such as a one-line typo fix, and confirm that the Slack message arrives in the channel.
 
 ## Next
 
