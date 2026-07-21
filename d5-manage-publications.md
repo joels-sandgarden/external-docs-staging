@@ -1,4 +1,4 @@
-# Manage an existing Publication
+# Manage publications
 
 Use this guide when a Publication already exists and needs updates, shared access, health checks, or deletion.
 
