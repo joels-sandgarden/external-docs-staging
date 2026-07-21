@@ -7,11 +7,10 @@ Cloud storage Sources provide read-only context from your storage account — th
 1. Open **Sources** and select **Add Source**.
 2. Choose **AWS (S3)**.
 3. Enter **Source Name**.
-4. Keep **Pause Background Work for Source** selected.
-5. Enter **Access Key ID**.
-6. Enter **Secret Access Key**.
-7. Enter **Region**.
-8. Select **Save Changes**.
+4. Enter **Access Key ID**.
+5. Enter **Secret Access Key**.
+6. Enter **Region**.
+7. Select **Save Changes**.
 
 ## Option B — Azure Blob Storage
 
