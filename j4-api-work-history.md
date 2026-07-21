@@ -34,14 +34,14 @@ Only the public `/api/v1/conversations*`, `/api/v1/conversation_comments*`, and 
 - Purpose: update staged draft state or excluded files.
 - Request: `staged`, `excludedFiles`.
 - Response: `ModelsGetConversationResponse`.
-- Notes: Doc Holiday rejects requests that set `staged` and `excludedFiles` together. When `staged` is omitted, it syncs excluded files on the working branch; when `staged` changes from `true` to `false`, it opens the draft into an open pull request and clears `staged`.
+- Notes: Doc Holiday rejects requests that set `staged` and `excludedFiles` together. When `staged` is omitted, it syncs excluded files on the working branch; when `staged` changes from `true` to `false`, it opens the draft as a pull request and clears `staged`.
 - `curl`: `curl -X PUT -H 'Content-Type: application/json' -d '{"staged":false}' /api/v1/conversations/conv_123`
 - `json`: `{"staged":false}`
 
 ### `POST /api/v1/conversations/{id}/annotate`
 - Purpose: queue annotation work for a Work History entry.
 - Request: `id`.
-- Response: `202 Accepted` with an empty JSON object.
+- Response: `ModelsAnnotateConversationResponse`.
 - Notes: Doc Holiday schedules background annotation work and returns immediately.
 - `curl`: `curl -X POST /api/v1/conversations/conv_123/annotate`
 - `json`: `{}`
