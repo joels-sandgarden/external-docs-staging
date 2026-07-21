@@ -1,6 +1,6 @@
 # Create your first publication
 
-A Publication is the defined set of documentation Doc Holiday keeps current over time; see [Publications](/d1-publications.md). This guide covers the first setup in the app and shows how to choose Sources, a docs destination, and the output types for a first Publication.
+A Publication is the defined set of documentation Doc Holiday keeps current over time; see [Publications](/d1-publications.md). This guide covers the first setup in the app and shows how to choose Sources, a docs destination, and the right output types.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ SCREENSHOT PLACEHOLDER: quickstart/publication-form.png
 2. Enter a **"Name"** that makes the Publication easy to recognize later.
 3. Under **"Inputs"** (**"select all that apply"**), choose the Sources this Publication should read from.
 4. Under **"Targets"** (**"select one"**), choose the docs destination.
-5. Under **"Write:"**, Doc Holiday starts **"Documentation"**, **"Release Notes"**, and **"Changelog"** on by default. For a first Publication, leave only **"Documentation"** on and turn **"Release Notes"** and **"Changelog"** off; see [Output types](/d3-output-types.md) for the broader explanation.
+5. Under **"Write:"**, Doc Holiday starts **"Documentation"**, **"Release Notes"**, and **"Changelog"** on by default. For a first Publication, leave only **"Documentation"** on and turn **"Release Notes"** and **"Changelog"** off. See [Output types](/d3-output-types.md) for the broader explanation.
 6. Leave **"Commit Instructions"** and **"Writing Instructions"** at their defaults for now.
 7. Trigger setup comes later; see [Configure triggers](/d2-configure-triggers.md). Finish by selecting **"Save Changes"**.
 
