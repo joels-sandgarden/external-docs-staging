@@ -34,8 +34,7 @@ curl -H "Authorization: Bearer $TOKEN" \
       "updatedAt": "2026-07-21T12:00:00Z"
     }
   ],
-  "previousPageToken": "",
-  "nextPageToken": "adl-00000000000000af"
+  "nextPageToken": "2026-07-21T12:00:00.000000Z"
 }
 ```
 
