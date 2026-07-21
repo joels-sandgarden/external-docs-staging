@@ -10,6 +10,12 @@ The Requires column names the parent connection when one exists. A blank entry m
 
 Read the catalog as an index rather than a procedure. Each row identifies one supported type, its exact API value, the visible label, the role group, any parent requirement, and the trigger events linked to that type. When two rows share the same label, the table and footnotes separate the alternative API values and parent relationships that keep them distinct.
 
+The table uses a compact, comparison first layout. Provider and child rows sit together, which keeps each parent requirement next to the dependent type. Blank cells carry meaning here: a blank Requires cell marks a type with no parent, and a blank Automatic triggers cell marks a type with no automatic event list.
+
+The catalog does not restate the separate source, trigger, or API pages. Those pages define the broader model, while this page keeps the connection type list, the visible labels, and the structural differences that matter when selecting a type.
+
+The footnotes preserve overlapping labels that the product uses for multiple API values. They keep the shared names readable without adding a second table, and they point out the notifier role that only one connection type can fill.
+
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
 | GitHub Application | `githubApp` | git provider | — | — |
