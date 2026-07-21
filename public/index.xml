@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Doc Holiday Documentation</title>
+		<link>http://localhost:1318/external-docs-staging/</link>
+		<description>Recent content on Doc Holiday Documentation</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1318/external-docs-staging/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Concepts</title>
+				<link>http://localhost:1318/external-docs-staging/docs/concepts/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1318/external-docs-staging/docs/concepts/</guid>
+				<description>&lt;p&gt;Doc Holiday uses a shared vocabulary to explain where documentation belongs, where source information comes from, and how work moves from request to result across the product, its connected workspaces, and the pages they maintain, for readers who need the same terms to mean the same thing everywhere.&#xA;Read this page first whenever the rest of the documentation starts using those words, because the same terms carry different relationships in different sections and the meaning needs to stay aligned from one page to the next.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Connect GitHub</title>
+				<link>http://localhost:1318/external-docs-staging/docs/connect-github/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1318/external-docs-staging/docs/connect-github/</guid>
+				<description>&lt;p&gt;Use this page when you need to connect GitHub to Doc Holiday. If the word Source is new, start with &lt;a href=&#34;http://localhost:1318/external-docs-staging/docs/concepts/&#34;&gt;Concepts&lt;/a&gt;&#xA;. GitHub setup uses two steps: install the GitHub App for the organization, then add one repository Source for each repository Doc Holiday should read or write. Install the app first so the organization grant exists before any repository setup begins, and so later repository Sources can reuse the same install without repeating the organization prompts.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Connection Types</title>
+				<link>http://localhost:1318/external-docs-staging/docs/connection-types/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1318/external-docs-staging/docs/connection-types/</guid>
+				<description>&lt;p&gt;This reference lists every supported Doc Holiday connection type, its role, parent requirement, and automatic trigger set. The table below stays a lookup register. It does not explain setup or workflow. It records the product model as it exists in the app.&lt;/p&gt;&#xA;&lt;p&gt;Doc Holiday keeps the set closed. Each row pairs the Type label shown in the app with the API value used by the model. The Role column groups rows into git provider, git repository, context source, or notifier. The Requires column names a parent only when one exists. The Automatic triggers column lists exact trigger identifiers or &lt;code&gt;—&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Publications</title>
+				<link>http://localhost:1318/external-docs-staging/docs/publications/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1318/external-docs-staging/docs/publications/</guid>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A Publication is the defined set of documentation Doc Holiday writes and maintains. It gives shape to the work that stays current over time, so most requests begin by choosing the Publication they belong to. That choice matters because it ties together the Sources it reads, the destination it writes to, and the writing guidance that keeps the output consistent. A Publication is larger than a single page: it represents the connected body of documentation Doc Holiday is responsible for keeping in sync as the product changes. It also acts as the boundary for day to day documentation work, so changes, review, and follow up stay anchored to one place. That framing helps Doc Holiday keep one place current while the surrounding product continues to change.&#xA;That makes the Publication the place where a team can keep one documentation area moving together, instead of treating each page as separate work. When the product changes, Doc Holiday keeps that area current as one unit, so related pages stay aligned.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Sources</title>
+				<link>http://localhost:1318/external-docs-staging/docs/sources/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1318/external-docs-staging/docs/sources/</guid>
+				<description>&lt;h2 id=&#34;what-sources-are&#34;&gt;What sources are&lt;/h2&gt;&#xA;&lt;p&gt;Doc Holiday treats a Source as a connected system that contributes content or receives notifications. A source can be a repository that Doc Holiday reads and writes, a context system it only reads, or the Slack Channel that carries notifications.&lt;/p&gt;&#xA;&lt;p&gt;Other sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Work History</title>
+				<link>http://localhost:1318/external-docs-staging/docs/work-history/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1318/external-docs-staging/docs/work-history/</guid>
+				<description>&lt;p&gt;Work History is the running record of one documentation request from the first trigger to the final result. It gives you a live view of the request as it opens, as Doc Holiday works, and as the entry settles into a result. The request can begin in a git comment, a trigger event, the app, or the API, but it still lands in the same list. That makes Work History the place to check what Doc Holiday is doing right now, not only what already finished. It also lets a reviewer spot entries that still need attention without opening each one. Use it when you need to follow a request for a specific Publication and Source, check whether it still needs input, or review what Doc Holiday produced. The list shows the current stage beside each entry, so you can scan a Publication’s activity. See &lt;a href=&#34;http://localhost:1318/external-docs-staging/docs/concepts/&#34;&gt;shared vocabulary&lt;/a&gt;&#xA;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

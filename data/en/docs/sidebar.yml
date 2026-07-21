@@ -1,0 +1,27 @@
+# Sidebar structure for the docs section. The theme builds each link as
+# /docs/<urlize(title)>/ — so every `title` here must urlize to the same slug
+# as the corresponding page's `url` front matter.
+# Wave-1 pages only; groups grow as later waves merge (full IA: dh-docs-prompts/SITE_MAP.md).
+- title: Overview
+  pages:
+    - title: Concepts
+
+- title: Getting started
+  pages:
+    - title: Connect GitHub
+
+- title: Sources
+  pages:
+    - title: Sources
+
+- title: Publications
+  pages:
+    - title: Publications
+
+- title: Working with Doc Holiday
+  pages:
+    - title: Work History
+
+- title: Reference
+  pages:
+    - title: Connection Types

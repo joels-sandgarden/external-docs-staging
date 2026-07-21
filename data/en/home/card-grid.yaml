@@ -1,0 +1,32 @@
+header:
+  title: Explore the docs.
+  description: Start with the shared vocabulary, connect a repository, and follow a request from trigger to merged pull request.
+
+items:
+  - icon: build/doc-holiday
+    title: Concepts
+    description: The shared vocabulary — Publications, Sources, the Library, and Work History — and how the pieces fit together.
+    link:
+      label: Read Concepts
+      url: "docs/concepts/"
+
+  - icon: build/doc-holiday
+    title: Connect GitHub
+    description: Install the GitHub Application, connect repositories, and verify the connection is healthy.
+    link:
+      label: Connect GitHub
+      url: "docs/connect-github/"
+
+  - icon: build/doc-holiday
+    title: Publications
+    description: What a Publication defines and controls — sources, destination, output types, and triggers.
+    link:
+      label: Read Publications
+      url: "docs/publications/"
+
+  - icon: build/doc-holiday
+    title: Connection Types
+    description: The reference table for every connection type, its role, and the triggers it supports.
+    link:
+      label: Open the reference
+      url: "docs/connection-types/"

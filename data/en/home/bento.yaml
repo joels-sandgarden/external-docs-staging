@@ -1,0 +1,22 @@
+header:
+  title: Docs that stay true to the code.
+  description: Doc Holiday reads your source, drafts documentation and release notes as reviewable diffs, and opens ordinary pull requests your team approves.
+
+items:
+  - col: col-5
+    icon: bento/rocket_launch
+    title: Written from what shipped
+    description: Every page is grounded in the connected repositories at the time of writing. Doc Holiday explores the source before it writes — it does not work from memory.
+    badges: [ ]
+
+  - col: col-7
+    icon: bento/extension
+    title: Your tools, your review
+    description: Requests arrive from GitHub, GitLab, Bitbucket, CI, or the app. Drafts stage for review, revisions follow your comments, and approved work lands as a normal pull request.
+    badges: [ Publications, Sources, Work History ]
+
+  - col: col-7
+    icon: bento/shield
+    title: Maintained, not just generated
+    description: When code changes, the affected pages get reconciled and release notes get written — the docs keep pace release after release. This site is maintained the same way.
+    badges: [ ]

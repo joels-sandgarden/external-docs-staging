@@ -1,0 +1,17 @@
+# The wordmark SVG is disabled (empty string, not deleted, so the E25DX theme
+# default doesn't merge back in) — the header logo already carries the name.
+svg: ""
+
+badge: Documentation
+
+title: Documentation for <span>Doc Holiday</span>.
+
+description: Doc Holiday writes and maintains documentation and release notes from what actually shipped — grounded in your source, reviewed by your team, delivered as ordinary pull requests. These docs are written and maintained by Doc Holiday itself.
+
+btn_primary:
+  label: Start with Concepts
+  url: docs/concepts/
+
+btn_secondary:
+  label: doc.holiday
+  url: https://doc.holiday/

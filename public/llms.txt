@@ -1,0 +1,26 @@
+# Doc Holiday Documentation (staging)
+
+> Doc Holiday (doc.holiday) writes and maintains documentation and release notes from
+> what actually shipped: it reads connected source repositories, drafts changes as
+> reviewable diffs, and opens pull requests a human approves. This documentation site
+> is written and maintained by Doc Holiday itself.
+
+Append index.md to any page URL to fetch its raw Markdown source.
+
+## Overview
+- Concepts: https://joels-sandgarden.github.io/external-docs-staging/docs/concepts/ — Publication, Source, the Library, Work History.
+
+## Getting started
+- Connect GitHub: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-github/ — install the GitHub Application and connect repositories.
+
+## Sources
+- Sources: https://joels-sandgarden.github.io/external-docs-staging/docs/sources/ — what Doc Holiday reads and writes; freshness and health.
+
+## Publications
+- Publications: https://joels-sandgarden.github.io/external-docs-staging/docs/publications/ — what a Publication defines and controls.
+
+## Working with Doc Holiday
+- Work History: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history/ — the record of every request and its lifecycle.
+
+## Reference
+- Connection Types: https://joels-sandgarden.github.io/external-docs-staging/docs/connection-types/ — every connection type, its role, and its triggers.
