@@ -4,7 +4,7 @@ Use this guide when you want Doc Holiday to read Confluence for context and conn
 
 ## Confluence
 
-Confluence gives Doc Holiday background material for writing. It does not start work on its own.
+Confluence gives Doc Holiday context for writing. It never starts work on its own.
 
 1. In **Sources**, choose `Confluence`.
 2. Enter **Source Name**.
