@@ -28,8 +28,9 @@ This reference lists every supported Doc Holiday connection type, its role, pare
 
 ## Notes
 
-- GitHub has two supported auth paths: GitHub App and personal access token.
-- GitLab and Bitbucket each support a direct repository path and a provider-backed project path.
+- GitHub App and GitHub personal access token are the two GitHub auth paths.
+- GitLab provider and GitLab project split provider-backed and direct access.
+- Bitbucket provider and Bitbucket project split provider-backed and direct access.
 - The UI labels `gcp` as Google Drive.
 - Slack Channel is the only publication notifier.
 
