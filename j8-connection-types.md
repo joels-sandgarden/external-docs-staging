@@ -20,7 +20,7 @@ The same label can point to more than one API value. The table and footnotes kee
 
 This layout keeps the page stable as the supported list changes, because new rows can fit the same five column pattern.
 
-Provider parents sit beside their child types, keeping the required parent visible at a glance. The API value separates rows that share a label but point to different parent or trigger combinations.
+Provider parents sit beside their child types, keeping the required parent visible at a glance. The API value distinguishes rows that share a label but use different parent or trigger combinations.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
