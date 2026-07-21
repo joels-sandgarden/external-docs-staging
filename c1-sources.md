@@ -38,6 +38,8 @@ Documentation can mean three different things in Doc Holiday: the External Docum
 
 That clarity matters when one Publication depends on many Sources at once. Shared provider access lives once, child Sources stay specific, and the app can show whether a Source feeds context, stores output, or carries notifications. The result stays easy to read even when the workspace grows.
 
+It also helps when a team adds new Sources over time. The app does not force every new system into the same role, so the workspace can grow without blurring the difference between a provider, a context Source, and a notification Source.
+
 ## Set up a source
 
 - [GitHub](/b2-connect-github.md)
