@@ -1,10 +1,10 @@
 # GitLab CI/CD integration
 
-This component lets you file a work request from a GitLab pipeline with a prompt, then review the generated documentation output before it reaches the docs repo.
+This component lets you file a work request from a GitLab pipeline with a prompt, then review the generated documentation output before it lands in the docs repo.
 
 ## Prerequisites
 
-1. Create an API key in [API keys](/j1-api-overview.md).
+1. Create an API key in Settings → API Keys. See [API keys](/j1-api-overview.md).
 2. Add it to the GitLab project or group as a CI/CD variable named `DOC_HOLIDAY_TOKEN`.
 3. Mark the variable `masked` and `protected`.
 
