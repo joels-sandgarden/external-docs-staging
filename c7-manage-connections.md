@@ -1,6 +1,6 @@
 # Manage connections
 
-Keep your Sources healthy, fix a broken connection, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check status, repair access, or make routine changes.
+Keep your Sources healthy, fix a broken connection, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check status, repair access, or make routine changes.
 
 ```
 SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
@@ -19,9 +19,9 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 
 ## Fix an unhealthy connection
 
-1. Open the Source or provider in **Sources** or **Providers**.
+1. Open the Source in **Sources** or the provider in **Providers**.
 2. Select **Edit**.
-3. Look for the common causes:
+3. Check these common causes:
    - Credentials expired or were revoked.
    - A provider app no longer exists in the workspace.
    - The repository or project moved, or someone deleted it.
@@ -31,12 +31,12 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 
 ## Edit a connection
 
-1. Open the Source or provider in **Sources** or **Providers**.
+1. Open the Source in **Sources** or the provider in **Providers**.
 2. Select **Edit**.
 3. Change **Source Name** when you want to rename a Source.
 4. Change **Branch** when you want Doc Holiday to track a different branch for a repository Source.
-5. Use the title at the top of the sheet as your cue. It reads **Update Source** or **Update Provider**.
-6. Select **Save Changes** when you finish. Select **Cancel** or **Close** if you want to leave the current values unchanged.
+5. The sheet title reads **Update Source** or **Update Provider**.
+6. Select **Save Changes** when you finish. Select **Cancel** or **Close** to leave the current values unchanged.
 
 ## Delete a connection
 
