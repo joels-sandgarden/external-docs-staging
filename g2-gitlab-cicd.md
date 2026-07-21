@@ -23,7 +23,7 @@ include:
 
 ## Tag-based release example
 
-Use this pattern when the pipeline runs from a release tag and the prompt should include the tag and project name.
+Use this pattern when the pipeline runs from a release tag.
 
 ```yaml
 generate-release-docs:
