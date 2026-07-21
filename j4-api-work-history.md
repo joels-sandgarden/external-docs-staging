@@ -85,7 +85,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `message`.
 - Response: `ModelsGetConversationCommentResponse`.
 - Notes: only the author can mutate the comment, and the comment must be discussion-only and not batched into an aggregate. Doc Holiday also checks update permission on the comment and read access on the Publication.
-- `curl`: `curl -X PATCH -H 'Content-Type: application/json' -d '{"message":"Updated note"}' /api/v1/conversation_comments/c1`
+- `curl`: `curl -X PATCH -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"message":"Updated note"}' "https://api.doc.holiday/api/v1/conversation_comments/c1"`
 - `json`: `{"message":"Updated note"}`
 
 ### `DELETE /api/v1/conversation_comments/{id}`
