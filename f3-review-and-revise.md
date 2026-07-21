@@ -24,7 +24,7 @@ The **Files** tab shows each file row, its diff count, and its status. Open a fi
 SCREENSHOT PLACEHOLDER: review-and-revise/files-tab-diff.png
 ```
 
-Inside the diff, review the lines in order. Use `Comment on specific lines` to anchor a note to one row, or `Comment on this line, or drag to select multiple` to cover more than one line. Set the range with `Start line` and `End line` when needed, then use `Add Comment` to leave feedback, `Send to Doc` to send the comment for another revision pass, or `Add to Batch` to collect several comments first. Use `Add a file-level comment` when the note applies to the whole file. Expand hidden context with `Expand unchanged lines`, and close open sections with `Collapse all expanded sections`.
+Inside the diff, review the lines in order. In the diff gutter, use "Comment on this line, or drag to select multiple" to anchor a comment; "Extend comment to this line" grows the selection. Use `Add Comment` to leave feedback, `Send to Doc` to send the comment for another revision pass, or `Add to Batch` to collect several comments first. Use `Add a file-level comment` when the note applies to the whole file. Expand hidden context with `Expand unchanged lines`, and close open sections with `Collapse all expanded sections`.
 
 ## Commenting and revising
 
