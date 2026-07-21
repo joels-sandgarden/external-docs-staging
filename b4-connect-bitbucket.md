@@ -4,7 +4,7 @@ Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources re
 
 If the Source already exists, update it in [Manage connections](/c7-manage-connections.md).
 
-## Option A: workspace access token and Bitbucket Project
+## Option A: workspace token provider and Bitbucket Project
 
 1. Open **Sources**, then select the **Providers** tab.
 2. Select **Add Provider**.
@@ -19,7 +19,7 @@ If the Source already exists, update it in [Manage connections](/c7-manage-conne
 11. Select **Publishing System**.
 12. Select **Save Changes**.
 
-Use this path when one workspace token should cover more than one project.
+Use this path when one workspace token should cover multiple projects.
 
 ## Option B: repository access token for one repository
 
