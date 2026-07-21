@@ -1,11 +1,11 @@
 # Coding agents
 
-Doc Holiday keeps documentation aligned with shipped behavior when code changes. This guide covers the REST request that a coding agent sends directly when code changes need a matching documentation update.
+Doc Holiday keeps documentation aligned with shipped behavior when code changes. This guide covers the REST request a coding agent sends directly when code changes need a matching documentation update.
 
 ## Request the work
 
 1. Send a `POST /api/v1/conversations/` request with a Doc Holiday API key in `Authorization: Bearer <token>`.
-2. Set `stage: true` by default so a human reviews the staged request in Work History.
+2. Set `stage: true` by default.
 3. Include `body`, `publication`, and `stage`. Add `changes`, `labels`, or `relevantLinks` when they help a reviewer.
 
 ### curl
@@ -45,7 +45,7 @@ curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
 
 ## Review by default
 
-Set `stage: true` by default. That keeps the request in Work History, staged for human review, before it moves on.
+That keeps the request in Work History, staged for human review, before it moves on.
 
 ## Reference
 
