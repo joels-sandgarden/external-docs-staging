@@ -29,7 +29,7 @@ SCREENSHOT PLACEHOLDER: quickstart/create-work-request.png
 SCREENSHOT PLACEHOLDER: quickstart/work-history-staged.png
 ```
 
-6. Open the entry, select the "Files" tab, and review the draft. See [Review and revise](/f3-review-and-revise.md) for the next step. When it is time to publish, select "Open Pull Request". The dialog shows "Open Pull Request" with "Confirm" and "Cancel"; choose "Confirm" and merge the resulting GitHub pull request.
+6. Open the entry, select the "Files" tab, and review the draft there. See [Review and revise](/f3-review-and-revise.md) for the next step. When it is time to publish, select "Open Pull Request". The dialog shows "Open Pull Request", "Confirm", and "Cancel"; choose "Confirm" and merge the resulting GitHub pull request.
 
 ```
 SCREENSHOT PLACEHOLDER: quickstart/open-pr-dialog.png
