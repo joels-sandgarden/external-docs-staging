@@ -10,9 +10,9 @@ Organization sits above the rest of the model, so every Publication, Source, and
 
 ## Publication
 
-A Publication is the body of documentation that Doc Holiday keeps current. It describes one maintained documentation set rather than a single page, so the same Publication can cover several pages or outputs when they belong together. That makes a Publication the unit of maintenance for a topic, product area, or release surface.
-
-A Publication points at Sources instead of owning them. That relationship matters because the Publication defines what gets written, while the Sources define where the information comes from and where the finished work belongs. One Organization can hold many Publications, and each Publication can draw from the Sources it needs. This keeps scope clear when one documentation set depends on code, background material, and a separate destination for the final pages.
+A Publication is the maintained set of documentation that Doc Holiday keeps current for one area of the product, one topic, or one release surface that needs to stay up to date.
+It names a body of content rather than a single page, which lets one Publication cover several related pages, outputs, or audiences without losing focus when the scope expands.
+A Publication points at Sources instead of owning them, so it defines what the docs set covers while the Sources define where the information comes from and where the finished work belongs.
 
 ## Sources
 
