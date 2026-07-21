@@ -1,21 +1,13 @@
 # Security and Data Handling
 
 
-What Doc Holiday reads, what it stores, and what happens to your data — stated plainly.
+How Doc Holiday handles your code and your data — stated plainly.
 
-## What Doc Holiday reads
+## How Doc Holiday handles your code
 
-Doc Holiday reads the [Sources](./c1-sources.md) you connect: the repositories a [Publication](./d1-publications.md) watches and writes to, and any context systems you add. It re-reads connected sources regularly — roughly every couple of hours per connection — and reads the current source again as part of doing work. It reads only through the access you grant, and an unhealthy connection stops being read until it's fixed.
+Doc Holiday is SOC 2 Type II certified.
 
-## What Doc Holiday stores
-
-**Derived knowledge.** To write well without re-deriving everything on every run, Doc Holiday keeps summaries and structured notes about your connected sources, together with reference pointers back to where each fact came from. Long-term knowledge about your code is stored in this derived form; when a connection or publication is removed, the knowledge derived from it is cleaned up.
-
-**Your work record.** Requests, plans, proposed changes (including the before-and-after content of edited files), comments, and revision history are stored in Doc Holiday's database as the [Work History](./f4-work-history.md) record — that's what makes review, revision, and an audit trail possible. Approved content additionally becomes ordinary commits in your own docs repository, which remains the home of your published documentation.
-
-**Connection credentials, encrypted.** Tokens, keys, and passwords in connection configurations are encrypted at rest using envelope encryption backed by a cloud key-management service, with each secret cryptographically bound to its own connection. Deleting a connection scrubs its stored secrets. The same scheme protects [AI provider keys](./h3-ai-provider-keys.md), which are also only ever returned in truncated form after creation.
-
-**Model traffic, briefly.** Doc Holiday keeps an internal log of model requests for reliability and support. The request and response content in that log is scrubbed after four days; only non-content metadata (model, token counts, timing, error states) is retained beyond that.
+We do not retain any code in our systems. We read your code only while writing documentation, and only for writing documentation — through the [Sources](./c1-sources.md) you connect, using only the access you grant.
 
 ## Where inference runs
 

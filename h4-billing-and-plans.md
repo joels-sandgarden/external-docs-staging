@@ -6,9 +6,9 @@ Open **Settings → Billing** to see the available plans and what each one inclu
 SCREENSHOT PLACEHOLDER: billing-and-plans/tier-cards.png
 ```
 
-## Open Source Software
+## Open Source Plan
 
-Open Source Software is free for public open-source projects and runs on your own OpenAI key for inference. See [Add your OpenAI key](/b6-add-your-openai-key.md) and [AI provider keys](/h3-ai-provider-keys.md) for setup context.
+Our Open Source Plan is free for public open-source projects and runs on your own OpenAI key for inference. See [Add your OpenAI key](/b6-add-your-openai-key.md) and [AI provider keys](/h3-ai-provider-keys.md) for setup context.
 
 The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
 
@@ -22,4 +22,4 @@ Use [Add your OpenAI key](/b6-add-your-openai-key.md) and [AI provider keys](/h3
 
 ## Enterprise
 
-You book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo, and inference is managed for you.
+Please book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo — inference is managed for you.

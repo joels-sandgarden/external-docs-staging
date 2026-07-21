@@ -8,7 +8,7 @@ Use this page when you already have an OpenAI key and need to finish setup in on
 
 ## Who needs this
 
-Use this page for Bring Your Own Key and Open Source Software plans. Enterprise does not use this setup page; see [Billing and plans](./h4-billing-and-plans.md) for plan details.
+Use this page for the Bring Your Own Key and Open Source plans. Enterprise does not use this setup page; see [Billing and plans](./h4-billing-and-plans.md) for plan details.
 
 Only OpenAI keys are accepted.
 

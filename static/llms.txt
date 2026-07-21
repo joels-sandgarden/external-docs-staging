@@ -65,7 +65,7 @@ Append index.md to any page URL to fetch its raw Markdown source.
 - Audit Log: https://joels-sandgarden.github.io/external-docs-staging/docs/audit-log/ — the event catalog and where to find it.
 - AI Provider Keys: https://joels-sandgarden.github.io/external-docs-staging/docs/ai-provider-keys/ — add, test, and rotate keys; active-key behavior.
 - Billing and Plans: https://joels-sandgarden.github.io/external-docs-staging/docs/billing-and-plans/ — plans, billing, and what each plan includes.
-- Security and Data Handling: https://joels-sandgarden.github.io/external-docs-staging/docs/security-and-data-handling/ — what Doc Holiday reads, stores, and never does.
+- Security and Data Handling: https://joels-sandgarden.github.io/external-docs-staging/docs/security-and-data-handling/ — SOC 2 Type II certified, no code retention, and what Doc Holiday never does.
 
 ## Reference
 - API Overview: https://joels-sandgarden.github.io/external-docs-staging/docs/api-overview/ — auth, base URL, and the shape of the REST API.

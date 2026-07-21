@@ -26,5 +26,5 @@ Use this glossary to map Doc Holiday's shared terms to their reader-facing and A
 | notifier | The optional connection that receives publication or work updates, such as Slack. |
 | API key | The credential that authenticates Doc Holiday API requests. See [/j1-api-overview.md](./j1-api-overview.md). |
 | Bring Your Own Key | The plan where a customer supplies its own OpenAI key for writing. See [/h3-ai-provider-keys.md](./h3-ai-provider-keys.md). |
-| Open Source Software plan | The plan that uses customer-supplied keys. See [/h4-billing-and-plans.md](./h4-billing-and-plans.md). |
+| Open Source Plan | The plan that uses customer-supplied keys. See [/h4-billing-and-plans.md](./h4-billing-and-plans.md). |
 | documentation drift | The gap between what the source now does and what the docs currently say. |
