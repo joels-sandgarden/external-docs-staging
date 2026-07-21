@@ -1,6 +1,6 @@
 # Add your OpenAI key
 
-Use this page when you need to finish OpenAI key setup in onboarding or add the key later in Settings.
+Use this page when you already have an OpenAI key and need to finish setup in onboarding or add it later in Settings.
 
 ## Who needs this
 
@@ -12,7 +12,7 @@ Use this page for Bring Your Own Key and Open Source Software plans. Enterprise 
 2. Add the key in the place that fits your flow.
    - **Onboarding:** On the **"Add your AI provider key"** step, select **"Add Provider Key"** and enter your key.
    - **Settings:** Admins on BYOK and OSS can open **"AI Provider Keys"**, select **"Add AI Provider Key"**, and fill in **"Name"**, **"Provider"**, and **"API Key"**. The **"Provider"** field accepts OpenAI only. Select **"Add Key"** to save it.
-3. Wait for Doc Holiday to verify the key with a live OpenAI request before it saves anything. If the provider rejects the key, get a new one. If verification cannot complete, try again.
+3. Doc Holiday verifies the key with a live OpenAI request before it saves anything. If the provider rejects the key, get a new one. If verification cannot complete, try again.
 4. Check the result. The first OpenAI key you add becomes **"Active"** automatically. In Settings, the key card shows **"Active"** and includes **"Test"**.
 
 ```text
