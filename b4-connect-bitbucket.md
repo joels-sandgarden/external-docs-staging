@@ -2,7 +2,7 @@
 
 Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react to pull requests and pull request comments only; issue and release triggers do not work. See [Configure triggers](/d2-configure-triggers.md).
 
-A Bitbucket setup uses two layers: a workspace access-token provider first, then repository Sources underneath it. Use the workspace path when one token should cover several repositories. Use Option B when one repository needs its own token.
+A Bitbucket setup uses two layers: a workspace access-token provider first, then repository Sources underneath it. Use the workspace path when one token should cover more than one repository. Use Option B when one repository needs its own token.
 
 ## Option A: workspace provider, then repository Sources
 
@@ -25,7 +25,7 @@ This path keeps one workspace token above the repository Sources, so several rep
 4. Select a **"Branch"** and a **"Publishing System"**.
 5. Save the Source.
 
-Use this option when a single repository needs its own token.
+Use this option when one repository needs its own token.
 
 ## Verify
 
