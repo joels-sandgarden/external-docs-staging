@@ -2,11 +2,11 @@
 
 This page covers direct integration with Doc Holiday's API.
 
-See [API overview](/j1-api-overview.md) for the full API surface.
+See [API overview](/j1-api-overview.md).
 
 ## GET /api/v1/me
 
-Returns the authenticated user in `ModelsGetUserResponse`, the same shape used by `GET /api/v1/users/{id}`.
+Returns the authenticated user as `ModelsGetUserResponse`, the same shape used by `GET /api/v1/users/{id}`.
 
 | Parameter | Notes |
 | --- | --- |
@@ -24,7 +24,7 @@ Requires authenticated SFS token access. Common errors: `400`, `500`.
 
 ## GET /api/v1/users
 
-Lists users in the authenticated org and returns `ModelsListUsersResponse` with `users`, `nextPageToken`, and `previousPageToken`.
+Returns `ModelsListUsersResponse` for users in the authenticated org, with `users`, `nextPageToken`, and `previousPageToken`.
 
 | Parameter | Notes |
 | --- | --- |
@@ -35,7 +35,7 @@ Lists users in the authenticated org and returns `ModelsListUsersResponse` with 
 | roleIds | Filter by role IDs. |
 | noBuiltinRole | Exclude builtin roles. |
 | invitationAccepted | Filter by invitation state. |
-| shared pagination | Common pagination fields. |
+| shared pagination | Shared pagination fields from the API. |
 
 ```bash
 curl "https://api.doc.holiday/api/v1/users?email=string"
