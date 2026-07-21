@@ -36,6 +36,8 @@ External Documentation works differently from the other context Sources. It poin
 
 Documentation can mean three different things in Doc Holiday: the External Documentation Source, the docs destination a Publication writes into, and the documentation output type. The output type has its own page at [Output types](/d3-output-types.md). Keeping those meanings separate avoids confusion when more than one kind of Source appears on the same screen.
 
+That clarity matters when one Publication depends on many Sources at once. Shared provider access lives once, child Sources stay specific, and the app can show whether a Source feeds context, stores output, or carries notifications. The result stays easy to read even when the workspace grows.
+
 ## Set up a source
 
 - [GitHub](/b2-connect-github.md)
