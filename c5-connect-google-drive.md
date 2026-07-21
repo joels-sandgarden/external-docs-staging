@@ -1,17 +1,18 @@
 # Connect Google Drive
 
-Use this page when you need to connect Google Drive to Doc Holiday. Google Drive is a read-only Source, so Doc Holiday reads it for background material but does not start new work from it on its own.
+Use this page when Google Drive needs to supply background material for Doc Holiday.
 
 ## What connecting Google Drive does
 
-Connecting Google Drive lets Doc Holiday use stored documents as context while it writes. The Source stays read only, and it appears in the shared Sources model alongside other context systems.
+Connecting Google Drive adds a read-only Source that Doc Holiday can use while it writes. It does not start new work on its own.
 
 ## How to connect Google Drive
 
 1. Open [Google Drive authentication instructions](https://doc.holiday/docs/connections/#google-drive) and prepare the JSON file before you open the form.
 2. Enter a **Source Name**.
-3. Add the JSON file in **Service Account JSON**. Select **Upload** to load the file into the field.
-4. Save the Source.
+3. Add the JSON file in **Service Account JSON**.
+4. Select **Upload**.
+5. Save the Source.
 
 ## Verify
 
