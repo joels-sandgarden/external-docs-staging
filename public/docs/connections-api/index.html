@@ -519,7 +519,7 @@
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;githubRepo&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span> <span class="s2">&#34;12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span> <span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span> <span class="s2">&#34;https://github.com/example/docs&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><h4 id="notion"><code>notion</code></h4>
@@ -528,7 +528,7 @@
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;notion&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;integrationKey&#34;</span><span class="p">:</span> <span class="s2">&#34;secret-key&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;integrationKey&#34;</span><span class="p">:</span> <span class="s2">&#34;********&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><h4 id="slackchannel"><code>slackChannel</code></h4>
 
@@ -536,7 +536,7 @@
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;slackChannel&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;slackAppConnectionId&#34;</span><span class="p">:</span> <span class="s2">&#34;9&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;slackAppConnectionId&#34;</span><span class="p">:</span> <span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;channelId&#34;</span><span class="p">:</span> <span class="s2">&#34;C01234567&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="endpoint-reference">Endpoint reference</h2>
@@ -552,13 +552,13 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s2">&#34;https://api.doc.holiday/api/v1/connections&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;name&#34;:&#34;Docs repo&#34;,&#34;paused&#34;:false,&#34;sync&#34;:true,&#34;config&#34;:{&#34;githubRepo&#34;:{&#34;githubAppConnectionId&#34;:&#34;12&#34;,&#34;repositoryUrl&#34;:&#34;https://github.com/acme/docs&#34;}}}&#39;</span></span></span></code></pre></div><ul>
+</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;name&#34;:&#34;Docs repo&#34;,&#34;paused&#34;:false,&#34;sync&#34;:true,&#34;config&#34;:{&#34;githubRepo&#34;:{&#34;githubAppConnectionId&#34;:&#34;cnn-0123456789abcdef&#34;,&#34;repositoryUrl&#34;:&#34;https://github.com/acme/docs&#34;}}}&#39;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs repo&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;githubRepo&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[</span><span class="s2">&#34;pullRequests&#34;</span><span class="p">,</span><span class="s2">&#34;newIssues&#34;</span><span class="p">,</span><span class="s2">&#34;issueComments&#34;</span><span class="p">,</span><span class="s2">&#34;releases&#34;</span><span class="p">],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;githubRepo&#34;</span><span class="p">:{</span><span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span><span class="s2">&#34;https://github.com/acme/docs&#34;</span><span class="p">}}}</span></span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs repo&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;githubRepo&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[</span><span class="s2">&#34;pullRequests&#34;</span><span class="p">,</span><span class="s2">&#34;newIssues&#34;</span><span class="p">,</span><span class="s2">&#34;issueComments&#34;</span><span class="p">,</span><span class="s2">&#34;releases&#34;</span><span class="p">],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;githubRepo&#34;</span><span class="p">:{</span><span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span><span class="s2">&#34;https://github.com/acme/docs&#34;</span><span class="p">}}}</span></span></span></code></pre></div><ul>
 <li>Behaviors: Requires an SFS token. Returns <code>400</code> when <code>config</code> is missing or more than one connection type is set.</li>
 </ul>
 <h3 id="get-apiv1connections"><code>GET /api/v1/connections</code></h3>
@@ -578,7 +578,7 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;connections&#34;</span><span class="p">:[{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs repo&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;githubRepo&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[</span><span class="s2">&#34;pullRequests&#34;</span><span class="p">,</span><span class="s2">&#34;newIssues&#34;</span><span class="p">,</span><span class="s2">&#34;issueComments&#34;</span><span class="p">,</span><span class="s2">&#34;releases&#34;</span><span class="p">],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;githubRepo&#34;</span><span class="p">:{</span><span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span><span class="s2">&#34;https://github.com/acme/docs&#34;</span><span class="p">}}}],</span><span class="nt">&#34;nextPageToken&#34;</span><span class="p">:</span><span class="s2">&#34;eyJ...&#34;</span><span class="p">}</span></span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;connections&#34;</span><span class="p">:[{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs repo&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;githubRepo&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[</span><span class="s2">&#34;pullRequests&#34;</span><span class="p">,</span><span class="s2">&#34;newIssues&#34;</span><span class="p">,</span><span class="s2">&#34;issueComments&#34;</span><span class="p">,</span><span class="s2">&#34;releases&#34;</span><span class="p">],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;githubRepo&#34;</span><span class="p">:{</span><span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span><span class="s2">&#34;https://github.com/acme/docs&#34;</span><span class="p">}}}],</span><span class="nt">&#34;nextPageToken&#34;</span><span class="p">:</span><span class="s2">&#34;eyJ...&#34;</span><span class="p">}</span></span></span></code></pre></div><ul>
 <li>Behaviors: Requires an SFS token. Returns <code>400</code> for invalid filters.</li>
 </ul>
 <h3 id="get-apiv1connectionsid"><code>GET /api/v1/connections/{id}</code></h3>
@@ -591,14 +591,14 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs repo&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;githubRepo&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[</span><span class="s2">&#34;pullRequests&#34;</span><span class="p">,</span><span class="s2">&#34;newIssues&#34;</span><span class="p">,</span><span class="s2">&#34;issueComments&#34;</span><span class="p">,</span><span class="s2">&#34;releases&#34;</span><span class="p">],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;githubRepo&#34;</span><span class="p">:{</span><span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span><span class="s2">&#34;https://github.com/acme/docs&#34;</span><span class="p">}}}</span></span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs repo&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;githubRepo&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[</span><span class="s2">&#34;pullRequests&#34;</span><span class="p">,</span><span class="s2">&#34;newIssues&#34;</span><span class="p">,</span><span class="s2">&#34;issueComments&#34;</span><span class="p">,</span><span class="s2">&#34;releases&#34;</span><span class="p">],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;githubRepo&#34;</span><span class="p">:{</span><span class="nt">&#34;githubAppConnectionId&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;repositoryUrl&#34;</span><span class="p">:</span><span class="s2">&#34;https://github.com/acme/docs&#34;</span><span class="p">}}}</span></span></span></code></pre></div><ul>
 <li>Behaviors: Requires an SFS token. Returns <code>400</code> for an invalid or missing <code>id</code>.</li>
 </ul>
 <h3 id="put-apiv1connectionsid"><code>PUT /api/v1/connections/{id}</code></h3>
@@ -610,16 +610,16 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X PUT <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X PUT <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;name&#34;:&#34;Docs source&#34;,&#34;paused&#34;:true,&#34;config&#34;:{&#34;notion&#34;:{&#34;integrationKey&#34;:&#34;secret-key&#34;}}}&#39;</span></span></span></code></pre></div><ul>
+</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;name&#34;:&#34;Docs source&#34;,&#34;paused&#34;:true,&#34;config&#34;:{&#34;notion&#34;:{&#34;integrationKey&#34;:&#34;********&#34;}}}&#39;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs source&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;notion&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;notion&#34;</span><span class="p">:{</span><span class="nt">&#34;integrationKey&#34;</span><span class="p">:</span><span class="s2">&#34;secret-key&#34;</span><span class="p">}}}</span></span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Docs source&#34;</span><span class="p">,</span><span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;notion&#34;</span><span class="p">,</span><span class="nt">&#34;healthy&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;paused&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;allowedTriggerEvents&#34;</span><span class="p">:[],</span><span class="nt">&#34;config&#34;</span><span class="p">:{</span><span class="nt">&#34;notion&#34;</span><span class="p">:{</span><span class="nt">&#34;integrationKey&#34;</span><span class="p">:</span><span class="s2">&#34;********&#34;</span><span class="p">}}}</span></span></span></code></pre></div><ul>
 <li>Behaviors: Requires an SFS token. Returns <code>400</code> when <code>config</code> is missing, ambiguous, or fails validation.</li>
 </ul>
 <h3 id="delete-apiv1connectionsid"><code>DELETE /api/v1/connections/{id}</code></h3>
@@ -632,55 +632,43 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X DELETE <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12?preserveDependencies=true&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X DELETE <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef?preserveDependencies=true&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span></span></span></code></pre></div><ul>
-<li>JSON:</li>
-</ul>
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="kc">null</span></span></span></code></pre></div><ul>
 <li>Behaviors: Requires an SFS token. Returns <code>204 No Content</code> with no response body.</li>
 </ul>
 <h3 id="post-apiv1connectionsidsync"><code>POST /api/v1/connections/{id}/sync</code></h3>
 <p>Starts a background sync for the selected connection.</p>
 <ul>
-<li>Key parameters: <code>id</code>, <code>wait</code>, <code>timeout</code></li>
+<li>Key parameters: <code>id</code>, <code>wait</code></li>
 <li>curl:</li>
 </ul>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12/sync&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/sync&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;wait&#34;:true,&#34;timeout&#34;:300}&#39;</span></span></span></code></pre></div><ul>
-<li>JSON:</li>
-</ul>
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;wait&#34;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&#34;timeout&#34;</span><span class="p">:</span><span class="mi">300</span><span class="p">}</span></span></span></code></pre></div><ul>
-<li>Behaviors: Requires an SFS token. Returns <code>202 Accepted</code>; invalid <code>wait</code> or <code>timeout</code> values return <code>400</code>.</li>
+</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;wait&#34;:true}&#39;</span></span></span></code></pre></div><ul>
+<li>Behaviors: Requires an SFS token. Returns <code>202 Accepted</code> with no response body; invalid <code>wait</code> values return <code>400</code>.</li>
 </ul>
 <h3 id="get-apiv1connectionsidhealth"><code>GET /api/v1/connections/{id}/health</code></h3>
-<p>Checks whether a connection is healthy and reports any error message.</p>
+<p>Checks whether a connection is healthy and returns any message or error when present.</p>
 <ul>
 <li>Key parameters: <code>id</code></li>
-<li>Returns: <code>id</code>, <code>status</code>, <code>message</code>, <code>error</code></li>
+<li>Returns: <code>id</code>, <code>status</code>, and optional <code>message</code>, <code>error</code></li>
 <li>curl:</li>
 </ul>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12/health&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/health&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;12&#34;</span><span class="p">,</span><span class="nt">&#34;status&#34;</span><span class="p">:</span><span class="s2">&#34;healthy&#34;</span><span class="p">,</span><span class="nt">&#34;message&#34;</span><span class="p">:</span><span class="s2">&#34;Healthy&#34;</span><span class="p">,</span><span class="nt">&#34;error&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">}</span></span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;cnn-0123456789abcdef&#34;</span><span class="p">,</span><span class="nt">&#34;status&#34;</span><span class="p">:</span><span class="s2">&#34;healthy&#34;</span><span class="p">}</span></span></span></code></pre></div><ul>
 <li>Behaviors: Requires an SFS token. Returns <code>400</code> for an invalid or missing <code>id</code>.</li>
 </ul>
 <h3 id="get-apiv1connectionsidchannels"><code>GET /api/v1/connections/{id}/channels</code></h3>
@@ -693,7 +681,7 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12/channels&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/channels&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
@@ -704,7 +692,7 @@
 <li>Behaviors: Requires an SFS token. Returns <code>400</code> for an invalid or unsupported connection.</li>
 </ul>
 <h3 id="get-apiv1bitbucketrepos"><code>GET /api/v1/bitbucket/repos</code></h3>
-<p>Lists Bitbucket repositories for a workspace and optional connection.</p>
+<p>Lists Bitbucket repositories using either a connection ID or workspace credentials.</p>
 <ul>
 <li>Key parameters: <code>connectionId</code>, <code>workspace</code>, <code>token</code></li>
 <li>Returns: <code>repos</code></li>
@@ -713,7 +701,7 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=12&amp;workspace=acme&amp;token={{bitbucketToken}}&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=cnn-0123456789abcdef&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
@@ -721,7 +709,7 @@
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;repos&#34;</span><span class="p">:[{</span><span class="nt">&#34;fullName&#34;</span><span class="p">:</span><span class="s2">&#34;acme/docs&#34;</span><span class="p">,</span><span class="nt">&#34;slug&#34;</span><span class="p">:</span><span class="s2">&#34;docs&#34;</span><span class="p">}]}</span></span></span></code></pre></div><ul>
-<li>Behaviors: Requires an SFS token. Returns <code>400</code> when <code>connectionId</code>, <code>workspace</code>, or <code>token</code> is missing or invalid.</li>
+<li>Behaviors: Use <code>connectionId</code> alone, or provide <code>workspace</code> and <code>token</code> together. Requires an SFS token. Returns <code>400</code> for invalid parameters.</li>
 </ul>
 <h3 id="get-apiv1connectionsidjirastatuses"><code>GET /api/v1/connections/{id}/jira/statuses</code></h3>
 <p>Lists the Jira statuses that a connection can use.</p>
@@ -733,7 +721,7 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12/jira/statuses&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/jira/statuses&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span></span></span></code></pre></div><ul>
 <li>JSON:</li>
 </ul>
@@ -752,17 +740,11 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/12/merges/summarize&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s2">&#34;https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/merges/summarize&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Authorization: Bearer {{sfsToken}}&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{&#34;number&#34;:123}&#39;</span></span></span></code></pre></div><ul>
-<li>JSON:</li>
-</ul>
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;number&#34;</span><span class="p">:</span><span class="mi">123</span><span class="p">}</span></span></span></code></pre></div><ul>
-<li>Behaviors: Requires an SFS token. Returns <code>202 Accepted</code>; missing or invalid <code>number</code> values return <code>400</code>.</li>
+<li>Behaviors: Requires an SFS token. Returns <code>202 Accepted</code> with no response body; missing or invalid <code>number</code> values return <code>400</code>.</li>
 </ul>
 
 				</div>
@@ -770,12 +752,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

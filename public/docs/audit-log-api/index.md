@@ -11,12 +11,12 @@ Returns audit logs for the current organization.
 | Parameter | Type | Behavior |
 | --- | --- | --- |
 | `type` | query | Matches one exact `AuditLogType` value. Omit it to exclude `assessment-*` logs. |
-| `summary` | query | Matches text with `ILIKE`. |
+| `summary` | query | Matches text case-insensitively. Use `%` wildcards for partial matches. |
 | pagination | shared | Uses the list pagination contract from [/j1-api-overview.md](./j1-api-overview.md). If `pageSize` is omitted, Doc Holiday uses the default page size. |
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "https://api.doc.holiday/api/v1/audit_logs?summary=release"
+  "https://api.doc.holiday/api/v1/audit_logs?summary=%release%"
 ```
 
 ```json
@@ -36,15 +36,14 @@ curl -H "Authorization: Bearer $TOKEN" \
       "updatedAt": "2026-07-21T12:00:00Z"
     }
   ],
-  "previousPageToken": "",
-  "nextPageToken": "adl-00000000000000af"
+  "nextPageToken": "2026-07-21T12:00:00.000000Z"
 }
 ```
 
 Notes:
 - SFS token auth follows the standard flow in [/j1-api-overview.md](./j1-api-overview.md).
 - When list permission is missing, Doc Holiday limits results to permitted audit-log IDs.
-- Unauthorized access remains the most common failure when the caller cannot read the records.
+- The get endpoint performs a per-ID permission check.
 
 ## Get an audit log
 `GET /api/v1/audit_logs/{id}`
@@ -94,8 +93,7 @@ Response body:
 
 Notes:
 - SFS token auth follows the standard flow in [/j1-api-overview.md](./j1-api-overview.md).
-- The API checks the requested audit log ID.
-- Unauthorized access or an invalid ID format can block the request.
+- Malformed IDs fail with a 4xx response.
 
 ## Audit log types
 - `error` — general error event.

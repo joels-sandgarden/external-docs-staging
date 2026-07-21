@@ -8,7 +8,7 @@ description: "Run Doc Holiday from a GitHub Actions workflow, with real YAML."
 
 Doc Holiday's GitHub Action files a documentation work request through the Conversations API. Use it when CI should ask Doc Holiday to prepare documentation work on a schedule or after a release.
 
-It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a reviewable result for review before it lands.
+It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a result you review before it lands.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ Choose only one changeset specification type per run.
 | Changeset specification | `releases-count` | Release count. |
 | Changeset specification | `time-range-start` + `time-range-end` | ISO 8601 timestamps. |
 | Changeset specification | `commits-count` | Commit count. |
-| Changeset specification | `commits-since-sha` | Start from one commit SHA. |
+| Changeset specification | `commits-since-sha` | Commits since a SHA. |
 | Changeset specification | `commits-shas` | Comma-separated commit SHAs. |
 | Changeset specification | `commits-start-sha` + `commits-end-sha` + `commits-include-start` | Commit range. |
 | Changeset specification | `tags-start` + `tags-end` | Tag range. |

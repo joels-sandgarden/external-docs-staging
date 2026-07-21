@@ -1,64 +1,42 @@
 # User Management
 
 
-Use this page to get your team in with the right access.
+You use this page to invite people, assign organization roles, and manage publication access.
 
-## 1. Invite teammates
+## Invite a user
 
-1. Open **Settings** > **Invitations**.
+1. Open **Settings** → **Invitations**.
 2. Select **Invite User**.
 3. Enter the person's **Email Address**.
-4. Select a role in **Select a role...**.
+4. Choose **Select a role...**.
 5. Select **Invite**.
 
-The **Invitations** page shows **Email**, **Sent At**, and **Role** for each invite.
+Pending invites list **Email**, **Sent At**, and **Role**.
 
-## 2. Set the organization role
+## Organization roles
 
-Each role builds on the one before it.
+The role dropdowns offer two choices:
 
-- `Reviewer` — read, review, comment.
-- `Writer` — adds request work and edit publications and instructions.
-- `Admin` — adds connections, keys, billing, users, and audit.
+| Role | Description |
+| --- | --- |
+| **Admin** | Manage and administer everything |
+| **User** | No administrative permissions |
 
-Choose the role that matches the person's job.
-
-## 3. Change a role on **Users**
-
-1. Open **Settings** > **Users**.
-2. Find the person with **Search users...** or **Filter by role**.
-3. Review the table for **Name**, **Email**, **Role**, and **Publication Access**.
+On **Settings** → **Users**, you see the table columns **Name**, **Email**, **Role**, and **Publication Access**. Open a user sheet to select **Edit Role** and then **Save**. To remove someone from the organization, select **Remove user** and confirm **Remove user?**.
 
 ```
 SCREENSHOT PLACEHOLDER: user-management/users-invite.png
 ```
 
-4. Select the person's row.
-5. Select **Edit Role**.
-6. Pick the new role in **Select a role...**.
-7. Select **Save**.
+## Publication access
 
-Select **Cancel** if you do not want to change the role.
+Publication access is set on the Publication. If you are an admin, open **Manage Access** and select **Share Publication**. Use **Search by name or email...** and **All access levels** to find a person, then grant **Writer** or **Reviewer** access.
 
-## 4. Share a Publication
+**Writer** lets a person request work under that Publication. **Reviewer** lets a person read and review. Select **Revoke access** to remove publication access.
 
-Open **Manage Access** or **View Access** for the Publication, then select **Share Publication**. Use **Search...** or **All Access Levels** to find the person.
-
-Writer access controls who can request work under a Publication. Reviewer access lets a person read, review, and comment.
-
-Use **Revoke Access** to remove publication access without removing the user from the organization.
-
-## 5. Remove a user
-
-1. Open **Settings** > **Users**.
-2. Find the person.
-3. Select **Remove user**.
-4. Confirm **Remove user?**.
-
-The warning says, "This user will lose all access to your Doc Holiday organization."
-
-After removal, you see **User removed**.
+If you are not an admin, you see **View Access** on the Publication.
 
 ## Next
 
-Next: [Manage publications](./d5-manage-publications.md)
+- [Manage publications](./d5-manage-publications.md)
+- [Audit log](./h2-audit-log.md)

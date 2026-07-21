@@ -1,30 +1,22 @@
 # The Library
 
 
-## What the Library is
+The Library is the organization-wide collection of reusable instructions. In the left nav, it appears as **Library**. From there, you create one of three instruction types: **Style & Formatting**, **Writing**, or **Commit**. The Library is shared, so every Publication editor in the organization can see the same instructions.
 
-The Library is your organization's shared collection of reusable instructions. Each instruction covers one kind of writing: documentation, release notes, changelogs, commit messages, or planning. That gives Doc Holiday one clear place for durable guidance instead of repeating the same text in every Publication.
+## How instructions affect a Publication
 
-## Scope and reuse
+An instruction changes what Doc Holiday writes only when it is attached to a Publication. On the instruction sheet, **Apply to Publication(s)** attaches it. A **Style & Formatting** instruction can be attached to one or more of a Publication's **Documentation**, **Release Notes**, and **Changelog** slots, so one instruction can guide several output types in the same Publication.
 
-Some instructions apply everywhere. Others attach only to selected Publications. A global instruction gives Doc Holiday the same direction across every Source that shares that Publication, while an instruction for selected Publications narrows the guidance to the places that need it. When a Publication uses several linked instructions, Doc Holiday follows their order so the writing stays consistent.
+When a Publication has both Library instructions and inline text in its own configuration, Doc Holiday follows the attached Library instructions in the order arranged on the Publication. The inline text applies only when a slot has no attached Library instruction. Work History shows the request and result, but it does not show which instruction source a run used.
 
-## How the Library shapes writing
+## What the Library page shows
 
-[Linked Library instructions govern how Doc Holiday writes for that Publication, but a specific ask in an individual request still wins for that request.](./p1-prompting-guide.md)
-
-When a Source triggers work for a Publication, Doc Holiday first looks for linked Library instructions. If none exist, it falls back to the inline writing text already stored on the Publication. That keeps the Library as the normal source of guidance while existing Publication settings stay usable. Work History records the request and keeps that choice visible with the result.
-
-## The Library page
-
-In the dashboard, the Library lives in the instructions area. The list lets you search, sort, and filter by type, and it shows how many Publications use each instruction. The **New instruction** action opens a sheet for creating or editing an instruction.
-
-From that sheet, you can save drafted text into the Library, see the Publications already attached to an instruction, and add existing Library instructions when a Publication needs the same guidance.
+The Library list supports search by name, an **In Use** column, and a type filter with **All types**, **Style & Formatting**, **Writing**, and **Commit**. The **New Instruction** action creates a new instruction.
 
 ```
 SCREENSHOT PLACEHOLDER: the-library/library-page.png
 ```
 
-## What good instructions do
+## Next
 
-Good instructions keep Doc Holiday's writing steady: the same Publication keeps a steady voice, clear boundaries, and a consistent output shape every time. See [Writing style guides](./p3-writing-style-guides.md) for how those instructions stay clear and usable.
+See [Prompting guide](./p1-prompting-guide.md) for the two levers that steer what Doc Holiday writes, [Writing style guides](./p3-writing-style-guides.md) for shaping tone and voice, and [Instruction slots reference](./e2-instruction-slots-reference.md) for the slots that receive Library instructions.

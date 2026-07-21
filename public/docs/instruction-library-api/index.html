@@ -504,8 +504,8 @@
 				</header>
 
 				<div id="article-body">
-					<p>This page covers direct integration with Doc Holiday&rsquo;s API.</p>
-<p>Authentication, pagination, and general API conventions live in <a href="/external-docs-staging/docs/api-overview/">j1-api-overview.md</a>.</p>
+					<p>This page covers direct integration with Doc Holiday&rsquo;s API.
+Authentication, pagination, and general API conventions live in <a href="/external-docs-staging/docs/api-overview/">j1-api-overview.md</a>.</p>
 <h2 id="instructions">Instructions</h2>
 <p>Instructions store reusable text for a slot.</p>
 <table>
@@ -525,7 +525,7 @@
 					<td><code>/api/v1/instructions</code></td>
 					<td>Lists instructions.</td>
 					<td><code>type</code>, <code>global</code></td>
-					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;$BASE_URL/api/v1/instructions?type=documentation&amp;global=true&quot;</code><br><code>{&quot;items&quot;:[{&quot;id&quot;:&quot;ins_01&quot;}]}</code></td>
+					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;https://api.doc.holiday/api/v1/instructions?type=documentation&amp;global=true&quot;</code><br><code>{&quot;instructions&quot;:[{&quot;id&quot;:&quot;ins-0123456789abcdef&quot;}]}</code></td>
 					<td>Requires list permission.</td>
 			</tr>
 			<tr>
@@ -533,7 +533,7 @@
 					<td><code>/api/v1/instructions/{id}</code></td>
 					<td>Returns one instruction.</td>
 					<td><code>id</code></td>
-					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;$BASE_URL/api/v1/instructions/ins_01&quot;</code><br><code>{&quot;id&quot;:&quot;ins_01&quot;}</code></td>
+					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;https://api.doc.holiday/api/v1/instructions/ins-0123456789abcdef&quot;</code><br><code>{&quot;id&quot;:&quot;ins-0123456789abcdef&quot;}</code></td>
 					<td>Requires get permission; returns <code>404</code> when missing.</td>
 			</tr>
 			<tr>
@@ -541,24 +541,24 @@
 					<td><code>/api/v1/instructions</code></td>
 					<td>Creates an instruction.</td>
 					<td><code>name</code>, <code>type</code>, <code>content</code></td>
-					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;$BASE_URL/api/v1/instructions&quot; -d '{&quot;name&quot;:&quot;Docs tone&quot;,&quot;type&quot;:&quot;documentation&quot;,&quot;content&quot;:&quot;Write in short sentences.&quot;}'</code><br><code>{&quot;name&quot;:&quot;Docs tone&quot;,&quot;type&quot;:&quot;documentation&quot;,&quot;content&quot;:&quot;Write in short sentences.&quot;}</code></td>
-					<td>Requires create permission; rejects unknown types; returns <code>409</code> for duplicate name and type.</td>
+					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;https://api.doc.holiday/api/v1/instructions&quot; -d '{&quot;name&quot;:&quot;Docs tone&quot;,&quot;type&quot;:&quot;documentation&quot;,&quot;content&quot;:&quot;Write in short sentences.&quot;}'</code></td>
+					<td>Requires create permission; rejects unknown types; returns <code>409</code> for duplicate name and type. Response is the full object, including <code>id</code>, <code>orgId</code>, <code>global</code>, <code>createdAt</code>, and <code>updatedAt</code>.</td>
 			</tr>
 			<tr>
 					<td>PUT</td>
 					<td><code>/api/v1/instructions/{id}</code></td>
 					<td>Replaces an instruction.</td>
 					<td><code>id</code>, <code>name</code>, <code>type</code>, <code>content</code></td>
-					<td><code>curl -X PUT -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;$BASE_URL/api/v1/instructions/ins_01&quot; -d '{&quot;name&quot;:&quot;Docs tone&quot;,&quot;type&quot;:&quot;documentation&quot;,&quot;content&quot;:&quot;Use short, direct sentences.&quot;}'</code><br><code>{&quot;name&quot;:&quot;Docs tone&quot;,&quot;type&quot;:&quot;documentation&quot;,&quot;content&quot;:&quot;Use short, direct sentences.&quot;}</code></td>
-					<td>Requires update permission; revalidates <code>type</code>; returns <code>409</code> for duplicate name and type.</td>
+					<td><code>curl -X PUT -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;https://api.doc.holiday/api/v1/instructions/ins-0123456789abcdef&quot; -d '{&quot;name&quot;:&quot;Docs tone&quot;,&quot;type&quot;:&quot;documentation&quot;,&quot;content&quot;:&quot;Use short, direct sentences.&quot;}'</code></td>
+					<td>Requires update permission; revalidates <code>type</code>; returns <code>409</code> for duplicate name and type. Response is the full object, including <code>id</code>, <code>orgId</code>, <code>global</code>, <code>createdAt</code>, and <code>updatedAt</code>.</td>
 			</tr>
 			<tr>
 					<td>DELETE</td>
 					<td><code>/api/v1/instructions/{id}</code></td>
 					<td>Deletes an instruction and its links.</td>
 					<td><code>id</code></td>
-					<td><code>curl -X DELETE -H &quot;Authorization: Bearer $TOKEN&quot; &quot;$BASE_URL/api/v1/instructions/ins_01&quot;</code><br><code>{}</code></td>
-					<td>Requires delete permission; returns <code>204</code> even when missing.</td>
+					<td><code>curl -X DELETE -H &quot;Authorization: Bearer $TOKEN&quot; &quot;https://api.doc.holiday/api/v1/instructions/ins-0123456789abcdef&quot;</code></td>
+					<td>Requires delete permission; returns <code>204 No Content</code> with no response body, even when missing.</td>
 			</tr>
 	</tbody>
 </table>
@@ -581,15 +581,15 @@
 					<td><code>/api/v1/instructions/{id}/links</code></td>
 					<td>Creates one link.</td>
 					<td><code>id</code>, <code>publicationId</code>, <code>slotType</code></td>
-					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;$BASE_URL/api/v1/instructions/ins_01/links&quot; -d '{&quot;publicationId&quot;:&quot;pub_01&quot;,&quot;slotType&quot;:&quot;documentation&quot;}'</code><br><code>{&quot;publicationId&quot;:&quot;pub_01&quot;,&quot;slotType&quot;:&quot;documentation&quot;}</code></td>
-					<td>Requires create permission; validates <code>slotType</code>; returns a conflict for duplicate instruction, publication, and slot.</td>
+					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;https://api.doc.holiday/api/v1/instructions/ins-0123456789abcdef/links&quot; -d '{&quot;publicationId&quot;:&quot;pub-0123456789abcdef&quot;,&quot;slotType&quot;:&quot;documentation&quot;}'</code></td>
+					<td>Requires create permission; validates <code>slotType</code>; duplicate instruction, publication, and slot combinations are accepted and appended at the next position. Response is the full object, including <code>id</code>, <code>orgId</code>, <code>position</code>, <code>createdAt</code>, and <code>updatedAt</code>.</td>
 			</tr>
 			<tr>
 					<td>GET</td>
 					<td><code>/api/v1/instruction-links</code></td>
 					<td>Lists links.</td>
 					<td><code>instructionId</code>, <code>publicationId</code>, <code>slotType</code></td>
-					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;$BASE_URL/api/v1/instruction-links?publicationId=pub_01&amp;slotType=documentation&quot;</code><br><code>{&quot;items&quot;:[{&quot;id&quot;:&quot;link_01&quot;}]}</code></td>
+					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;https://api.doc.holiday/api/v1/instruction-links?publicationId=pub-0123456789abcdef&amp;slotType=documentation&quot;</code><br><code>{&quot;instructionLinks&quot;:[{&quot;id&quot;:&quot;inl-0123456789abcdef&quot;}]}</code></td>
 					<td>Requires list permission; accepts any combination of filters.</td>
 			</tr>
 			<tr>
@@ -597,7 +597,7 @@
 					<td><code>/api/v1/instruction-links/{id}</code></td>
 					<td>Returns one link.</td>
 					<td><code>id</code></td>
-					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;$BASE_URL/api/v1/instruction-links/link_01&quot;</code><br><code>{&quot;id&quot;:&quot;link_01&quot;}</code></td>
+					<td><code>curl -H &quot;Authorization: Bearer $TOKEN&quot; &quot;https://api.doc.holiday/api/v1/instruction-links/inl-0123456789abcdef&quot;</code><br><code>{&quot;id&quot;:&quot;inl-0123456789abcdef&quot;}</code></td>
 					<td>Requires get permission; returns <code>404</code> when missing.</td>
 			</tr>
 			<tr>
@@ -605,24 +605,24 @@
 					<td><code>/api/v1/instruction-links/{id}</code></td>
 					<td>Deletes one link.</td>
 					<td><code>id</code></td>
-					<td><code>curl -X DELETE -H &quot;Authorization: Bearer $TOKEN&quot; &quot;$BASE_URL/api/v1/instruction-links/link_01&quot;</code><br><code>{}</code></td>
-					<td>Requires delete permission; returns <code>204</code> even when missing.</td>
+					<td><code>curl -X DELETE -H &quot;Authorization: Bearer $TOKEN&quot; &quot;https://api.doc.holiday/api/v1/instruction-links/inl-0123456789abcdef&quot;</code></td>
+					<td>Requires delete permission; returns <code>204 No Content</code> with no response body, even when missing.</td>
 			</tr>
 			<tr>
 					<td>POST</td>
 					<td><code>/api/v1/instructions/{id}/links/bulk</code></td>
 					<td>Creates links across many publications and slots.</td>
 					<td><code>id</code>, <code>publicationIds</code>, <code>slotTypes</code></td>
-					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;$BASE_URL/api/v1/instructions/ins_01/links/bulk&quot; -d '{&quot;publicationIds&quot;:[&quot;pub_01&quot;,&quot;pub_02&quot;],&quot;slotTypes&quot;:[&quot;documentation&quot;,&quot;planning&quot;]}'</code><br><code>{&quot;publicationIds&quot;:[&quot;pub_01&quot;,&quot;pub_02&quot;],&quot;slotTypes&quot;:[&quot;documentation&quot;,&quot;planning&quot;]}</code></td>
-					<td>Requires bulk create permission; validates every slot and publication; appends links instead of replacing them.</td>
+					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;https://api.doc.holiday/api/v1/instructions/ins-0123456789abcdef/links/bulk&quot; -d '{&quot;publicationIds&quot;:[&quot;pub-0123456789abcdef&quot;,&quot;pub-fedcba9876543210&quot;],&quot;slotTypes&quot;:[&quot;documentation&quot;,&quot;planning&quot;]}'</code></td>
+					<td>Requires bulk create permission; validates every slot and publication; appends links instead of replacing them; returns <code>204 No Content</code> with no response body.</td>
 			</tr>
 			<tr>
 					<td>POST</td>
 					<td><code>/api/v1/instruction-links/bulk-delete</code></td>
 					<td>Deletes many links at once.</td>
 					<td><code>ids</code></td>
-					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;$BASE_URL/api/v1/instruction-links/bulk-delete&quot; -d '{&quot;ids&quot;:[&quot;link_01&quot;,&quot;link_02&quot;]}'</code><br><code>{&quot;ids&quot;:[&quot;link_01&quot;,&quot;link_02&quot;]}</code></td>
-					<td>Requires bulk delete permission; skips missing IDs.</td>
+					<td><code>curl -X POST -H &quot;Authorization: Bearer $TOKEN&quot; -H &quot;Content-Type: application/json&quot; &quot;https://api.doc.holiday/api/v1/instruction-links/bulk-delete&quot; -d '{&quot;ids&quot;:[&quot;inl-0123456789abcdef&quot;,&quot;inl-fedcba9876543210&quot;]}'</code></td>
+					<td>Requires bulk delete permission; skips missing IDs; returns <code>204 No Content</code> with no response body.</td>
 			</tr>
 	</tbody>
 </table>
@@ -632,12 +632,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

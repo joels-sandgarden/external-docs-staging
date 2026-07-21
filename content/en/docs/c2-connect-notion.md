@@ -8,11 +8,10 @@ Use this page when you need Notion to supply background context for Doc Holiday.
 
 ## Connect Notion
 
-1. Open **Sources** and select **Notion**.
+1. Open **Sources**, select **Add Source**, and choose **Notion**.
 2. Enter a **Source Name** that helps you recognize it later.
-3. If the control appears, turn on **Pause Background Work for Source** to pause background updates.
-4. Enter the **Integration Key** for the Notion integration that can read the pages you want Doc Holiday to use.
-5. Save the Source.
+3. Enter the **Integration Key** for the Notion integration that can read the pages you want Doc Holiday to use.
+4. Select **Save Changes**.
 
 ## Verify
 

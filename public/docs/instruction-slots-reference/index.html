@@ -504,54 +504,53 @@
 				</header>
 
 				<div id="article-body">
-					<p>This page lists the instruction slots that appear in the Library and Publication settings.</p>
+					<p>Use this page to look up where each instruction slot appears on a Publication and what it controls.</p>
 <h2 id="slot-reference">Slot reference</h2>
 <table>
 	<thead>
 			<tr>
-					<th>Slot</th>
-					<th>What it governs</th>
-					<th>When it is applied</th>
-					<th>Typical use</th>
+					<th>Publication slot</th>
+					<th>API value</th>
+					<th>Instruction shown in the app</th>
+					<th>What it controls</th>
 			</tr>
 	</thead>
 	<tbody>
 			<tr>
-					<td>documentation</td>
-					<td>Long-form documentation</td>
-					<td>When Doc Holiday writes or updates a documentation page</td>
-					<td>Page structure and tone</td>
+					<td>Documentation</td>
+					<td><code>documentation</code></td>
+					<td>Style &amp; Formatting</td>
+					<td>Style and formatting for documentation pages Doc Holiday writes.</td>
 			</tr>
 			<tr>
-					<td>release notes</td>
-					<td>Release note content</td>
-					<td>When Doc Holiday writes release notes for a release</td>
-					<td>Audience, summary length, and release framing</td>
+					<td>Release Notes</td>
+					<td><code>releaseNotes</code></td>
+					<td>Style &amp; Formatting</td>
+					<td>Style and formatting for release notes.</td>
 			</tr>
 			<tr>
-					<td>changelog</td>
-					<td>Changelog entries</td>
-					<td>When Doc Holiday updates the changelog for shipped changes</td>
-					<td>Entry format and release grouping</td>
+					<td>Changelog</td>
+					<td><code>changelog</code></td>
+					<td>Style &amp; Formatting</td>
+					<td>Style and formatting for changelog entries.</td>
 			</tr>
 			<tr>
-					<td>commit</td>
-					<td>Commit messages</td>
-					<td>When Doc Holiday creates or rewrites a commit message</td>
-					<td>Message style and required prefixes</td>
+					<td>Writing Instructions</td>
+					<td><code>planning</code></td>
+					<td>Writing</td>
+					<td>What Doc Holiday plans to work on, including which files matter and where outputs go.</td>
 			</tr>
 			<tr>
-					<td>planning</td>
-					<td>Planning notes</td>
-					<td>When Doc Holiday drafts planning content for a work request</td>
-					<td>Scope, ordering, and review notes</td>
+					<td>Commit Instructions</td>
+					<td><code>commit</code></td>
+					<td>Commit</td>
+					<td>How Doc Holiday opens pull requests, including titles, commit messages, PR body, and branch naming.</td>
 			</tr>
 	</tbody>
 </table>
-<h2 id="how-linking-works">How linking works</h2>
-<p>An instruction can be global or linked to one or more Publications. Multiple instructions can share the same slot, and Doc Holiday applies them in link order.</p>
-<h2 id="precedence">Precedence</h2>
-<p>Library instructions take precedence over inline Publication instructions. When both exist for the same slot, Doc Holiday uses the Library-linked instruction first and uses inline text only when no linked instruction applies.</p>
+<p>You can attach one Style &amp; Formatting instruction to the Documentation, Release Notes, and Changelog slots at the same time.</p>
+<h2 id="resolution">Resolution</h2>
+<p>When more than one Library instruction is attached to the same slot, Doc Holiday follows them in the order arranged on the Publication. The Publication’s inline text for that slot applies only when no Library instruction is attached.</p>
 <h2 id="see-also">See also</h2>
 <ul>
 <li><a href="/external-docs-staging/docs/the-library/">The Library</a></li>
@@ -563,12 +562,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 
@@ -613,8 +612,7 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#slot-reference">Slot reference</a></li>
-    <li><a href="#how-linking-works">How linking works</a></li>
-    <li><a href="#precedence">Precedence</a></li>
+    <li><a href="#resolution">Resolution</a></li>
     <li><a href="#see-also">See also</a></li>
   </ul>
 </nav>

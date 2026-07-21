@@ -504,33 +504,29 @@
 				</header>
 
 				<div id="article-body">
-					<h2 id="what-the-library-is">What the Library is</h2>
-<p>The Library is your organization&rsquo;s shared collection of reusable instructions. Each instruction covers one kind of writing: documentation, release notes, changelogs, commit messages, or planning. That gives Doc Holiday one clear place for durable guidance instead of repeating the same text in every Publication.</p>
-<h2 id="scope-and-reuse">Scope and reuse</h2>
-<p>Some instructions apply everywhere. Others attach only to selected Publications. A global instruction gives Doc Holiday the same direction across every Source that shares that Publication, while an instruction for selected Publications narrows the guidance to the places that need it. When a Publication uses several linked instructions, Doc Holiday follows their order so the writing stays consistent.</p>
-<h2 id="how-the-library-shapes-writing">How the Library shapes writing</h2>
-<p><a href="/external-docs-staging/docs/prompting-guide/">Linked Library instructions govern how Doc Holiday writes for that Publication, but a specific ask in an individual request still wins for that request.</a></p>
-<p>When a Source triggers work for a Publication, Doc Holiday first looks for linked Library instructions. If none exist, it falls back to the inline writing text already stored on the Publication. That keeps the Library as the normal source of guidance while existing Publication settings stay usable. Work History records the request and keeps that choice visible with the result.</p>
-<h2 id="the-library-page">The Library page</h2>
-<p>In the dashboard, the Library lives in the instructions area. The list lets you search, sort, and filter by type, and it shows how many Publications use each instruction. The <strong>New instruction</strong> action opens a sheet for creating or editing an instruction.</p>
-<p>From that sheet, you can save drafted text into the Library, see the Publications already attached to an instruction, and add existing Library instructions when a Publication needs the same guidance.</p>
+					<p>The Library is the organization-wide collection of reusable instructions. In the left nav, it appears as <strong>Library</strong>. From there, you create one of three instruction types: <strong>Style &amp; Formatting</strong>, <strong>Writing</strong>, or <strong>Commit</strong>. The Library is shared, so every Publication editor in the organization can see the same instructions.</p>
+<h2 id="how-instructions-affect-a-publication">How instructions affect a Publication</h2>
+<p>An instruction changes what Doc Holiday writes only when it is attached to a Publication. On the instruction sheet, <strong>Apply to Publication(s)</strong> attaches it. A <strong>Style &amp; Formatting</strong> instruction can be attached to one or more of a Publication&rsquo;s <strong>Documentation</strong>, <strong>Release Notes</strong>, and <strong>Changelog</strong> slots, so one instruction can guide several output types in the same Publication.</p>
+<p>When a Publication has both Library instructions and inline text in its own configuration, Doc Holiday follows the attached Library instructions in the order arranged on the Publication. The inline text applies only when a slot has no attached Library instruction. Work History shows the request and result, but it does not show which instruction source a run used.</p>
+<h2 id="what-the-library-page-shows">What the Library page shows</h2>
+<p>The Library list supports search by name, an <strong>In Use</strong> column, and a type filter with <strong>All types</strong>, <strong>Style &amp; Formatting</strong>, <strong>Writing</strong>, and <strong>Commit</strong>. The <strong>New Instruction</strong> action creates a new instruction.</p>
 
 
 
-<pre tabindex="0"><code>SCREENSHOT PLACEHOLDER: the-library/library-page.png</code></pre><h2 id="what-good-instructions-do">What good instructions do</h2>
-<p>Good instructions keep Doc Holiday&rsquo;s writing steady: the same Publication keeps a steady voice, clear boundaries, and a consistent output shape every time. See <a href="/external-docs-staging/docs/writing-style-guides/">Writing style guides</a> for how those instructions stay clear and usable.</p>
+<pre tabindex="0"><code>SCREENSHOT PLACEHOLDER: the-library/library-page.png</code></pre><h2 id="next">Next</h2>
+<p>See <a href="/external-docs-staging/docs/prompting-guide/">Prompting guide</a> for the two levers that steer what Doc Holiday writes, <a href="/external-docs-staging/docs/writing-style-guides/">Writing style guides</a> for shaping tone and voice, and <a href="/external-docs-staging/docs/instruction-slots-reference/">Instruction slots reference</a> for the slots that receive Library instructions.</p>
 
 				</div>
 
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 
@@ -573,11 +569,9 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-the-library-is">What the Library is</a></li>
-    <li><a href="#scope-and-reuse">Scope and reuse</a></li>
-    <li><a href="#how-the-library-shapes-writing">How the Library shapes writing</a></li>
-    <li><a href="#the-library-page">The Library page</a></li>
-    <li><a href="#what-good-instructions-do">What good instructions do</a></li>
+    <li><a href="#how-instructions-affect-a-publication">How instructions affect a Publication</a></li>
+    <li><a href="#what-the-library-page-shows">What the Library page shows</a></li>
+    <li><a href="#next">Next</a></li>
   </ul>
 </nav>
 

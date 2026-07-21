@@ -513,8 +513,8 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Purpose: list Work History entries.</li>
 <li>Request: <code>branch</code>, <code>outputUrl</code>, <code>jobId</code>, <code>publicationId</code>, <code>operationType</code>, <code>status</code>, <code>summary</code>, <code>staged</code>, <code>originType</code>, <code>originURL</code>.</li>
 <li>Response: <code>ModelsListConversationsResponse</code> with <code>conversations</code>, <code>nextPageToken</code>, <code>previousPageToken</code>, and <code>error</code>.</li>
-<li>Notes: list permission applies to <code>Conversation</code>; <code>publicationId</code> narrows the result set, and <code>staged</code> accepts <code>null</code> or <code>boolean</code>.</li>
-<li><code>curl</code>: <code>curl -H 'Authorization: Bearer …' '/api/v1/conversations?publicationId=pub_123&amp;staged=true'</code></li>
+<li>Notes: list permission applies to <code>Conversation</code>. <code>publicationId</code> narrows the result set. Omit <code>staged</code> for no filter; <code>staged=null</code> returns <code>400</code>.</li>
+<li><code>curl</code>: <code>curl -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversations?publicationId=pub_123&amp;staged=true&quot;</code></li>
 <li><code>json</code>: <code>{&quot;conversations&quot;:[{&quot;id&quot;:&quot;conv_123&quot;,&quot;status&quot;:&quot;running&quot;}],&quot;nextPageToken&quot;:&quot;&quot;,&quot;previousPageToken&quot;:&quot;&quot;}</code></li>
 </ul>
 <h3 id="post-apiv1conversations"><code>POST /api/v1/conversations/</code></h3>
@@ -523,7 +523,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>body</code>, <code>relevantLinks</code>, <code>changes</code>, <code>stage</code>, <code>publication</code>, <code>labels</code>.</li>
 <li>Response: <code>ModelsGetConversationResponse</code> with <code>id</code>, <code>status</code>, <code>staged</code>, <code>outputUrl</code>, <code>entries</code>, and the other Conversation fields.</li>
 <li>Notes: Doc Holiday resolves <code>publication</code> by name or ID, uses the Publication&rsquo;s docs repo <code>Connection</code> as the target, and enqueues the manual job after create-time permission checks and billing checks. This route is the handoff point for <a href="/external-docs-staging/docs/github-action/">GitHub Action</a> and <a href="/external-docs-staging/docs/coding-agents/">Coding agents</a>.</li>
-<li><code>curl</code>: <code>curl -X POST -H 'Content-Type: application/json' -d '{&quot;body&quot;:&quot;Update the guide&quot;,&quot;publication&quot;:&quot;docs&quot;,&quot;stage&quot;:true}' /api/v1/conversations/</code></li>
+<li><code>curl</code>: <code>curl -X POST -H &quot;Authorization: Bearer &lt;token&gt;&quot; -H &quot;Content-Type: application/json&quot; -d '{&quot;body&quot;:&quot;Update the guide&quot;,&quot;publication&quot;:&quot;docs&quot;,&quot;stage&quot;:true}' &quot;https://api.doc.holiday/api/v1/conversations/&quot;</code></li>
 <li><code>json</code>: <code>{&quot;body&quot;:&quot;Update the guide&quot;,&quot;publication&quot;:&quot;docs&quot;,&quot;stage&quot;:true,&quot;labels&quot;:[&quot;docs&quot;]}</code></li>
 </ul>
 <h3 id="get-apiv1conversationsid"><code>GET /api/v1/conversations/{id}</code></h3>
@@ -532,7 +532,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>id</code>.</li>
 <li>Response: <code>ModelsGetConversationResponse</code> with <code>id</code>, <code>status</code>, <code>branch</code>, <code>outputUrl</code>, <code>staged</code>, <code>excludedFiles</code>, <code>publicationName</code>, and <code>entries</code>.</li>
 <li>Notes: read permission applies to the <code>Conversation</code>, and the response includes the full Work History record for that entry.</li>
-<li><code>curl</code>: <code>curl -H 'Authorization: Bearer …' /api/v1/conversations/conv_123</code></li>
+<li><code>curl</code>: <code>curl -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversations/conv_123&quot;</code></li>
 <li><code>json</code>: <code>{&quot;id&quot;:&quot;conv_123&quot;,&quot;status&quot;:&quot;open&quot;,&quot;staged&quot;:false,&quot;entries&quot;:[]}</code></li>
 </ul>
 <h3 id="put-apiv1conversationsid"><code>PUT /api/v1/conversations/{id}</code></h3>
@@ -541,7 +541,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>staged</code>, <code>excludedFiles</code>.</li>
 <li>Response: <code>ModelsGetConversationResponse</code>.</li>
 <li>Notes: Doc Holiday rejects requests that set <code>staged</code> and <code>excludedFiles</code> together. When <code>staged</code> is omitted, it syncs excluded files on the working branch; when <code>staged</code> changes from <code>true</code> to <code>false</code>, it opens the draft as a pull request and clears <code>staged</code>.</li>
-<li><code>curl</code>: <code>curl -X PUT -H 'Content-Type: application/json' -d '{&quot;staged&quot;:false}' /api/v1/conversations/conv_123</code></li>
+<li><code>curl</code>: <code>curl -X PUT -H &quot;Authorization: Bearer &lt;token&gt;&quot; -H &quot;Content-Type: application/json&quot; -d '{&quot;staged&quot;:false}' &quot;https://api.doc.holiday/api/v1/conversations/conv_123&quot;</code></li>
 <li><code>json</code>: <code>{&quot;staged&quot;:false}</code></li>
 </ul>
 <h3 id="post-apiv1conversationsidannotate"><code>POST /api/v1/conversations/{id}/annotate</code></h3>
@@ -550,7 +550,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>id</code>.</li>
 <li>Response: <code>202 Accepted</code> with <code>ModelsAnnotateConversationResponse</code>.</li>
 <li>Notes: Doc Holiday schedules background annotation work and returns immediately.</li>
-<li><code>curl</code>: <code>curl -X POST /api/v1/conversations/conv_123/annotate</code></li>
+<li><code>curl</code>: <code>curl -X POST -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversations/conv_123/annotate&quot;</code></li>
 <li><code>json</code>: <code>{}</code></li>
 </ul>
 <h3 id="post-apiv1conversationsidcomments"><code>POST /api/v1/conversations/{id}/comments</code></h3>
@@ -559,7 +559,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>body</code>, <code>relevantLinks</code>, <code>changes</code>, <code>labels</code>, <code>workRequested</code>, <code>anchor</code>.</li>
 <li>Response: <code>ModelsGetConversationCommentResponse</code> with <code>id</code>, <code>message</code>, <code>workRequested</code>, <code>anchor</code>, <code>batchItemIds</code>, <code>batchedIntoIds</code>, and <code>replyIds</code>.</li>
 <li>Notes: <code>workRequested:false</code> takes the immediate discussion-comment path; <code>workRequested:true</code> or an omitted value queues work. <code>anchor</code> binds the comment to <code>filePath</code>, <code>anchoredFileSha</code>, and optional line range fields.</li>
-<li><code>curl</code>: <code>curl -X POST -H 'Content-Type: application/json' -d '{&quot;body&quot;:&quot;Please revise&quot;,&quot;workRequested&quot;:false}' /api/v1/conversations/conv_123/comments</code></li>
+<li><code>curl</code>: <code>curl -X POST -H &quot;Authorization: Bearer &lt;token&gt;&quot; -H &quot;Content-Type: application/json&quot; -d '{&quot;body&quot;:&quot;Please revise&quot;,&quot;workRequested&quot;:false}' &quot;https://api.doc.holiday/api/v1/conversations/conv_123/comments&quot;</code></li>
 <li><code>json</code>: <code>{&quot;body&quot;:&quot;Please revise&quot;,&quot;workRequested&quot;:false}</code></li>
 </ul>
 <h3 id="post-apiv1conversationsidcommentssendbatch"><code>POST /api/v1/conversations/{id}/comments/sendBatch</code></h3>
@@ -568,7 +568,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>message</code>, <code>itemCommentIds</code>.</li>
 <li>Response: <code>200 OK</code> with no JSON body.</li>
 <li>Notes: Doc Holiday only accepts discussion-only comments from the same conversation, and it rejects work-requesting items.</li>
-<li><code>curl</code>: <code>curl -X POST -H 'Content-Type: application/json' -d '{&quot;message&quot;:&quot;Please review&quot;,&quot;itemCommentIds&quot;:[&quot;c1&quot;,&quot;c2&quot;]}' /api/v1/conversations/conv_123/comments/sendBatch</code></li>
+<li><code>curl</code>: <code>curl -X POST -H &quot;Authorization: Bearer &lt;token&gt;&quot; -H &quot;Content-Type: application/json&quot; -d '{&quot;message&quot;:&quot;Please review&quot;,&quot;itemCommentIds&quot;:[&quot;c1&quot;,&quot;c2&quot;]}' &quot;https://api.doc.holiday/api/v1/conversations/conv_123/comments/sendBatch&quot;</code></li>
 <li><code>json</code>: <code>{&quot;message&quot;:&quot;Please review&quot;,&quot;itemCommentIds&quot;:[&quot;c1&quot;,&quot;c2&quot;]}</code></li>
 </ul>
 <h3 id="post-apiv1conversationsidnotify"><code>POST /api/v1/conversations/{id}/notify</code></h3>
@@ -577,7 +577,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>id</code>.</li>
 <li>Response: <code>ModelsNotifyConversationResponse</code>.</li>
 <li>Notes: the Publication must point at a notifier <code>Connection</code>, and the caller needs notify permission.</li>
-<li><code>curl</code>: <code>curl -X POST -H 'Authorization: Bearer …' /api/v1/conversations/conv_123/notify</code></li>
+<li><code>curl</code>: <code>curl -X POST -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversations/conv_123/notify&quot;</code></li>
 <li><code>json</code>: <code>{}</code></li>
 </ul>
 <h2 id="conversation_comments"><code>conversation_comments</code></h2>
@@ -587,7 +587,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>ids</code>, <code>conversationId</code>, <code>connectionId</code>, <code>workRequested</code>, <code>source</code>, <code>externalId</code>, <code>filePath</code>.</li>
 <li>Response: <code>ModelsListConversationCommentsResponse</code> with <code>comments</code>, <code>nextPageToken</code>, <code>previousPageToken</code>, and <code>error</code>.</li>
 <li>Notes: when <code>conversationId</code> is present, Doc Holiday checks read access on that Publication. Each comment can include <code>anchor</code>, <code>batchItemIds</code>, <code>batchedIntoIds</code>, and <code>replyIds</code>.</li>
-<li><code>curl</code>: <code>curl -H 'Authorization: Bearer …' '/api/v1/conversation_comments?conversationId=conv_123&amp;workRequested=false'</code></li>
+<li><code>curl</code>: <code>curl -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversation_comments?conversationId=conv_123&amp;workRequested=false&quot;</code></li>
 <li><code>json</code>: <code>{&quot;comments&quot;:[{&quot;id&quot;:&quot;c1&quot;,&quot;workRequested&quot;:false}],&quot;nextPageToken&quot;:&quot;&quot;,&quot;previousPageToken&quot;:&quot;&quot;}</code></li>
 </ul>
 <h3 id="patch-apiv1conversation_commentsid"><code>PATCH /api/v1/conversation_comments/{id}</code></h3>
@@ -596,7 +596,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>message</code>.</li>
 <li>Response: <code>ModelsGetConversationCommentResponse</code>.</li>
 <li>Notes: only the author can mutate the comment, and the comment must be discussion-only and not batched into an aggregate. Doc Holiday also checks update permission on the comment and read access on the Publication.</li>
-<li><code>curl</code>: <code>curl -X PATCH -H 'Content-Type: application/json' -d '{&quot;message&quot;:&quot;Updated note&quot;}' /api/v1/conversation_comments/c1</code></li>
+<li><code>curl</code>: <code>curl -X PATCH -H &quot;Authorization: Bearer &lt;token&gt;&quot; -H &quot;Content-Type: application/json&quot; -d '{&quot;message&quot;:&quot;Updated note&quot;}' &quot;https://api.doc.holiday/api/v1/conversation_comments/c1&quot;</code></li>
 <li><code>json</code>: <code>{&quot;message&quot;:&quot;Updated note&quot;}</code></li>
 </ul>
 <h3 id="delete-apiv1conversation_commentsid"><code>DELETE /api/v1/conversation_comments/{id}</code></h3>
@@ -605,7 +605,7 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Request: <code>id</code>.</li>
 <li>Response: <code>204 No Content</code>.</li>
 <li>Notes: the same author and mutability rules apply here: only the author can remove a comment that is neither work-requested nor batched.</li>
-<li><code>curl</code>: <code>curl -X DELETE -H 'Authorization: Bearer …' /api/v1/conversation_comments/c1</code></li>
+<li><code>curl</code>: <code>curl -X DELETE -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversation_comments/c1&quot;</code></li>
 <li><code>json</code>: <code>{}</code></li>
 </ul>
 <h2 id="conversation_turns"><code>conversation_turns</code></h2>
@@ -614,8 +614,8 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 <li>Purpose: retry one failed turn.</li>
 <li>Request: <code>id</code>.</li>
 <li>Response: <code>ModelsGetConversationTurnResponse</code> with <code>id</code>, <code>status</code>, <code>errorMessage</code>, <code>retryCount</code>, <code>request</code>, and <code>triggeringCommentId</code>.</li>
-<li>Notes: Doc Holiday accepts only turns in an error state, resets <code>status</code> to <code>running</code>, clears <code>errorMessage</code>, increments <code>retryCount</code>, and requeues the manual job after retry permission checks and Publication write access checks.</li>
-<li><code>curl</code>: <code>curl -X POST -H 'Authorization: Bearer …' /api/v1/conversation_turns/turn_123/retry</code></li>
+<li>Notes: The app offers Retry on failed turns; the endpoint resets the turn to running, clears its error, and requeues the work.</li>
+<li><code>curl</code>: <code>curl -X POST -H &quot;Authorization: Bearer &lt;token&gt;&quot; &quot;https://api.doc.holiday/api/v1/conversation_turns/turn_123/retry&quot;</code></li>
 <li><code>json</code>: <code>{&quot;id&quot;:&quot;turn_123&quot;,&quot;status&quot;:&quot;running&quot;,&quot;retryCount&quot;:2}</code></li>
 </ul>
 
@@ -624,12 +624,12 @@ This page documents only the public <code>/api/v1/conversations*</code>, <code>/
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

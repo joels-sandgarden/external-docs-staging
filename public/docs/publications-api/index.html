@@ -527,8 +527,8 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -X POST https://api.doc.holiday/api/v1/publications -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;pub_1&quot;,&quot;sourceRepos&quot;:[&quot;src_1&quot;]}}'</code>
-<code>JSON</code>: <code>{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;pub_1&quot;,&quot;sourceRepos&quot;:[&quot;src_1&quot;]},&quot;instructions&quot;:[]}</code>
+<p><code>curl</code>: <code>curl -X POST https://api.doc.holiday/api/v1/publications -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;cnn-0123456789abcdef&quot;,&quot;sourceRepos&quot;:[&quot;cnn-0123456789abcdef&quot;]}}'</code>
+<code>JSON</code>: <code>{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;cnn-0123456789abcdef&quot;,&quot;sourceRepos&quot;:[&quot;cnn-0123456789abcdef&quot;]},&quot;instructions&quot;:[]}</code>
 <code>Notes</code>: Permissions gate the call; invalid configs and duplicate names stop the save.</p>
 <h3 id="get-apiv1publicationsid"><code>GET /api/v1/publications/{id}</code></h3>
 <p>Retrieves one publication with config, health, sync time, and resolved instructions.</p>
@@ -550,8 +550,7 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1</code>
-<code>JSON</code>: <code>{&quot;id&quot;:&quot;pub_1&quot;}</code>
+<p><code>curl</code>: <code>curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef</code>
 <code>Notes</code>: Access checks run before the lookup; missing or invalid IDs fail the request.</p>
 <h3 id="get-apiv1publications"><code>GET /api/v1/publications</code></h3>
 <p>Lists publications with paging and filter support.</p>
@@ -573,8 +572,8 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -H 'Authorization: Bearer $TOKEN' 'https://api.doc.holiday/api/v1/publications?name=API&amp;ids=pub_1,pub_2'</code>
-<code>JSON</code>: <code>{&quot;name&quot;:&quot;API&quot;,&quot;ids&quot;:[&quot;pub_1&quot;,&quot;pub_2&quot;]}</code>
+<p><code>curl</code>: <code>curl -H 'Authorization: Bearer $TOKEN' 'https://api.doc.holiday/api/v1/publications?name=API&amp;ids=pub-0123456789abcdef,pub-fedcba9876543210'</code>
+<code>JSON</code>: <code>{&quot;name&quot;:&quot;API&quot;,&quot;ids&quot;:[&quot;pub-0123456789abcdef&quot;,&quot;pub-fedcba9876543210&quot;]}</code>
 <code>Notes</code>: The result set narrows to permitted publications when broad list access is absent.</p>
 <h3 id="put-apiv1publicationsid"><code>PUT /api/v1/publications/{id}</code></h3>
 <p>Replaces a publication&rsquo;s full configuration and instruction set.</p>
@@ -592,7 +591,7 @@
 			</tr>
 			<tr>
 					<td>Body</td>
-					<td><code>name</code> required; <code>config</code> and <code>instructions</code> optional</td>
+					<td><code>name</code> required; <code>config</code> and <code>instructions</code> optional; <code>updatedAt</code> optional</td>
 			</tr>
 			<tr>
 					<td>Response</td>
@@ -600,8 +599,8 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -X PUT https://api.doc.holiday/api/v1/publications/pub_1 -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;pub_1&quot;,&quot;sourceRepos&quot;:[&quot;src_1&quot;]}}'</code>
-<code>JSON</code>: <code>{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;pub_1&quot;,&quot;sourceRepos&quot;:[&quot;src_1&quot;]},&quot;instructions&quot;:[]}</code>
+<p><code>curl</code>: <code>curl -X PUT https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;cnn-0123456789abcdef&quot;,&quot;sourceRepos&quot;:[&quot;cnn-0123456789abcdef&quot;]}}'</code>
+<code>JSON</code>: <code>{&quot;name&quot;:&quot;API Docs&quot;,&quot;config&quot;:{&quot;docsRepo&quot;:&quot;cnn-0123456789abcdef&quot;,&quot;sourceRepos&quot;:[&quot;cnn-0123456789abcdef&quot;]},&quot;instructions&quot;:[]}</code>
 <code>Notes</code>: Permissions gate the call; invalid configs and name clashes stop replacement.</p>
 <h3 id="delete-apiv1publicationsid"><code>DELETE /api/v1/publications/{id}</code></h3>
 <p>Removes a publication.</p>
@@ -623,8 +622,7 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -X DELETE -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1</code>
-<code>JSON</code>: <code>{&quot;id&quot;:&quot;pub_1&quot;}</code>
+<p><code>curl</code>: <code>curl -X DELETE -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef</code>
 <code>Notes</code>: Permission checks apply; removal also clears linked instruction records and orphaned local instructions.</p>
 <h3 id="get-apiv1publicationsidhealth"><code>GET /api/v1/publications/{id}/health</code></h3>
 <p>Reports whether a publication is misconfigured.</p>
@@ -646,8 +644,8 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1/health</code>
-<code>JSON</code>: <code>{&quot;id&quot;:&quot;pub_1&quot;}</code>
+<p><code>curl</code>: <code>curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef/health</code>
+<code>JSON</code>: <code>{&quot;id&quot;:&quot;pub-0123456789abcdef&quot;}</code>
 <code>Notes</code>: The check can surface unhealthy docs or source connections and returns a message for the failure.</p>
 <h3 id="post-apiv1publicationsidsync"><code>POST /api/v1/publications/{id}/sync</code></h3>
 <p>Queues a sync run for the publication.</p>
@@ -673,8 +671,8 @@
 			</tr>
 	</tbody>
 </table>
-<p><code>curl</code>: <code>curl -X POST https://api.doc.holiday/api/v1/publications/pub_1/sync -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{&quot;wait&quot;:true,&quot;timeout&quot;:60000000000}'</code>
-<code>JSON</code>: <code>{&quot;wait&quot;:false,&quot;timeout&quot;:60000000000}</code>
+<p><code>curl</code>: <code>curl -X POST https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef/sync -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{&quot;wait&quot;:true,&quot;timeout&quot;:60000000000}'</code>
+<code>JSON</code>: <code>{&quot;wait&quot;:true,&quot;timeout&quot;:60000000000}</code>
 <code>Notes</code>: Permissions gate the call; <code>wait: true</code> blocks until completion or timeout.</p>
 <h2 id="modelspublicationconfig">ModelsPublicationConfig</h2>
 <ul>
@@ -703,12 +701,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

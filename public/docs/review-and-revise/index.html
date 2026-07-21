@@ -508,7 +508,7 @@
 <h2 id="opening-the-entry">Opening the entry</h2>
 <ol>
 <li>In Work History, select the entry marked Ready for Review.</li>
-<li>The sheet opens with &ldquo;Details&rdquo;, &ldquo;Files&rdquo;, and &ldquo;Messages&rdquo;. The &ldquo;Messages&rdquo; tab shows the conversation thread and the reply box.</li>
+<li>The sheet opens with &ldquo;Details&rdquo;, &ldquo;Files&rdquo;, and &ldquo;Messages&rdquo;; recent work requests can also show a &ldquo;Reasoning&rdquo; tab. The &ldquo;Messages&rdquo; tab shows the conversation thread and the reply box.</li>
 <li>In <strong>Details</strong>, confirm these labels:
 <ul>
 <li><code>Summary:</code> the request title</li>
@@ -523,16 +523,16 @@
 </li>
 </ol>
 <h2 id="reviewing-proposed-file-changes">Reviewing proposed file changes</h2>
-<p>The <strong>Files</strong> tab shows each file row, its diff count, and its status. Open a file to review the diff, then use <strong>Discard</strong> to remove it from the final request or <strong>Restore</strong> to add it back.</p>
+<p>The <strong>Files</strong> tab shows each file row, its diff count, and its status. Open a file to review the diff, then use the icon-only buttons whose tooltips read &ldquo;Discard file&rdquo; and &ldquo;Restore file&rdquo; to remove it from the final request or add it back.</p>
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">SCREENSHOT PLACEHOLDER: review-and-revise/files-tab-diff.png</span></span></code></pre></div><p>Inside the diff, review the lines in order. Use <code>Comment on specific lines</code> to anchor a note to one row, or <code>Comment on this line, or drag to select multiple</code> to cover more than one line. Set the range with <code>Start line</code> and <code>End line</code> when needed, then use <code>Add Comment</code> to leave feedback, <code>Send to Doc</code> to send the comment for another revision pass, or <code>Add to Batch</code> to collect several comments first. Use <code>Add a file-level comment</code> when the note applies to the whole file. Expand hidden context with <code>Expand unchanged lines</code>, and close open sections with <code>Collapse all expanded sections</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">SCREENSHOT PLACEHOLDER: review-and-revise/files-tab-diff.png</span></span></code></pre></div><p>Inside the diff, review the lines in order. In the diff gutter, use &ldquo;Comment on this line, or drag to select multiple&rdquo; to anchor a comment; &ldquo;Extend comment to this line&rdquo; grows the selection. Use <code>Add Comment</code> to leave feedback, <code>Send to Doc</code> to send the comment for another revision pass, or <code>Add to Batch</code> to collect several comments first. Use <code>Add a file-level comment</code> when the note applies to the whole file. Expand hidden context with <code>Expand unchanged lines</code>, and close open sections with <code>Collapse all expanded sections</code>.</p>
 <h2 id="commenting-and-revising">Commenting and revising</h2>
-<p>Leave inline comments on the file content when only a few lines need attention. Leave a file-level comment when the whole file needs a broader change. In <strong>Messages</strong>, reply with <code>Send a message</code> and then <code>Send</code> so the next update includes that context. Every comment or reply sends Doc Holiday back for another revision pass.</p>
+<p>Leave inline comments on the file content when only a few lines need attention. Leave a file-level comment when the whole file needs a broader change. In <strong>Messages</strong>, reply with <code>Send a message</code> and then <code>Send</code> so the next update includes that context. <code>Add Comment</code> records feedback without starting work. <code>Send to Doc</code>, <code>Send Batch to Doc</code>, and messages in the <code>Messages</code> tab send the feedback to Doc Holiday for a revision pass.</p>
 <p>If you selected several comments, finish with <code>Send Batch to Doc</code>.</p>
 <h2 id="excluding-files">Excluding files</h2>
-<p>Use <strong>Discard</strong> to remove a file from the final request, and <strong>Restore</strong> to bring it back. The approval dialog updates to show how many files stay in the request and how many are permanently discarded.</p>
+<p>Use the icon-only buttons whose tooltips read &ldquo;Discard file&rdquo; and &ldquo;Restore file&rdquo; to remove a file from the final request or bring it back. The approval dialog updates to show how many files stay in the request and how many are permanently discarded.</p>
 <h2 id="approving-and-opening-the-prmr">Approving and opening the PR/MR</h2>
 <p>When the draft looks right, use <strong>Open Pull Request</strong> on GitHub or <strong>Open Merge Request</strong> on GitLab. The confirmation dialog shows how many files will be committed and how many will be permanently discarded.</p>
 
@@ -547,12 +547,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

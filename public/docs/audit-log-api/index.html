@@ -525,7 +525,7 @@
 			<tr>
 					<td><code>summary</code></td>
 					<td>query</td>
-					<td>Matches text with <code>ILIKE</code>.</td>
+					<td>Matches text case-insensitively. Use <code>%</code> wildcards for partial matches.</td>
 			</tr>
 			<tr>
 					<td>pagination</td>
@@ -538,7 +538,7 @@
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -H <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$TOKEN</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  <span class="s2">&#34;https://api.doc.holiday/api/v1/audit_logs?summary=release&#34;</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl">  <span class="s2">&#34;https://api.doc.holiday/api/v1/audit_logs?summary=%release%&#34;</span></span></span></code></pre></div>
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
@@ -557,13 +557,12 @@
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;updatedAt&#34;</span><span class="p">:</span> <span class="s2">&#34;2026-07-21T12:00:00Z&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">],</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;previousPageToken&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;nextPageToken&#34;</span><span class="p">:</span> <span class="s2">&#34;adl-00000000000000af&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;nextPageToken&#34;</span><span class="p">:</span> <span class="s2">&#34;2026-07-21T12:00:00.000000Z&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><p>Notes:</p>
 <ul>
 <li>SFS token auth follows the standard flow in <a href="/external-docs-staging/docs/api-overview/">/j1-api-overview.md</a>.</li>
 <li>When list permission is missing, Doc Holiday limits results to permitted audit-log IDs.</li>
-<li>Unauthorized access remains the most common failure when the caller cannot read the records.</li>
+<li>The get endpoint performs a per-ID permission check.</li>
 </ul>
 <h2 id="get-an-audit-log">Get an audit log</h2>
 <p><code>GET /api/v1/audit_logs/{id}</code></p>
@@ -673,8 +672,7 @@
 <p>Notes:</p>
 <ul>
 <li>SFS token auth follows the standard flow in <a href="/external-docs-staging/docs/api-overview/">/j1-api-overview.md</a>.</li>
-<li>The API checks the requested audit log ID.</li>
-<li>Unauthorized access or an invalid ID format can block the request.</li>
+<li>Malformed IDs fail with a 4xx response.</li>
 </ul>
 <h2 id="audit-log-types">Audit log types</h2>
 <ul>
@@ -699,12 +697,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

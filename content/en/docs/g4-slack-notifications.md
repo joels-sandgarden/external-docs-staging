@@ -8,15 +8,15 @@ This guide sets up Slack notifications for a Publication. Use it when you want D
 
 1. Open the Sources page, then the **Providers** tab.
 2. Select **Add Provider**, choose **Slack Application**, then click **Connect Slack Workspace**. Finish the Slack install flow.
-3. Create a Slack Channel source under that provider. Fill in **Source Name**, **Slack Workspace**, and **Channel**. Use **Select a workspace...** to pick the workspace. If no channel is selected yet, the control shows **Select a channel...**. When channels are still loading, it shows **Loading channels...**. Use **Search channels...** to find one, and **No channels found...** appears when the list is empty.
+3. Switch to the **Sources** tab, then select **Add Source**. Create a Slack Channel source under that provider. Fill in **Source Name** and **Channel**. If more than one Slack workspace is connected, the **Slack Workspace** field appears; with a single workspace, Doc Holiday selects it automatically and hides the field. Use **Select a workspace...** to pick the workspace. If no channel is selected yet, the control shows **Select a channel...**. When channels are still loading, it shows **Loading channels...**. Use **Search channels...** to find one, and **No channels found...** appears when the list is empty.
 
-```text
+```
 SCREENSHOT PLACEHOLDER: slack-notifications/channel-form.png
 ```
 
 When you save the source, Doc Holiday joins the channel.
 
-4. Open the Publication form and set **Notify** to the Slack Channel source. The Publication form shows **optional** next to **Notify**. Use **Select notifier** to choose the source, or leave **None** selected to keep notifications off for that Publication.
+4. Open the Publication form and set **Notify** to the Slack Channel source. The Publication form shows **(optional)** next to **Notify**. Use **Select notifier** to choose the source, or leave **None** selected to keep notifications off for that Publication.
 
 ## What you get
 

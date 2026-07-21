@@ -3,94 +3,115 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1318/external-docs-staging/docs/add-your-openai-key/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/ai-provider-keys/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/api-overview/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/audit-log/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/audit-log-api/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/billing-and-plans/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/coding-agents/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/concepts/</loc>
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/configure-triggers/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-bitbucket/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-cloud-storage/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-confluence-and-jira/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-github/</loc>
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-gitlab/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-google-drive/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-linear/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-notion/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connection-types/</loc>
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connections-api/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/create-your-first-publication/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/github-action/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/gitlab-pipelines/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/glossary/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/how-doc-holiday-works/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/how-this-site-is-made/</loc>
     <lastmod>2026-07-20T23:08:18-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/instruction-library-api/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/instruction-slots-reference/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/manage-connections/</loc>
-    <lastmod>2026-07-21T08:00:43-07:00</lastmod>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/manage-publications/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/output-types/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/prompt-patterns/</loc>
     <lastmod>2026-07-20T23:08:18-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/prompting-guide/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/publications/</loc>
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/publications-api/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/publishing-systems/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/quickstart/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/release-notes/</loc>
     <lastmod>2026-07-20T21:47:28-07:00</lastmod>
@@ -99,29 +120,37 @@
     <lastmod>2026-07-20T21:47:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/request-work-in-git/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/request-work-in-the-app/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/review-and-revise/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/security-and-data-handling/</loc>
     <lastmod>2026-07-20T23:08:18-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/slack-notifications/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/sources/</loc>
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/the-library/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/trigger-and-event-types/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/troubleshooting-and-faq/</loc>
     <lastmod>2026-07-20T23:08:18-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/user-management/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/users-api/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/what-is-doc-holiday/</loc>
     <lastmod>2026-07-20T23:08:18-07:00</lastmod>
@@ -130,8 +159,10 @@
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/work-history-api/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/work-history-states/</loc>
+    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/writing-planning-instructions/</loc>
     <lastmod>2026-07-20T21:47:28-07:00</lastmod>

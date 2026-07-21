@@ -4,25 +4,23 @@ url: "docs/instruction-slots-reference"
 description: "The five instruction slots and where each is applied."
 ---
 
-This page lists the instruction slots that appear in the Library and Publication settings.
+Use this page to look up where each instruction slot appears on a Publication and what it controls.
 
 ## Slot reference
 
-| Slot | What it governs | When it is applied | Typical use |
+| Publication slot | API value | Instruction shown in the app | What it controls |
 | --- | --- | --- | --- |
-| documentation | Long-form documentation | When Doc Holiday writes or updates a documentation page | Page structure and tone |
-| release notes | Release note content | When Doc Holiday writes release notes for a release | Audience, summary length, and release framing |
-| changelog | Changelog entries | When Doc Holiday updates the changelog for shipped changes | Entry format and release grouping |
-| commit | Commit messages | When Doc Holiday creates or rewrites a commit message | Message style and required prefixes |
-| planning | Planning notes | When Doc Holiday drafts planning content for a work request | Scope, ordering, and review notes |
+| Documentation | `documentation` | Style & Formatting | Style and formatting for documentation pages Doc Holiday writes. |
+| Release Notes | `releaseNotes` | Style & Formatting | Style and formatting for release notes. |
+| Changelog | `changelog` | Style & Formatting | Style and formatting for changelog entries. |
+| Writing Instructions | `planning` | Writing | What Doc Holiday plans to work on, including which files matter and where outputs go. |
+| Commit Instructions | `commit` | Commit | How Doc Holiday opens pull requests, including titles, commit messages, PR body, and branch naming. |
 
-## How linking works
+You can attach one Style & Formatting instruction to the Documentation, Release Notes, and Changelog slots at the same time.
 
-An instruction can be global or linked to one or more Publications. Multiple instructions can share the same slot, and Doc Holiday applies them in link order.
+## Resolution
 
-## Precedence
-
-Library instructions take precedence over inline Publication instructions. When both exist for the same slot, Doc Holiday uses the Library-linked instruction first and uses inline text only when no linked instruction applies.
+When more than one Library instruction is attached to the same slot, Doc Holiday follows them in the order arranged on the Publication. The Publication’s inline text for that slot applies only when no Library instruction is attached.
 
 ## See also
 

@@ -505,14 +505,103 @@
 
 				<div id="article-body">
 					<p>This reference page lists the trigger events Doc Holiday can react to and the connection types that support each one. See <a href="/external-docs-staging/docs/configure-triggers/">/d2-configure-triggers.md</a> for setup and <a href="/external-docs-staging/docs/connection-types/">/j8-connection-types.md</a> for the full source catalog.</p>
-<p>| Event | Typical output | GitHub Repository | GitHub Repository (personal access token) | GitLab (multi-project access token) | GitLab Project | Bitbucket Repository (repository access token) | Bitbucket Project | Linear | Jira Project | Atlassian Forge Jira Project |
-| &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | |
-| Pull / Merge Requests | Page updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — |
-| New Issues | New pages or follow-up updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — |
-| Issue Comments | Targeted updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — |
-| Releases | Release notes | ✓ | ✓ | ✓ | ✓ | — | — | — | — | — |
-| Send to Doc | Jira page updates | — | — | — | — | — | — | — | ✓ | ✓ |
-| Issue status changes | Workflow page updates | — | — | — | — | — | — | — | ✓ | ✓ |</p>
+<table>
+	<thead>
+			<tr>
+					<th>Event</th>
+					<th>Typical output</th>
+					<th>GitHub Repository</th>
+					<th>GitHub Repository (personal access token)</th>
+					<th>GitLab (multi-project access token)</th>
+					<th>GitLab Project</th>
+					<th>Bitbucket Repository (repository access token)</th>
+					<th>Bitbucket Project</th>
+					<th>Linear</th>
+					<th>Jira Read-Only</th>
+					<th>Jira Project</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Pull / Merge Requests</td>
+					<td>Page updates</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+			</tr>
+			<tr>
+					<td>New Issues</td>
+					<td>New pages or follow-up updates</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>—</td>
+					<td>—</td>
+					<td>✓</td>
+					<td>—</td>
+					<td>—</td>
+			</tr>
+			<tr>
+					<td>Issue Comments</td>
+					<td>Targeted updates</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>—</td>
+					<td>—</td>
+			</tr>
+			<tr>
+					<td>Releases</td>
+					<td>Release notes</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+			</tr>
+			<tr>
+					<td>Send to Doc</td>
+					<td>Page updates from a Jira issue</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>✓</td>
+					<td>✓</td>
+			</tr>
+			<tr>
+					<td>Issue status changes</td>
+					<td>Workflow page updates</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>✓</td>
+					<td>✓</td>
+			</tr>
+	</tbody>
+</table>
 <p>Doc Holiday does not offer a scheduled trigger. For recurring cadence, use CI through <a href="/external-docs-staging/docs/github-action/">/g1-github-action.md</a>.</p>
 
 				</div>
@@ -520,12 +609,12 @@
 				<footer id="article-footer">
 	
 		
-		<time datetime="0001-01-01">
+		<time datetime="2026-07-21">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 0001-01-01
+</span>Updated: 2026-07-21
 		</time>
 	
 

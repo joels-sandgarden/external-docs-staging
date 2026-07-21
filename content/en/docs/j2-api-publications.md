@@ -18,8 +18,8 @@ Creates a publication and returns it with resolved instructions.
 | Body | `name` required; `config` and `instructions` optional |
 | Response | `201 Created` |
 
-`curl`: `curl -X POST https://api.doc.holiday/api/v1/publications -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]}}'`
-`JSON`: `{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]},"instructions":[]}`
+`curl`: `curl -X POST https://api.doc.holiday/api/v1/publications -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]}}'`
+`JSON`: `{"name":"API Docs","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]},"instructions":[]}`
 `Notes`: Permissions gate the call; invalid configs and duplicate names stop the save.
 
 ### `GET /api/v1/publications/{id}`
@@ -30,8 +30,7 @@ Retrieves one publication with config, health, sync time, and resolved instructi
 | Path | `id` |
 | Response | `200 OK` |
 
-`curl`: `curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1`
-`JSON`: `{"id":"pub_1"}`
+`curl`: `curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef`
 `Notes`: Access checks run before the lookup; missing or invalid IDs fail the request.
 
 ### `GET /api/v1/publications`
@@ -42,8 +41,8 @@ Lists publications with paging and filter support.
 | Query | `name`, `syncedAtBefore`, `ids` |
 | Response | `200 OK` |
 
-`curl`: `curl -H 'Authorization: Bearer $TOKEN' 'https://api.doc.holiday/api/v1/publications?name=API&ids=pub_1,pub_2'`
-`JSON`: `{"name":"API","ids":["pub_1","pub_2"]}`
+`curl`: `curl -H 'Authorization: Bearer $TOKEN' 'https://api.doc.holiday/api/v1/publications?name=API&ids=pub-0123456789abcdef,pub-fedcba9876543210'`
+`JSON`: `{"name":"API","ids":["pub-0123456789abcdef","pub-fedcba9876543210"]}`
 `Notes`: The result set narrows to permitted publications when broad list access is absent.
 
 ### `PUT /api/v1/publications/{id}`
@@ -52,11 +51,11 @@ Replaces a publication's full configuration and instruction set.
 | Key parameters | Details |
 | --- | --- |
 | Path | `id` |
-| Body | `name` required; `config` and `instructions` optional |
+| Body | `name` required; `config` and `instructions` optional; `updatedAt` optional |
 | Response | `200 OK` |
 
-`curl`: `curl -X PUT https://api.doc.holiday/api/v1/publications/pub_1 -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]}}'`
-`JSON`: `{"name":"API Docs","config":{"docsRepo":"pub_1","sourceRepos":["src_1"]},"instructions":[]}`
+`curl`: `curl -X PUT https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]}}'`
+`JSON`: `{"name":"API Docs","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]},"instructions":[]}`
 `Notes`: Permissions gate the call; invalid configs and name clashes stop replacement.
 
 ### `DELETE /api/v1/publications/{id}`
@@ -67,8 +66,7 @@ Removes a publication.
 | Path | `id` |
 | Response | `204 No Content` |
 
-`curl`: `curl -X DELETE -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1`
-`JSON`: `{"id":"pub_1"}`
+`curl`: `curl -X DELETE -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef`
 `Notes`: Permission checks apply; removal also clears linked instruction records and orphaned local instructions.
 
 ### `GET /api/v1/publications/{id}/health`
@@ -79,8 +77,8 @@ Reports whether a publication is misconfigured.
 | Path | `id` |
 | Response | `200 OK` |
 
-`curl`: `curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub_1/health`
-`JSON`: `{"id":"pub_1"}`
+`curl`: `curl -H 'Authorization: Bearer $TOKEN' https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef/health`
+`JSON`: `{"id":"pub-0123456789abcdef"}`
 `Notes`: The check can surface unhealthy docs or source connections and returns a message for the failure.
 
 ### `POST /api/v1/publications/{id}/sync`
@@ -92,8 +90,8 @@ Queues a sync run for the publication.
 | Body | `wait` and `timeout` |
 | Response | `202 Accepted` when queued |
 
-`curl`: `curl -X POST https://api.doc.holiday/api/v1/publications/pub_1/sync -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"wait":true,"timeout":60000000000}'`
-`JSON`: `{"wait":false,"timeout":60000000000}`
+`curl`: `curl -X POST https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef/sync -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"wait":true,"timeout":60000000000}'`
+`JSON`: `{"wait":true,"timeout":60000000000}`
 `Notes`: Permissions gate the call; `wait: true` blocks until completion or timeout.
 
 ## ModelsPublicationConfig

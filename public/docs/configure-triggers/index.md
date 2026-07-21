@@ -15,7 +15,7 @@ SCREENSHOT PLACEHOLDER: configure-triggers/trigger-config.png
 
 | Event concept | On-screen label | Supported Sources |
 | --- | --- | --- |
-| Merged pull requests | GitHub-only Sources show **Pull Requests**, GitLab-only Sources show **Merge Requests**, and mixed GitHub and GitLab selections show **Pull / Merge Requests** | GitHub repository, GitHub access-token, GitLab, GitLab project, Bitbucket repository, Bitbucket project |
+| Merged pull requests | GitHub and Bitbucket Sources show **Pull Requests**, and GitLab Sources show **Merge Requests** | GitHub repository, GitHub access-token, GitLab, GitLab project, Bitbucket repository, Bitbucket project |
 | New issues | **New Issues** | GitHub repository, GitHub access-token, GitLab, GitLab project, Linear |
 | Issue comments | **Issue Comments** | GitHub repository, GitHub access-token, GitLab, GitLab project, Bitbucket repository, Bitbucket project, Linear |
 | Releases | **Releases** | GitHub repository, GitHub access-token, GitLab, GitLab project |

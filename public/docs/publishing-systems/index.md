@@ -38,6 +38,6 @@ Doc Holiday uses the publishing system to understand a site’s structure and co
 
 ## Fallback guidance
 
-If the site generator is not listed, or if no better match exists, choose `Generic Markdown`. Treat `None` as the literal UI option for no selection, not the recommended choice for an unrecognized site.
+If the site generator is not listed, or if no better match exists, choose `Generic Markdown`. `None` is the UI option for no selection. For an unrecognized site, choose `Generic Markdown`.
 
 For publication setup and source selection, see [Publications](./d1-publications.md) and [Sources](./c1-sources.md).
