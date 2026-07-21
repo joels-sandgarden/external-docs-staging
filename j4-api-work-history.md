@@ -51,7 +51,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `body`, `relevantLinks`, `changes`, `labels`, `workRequested`, `anchor`.
 - Response: `ModelsGetConversationCommentResponse` with `id`, `message`, `workRequested`, `anchor`, `batchItemIds`, `batchedIntoIds`, and `replyIds`.
 - Notes: `workRequested:false` takes the immediate discussion-comment path; `workRequested:true` or an omitted value queues work. `anchor` binds the comment to `filePath`, `anchoredFileSha`, and optional line range fields.
-- `curl`: `curl -X POST -H 'Content-Type: application/json' -d '{"body":"Please revise","workRequested":false}' /api/v1/conversations/conv_123/comments`
+- `curl`: `curl -X POST -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"body":"Please revise","workRequested":false}' "https://api.doc.holiday/api/v1/conversations/conv_123/comments"`
 - `json`: `{"body":"Please revise","workRequested":false}`
 
 ### `POST /api/v1/conversations/{id}/comments/sendBatch`
