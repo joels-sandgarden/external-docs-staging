@@ -137,19 +137,15 @@ null
 
 Starts a background sync for the selected connection.
 
-- Key parameters: `id`, `wait`, `timeout`
+- Key parameters: `id`, `wait`
 - curl:
 ```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections/12/sync" \
+curl -X POST "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/sync" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
-  -d '{"wait":true,"timeout":300}'
+  -d '{"wait":true}'
 ```
-- JSON:
-```json
-{"wait":true,"timeout":300}
-```
-- Behaviors: Requires an SFS token. Returns `202 Accepted`; invalid `wait` or `timeout` values return `400`.
+- Behaviors: Requires an SFS token. Returns `202 Accepted` with no response body; invalid `wait` values return `400`.
 
 ### `GET /api/v1/connections/{id}/health`
 
