@@ -1,6 +1,6 @@
 # Manage connections
 
-Keep your Sources healthy, fix a broken connection, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check status, repair access, or make routine changes.
+Keep your Sources healthy, fix a broken connection, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, repair access, edit details, or remove a Source or provider.
 
 ```
 SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
@@ -46,6 +46,6 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 4. Select **Delete this source** or **Delete this provider**.
 5. Review the warning, then confirm the delete.
 6. Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation.
-7. The repository itself stays in place, and already merged documentation stays as it is.
+7. The repository itself stays in place, and already merged documentation remains unchanged.
 
 Next: [Sources](/c1-sources.md).
