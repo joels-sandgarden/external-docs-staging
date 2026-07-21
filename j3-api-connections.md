@@ -350,33 +350,11 @@ The API returns `repos` and pagination tokens when it finds more than one page o
 
 ### `GET /api/v1/connections/{id}/jira/statuses`
 
-List the Jira statuses available to the connection.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Returns | `statuses` |
 | Success | `200 OK` |
-
-```bash
-curl "https://api.doc.holiday/api/v1/connections/123/jira/statuses" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
-```json
-{
-  "statuses": [
-    {
-      "id": "10001",
-      "name": "To Do"
-    }
-  ],
-  "nextPageToken": "token-2",
-  "previousPageToken": "token-1"
-}
-```
-
-The response uses `statuses` and carries pagination tokens when needed.
 
 ### `POST /api/v1/connections/{id}/merges/summarize`
 
