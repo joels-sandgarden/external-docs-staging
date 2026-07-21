@@ -21,7 +21,7 @@ Use this option when one project needs its own token.
 
 1. In the **Add Source** sheet with **GitLab Project** selected, use the **Click here ...** helper link to switch to the standalone GitLab form.
 2. Enter **Source Name**, **Access Token**, **Project**, **Branch**, and **Publishing System**.
-3. Save the Source.
+3. Select **Save Changes**.
 
 This form covers exactly one project, and the token stays on that Source.
 
