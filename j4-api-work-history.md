@@ -67,7 +67,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `id`.
 - Response: `ModelsNotifyConversationResponse`.
 - Notes: the Publication must point at a notifier `Connection`, and the caller needs notify permission.
-- `curl`: `curl -X POST -H 'Authorization: Bearer …' /api/v1/conversations/conv_123/notify`
+- `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversations/conv_123/notify"`
 - `json`: `{}`
 
 ## `conversation_comments`
