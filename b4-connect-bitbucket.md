@@ -1,4 +1,4 @@
-# Connect Bitbucket Sources
+# Connect Bitbucket
 
 Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments; issue and release triggers do not apply. See [Configure triggers](/d2-configure-triggers.md).
 
