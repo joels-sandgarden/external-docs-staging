@@ -89,12 +89,12 @@ Returns one connection record with the redacted configuration and trigger events
 - Returns: one connection record
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
 ```json
-{"id":"12","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}
+{"id":"cnn-0123456789abcdef","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for an invalid or missing `id`.
 
