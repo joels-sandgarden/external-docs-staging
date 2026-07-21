@@ -1,8 +1,8 @@
 # Connect GitLab sources in Doc Holiday
 
-Use this guide when GitLab should feed Doc Holiday with source changes and keep documentation current. Doc Holiday uses Sources to connect GitLab projects; see [Concepts](/a3-concepts.md) for the shared model.
+Use this guide when GitLab needs to feed Doc Holiday with project changes and keep documentation current. Doc Holiday uses Sources for GitLab projects; see [Concepts](/a3-concepts.md) for the shared model.
 
-GitLab uses merge requests, so Doc Holiday opens merge requests on GitLab rather than pull requests.
+On GitLab, Doc Holiday opens merge requests rather than pull requests.
 
 ## Main path: create a provider and a project Source
 
@@ -17,11 +17,11 @@ If the **Publishing System** choice needs a refresher, see [Publishing systems](
 
 ## Option: use one access token for multiple projects
 
-Choose the standalone GitLab access token flow when one token should create Sources for multiple projects. It uses the same **Token Name** and **Access Token** labels and fits teams that manage several projects with shared access.
+Use **Connect with Personal Access Token** when one token should create Sources to multiple projects.
 
 ## Verify
 
-Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open Manage connections and fix the Source before continuing.
+Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open Manage connections and update the Source before continuing.
 
 ## Next
 
