@@ -35,7 +35,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `staged`, `excludedFiles`.
 - Response: `ModelsGetConversationResponse`.
 - Notes: Doc Holiday rejects requests that set `staged` and `excludedFiles` together. When `staged` is omitted, it syncs excluded files on the working branch; when `staged` changes from `true` to `false`, it opens the draft as a pull request and clears `staged`.
-- `curl`: `curl -X PUT -H 'Content-Type: application/json' -d '{"staged":false}' /api/v1/conversations/conv_123`
+- `curl`: `curl -X PUT -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"staged":false}' "https://api.doc.holiday/api/v1/conversations/conv_123"`
 - `json`: `{"staged":false}`
 
 ### `POST /api/v1/conversations/{id}/annotate`
