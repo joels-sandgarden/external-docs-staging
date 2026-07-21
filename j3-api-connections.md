@@ -164,7 +164,7 @@ curl "https://api.doc.holiday/api/v1/connections/12/health" \
 ```
 - JSON:
 ```json
-{"id":"12","status":"healthy","message":"Healthy","error":null}
+{"id":"12","status":"healthy","message":"Healthy","error":""}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for an invalid or missing `id`.
 
