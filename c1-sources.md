@@ -10,7 +10,7 @@ In the Sources list, each row shows an icon, a name, and a health badge. When a 
 
 Provider Sources work as the first step in an install-once flow. You connect the provider once, then add the repositories, projects, or channels that belong under it. The form changes to match the Source type you selected, so the provider setup and the child Source setup stay separate.
 
-That pattern shows up across the supported Source types. GitHub App opens access to repositories. GitLab provider connects once, then GitLab projects sit beneath it. Bitbucket provider connects once, then Bitbucket repositories and Bitbucket projects sit beneath it. Slack App follows the same idea for notifications: you connect the Slack App once, then choose the Slack Channel Source that should receive updates.
+That pattern shows up across the supported Source types. GitHub App connects once, then repositories sit beneath it. GitLab provider connects once, then GitLab projects sit beneath it. Bitbucket provider connects once, then Bitbucket repositories and Bitbucket projects sit beneath it. Slack App follows the same idea for notifications: you connect the Slack App once, then choose the Slack Channel Source that should receive updates.
 
 This structure keeps the setup model simple. The provider carries the shared access, and the child Source names the specific repository, project, or channel that Doc Holiday should use. If a provider already exists, the child Source reuses it instead of asking for the same access again.
 
@@ -26,7 +26,7 @@ External Documentation is a read only Source for hosted docs sites. Enter the si
 
 ## A note about `documentation`
 
-The word `documentation` can mean three different things in Doc Holiday: the External Documentation Source, the docs destination repository in a Publication, or the documentation output type. For the output type sense, see [Output types](/d3-output-types.md).
+The word `documentation` can point to three different things in Doc Holiday: the External Documentation Source, the docs destination repository in a Publication, or the documentation output type. For the output type sense, see [Output types](/d3-output-types.md).
 
 ## Set up a source
 
