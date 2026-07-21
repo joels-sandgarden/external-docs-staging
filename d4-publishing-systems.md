@@ -27,7 +27,7 @@ These are the options in the **Publishing System** field.
 
 ## How Doc Holiday chooses a publishing system
 
-The setting comes from the **Publishing System** field on the source/publication setup form, or from automatic detection of signature files in the repository.
+The setting comes from the **Publishing System** field on the docs repository source form, or from automatic detection of signature files in the repository.
 
 Automatic detection looks for files that identify a site generator. Examples include `docusaurus.config.js` or `docusaurus.config.ts` for Docusaurus, `mkdocs.yml` or `mkdocs.yaml` for MkDocs, `.vuepress/config.js` or `.vuepress/config.ts` for VuePress, and `antora.yml`, `antora.yaml`, `antora-playbook.yml`, or `antora-playbook.yaml` for Antora. Doc Holiday also checks `package.json` as a lower-confidence signal when no signature file gives a clear result.
 
