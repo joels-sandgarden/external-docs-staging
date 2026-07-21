@@ -6,7 +6,7 @@ Use this page when you need to connect GitHub to Doc Holiday. If the word Source
 
 1. Open the GitHub setup flow and select **Install GitHub Application**. That starts the organization-wide install and keeps the rest of the setup tied to the same GitHub account.
 2. Choose the organization that owns the repositories you want Doc Holiday to use, then finish the GitHub prompts. GitHub then returns you to Doc Holiday with the organization already selected, which keeps the next step focused on repository setup.
-3. If Doc Holiday asks for admin help, select **Create Invite Link**. Copy the link and send it to an organization owner or GitHub App manager. They can open it, approve the app, and finish the install without changing the rest of your setup.
+3. If you are not a GitHub organization owner or app manager, select **Create Invite Link** to generate a GitHub installation invite. Copy the link and send it to an organization owner or GitHub App manager. They can open it, approve the app, and finish the install without changing the rest of your setup.
 
 ```
 SCREENSHOT PLACEHOLDER: connect-github/app-install.png
