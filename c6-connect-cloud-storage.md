@@ -1,6 +1,6 @@
 # Connect cloud storage
 
-Cloud storage Sources provide read-only context from a bucket or container. They inform what Doc Holiday writes without triggering work. For the broader Sources model, see [Sources](/c1-sources.md).
+Cloud storage Sources provide read-only context from your storage account — the S3 buckets your credentials can access in a region, or a single Azure Blob container. They inform what Doc Holiday writes without triggering work. For the broader Sources model, see [Sources](/c1-sources.md).
 
 ## Option A — AWS (S3)
 
