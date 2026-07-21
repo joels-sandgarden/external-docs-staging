@@ -40,7 +40,7 @@ List responses add `nextPageToken` and `previousPageToken` when the schema inclu
 
 ## Connection config examples
 
-The `config` field uses a one-of object with one sub-object per connection type. `/j8-connection-types.md` lists every connection type.
+The `config` field uses a single-variant object with one sub-object per connection type.
 
 ### `githubRepo`
 
