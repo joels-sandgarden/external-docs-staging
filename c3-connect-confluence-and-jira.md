@@ -1,6 +1,6 @@
 # Connect Confluence and Jira
 
-Use this guide when you want Doc Holiday to read Confluence for background context and connect Jira for trigger work. Confluence stays read only; Jira can use the app backed path or the read only path.
+Use this guide when you want Doc Holiday to read Confluence for context and connect Jira for work started by triggers. Confluence stays read only. Jira can use the app backed path or the read only path.
 
 ## Confluence
 
