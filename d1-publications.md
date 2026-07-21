@@ -32,6 +32,8 @@ The Publications area also makes access visible. When the right people can see t
 
 It also keeps output choices readable. A team can enable documentation, release notes, or changelogs without creating a separate workspace for each one, as long as the same Publication should govern them.
 
+That keeps the setup compact even when the Publication covers more than one document type.
+
 ## What work looks like under a Publication
 
 Every request becomes a Work History entry for one Publication. That entry gathers the context for the work, the drafts that Doc Holiday proposes, and the outcome that follows. The Publication gives each request a clear home and keeps the record of the work attached to the right documentation set.
