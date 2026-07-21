@@ -12,7 +12,7 @@ Use this glossary to map Doc Holiday's shared terms to their reader-facing and A
 | slot | A Publication instruction slot. API values include documentation, releaseNotes, changelog, planning, and commit; the styleGuide instruction type also exists alongside them. See [/e2-instruction-slots-reference.md](/e2-instruction-slots-reference.md). |
 | Work History entry | The record of one documentation request, from trigger to result. See [/f4-work-history.md](/f4-work-history.md). |
 | conversation | The API term for a Work History entry. Use it only on API pages. See [/j4-api-work-history.md](/j4-api-work-history.md). |
-| pass/turn | One follow-up round in a Work History entry. A turn is one Director invocation, and a pass can add or revise proposed changes. |
+| pass/turn | One round of work on a request — the initial run, or one revision pass triggered by feedback. |
 | proposed change (diff) | One file-level draft change shown for review. |
 | staged / Ready for Review | The state where proposed changes are ready for human review. See [/f3-review-and-revise.md](/f3-review-and-revise.md). |
 | docs destination | The single repository a Publication writes docs into. |
