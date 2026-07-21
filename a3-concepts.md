@@ -13,7 +13,7 @@ That ownership makes the rest of the model easier to read because every child co
 
 A Publication is the maintained set of documentation that Doc Holiday keeps current for one area of the product, one topic, or one release surface that needs to stay up to date.
 It names a body of content rather than a single page, which lets one Publication cover several related pages, outputs, or audiences without losing focus when the scope expands or new material appears.
-A Publication points at Sources instead of owning them, so it defines what the docs set covers while the Sources define where the information comes from and where the finished work belongs.
+A Publication points at Sources instead of owning them, so it defines what the docs set covers while the Sources define where the information comes from and where the finished work belongs, including the pages that need to match that scope.
 
 ## Sources
 
