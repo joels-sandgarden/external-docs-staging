@@ -22,4 +22,4 @@ Use [Add your OpenAI key](/b6-add-your-openai-key.md) and [AI provider keys](/h3
 
 ## Enterprise
 
-Enterprise customers book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo. Inference is managed for you.
+You book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo. Inference is managed for you.
