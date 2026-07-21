@@ -26,7 +26,7 @@ That separation keeps failures from hiding in the background. A Source can still
 
 ## Context Sources
 
-Doc Holiday also reads several Sources only for context. Notion asks for an integration key. Confluence asks for a URL, username, and API token. Jira asks for a URL, email address, API token, and project key. Linear asks for an API key and a team. Google Drive asks for service account JSON, and the app lets you upload a file or paste the JSON directly. AWS asks for an access key ID, secret access key, and region. Azure Blob asks for an account name, account key, and container name.
+Doc Holiday also reads several read-only context Sources, including Notion, Confluence, Jira, Linear, Google Drive, AWS, and Azure Blob.
 
 These Sources help Doc Holiday understand the material around a change without making that material the docs destination itself. They often hold background, planning notes, reference text, or support information that sharpens the draft, while the Publication still writes into its own docs repository. That keeps the roles separate: one Source supplies context, another Source stores the published result, and the Library guides the wording that links them together.
 
