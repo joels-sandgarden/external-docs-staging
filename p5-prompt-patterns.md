@@ -58,20 +58,22 @@ Apply exactly these corrections and change nothing else:
 
 Why it works: "apply exactly / change nothing else" turns the writer into a surgeon. This is also the right way to *correct* Doc Holiday's own output — corrections through the same pipeline keep the page's history in one place.
 
-## Building a doc set page by page
+## Building a doc set
 
-When to use: several related pages, written one request at a time.
+When to use: several related pages that belong together.
 
-Send one request per page, and paste the same short site map into each so every page cross-links to its siblings by their real paths — even the ones not written yet:
+Ask for the whole set in one request — Doc Holiday can fulfill any number of pages in one piece of work. Include a short site map so every page lands at its exact path and cross-links to its siblings:
 
 ```
-Site map (link to these paths, they are part of the same build):
+@doc.holiday, build the following pages as one set, cross-linked by these
+exact paths:
+
 /concepts.md — the shared vocabulary
 /setup.md — installation and first run
 /troubleshooting.md — common failures and fixes
 ```
 
-Why it works: each page gets a fresh, focused run and its own review, while the shared map keeps the set coherent. One request per page also means one failure never blocks the batch.
+Why it works: the map fixes each page's path and role before writing starts, so the set arrives coherent, cross-linked, and reviewable as one piece of work. To review page by page instead, send one request per page and paste the same map into each — the shared map keeps the set coherent either way.
 
 ## Placeholders that must survive
 
