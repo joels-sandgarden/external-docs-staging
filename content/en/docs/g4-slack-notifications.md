@@ -10,9 +10,7 @@ This guide sets up Slack notifications for a Publication. Use it when you want D
 2. Select **Add Provider**, choose **Slack Application**, then click **Connect Slack Workspace**. Finish the Slack install flow.
 3. Switch to the **Sources** tab, then select **Add Source**. Create a Slack Channel source under that provider. Fill in **Source Name** and **Channel**. If more than one Slack workspace is connected, the **Slack Workspace** field appears; with a single workspace, Doc Holiday selects it automatically and hides the field. Use **Select a workspace...** to pick the workspace. If no channel is selected yet, the control shows **Select a channel...**. When channels are still loading, it shows **Loading channels...**. Use **Search channels...** to find one, and **No channels found...** appears when the list is empty.
 
-```
-SCREENSHOT PLACEHOLDER: slack-notifications/channel-form.png
-```
+![The Create Source form for a Slack Channel: workspace and channel selection](/screenshots/slack-notifications/channel-form.png)
 
 When you save the source, Doc Holiday joins the channel.
 

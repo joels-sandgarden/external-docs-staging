@@ -17,9 +17,7 @@ Only OpenAI keys are accepted.
 3. Doc Holiday verifies the key with a live OpenAI request before it saves anything. If Doc Holiday returns "the provider rejected this api key", get a new key. If Doc Holiday returns "could not verify the api key, try again", the check could not complete, so try again.
 4. Confirm the key saved successfully. The first OpenAI key added becomes **Active** automatically.
 
-```
-SCREENSHOT PLACEHOLDER: add-your-openai-key/keys-page.png
-```
+![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
 
 ## Verify
 

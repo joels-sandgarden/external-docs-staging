@@ -11,7 +11,6 @@ Append index.md to any page URL to fetch its raw Markdown source.
 - What Is Doc Holiday: https://joels-sandgarden.github.io/external-docs-staging/docs/what-is-doc-holiday/ — documentation drift, and the product that closes it continuously.
 - How Doc Holiday Works: https://joels-sandgarden.github.io/external-docs-staging/docs/how-doc-holiday-works/ — the user-seat loop: request → plan → draft from source → review → pull request.
 - Concepts: https://joels-sandgarden.github.io/external-docs-staging/docs/concepts/ — Publication, Source, the Library, Work History.
-- How This Site Is Made: https://joels-sandgarden.github.io/external-docs-staging/docs/how-this-site-is-made/ — these docs are written and maintained by Doc Holiday itself.
 
 ## Getting started
 - Quickstart: https://joels-sandgarden.github.io/external-docs-staging/docs/quickstart/ — zero to your first merged Doc-Holiday-written doc.

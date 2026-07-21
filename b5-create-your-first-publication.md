@@ -8,9 +8,7 @@ A Publication is the defined set of documentation Doc Holiday keeps current over
 - One docs destination repository. A separate repository for docs is normal and recommended.
 - Creating Publications requires an admin role — the **Add Publication** button is only shown to admins.
 
-```
-SCREENSHOT PLACEHOLDER: quickstart/publication-form.png
-```
+![The publication create form: name, source repositories, write destination, and output types](/screenshots/quickstart/publication-form.png)
 
 1. Open **Publications** and select **Add Publication**. The **Create Publication** panel opens.
 2. Enter a **Name** that makes the Publication easy to recognize later.

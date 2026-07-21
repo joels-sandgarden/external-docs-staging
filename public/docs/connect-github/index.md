@@ -9,9 +9,7 @@ Use this page when you need to connect GitHub to Doc Holiday. If the word Source
 2. Choose the organization that owns the repositories you want Doc Holiday to use, then finish the GitHub prompts. GitHub then returns you to Doc Holiday with the organization already selected, which keeps the next step focused on repository setup.
 3. If you are not a GitHub organization owner or app manager, select **Create Invite Link** to generate a GitHub installation invite. Copy the link and send it to an organization owner or GitHub App manager. They can open it, approve the app, and finish the install without changing the rest of your setup.
 
-```
-SCREENSHOT PLACEHOLDER: connect-github/app-install.png
-```
+![GitHub's Install doc.holiday screen asking where to install the app](/screenshots/connect-github/app-install.png)
 
 After installation, Doc Holiday returns you to the same flow so you can add repository Sources under the organization install. The app keeps the same organization context, so the next step stays tied to the right GitHub account and the repository picker shows only repositories available to that install.
 
@@ -22,9 +20,7 @@ After installation, Doc Holiday returns you to the same flow so you can add repo
 3. Select **Repository** from the picker. Doc Holiday fills in the repository and the default branch automatically. The selected repository should match the project the Source belongs to, and the default branch usually matches the branch that should drive documentation. Change **Branch** only when a different branch should drive documentation.
 4. Submit the form to create the repository Source. Repeat the same flow for every repository that should belong to the organization or publication.
 
-```
-SCREENSHOT PLACEHOLDER: connect-github/repo-connection-form.png
-```
+![The Create Source form for a GitHub Repository: repository, branch, and publishing system fields](/screenshots/connect-github/repo-connection-form.png)
 
 If the repository list looks empty, return to the app install and confirm that the organization grant includes the repository you want. That usually means the app install does not yet cover the repository you expect, or an organization owner still needs to approve access.
 

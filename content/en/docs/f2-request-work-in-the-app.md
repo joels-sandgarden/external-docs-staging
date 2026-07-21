@@ -13,9 +13,7 @@ Use this guide to start a request in app.doc.holiday and check it in **Work Hist
 3. In **Description**, enter one sentence that explains the work request. If the one-sentence request needs help, see [Writing requests](./p2-writing-requests.md). The placeholder reads **Describe the work request...**.
 4. Select **Submit Request**. The sheet also offers **Cancel** and **Close**.
 
-```
-SCREENSHOT PLACEHOLDER: quickstart/create-work-request.png
-```
+![The New Work Request sheet with a publication selected and a request typed in Description](/screenshots/quickstart/create-work-request.png)
 
 By default, Doc Holiday stages the request for review before it opens anything against the repository.
 
@@ -29,4 +27,4 @@ The new entry appears in **Work History**.
 
 ## Next
 
-Open [**Writing requests**](./p2-writing-requests.md).
+Open the [Prompting guide](./p1-prompting-guide.md) to get more out of your requests, and [Review and revise](./f3-review-and-revise.md) for what happens after you submit one.
