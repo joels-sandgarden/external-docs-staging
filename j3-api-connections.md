@@ -176,7 +176,7 @@ Lists the channels that the selected connection can reach.
 - Returns: `channels`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12/channels" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/channels" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
