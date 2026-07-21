@@ -8,7 +8,7 @@ An Organization is the top-level home for everything Doc Holiday keeps together.
 
 ## Publication
 
-A Publication is the documentation destination Doc Holiday keeps current. It is the place where work lands after Doc Holiday reads the relevant Sources and prepares a reviewable result. A Publication can point at more than one Source, which lets one destination draw context from several places while still keeping a single focus. In practice, a Publication gives the work its purpose: it answers the question, "what does this documentation belong to?" A Publication sits under one Organization and gives the rest of the system a clear target.
+A Publication is the documentation destination Doc Holiday keeps current. It is the place where work lands after Doc Holiday reads the relevant Sources and prepares a reviewable result. A Publication can point at more than one Source, which lets one destination draw context from several places while still keeping a single focus. In practice, a Publication gives the work its purpose. It tells Doc Holiday which documentation set should change. A Publication sits under one Organization and gives the rest of the system a clear target.
 
 ## Sources
 
@@ -22,4 +22,4 @@ The Library is the organization-wide home for reusable writing guidance. Each in
 
 Work History is the record of one request from the moment it starts until it reaches a result. It shows the path of the work in plain language, so you can follow what came in, what Doc Holiday did, and how the request ended. The lifecycle is simple: it opens, does its work, and settles into a result such as Ready for Review, Merged, or Closed. That makes Work History the place to look when you want to understand a single request from start to finish rather than the structure around it. See [Work History](/f4-work-history.md) for the full page.
 
-Taken together, these terms tell the same story from different angles. Something happens in a Source, Doc Holiday turns it into reviewed documentation in a Publication, the Library keeps the guidance consistent, and Work History preserves the record of how the request moved to its result.
+Taken together, these terms describe one path from source to page. Something happens in a Source, Doc Holiday turns it into reviewed documentation in a Publication, the Library keeps the guidance consistent, and Work History records how the request ended.
