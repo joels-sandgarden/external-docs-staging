@@ -220,26 +220,17 @@ The API replaces the stored fields with the request body. It uses the same one-o
 
 ### `DELETE /api/v1/connections/{id}`
 
-Delete a connection record.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Query parameter | `preserveDependencies` |
 | Success | `204 No Content` |
 
-```bash
-curl -X DELETE "https://api.doc.holiday/api/v1/connections/123?preserveDependencies=true" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
 ```json
-{
-  "error": "..."
-}
+null
 ```
 
-Success returns `204 No Content` and no response body.
+The endpoint returns no body.
 
 ### `POST /api/v1/connections/{id}/sync`
 
