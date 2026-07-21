@@ -6,7 +6,7 @@ Use this page when GitLab needs to feed Doc Holiday. For the shared model behind
 
 1. Open **Sources**, then the **Providers** tab, and select **Add Provider**.
 2. Choose **GitLab Access Token**.
-3. Enter **Token Name** and **Access Token**, then save the provider.
+3. Enter **Token Name** and **Access Token**. Select **Save Changes**.
 4. Return to the **Sources** tab and select **Add Source**.
 5. Choose **GitLab Project**.
 6. Enter **Source Name**, **Project**, **Branch**, and **Publishing System**.
