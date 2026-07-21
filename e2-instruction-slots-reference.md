@@ -1,12 +1,12 @@
 # Instruction slots reference
 
-Use this page to look up the instruction slots that appear in the Library and Publication settings.
+This page lists the instruction slots that appear in the Library and Publication settings.
 
 ## Slot reference
 
 | Slot | What it governs | When it is applied | Typical use |
 | --- | --- | --- | --- |
-| documentation | Long-form user documentation | When Doc Holiday writes or updates a page in a Publication | Tone, structure, and page shape |
+| documentation | Long-form documentation | When Doc Holiday writes or updates a documentation page | Page structure and tone |
 | release notes | Release note content | When Doc Holiday writes release notes for a release | Audience, summary length, and release framing |
 | changelog | Changelog entries | When Doc Holiday updates the changelog for shipped changes | Entry format and release grouping |
 | commit | Commit messages | When Doc Holiday creates or rewrites a commit message | Message style and required prefixes |
