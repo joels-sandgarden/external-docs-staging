@@ -1,12 +1,12 @@
 # Request work in the app
 
-Use this guide when a request starts in app.doc.holiday and needs to show up in Work History.
+Use this guide to start a request in app.doc.holiday and check it in Work History.
 
 ## Request work from the app
 
 1. In the left navigation, select "Create Work Request".
-2. In the "New Work Request" sheet, choose a "Publication" from "Select a publication". Only publications with write access appear.
-3. In "Description", enter one sentence that describes the work request. The placeholder reads "Describe the work request...".
+2. In the "New Work Request" sheet, choose a "Publication" from "Select a publication". The selector shows only publications with write access.
+3. In "Description", enter one sentence that explains the work request. The placeholder reads "Describe the work request...".
 4. Select "Submit Request". The sheet also includes "Cancel" and "Close".
 
 ```
