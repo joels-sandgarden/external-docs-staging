@@ -10,7 +10,7 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 
 1. Select **Add AI Provider Key**.
 2. In the dialog, enter **Name**, choose **Provider** as **OpenAI**, and paste the **API Key**.
-3. Select **Add Key**. Select **Cancel** to close the dialog without saving.
+3. Select **Add Key**. Use **Cancel** to close the dialog without saving.
    Doc Holiday sends a real OpenAI verification call before it saves the key, and it rejects keys that cannot run inference.
 
 ## Manage active and failover keys
