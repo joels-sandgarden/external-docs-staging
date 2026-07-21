@@ -325,28 +325,11 @@ The response uses `channels` and includes pagination tokens when the result set 
 
 ### `GET /api/v1/bitbucket/repos`
 
-List Bitbucket repositories that match the supplied lookup values.
-
 | Key | Value |
 | --- | --- |
 | Query parameters | `connectionId`, `workspace`, `token` |
 | Returns | `repos` |
 | Success | `200 OK` |
-
-```bash
-curl "https://api.doc.holiday/api/v1/bitbucket/repos?workspace=docs&token=abc123" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
-```json
-{
-  "repos": [],
-  "nextPageToken": "token-2",
-  "previousPageToken": "token-1"
-}
-```
-
-The API returns `repos` and pagination tokens when it finds more than one page of results.
 
 ### `GET /api/v1/connections/{id}/jira/statuses`
 
