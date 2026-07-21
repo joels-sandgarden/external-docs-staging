@@ -23,6 +23,8 @@ The active key card shows the **Active** badge. Every key card menu includes **T
 2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key to failover.
 3. If your provider rejects the active key, Doc Holiday fails over to another stored key within the same request. If every key fails, the work errors.
 
+Doc Holiday only ever uses keys your organization has added — there is no fallback to any other key.
+
 ## Rotate a key
 
 1. Add the new key.
