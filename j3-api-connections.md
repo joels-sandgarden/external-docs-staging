@@ -6,7 +6,6 @@ Use this reference when an integration needs the public Connections endpoints. S
 
 ## Common shapes
 
-- Every endpoint requires an SFS token.
 - `config` is a one-of object. `POST /api/v1/connections` and `PUT /api/v1/connections/{id}` return `400` when `config` is missing or when more than one variant is set.
 - Connection responses include `id`, `orgId`, `name`, `type`, `allowedTriggerEvents`, `healthy`, `paused`, redacted `config`, `createdAt`, `updatedAt`, and `deletedAt`.
 - List responses return `connections`, `channels`, `repos`, or `statuses`, and include `nextPageToken` and `previousPageToken` when present.
