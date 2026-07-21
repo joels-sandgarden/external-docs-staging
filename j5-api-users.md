@@ -13,7 +13,7 @@ Returns the authenticated user as `ModelsGetUserResponse`, the same shape used b
 | none | No query or path parameters. |
 
 ```bash
-curl https://api.doc.holiday/api/v1/me
+curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/me
 ```
 
 ```json
