@@ -26,7 +26,7 @@ Cloud storage Sources provide read-only context from a bucket or container. They
 
 ## Verify
 
-Confirm the Source shows **Healthy** on the **Sources** page.
+Verify that the Source shows **Healthy** on the **Sources** page.
 
 ## Next
 
