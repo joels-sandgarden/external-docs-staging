@@ -4,7 +4,7 @@ This guide explains how to configure automatic trigger behavior for an existing 
 
 ## Where trigger settings live
 
-Each Source in a Publication has its own trigger settings on the Publication form. Open the Publication, go to **Inputs**, and use **React to** to add triggers for a selected Source. The **Add Triggering Event** control only shows Sources that are already selected as Inputs and can emit at least one trigger event.
+Each Source in a Publication has its own trigger settings on the Publication form. Open the Publication, go to **Inputs**, and use **React to** to add triggers for a selected Source. The **Add Triggering Event** control only shows Sources that appear in **Inputs** and can emit at least one trigger event.
 
 ```
 SCREENSHOT PLACEHOLDER: configure-triggers/trigger-config.png
