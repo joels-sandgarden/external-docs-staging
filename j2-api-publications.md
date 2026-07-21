@@ -94,13 +94,13 @@ Queues a sync run for the publication.
 
 ## ModelsPublicationConfig
 
-- `sourceRepos`: Connection IDs for sources that feed a publication.
-- `docsRepo`: The docs destination; validation requires it.
+- `sourceRepos`: The source connections list for a publication.
+- `docsRepo`: A publication must set this to its docs destination.
 - `inputTriggers`: A map keyed by Connection ID, with events limited by connection type.
 - `writeDocumentation`: Controls whether the publication writes documentation.
 - `writeReleaseNotes`: Controls whether the publication writes release notes.
 - `writeChangelogs`: Controls whether the publication writes changelogs.
-- `styleGuide`: Nested per type settings for documentation, release notes, and changelogs.
+- `styleGuide`: Nested per-type settings for documentation, release notes, and changelogs.
 - `planningInstructions`: Text field used in publication configuration for planning guidance.
 - `prCommitInstructions`: Text field used in publication configuration for pull request commit guidance.
 - `notifierConnection`: The publication's notifier connection field.
