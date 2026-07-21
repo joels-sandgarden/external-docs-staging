@@ -14,11 +14,11 @@ The **Invitations** page shows **Email**, **Sent At**, and **Role** for each inv
 
 ## 2. Set the organization role
 
-Your access climbs like this:
+Each role builds on the one before it.
 
 - `Reviewer` — read, review, comment.
-- `Writer` — all `Reviewer` access, plus request work and edit publications and instructions.
-- `Admin` — all `Writer` access, plus connections, keys, billing, users, and audit.
+- `Writer` — adds request work and edit publications and instructions.
+- `Admin` — adds connections, keys, billing, users, and audit.
 
 Choose the role that matches the person's job.
 
