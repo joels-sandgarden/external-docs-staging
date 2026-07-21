@@ -36,6 +36,8 @@ Write access controls who can request work under the Publication. For broader ro
 2. Select **Delete Publication**.
 3. Confirm **Permanently delete this publication.** and then **This cannot be undone.**
 
-> [Screenshot placeholder]
+```text
+SCREENSHOT PLACEHOLDER: manage-publications/danger-zone.png
+```
 
 Deleting the Publication stops its triggers and new work under that Publication. Repositories and already merged documentation remain untouched.
