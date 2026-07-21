@@ -1,6 +1,6 @@
 # Connect GitLab
 
-Use this page when GitLab needs to feed Doc Holiday. For the shared model behind Sources, start with [Concepts](/a3-concepts.md) and [Sources](/c1-sources.md). On GitLab, Doc Holiday opens merge requests and keeps project Sources current.
+Use this page when GitLab needs to feed Doc Holiday. For the shared model behind Sources, start with [Concepts](/a3-concepts.md) and [Sources](/c1-sources.md). On GitLab, Doc Holiday opens merge requests (GitLab's term for pull requests) and keeps project Sources current.
 
 ## One token, many projects
 
