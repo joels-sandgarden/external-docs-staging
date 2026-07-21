@@ -109,45 +109,11 @@ The API validates that `config` contains exactly one variant before it stores th
 
 ### `GET /api/v1/connections`
 
-List connection records.
-
 | Key | Value |
 | --- | --- |
 | Query parameters | `name`, `type`, `paused`, `syncedAtBefore`, `remainingRateLimitPercent`, `healthy` |
 | Returns | `connections` |
 | Success | `200 OK` |
-
-```bash
-curl "https://api.doc.holiday/api/v1/connections?name=Docs&healthy=true" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
-```json
-{
-  "connections": [
-    {
-      "id": "123",
-      "orgId": "org_1",
-      "name": "Docs GitHub",
-      "type": "githubRepo",
-      "healthy": true,
-      "paused": false,
-      "config": {
-        "githubRepo": {
-          "githubAppConnectionId": "12",
-          "repositoryUrl": "https://github.com/example/docs"
-        }
-      },
-      "createdAt": "2026-07-21T12:00:00Z",
-      "updatedAt": "2026-07-21T12:00:00Z"
-    }
-  ],
-  "nextPageToken": "token-2",
-  "previousPageToken": "token-1"
-}
-```
-
-List responses keep the same connection shape as `GET /api/v1/connections/{id}` and add pagination tokens when more pages exist.
 
 ### `GET /api/v1/connections/{id}`
 
