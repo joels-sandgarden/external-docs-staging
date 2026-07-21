@@ -1,5 +1,6 @@
-This page covers direct integration with Doc Holiday's API.
+# Instruction Library API
 
+This page covers direct integration with Doc Holiday's API.
 Authentication, pagination, and general API conventions live in [j1-api-overview.md](/j1-api-overview.md).
 
 ## Instructions
