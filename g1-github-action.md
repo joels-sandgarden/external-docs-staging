@@ -13,21 +13,20 @@ Create an API key in Doc Holiday **Settings → API Keys** and store it as the `
 ## Quick start
 
 ```yaml
-name: Doc Holiday
+name: Generate Documentation
 on:
-  schedule:
-    - cron: '0 9 * * *'
   release:
-    types:
-      - published
+    types: [published]
+
 jobs:
-  request-docs:
+  docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: doc-holiday/github-action@v1
+      - uses: sandgardenhq/doc-holiday-action@v3
         with:
           api-token: ${{ secrets.DOC_HOLIDAY_TOKEN }}
-          body: "Write documentation for the latest release."
+          body: "Generate release notes for the latest release"
+          releases-count: 1
 ```
 
 ## Inputs and outputs
