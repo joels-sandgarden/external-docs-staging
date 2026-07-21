@@ -1,11 +1,11 @@
 # Quickstart
 
-This quickstart follows a single GitHub path from sign-in to a merged Doc Holiday-written document.
+This quickstart follows the GitHub path from sign-in to a merged Doc Holiday-written document.
 
 1. Sign in at `app.doc.holiday`, select **Get started** on **Ready to get your docs in a row?**, and continue to **Add Source(s)**.
 2. On the source screen, select **GitHub**, then choose **Install GitHub App**. In the repository picker, use **Search repositories...**, **Select all**, and **Add Sources** to finish the connection.
 
-GitLab and Bitbucket each have a setup guide: [Connect GitLab](/b3-connect-gitlab.md) and [Connect Bitbucket](/b4-connect-bitbucket.md).
+GitLab and Bitbucket each have a matching setup guide: [Connect GitLab](/b3-connect-gitlab.md) and [Connect Bitbucket](/b4-connect-bitbucket.md).
 
 ```
 SCREENSHOT PLACEHOLDER: quickstart/onboarding-connect.png
