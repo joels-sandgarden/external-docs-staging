@@ -118,7 +118,7 @@ curl -X DELETE -H "Authorization: Bearer $TOKEN" "$BASE_URL/api/v1/instructions/
 {}
 ```
 
-Behaviors: Requires delete permission. Returns `204`. Missing IDs do not fail.
+Behaviors: Requires delete permission. Returns `204`, even when the ID is missing.
 
 ## Instruction links
 
@@ -221,7 +221,7 @@ curl -X DELETE -H "Authorization: Bearer $TOKEN" "$BASE_URL/api/v1/instruction-l
 {}
 ```
 
-Behaviors: Requires delete permission. Returns `204`. Missing IDs do not fail.
+Behaviors: Requires delete permission. Returns `204`, even when the ID is missing.
 
 ### POST /api/v1/instructions/{id}/links/bulk
 Creates links for one instruction across many publications and slots.
