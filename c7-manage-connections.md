@@ -44,7 +44,7 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 2. If you delete a provider, remove its dependent Sources first.
 3. Select **Delete** in the row's menu.
 4. Review the warning, then select **Delete this source** (or **Delete this provider**) to confirm.
-6. Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation.
-7. The repository itself stays in place, and already merged documentation remains unchanged.
+5. Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation.
+6. The repository itself stays in place, and already merged documentation remains unchanged.
 
 Next: [Sources](/c1-sources.md).
