@@ -1,6 +1,5 @@
 # Billing and plans
 
-Open **Settings → Billing** to see the available plans and what each one includes. The page presents three plan cards for the current billing options.
 Open **Settings → Billing** to see the available plans and what each one includes. You will see three plan cards for the current billing options.
 
 ```text
