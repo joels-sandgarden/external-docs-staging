@@ -20,7 +20,7 @@ Each key card shows **Active** and the overflow menu actions **Test**, **Set Act
 1. The first OpenAI key becomes active automatically.
 2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key to failover.
 3. If Doc Holiday rejects the active key, it uses a failover key on the next piece of work.
-4. Doc Holiday checks key state fresh for each request, so changes apply to the next piece of work, including work already in flight.
+4. Doc Holiday resolves key state for each request, so changes apply to the next piece of work, including work already in flight.
 
 ## Test and delete a key
 
