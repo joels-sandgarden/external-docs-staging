@@ -41,7 +41,6 @@ That clarity matters when one Publication depends on many Sources at once. Share
 It also helps when a team adds new Sources over time. The app does not force every new system into the same role, so the workspace can grow without blurring the difference between a provider, a context Source, and a notification Source.
 
 That structure also helps readers and reviewers tell context apart from output at a glance. A Publication can read one set of Sources for background and write into another Source for the published result, while the Library keeps the wording aligned across both.
-That distinction keeps the three meanings of documentation easy to tell apart. The context Source, the output type, and the destination each play a different part in the same workflow, so the page can show what supplies background, what names the result, and where the result ends up without making the reader guess.
 
 ## Set up a source
 
