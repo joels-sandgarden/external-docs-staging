@@ -2,11 +2,13 @@
 
 Doc Holiday keeps documentation aligned with shipped behavior when code changes. This guide covers the REST request a coding agent sends directly when code changes need a matching documentation update.
 
+Any coding agent that can run a tool or script can use this REST API.
+
 ## Request the work
 
 1. Send a `POST /api/v1/conversations/` request with a Doc Holiday API key in `Authorization: Bearer <token>`.
 2. Set `stage: true` by default.
-3. Include `body`, `publication`, and `stage`. Add `changes`, `labels`, or `relevantLinks` when they help a reviewer.
+3. Include `body`, `publication`, and `stage`.
 
 ### curl
 
@@ -17,10 +19,7 @@ curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
   -d '{
     "body": "Update the authentication guide for the new token flow.",
     "publication": "docs-site",
-    "stage": true,
-    "changes": [],
-    "labels": ["api"],
-    "relevantLinks": ["https://example.com/change"]
+    "stage": true
   }'
 ```
 
@@ -30,10 +29,7 @@ curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
 {
   "body": "Update the authentication guide for the new token flow.",
   "publication": "docs-site",
-  "stage": true,
-  "changes": [],
-  "labels": ["api"],
-  "relevantLinks": ["https://example.com/change"]
+  "stage": true
 }
 ```
 
