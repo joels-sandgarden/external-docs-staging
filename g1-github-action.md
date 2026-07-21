@@ -4,7 +4,7 @@
 
 Doc Holiday's GitHub Action files a documentation work request through the Conversations API. Use it when CI should ask Doc Holiday to prepare documentation work on a schedule or after a release.
 
-It fits release pipelines and other automated workflows that should queue docs work without opening the app. Doc Holiday still returns a reviewable result for the team to check before it lands.
+It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a reviewable result for the team to check before it lands.
 
 ## Prerequisites
 
@@ -42,13 +42,13 @@ Use only one changeset specification type per run.
 | Optional | `stage` | When `true`, work does not immediately open a pull request. |
 | Optional | `labels` | Comma-separated labels. |
 | Optional | `relevant-links` | Comma-separated URLs. |
-| Changeset specification | `releases-count` | Choose one changeset specification type per run. |
-| Changeset specification | `time-range-start` + `time-range-end` | ISO 8601 time range. Choose one changeset specification type per run. |
-| Changeset specification | `commits-count` | Choose one changeset specification type per run. |
-| Changeset specification | `commits-since-sha` | Choose one changeset specification type per run. |
-| Changeset specification | `commits-shas` | Comma-separated commit SHAs. Choose one changeset specification type per run. |
-| Changeset specification | `commits-start-sha` + `commits-end-sha` + `commits-include-start` | Choose one changeset specification type per run. |
-| Changeset specification | `tags-start` + `tags-end` | Choose one changeset specification type per run. |
+| Changeset specification | `releases-count` | Count releases. |
+| Changeset specification | `time-range-start` + `time-range-end` | Use ISO 8601 timestamps. |
+| Changeset specification | `commits-count` | Count commits. |
+| Changeset specification | `commits-since-sha` | Start from one commit SHA. |
+| Changeset specification | `commits-shas` | Use comma-separated commit SHAs. |
+| Changeset specification | `commits-start-sha` + `commits-end-sha` + `commits-include-start` | Use a commit range. |
+| Changeset specification | `tags-start` + `tags-end` | Use a tag range. |
 
 | Output | Description |
 | --- | --- |
