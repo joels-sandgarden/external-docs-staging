@@ -32,9 +32,9 @@ A Work History entry opens, does the work for that Publication, and then settles
 
 ## Publication health
 
-Publication health shows whether the Publication and the Sources and destination it depends on are ready for Doc Holiday to use. In the Publications list, health appears as a badge. On the publication details page, it appears in a status section.
+Publication health shows whether the Publication, its Sources, and its docs destination are ready for Doc Holiday to use. In the Publications list, health appears as a badge. On the publication details page, it appears in a status section.
 
-When health is unhealthy, the details page shows a retry action and troubleshooting guidance so the problem is easy to follow up.
+When health is unhealthy, the details page shows a retry action and troubleshooting guidance.
 
 ## Next
 
