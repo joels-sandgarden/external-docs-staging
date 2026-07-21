@@ -1,4 +1,4 @@
-# Create your first publication
+# Create your first Publication
 
 A Publication is the defined set of documentation Doc Holiday keeps current over time; see [Publications](/d1-publications.md). This guide covers the first setup in the app and shows how to choose Sources, a docs destination, and the right output types.
 
@@ -11,7 +11,7 @@ A Publication is the defined set of documentation Doc Holiday keeps current over
 SCREENSHOT PLACEHOLDER: quickstart/publication-form.png
 ```
 
-1. Open **"Publications"**, then select **"Add Publication"** and **"Create Publication"**.
+1. Open **Publications**, then select **Add Publication** and **Create Publication**.
 2. Enter a **"Name"** that makes the Publication easy to recognize later.
 3. Under **"Inputs"** (**"select all that apply"**), choose the Sources this Publication should read from.
 4. Under **"Targets"** (**"select one"**), choose the docs destination.
