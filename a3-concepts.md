@@ -8,7 +8,7 @@ An Organization is the highest level home for everything Doc Holiday keeps toget
 
 ## Publication
 
-A Publication is the documentation destination Doc Holiday keeps current, and it gives every request a clear place to land. It is the place where work lands after Doc Holiday reads the relevant Sources and prepares a reviewable result. A Publication can point at more than one Source, which lets one destination gather context from several places while still keeping one focus and one set of expectations. It gives the work its purpose by showing which documentation set should change, which pages deserve attention first, and what the reviewer should expect to see before the result moves forward, and it helps reviewers see the intended target at a glance. A Publication sits under one Organization and depends on Sources for the facts it needs.
+A Publication is the documentation destination Doc Holiday keeps current, and it gives every request a clear place to land. It is the place where work lands after Doc Holiday reads the relevant Sources and prepares a reviewable result. A Publication can point at more than one Source, which lets one destination gather context from several places while still keeping one focus and one set of expectations. It gives the work its purpose by showing which documentation set should change, which pages deserve attention first, and what the reviewer should expect to see before the result moves forward, and it helps reviewers see the intended target at a glance. A Publication sits under one Organization and depends on Sources for the facts it needs, which keeps the destination clear and accountable.
 
 ## Sources
 
