@@ -14,7 +14,7 @@ The Apply dialog asks for project name, public repo URL, and description. Doc Ho
 
 ## Bring Your Own Key
 
-Bring Your Own Key costs $100/month. It is a self-serve subscription with a free trial, and billing management happens in the billing portal.
+Bring Your Own Key costs $100/month. It is a self-serve subscription with a free trial, and readers manage billing in the billing portal.
 
 If the subscription lapses, work pauses until billing is current. The banner reads: "Your BYOK subscription is no longer active. You can still view Doc Holiday, but new requests are disabled until you resubscribe."
 
