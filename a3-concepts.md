@@ -1,6 +1,6 @@
 # Concepts
 
-This page defines the shared vocabulary used throughout Doc Holiday’s documentation. Read it first when the terms around Organizations, Publications, Sources, the Library, and Work History start to blur together, or when a draft needs the model put back in order and the relationships between the concepts made clear again for new readers.
+This page defines the shared vocabulary used throughout Doc Holiday’s documentation. Read it first when the terms around Organizations, Publications, Sources, the Library, and Work History start to blur together, or when a draft needs the model put back in order and the relationships between the concepts made clear again for new readers across the page.
 
 ## Organization
 
