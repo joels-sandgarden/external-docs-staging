@@ -4,11 +4,11 @@ This reference page lists the trigger events Doc Holiday can react to and the co
 
 | Event | Typical output | GitHub Repository | GitHub Repository (personal access token) | GitLab (multi-project access token) | GitLab Project | Bitbucket Repository (repository access token) | Bitbucket Project | Linear | Jira Read-Only | Jira Project | Atlassian Forge Jira Project |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pull / Merge Requests | Documentation updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — | — |
-| New issues | New documentation or follow-up updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — |
-| Issue comments | Targeted documentation updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — |
+| Pull / Merge Requests | Page updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — | — |
+| New issues | New pages or follow-up updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — |
+| Issue comments | Targeted updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | — |
 | Releases | Release notes | ✓ | ✓ | ✓ | ✓ | — | — | — | — | — | — |
-| Send to Doc | Documentation updates from Jira | — | — | — | — | — | — | — | ✓ | ✓ | ✓ |
-| Issue status change | Workflow-driven documentation updates | — | — | — | — | — | — | — | ✓ | ✓ | ✓ |
+| Send to Doc | Jira page updates | — | — | — | — | — | — | — | ✓ | ✓ | ✓ |
+| Issue status change | Workflow page updates | — | — | — | — | — | — | — | ✓ | ✓ | ✓ |
 
 Doc Holiday does not offer a scheduled trigger. For recurring cadence, use CI through [/g1-github-action.md](/g1-github-action.md).
