@@ -1,6 +1,6 @@
 # Concepts
 
-Doc Holiday uses a shared vocabulary to explain where documentation belongs, where source information comes from, and how work moves from request to result across the product, its connected workspaces, and the pages they maintain.
+Doc Holiday uses a shared vocabulary to explain where documentation belongs, where source information comes from, and how work moves from request to result across the product, its connected workspaces, and the pages they maintain, for readers who need the same terms to mean the same thing everywhere.
 Read this page first whenever the rest of the documentation starts using those words, because the same terms carry different relationships in different sections and the meaning needs to stay aligned from one page to the next.
 
 ## Organization
