@@ -26,10 +26,16 @@ include:
 Use this pattern when the pipeline runs from a release tag and the prompt should include the tag and project name.
 
 ```yaml
-include:
-  - component: gitlab.com/sandgarden/doc-holiday-ci-job/generate-docs@1.0.0
-    inputs:
-      prompt: "Write release notes for ${CI_PROJECT_NAME} at ${CI_COMMIT_TAG}."
+generate-release-docs:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - !reference [.generate-docs, script]
+  variables:
+    INPUT_TITLE: "Release ${CI_COMMIT_TAG}"
+    INPUT_BODY: "Release notes for ${CI_COMMIT_TAG}"
+    INPUT_RELEASES_COUNT: "1"
 ```
 
 ## What else it supports
