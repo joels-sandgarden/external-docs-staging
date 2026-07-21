@@ -12,7 +12,7 @@ A Publication is the documentation destination Doc Holiday keeps current. It is 
 
 ## Sources
 
-Sources are the connected systems Doc Holiday uses when it works on a Publication. A Source can play three different roles at a high level: it can be the repository Doc Holiday reads from and writes to, it can be a context system Doc Holiday only reads, or it can be a Slack connection that carries notifications. Git-based Sources let Doc Holiday work with a repository and a branch, while context Sources bring in background from places such as Notion, Confluence, Jira, Linear, Documentation, and Zendesk. That mix lets a Publication gather the right evidence without forcing every connection into the same shape. See [Sources](/c1-sources.md) for a deeper look at how these roles fit together. A Publication points at Sources rather than owning the information itself, so the Source list explains where the facts for a request come from.
+Sources are the connected systems Doc Holiday uses when it works on a Publication. A Source can play three different roles at a high level. It can be the repository Doc Holiday reads from and writes to, it can be a context system Doc Holiday only reads, or it can be a Slack connection that carries notifications. Git-based Sources let Doc Holiday work with a repository and a branch, while context Sources bring in background from places such as Notion, Confluence, Jira, Linear, Documentation, and Zendesk. That mix lets a Publication gather the right evidence without forcing every connection into the same shape. See [Sources](/c1-sources.md) for a deeper look at how these roles fit together. A Publication points at Sources rather than owning the information itself, so the Source list explains where the facts for a request come from.
 
 ## The Library and instructions
 
@@ -20,6 +20,6 @@ The Library is the organization-wide home for reusable writing guidance. Each in
 
 ## Work History
 
-Work History is the record of one request from the moment it starts until it reaches a result. It shows the path of the work in plain language, so you can follow what came in, what Doc Holiday did, and how the request ended. The lifecycle is simple: it opens, does its work, and settles into a result such as Ready for Review, Merged, or Closed. That makes Work History the place to look when you want to understand a single request from start to finish rather than the structure around it. See [Work History](/f4-work-history.md) for the full page.
+Work History is the record of one request from the moment it starts until it reaches a result. It shows what came in, what Doc Holiday did, and how the request ended. The lifecycle is simple: it opens, does its work, and settles into a result such as Ready for Review, Merged, or Closed. That makes Work History the place to look when you want to follow one request from start to finish. See [Work History](/f4-work-history.md) for the full page.
 
-Taken together, these terms describe one path from source to page. Something happens in a Source, Doc Holiday turns it into reviewed documentation in a Publication, the Library keeps the guidance consistent, and Work History records how the request ended.
+Taken together, these terms describe one path from source to page. Something happens in a Source, Doc Holiday turns it into reviewed documentation in a Publication, the Library keeps the guidance consistent, and Work History records the result.
