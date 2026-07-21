@@ -1,17 +1,17 @@
 # Connect GitLab
 
-Use this page when GitLab needs to feed Doc Holiday. For the shared model behind Sources, start with [Concepts](/a3-concepts.md) and [Sources](/c1-sources.md). On GitLab, Doc Holiday opens merge requests and keeps project Sources current.
+Use this page when GitLab needs to feed Doc Holiday. For the shared model behind Sources, start with [Concepts](/a3-concepts.md) and [Sources](/c1-sources.md). On GitLab, Doc Holiday opens merge requests (GitLab's term for pull requests) and keeps project Sources current.
 
 ## One token, many projects
 
 1. Open **Sources**, then the **Providers** tab, and select **Add Provider**.
 2. Choose **GitLab Access Token**.
-3. Enter **Token Name** and **Access Token**, then save the provider.
+3. Enter **Token Name** and **Access Token**. Select **Save Changes**.
 4. Return to the **Sources** tab and select **Add Source**.
 5. Choose **GitLab Project**.
 6. Enter **Source Name**, **Project**, **Branch**, and **Publishing System**.
-7. Choose the project in **Project**. Doc Holiday infers the provider token from the project you pick.
-8. Repeat **Add Source** for each GitLab project that should use the same token.
+   Choose the project in **Project**. Doc Holiday infers the provider token from the project you pick.
+7. Repeat **Add Source** for each GitLab project that should use the same token.
 
 If you need the supported publishing systems, see [Publishing systems](/d4-publishing-systems.md).
 
@@ -21,7 +21,7 @@ Use this option when one project needs its own token.
 
 1. In the **Add Source** sheet with **GitLab Project** selected, use the **Click here ...** helper link to switch to the standalone GitLab form.
 2. Enter **Source Name**, **Access Token**, **Project**, **Branch**, and **Publishing System**.
-3. Save the Source.
+3. Select **Save Changes**.
 
 This form covers exactly one project, and the token stays on that Source.
 
