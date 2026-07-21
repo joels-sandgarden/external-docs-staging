@@ -6,7 +6,7 @@ A Bitbucket setup uses two layers: a workspace access-token provider first, then
 
 ## Option A: workspace access-token provider, then Bitbucket Project connections
 
-1. In Sources, select **"Add Provider"**.
+1. In Sources, select **Add Provider**.
 2. In the sheet titled **Create Provider**, choose **Bitbucket Workspace Access Token**.
 3. Enter **Token Name**, **Workspace**, and **Access Token**.
 4. Select **Save Changes**, then select **Add Source**.
@@ -15,7 +15,7 @@ A Bitbucket setup uses two layers: a workspace access-token provider first, then
 7. Select a **Branch** with **Select branch**, then choose a **Publishing System** with **Select a publishing system**.
 8. Turn on **Pause Background Work for Source** only if the Source should stay idle. Select **Save Changes** to finish the Source.
 
-This path keeps one workspace token above the Bitbucket Project connections, so several projects can share the same Bitbucket access.
+This path keeps one workspace token above the Bitbucket Project connections, so several projects can share the same access token.
 
 ## Option B: repository access token
 
