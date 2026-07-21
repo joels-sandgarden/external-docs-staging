@@ -1,6 +1,6 @@
 # Request work in the app
 
-Use this guide to start a request in app.doc.holiday and check it in Work History.
+Use this guide to start a request in app.doc.holiday and check it in **Work History**.
 
 ## Request work from the app
 
@@ -25,4 +25,4 @@ The new entry appears in **Work History**.
 
 ## Next
 
-Review the request in [Work History](/f4-work-history.md).
+Open [**Work History**](/f4-work-history.md).
