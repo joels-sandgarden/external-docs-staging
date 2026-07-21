@@ -187,20 +187,20 @@ curl "https://api.doc.holiday/api/v1/connections/12/channels" \
 
 ### `GET /api/v1/bitbucket/repos`
 
-Lists Bitbucket repositories for a workspace and optional connection.
+Lists Bitbucket repositories using either a connection ID or workspace credentials.
 
 - Key parameters: `connectionId`, `workspace`, `token`
 - Returns: `repos`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=12&workspace=acme&token={{bitbucketToken}}" \
+curl "https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=cnn-0123456789abcdef" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
 ```json
 {"repos":[{"fullName":"acme/docs","slug":"docs"}]}
 ```
-- Behaviors: Requires an SFS token. Returns `400` when `connectionId`, `workspace`, or `token` is missing or invalid.
+- Behaviors: Use `connectionId` alone, or provide `workspace` and `token` together. Requires an SFS token. Returns `400` for invalid parameters.
 
 ### `GET /api/v1/connections/{id}/jira/statuses`
 
