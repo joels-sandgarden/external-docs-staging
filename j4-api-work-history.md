@@ -19,7 +19,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `body`, `relevantLinks`, `changes`, `stage`, `publication`, `labels`.
 - Response: `ModelsGetConversationResponse` with `id`, `status`, `staged`, `outputUrl`, `entries`, and the other Conversation fields.
 - Notes: Doc Holiday resolves `publication` by name or ID, uses the Publication's docs repo `Connection` as the target, and enqueues the manual job after create-time permission checks and billing checks. This route is the handoff point for [GitHub Action](/g1-github-action.md) and [Coding agents](/g3-coding-agents.md).
-- `curl`: `curl -X POST -H 'Content-Type: application/json' -d '{"body":"Update the guide","publication":"docs","stage":true}' /api/v1/conversations/`
+- `curl`: `curl -X POST -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"body":"Update the guide","publication":"docs","stage":true}' "https://api.doc.holiday/api/v1/conversations/"`
 - `json`: `{"body":"Update the guide","publication":"docs","stage":true,"labels":["docs"]}`
 
 ### `GET /api/v1/conversations/{id}`
