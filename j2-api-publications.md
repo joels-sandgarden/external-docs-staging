@@ -47,11 +47,11 @@ Replaces a publication's full configuration and instruction set.
 | Key parameters | Details |
 | --- | --- |
 | Path | `id` |
-| Body | `name` required; `config`, `instructions`, and optional `updatedAt` |
+| Body | `name` required; `config` and `instructions` optional; `updatedAt` optional |
 | Response | `200 OK` |
 
-`curl`: `curl -X PUT https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","updatedAt":"2026-07-21T17:14:32Z","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]}}'`
-`JSON`: `{"name":"API Docs","updatedAt":"2026-07-21T17:14:32Z","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]},"instructions":[]}`
+`curl`: `curl -X PUT https://api.doc.holiday/api/v1/publications/pub-0123456789abcdef -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{"name":"API Docs","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]}}'`
+`JSON`: `{"name":"API Docs","config":{"docsRepo":"cnn-0123456789abcdef","sourceRepos":["cnn-0123456789abcdef"]},"instructions":[]}`
 `Notes`: Permissions gate the call; invalid configs and name clashes stop replacement.
 
 ### `DELETE /api/v1/publications/{id}`
