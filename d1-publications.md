@@ -22,11 +22,15 @@ A Publication lets Doc Holiday keep several kinds of output in one place without
 
 The boundary also makes the setup easier to understand at a glance. A team can see which Sources drive the content, which destination receives it, and which instructions shape the writing. That shared contract gives everyone the same frame for judging whether the Publication matches the work it is meant to cover.
 
+That matters when the documentation repo lives apart from the code. The Publication keeps that split visible, so the destination never looks like an afterthought and the Sources never look like a loose list of inputs.
+
 ## How people read a Publication
 
 A Publication gives product managers, writers, support engineers, and software engineers the same frame for the same documentation set. A person reviewing the Publication can see the Sources that drive it, the destination that receives output, and the kinds of content it may create. That shared view makes it easier to understand why one request turns into a new guide while another turns into a release note or a changelog entry.
 
 The Publications area also makes access visible. When the right people can see the same configuration, they can judge whether the Publication still matches the work it covers before they start a new request. That helps the Publication act as a clear contract instead of a loose collection of settings.
+
+It also keeps output choices readable. A team can enable documentation, release notes, or changelogs without creating a separate workspace for each one, as long as the same Publication should govern them.
 
 ## What work looks like under a Publication
 
