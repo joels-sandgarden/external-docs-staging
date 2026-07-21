@@ -9,7 +9,7 @@ The public API covers the published contract for `Connection`, `Conversation`, a
 ## Authentication and transport
 
 - Base URL: `https://api.doc.holiday/api/v1`
-- OpenAPI spec: `GET /api/v1/openapi.yaml`
+- OpenAPI spec: `https://api.doc.holiday/api/v1/openapi.yaml` (unauthenticated)
 - Create API keys in **Settings → API Keys**. That route is admin only.
 - The create form sets `expiresAt` to 48 hours from creation by default. Change the expiration date to keep a key valid longer.
 - The token appears only once after creation. Store it immediately.
@@ -33,9 +33,9 @@ An API key acts as the user who created it, so that user's organization membersh
 
 | Page | Use it for |
 | --- | --- |
-| [Publications](./j2-api-publications.md) | publication records and publication-scoped operations |
-| [Connections](./j3-api-connections.md) | connection records and connection-scoped operations |
-| [Work History](./j4-api-work-history.md) | conversations, turns, and comments |
-| [Users](./j5-api-users.md) | user identity and account data |
-| [Instruction Library](./j6-api-instruction-library.md) | instructions and instruction links |
-| [Audit Logs](./j7-api-audit-logs.md) | audit log records |
+| [Publications](/j2-api-publications.md) | publication records and publication-scoped operations |
+| [Connections](/j3-api-connections.md) | connection records and connection-scoped operations |
+| [Work History](/j4-api-work-history.md) | conversations, turns, and comments |
+| [Users](/j5-api-users.md) | user identity and account data |
+| [Instruction Library](/j6-api-instruction-library.md) | instructions and instruction links |
+| [Audit Logs](/j7-api-audit-logs.md) | audit log records |
