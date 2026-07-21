@@ -25,4 +25,4 @@ The new entry appears in **Work History**.
 
 ## Next
 
-Open [**Work History**](/f4-work-history.md).
+See [**Writing requests**](/p2-writing-requests.md).
