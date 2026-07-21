@@ -8,6 +8,8 @@ A Publication can choose any connected git repository as its docs destination. G
 
 In the Sources list, each row shows an icon, a name, and a health badge. When a child Source sits under a provider, the parent appears underneath it so the relationship stays visible at a glance.
 
+A Source can play a different role in a different Publication. The same GitHub repository can feed context in one Publication and receive documentation in another. The Publication keeps the role clear, so the app does not need a separate category for each use.
+
 ## Provider Sources and the Sources under them
 
 Provider Sources work as the first step in an install-once flow. You connect the provider once, then add the repositories, projects, or channels that belong under it. The form changes to match the Source type you selected, so the provider setup and the child Source setup stay separate.
@@ -17,6 +19,8 @@ That pattern shows up across the supported Source types. GitHub App connects onc
 This structure keeps the setup model simple. The provider carries the shared access, and the child Source names the specific repository, project, or channel that Doc Holiday should use. If a provider already exists, the child Source reuses it instead of asking for the same access again.
 
 That is why the form changes by Source type. A provider asks for the shared access first, and the child Source asks for the one repository, project, or channel that should use it. The setup feels different from provider to provider, but the rule never changes: connect once, then choose the exact child item.
+
+The same pattern keeps larger setups readable. A provider can support many child Sources, and the children can belong to different Publications if their access and purpose differ. The app still shows the shared provider at the top, which helps when several child Sources depend on the same source of access.
 
 ## Freshness and health
 
@@ -32,11 +36,15 @@ External Documentation is a read only Source for hosted docs sites. Enter the si
 
 External Documentation fits differently from a repository or a chat channel. It gives Doc Holiday outside context, such as product copy, help article text, or a hosted knowledge site, but it never becomes a write target. Use it when the site can help the draft without becoming part of the docs repo itself.
 
+Because the Source stays read only, it works well for reference material that should not be edited by the docs repo workflow. That is especially useful for help sites and documentation portals that change on a different schedule from the Publication itself.
+
 ## A note about `documentation`
 
 The word `documentation` can point to three different things in Doc Holiday: the External Documentation Source, the docs destination repository in a Publication, or the documentation output type. For the output type sense, see [Output types](/d3-output-types.md).
 
 That distinction matters when a Publication uses more than one kind of Source at the same time. A docs repository stores the output, a context Source informs the draft, and the output type decides what Doc Holiday should write. The labels stay separate so the app can show each role clearly.
+
+The three senses of documentation often appear on one screen. Keeping them separate avoids confusion when a Publication writes docs into one repository, pulls context from a hosted site, and turns on the documentation output at the same time.
 
 ## Set up a source
 
