@@ -6,7 +6,7 @@ Open **Audit Log** at `/logs` to see who changed what. Only admins can open it.
 
 ## What each entry shows
 
-The table shows **EVENT**, **TARGET**, **TIME**, and **USER**. Select a row to open a details sheet with **Source:**, **Source Type:**, **Publication:**, **API Key**, **Event:**, **Time:**, and **User:**. When present, the sheet also shows the summary and delta text.
+The table shows **EVENT**, **TARGET**, **TIME**, and **USER**. Select a row to open a details sheet with **Source:**, **Source Type:**, **Publication:**, **API Key**, **Event:**, **Time:**, and **User:** depending on the entry type. When present, the sheet also shows the summary and delta text.
 
 The table and details sheet show event text as **Created**, **Updated**, **Deleted**, **Source Healthcheck**, and **Publication Healthcheck**.
 
