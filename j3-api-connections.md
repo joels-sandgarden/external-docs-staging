@@ -53,7 +53,6 @@ Use this reference when an integration needs the public Connections endpoints. S
 | --- | --- |
 | Body | `name`, `config`, `paused`, `sync` |
 | Success | `201 Created` |
-| Notes | `config` must set exactly one variant; missing or ambiguous config returns `400` |
 
 ### `GET /api/v1/connections`
 
