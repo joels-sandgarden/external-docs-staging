@@ -153,18 +153,18 @@ curl -X POST "https://api.doc.holiday/api/v1/connections/12/sync" \
 
 ### `GET /api/v1/connections/{id}/health`
 
-Checks whether a connection is healthy and reports any error message.
+Checks whether a connection is healthy and returns any message or error when present.
 
 - Key parameters: `id`
-- Returns: `id`, `status`, `message`, `error`
+- Returns: `id`, `status`, and optional `message`, `error`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12/health" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/health" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
 ```json
-{"id":"12","status":"healthy","message":"Healthy","error":""}
+{"id":"cnn-0123456789abcdef","status":"healthy"}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for an invalid or missing `id`.
 
