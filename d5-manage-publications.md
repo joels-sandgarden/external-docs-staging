@@ -36,7 +36,7 @@ Write access controls who can request work under the Publication. For broader ro
 2. Select **Delete Publication**.
 3. Confirm **Permanently delete this publication.** and then **This cannot be undone.**
 
-```text
+```
 SCREENSHOT PLACEHOLDER: manage-publications/danger-zone.png
 ```
 
