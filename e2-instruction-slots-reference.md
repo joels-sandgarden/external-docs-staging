@@ -14,7 +14,7 @@ This page lists the instruction slots that appear in the Library and Publication
 
 ## How linking works
 
-An instruction can be global or linked to one or more Publications. Multiple instructions can share the same slot. Doc Holiday applies all linked instructions for that slot together.
+An instruction can be global or linked to one or more Publications. Multiple instructions can share the same slot, and Doc Holiday applies them in the order they are linked.
 
 ## Precedence
 
