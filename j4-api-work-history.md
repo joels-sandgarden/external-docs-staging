@@ -27,7 +27,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `id`.
 - Response: `ModelsGetConversationResponse` with `id`, `status`, `branch`, `outputUrl`, `staged`, `excludedFiles`, `publicationName`, and `entries`.
 - Notes: read permission applies to the `Conversation`, and the response includes the full Work History record for that entry.
-- `curl`: `curl -H 'Authorization: Bearer …' /api/v1/conversations/conv_123`
+- `curl`: `curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversations/conv_123"`
 - `json`: `{"id":"conv_123","status":"open","staged":false,"entries":[]}`
 
 ### `PUT /api/v1/conversations/{id}`
