@@ -22,9 +22,9 @@ A Publication can point to more than one Source, which lets one documentation se
 
 ## The Library and instructions
 
-The Library is the organization-wide collection of editable guidance, and [the Library](/e1-the-library.md) keeps that shared direction visible. It gives the workspace a common writing voice without forcing every Publication to use the same rules in the same way. An instruction is one entry in the Library, and it can apply to every Publication or only to selected ones. Because the Library stays editable, a team can refine guidance without rewriting each Publication by hand.
-
-The Library shapes how Doc Holiday writes, not what it invents. It keeps recurring guidance in one place, so an Organization can hold a consistent tone while still letting individual Publications rely on the instructions they need. That separation keeps the Library reusable and keeps each Publication focused on its own scope. It also keeps the difference clear between the shared collection and the individual instruction inside it.
+The Library is the organization-wide collection of editable guidance, and [the Library](/e1-the-library.md) keeps that shared direction visible for every Publication in the Organization without forcing identical behavior everywhere.
+Each instruction is one entry in the Library, and it can apply to every Publication or only to selected Publications when a team needs a narrower rule for specific work.
+The Library shapes how Doc Holiday writes by giving each Publication the same source of guidance while still letting it use the instructions it needs for its own subject matter and audience.
 
 ## Work History
 
