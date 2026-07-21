@@ -1,8 +1,8 @@
 # Work History API
 
 This page covers direct integration with Doc Holiday's API.
-The API resource is named `conversations`, and the app calls it Work History.
-Only the public `/api/v1/conversations*`, `/api/v1/conversation_comments*`, and `/api/v1/conversation_turns/{id}/retry` routes are covered here.
+The API resource uses `conversations`, and the app calls it Work History.
+This page documents only the public `/api/v1/conversations*`, `/api/v1/conversation_comments*`, and `/api/v1/conversation_turns/{id}/retry` routes.
 
 ## `conversations`
 
