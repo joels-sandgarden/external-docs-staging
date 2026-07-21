@@ -1,6 +1,6 @@
 # User management
 
-Use this page to invite people, assign organization roles, and manage publication access.
+You use this page to invite people, assign organization roles, and manage publication access.
 
 ## Invite a user
 
@@ -21,7 +21,7 @@ The role dropdowns offer two choices:
 | **Admin** | Manage and administer everything |
 | **User** | No administrative permissions |
 
-On **Settings** → **Users**, the table shows **Name**, **Email**, **Role**, and **Publication Access**. Open a user sheet to select **Edit Role** and then **Save**. To remove someone from the organization, select **Remove user** and confirm **Remove user?**.
+On **Settings** → **Users**, you see the table columns **Name**, **Email**, **Role**, and **Publication Access**. Open a user sheet to select **Edit Role** and then **Save**. To remove someone from the organization, select **Remove user** and confirm **Remove user?**.
 
 ```
 SCREENSHOT PLACEHOLDER: user-management/users-invite.png
@@ -29,7 +29,7 @@ SCREENSHOT PLACEHOLDER: user-management/users-invite.png
 
 ## Publication access
 
-Publication access is set on the Publication. Admins open **Manage Access** and select **Share Publication**. Use **Search by name or email...** and **All access levels** to find a person, then grant **Writer** or **Reviewer** access.
+Publication access is set on the Publication. If you are an admin, open **Manage Access** and select **Share Publication**. Use **Search by name or email...** and **All access levels** to find a person, then grant **Writer** or **Reviewer** access.
 
 **Writer** lets a person request work under that Publication. **Reviewer** lets a person read and review. Select **Revoke access** to remove publication access.
 
