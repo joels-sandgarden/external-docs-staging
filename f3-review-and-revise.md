@@ -28,7 +28,7 @@ Inside the diff, review the lines in order. In the diff gutter, use "Comment on 
 
 ## Commenting and revising
 
-Leave inline comments on the file content when only a few lines need attention. Leave a file-level comment when the whole file needs a broader change. In **Messages**, reply with `Send a message` and then `Send` so the next update includes that context. Every comment or reply sends Doc Holiday back for another revision pass.
+Leave inline comments on the file content when only a few lines need attention. Leave a file-level comment when the whole file needs a broader change. In **Messages**, reply with `Send a message` and then `Send` so the next update includes that context. `Add Comment` records feedback without starting work. `Send to Doc`, `Send Batch to Doc`, and messages in the `Messages` tab send the feedback to Doc Holiday for a revision pass.
 
 If you selected several comments, finish with `Send Batch to Doc`.
 
