@@ -1,6 +1,6 @@
 # Work History states
 
-Work History uses backend status values, but the app shows readers a smaller set of labels. This page maps those labels to the underlying values for quick lookup.
+Work History uses backend status values, but the app shows readers a smaller set of labels. This page maps those labels to the backend values for quick lookup.
 
 ## Conversation status values
 
@@ -12,7 +12,7 @@ Work History uses backend status values, but the app shows readers a smaller set
 | `closed` | `Closed` | The request ended without a merge. | Start a new request to continue the work. |
 | `merged` | `Merged` | The proposed changes reached the docs repository. | The merge completes and the result records here. |
 | `cancelled` | `Cancelled` | The request stopped before completion. | Start a new request to try again. |
-| `needsAttention` | `Needs Attention` | The latest staged pass needs a reply. | A reply in Messages lets the next pass continue. |
+| `needsAttention` | `Needs Attention` | A staged request waits for input. | A reply in Messages lets the next pass continue. |
 
 The app shows `Needs Attention` only when a staged conversation's latest bot comment includes `⚠️` or `🙋`.
 
