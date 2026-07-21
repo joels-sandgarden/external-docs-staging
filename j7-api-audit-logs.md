@@ -9,12 +9,12 @@ Returns audit logs for the current organization.
 | Parameter | Type | Behavior |
 | --- | --- | --- |
 | `type` | query | Matches one exact `AuditLogType` value. Omit it to exclude `assessment-*` logs. |
-| `summary` | query | Matches text with `ILIKE`. |
+| `summary` | query | Matches text case-insensitively. Use `%` wildcards for partial matches. |
 | pagination | shared | Uses the list pagination contract from [/j1-api-overview.md](/j1-api-overview.md). If `pageSize` is omitted, Doc Holiday uses the default page size. |
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "https://api.doc.holiday/api/v1/audit_logs?summary=release"
+  "https://api.doc.holiday/api/v1/audit_logs?summary=%release%"
 ```
 
 ```json
