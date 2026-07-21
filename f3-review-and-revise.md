@@ -1,6 +1,6 @@
 # Review and revise
 
-When a Work History entry reaches Ready for Review, open its sheet and review each file. From there, you can confirm the request details, leave comments, and open the final request.
+When a Work History entry reaches Ready for Review, open its sheet and review each file. From there, you can confirm the request details, leave comments, and open the final pull request or merge request.
 
 ## Opening the entry
 
@@ -28,7 +28,7 @@ Inside the diff, review the lines in order. Use `Comment on specific lines` to a
 
 ## Commenting and revising
 
-Leave inline comments on the file content when only a few lines need attention. Leave a file-level comment when the whole file needs a broader change. In **Messages**, reply with `Send a message` and then `Send` so the next update includes that context. Every new comment or reply sends Doc Holiday back for another revision pass.
+Leave inline comments on the file content when only a few lines need attention. Leave a file-level comment when the whole file needs a broader change. In **Messages**, reply with `Send a message` and then `Send` so the next update includes that context. Every comment or reply sends Doc Holiday back for another revision pass.
 
 If you selected several comments, finish with `Send Batch to Doc`.
 
