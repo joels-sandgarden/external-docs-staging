@@ -10,7 +10,7 @@ Use this page when GitLab needs to feed Doc Holiday. For the shared model behind
 4. Return to the **Sources** tab and select **Add Source**.
 5. Choose **GitLab Project**.
 6. Enter **Source Name**, **Project**, **Branch**, and **Publishing System**.
-7. Choose the project in **Project**. Doc Holiday infers the provider token from the project you pick.
+   Choose the project in **Project**. Doc Holiday infers the provider token from the project you pick.
 8. Repeat **Add Source** for each GitLab project that should use the same token.
 
 If you need the supported publishing systems, see [Publishing systems](/d4-publishing-systems.md).
