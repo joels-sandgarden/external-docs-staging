@@ -4,7 +4,7 @@
 
 Doc Holiday's GitHub Action files a documentation work request through the Conversations API. Use it when CI should ask Doc Holiday to prepare documentation work on a schedule or after a release.
 
-It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a reviewable result for the team to check before it lands.
+It fits scheduled jobs and release pipelines that should queue docs work without opening the app. Doc Holiday returns a reviewable result for review before it lands.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ jobs:
 
 ## Inputs and outputs
 
-Use only one changeset specification type per run.
+Choose only one changeset specification type per run.
 
 | Type | Inputs | Details |
 | --- | --- | --- |
@@ -42,13 +42,13 @@ Use only one changeset specification type per run.
 | Optional | `stage` | When `true`, work does not immediately open a pull request. |
 | Optional | `labels` | Comma-separated labels. |
 | Optional | `relevant-links` | Comma-separated URLs. |
-| Changeset specification | `releases-count` | Count releases. |
-| Changeset specification | `time-range-start` + `time-range-end` | Use ISO 8601 timestamps. |
-| Changeset specification | `commits-count` | Count commits. |
+| Changeset specification | `releases-count` | Release count. |
+| Changeset specification | `time-range-start` + `time-range-end` | ISO 8601 timestamps. |
+| Changeset specification | `commits-count` | Commit count. |
 | Changeset specification | `commits-since-sha` | Start from one commit SHA. |
-| Changeset specification | `commits-shas` | Use comma-separated commit SHAs. |
-| Changeset specification | `commits-start-sha` + `commits-end-sha` + `commits-include-start` | Use a commit range. |
-| Changeset specification | `tags-start` + `tags-end` | Use a tag range. |
+| Changeset specification | `commits-shas` | Comma-separated commit SHAs. |
+| Changeset specification | `commits-start-sha` + `commits-end-sha` + `commits-include-start` | Commit range. |
+| Changeset specification | `tags-start` + `tags-end` | Tag range. |
 
 | Output | Description |
 | --- | --- |
