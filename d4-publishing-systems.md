@@ -27,7 +27,7 @@ These are the options in the **Publishing System** field.
 
 ## How Doc Holiday chooses a publishing system
 
-The setting comes from the **Publishing System** field on the docs repository source form, or from automatic detection of signature files in the repository.
+The setting comes from the **Publishing System** field on the source/publication setup form, or from automatic detection of signature files in the repository.
 
 Automatic detection looks for files that identify a site generator. Examples include `docusaurus.config.js` or `docusaurus.config.ts` for Docusaurus, `mkdocs.yml` or `mkdocs.yaml` for MkDocs, `.vuepress/config.js` or `.vuepress/config.ts` for VuePress, and `antora.yml`, `antora.yaml`, `antora-playbook.yml`, or `antora-playbook.yaml` for Antora. Doc Holiday also checks `package.json` as a lower-confidence signal when no signature file gives a clear result.
 
@@ -37,6 +37,6 @@ Doc Holiday uses the publishing system to understand a site’s structure and co
 
 ## Fallback guidance
 
-If the site generator is not listed, or if no better match exists, choose `Generic Markdown`. Treat `None` as the literal UI option for no selection, not the recommended choice for an unrecognized site.
+If the site generator is not listed, or if no better match exists, choose `Generic Markdown`. `None` is the UI option for no selection. For an unrecognized site, choose `Generic Markdown`.
 
 For publication setup and source selection, see [Publications](/d1-publications.md) and [Sources](/c1-sources.md).
