@@ -198,7 +198,7 @@ curl "https://api.doc.holiday/api/v1/bitbucket/repos?connectionId=12&workspace=a
 ```
 - JSON:
 ```json
-{"repos":[{"slug":"docs","name":"docs"}]}
+{"repos":[{"fullName":"acme/docs","slug":"docs"}]}
 ```
 - Behaviors: Requires an SFS token. Returns `400` when `connectionId`, `workspace`, or `token` is missing or invalid.
 
