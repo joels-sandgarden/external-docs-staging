@@ -1,6 +1,6 @@
 # Connection types
 
-This page lists every supported connection type, the label the app shows, the parent connection it depends on, and the trigger events it can receive.
+This page lists each supported connection type, its app label, any required parent connection, and its automatic trigger events.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
@@ -26,11 +26,11 @@ This page lists every supported connection type, the label the app shows, the pa
 | Confluence | `confluence` | context source | — | — |
 | Azure Blob Storage | `azureBlob` | context source | — | — |
 
-Notes:
+Footnotes:
 
-- `githubRepo` and `githubAccessToken` both appear as `GitHub Repository`; the first uses a GitHub Application parent, and the second uses a personal access token.
-- `gitlabProject` and `gitlab` both appear as `GitLab Project`; the first uses a GitLab Access Token parent, and the second uses a multi-project token.
-- `bitbucketProject` and `bitbucketRepo` both appear as `Bitbucket Project`; the first uses a Bitbucket Workspace Access Token parent, and the second uses a per-repository token.
+- `githubRepo` and `githubAccessToken` both appear as `GitHub Repository`; `githubRepo` uses a GitHub Application parent, and `githubAccessToken` uses a personal access token.
+- `gitlabProject` and `gitlab` both appear as `GitLab Project`; `gitlabProject` uses a GitLab Access Token parent, and `gitlab` uses a multi-project token.
+- `bitbucketProject` and `bitbucketRepo` both appear as `Bitbucket Project`; `bitbucketProject` uses a Bitbucket Workspace Access Token parent, and `bitbucketRepo` uses a per-repository token.
 - `gcp` is the API value behind `Google Drive`.
 - `slackChannel` is the only connection type that can serve as a Publication notifier.
 
