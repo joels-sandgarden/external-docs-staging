@@ -1,6 +1,14 @@
 # Connection types
 
-This page lists each supported connection type, its app label, any required parent connection, and its automatic trigger events.
+This catalog follows the current connection type enumeration. It lists the supported API values the product accepts today and omits Zendesk, which this page does not treat as a supported type.
+
+The table keeps the label and API value side by side so the catalog stays usable as a lookup page. The label column matches the user-facing name in the product, and the API value column preserves the exact machine value that the system stores and returns.
+
+The Role column groups each type by its broader product area. Git provider covers the source control parent types, git repository covers repository-level connections, context source covers the services that feed content or issue data into documentation workflows, and notifier covers the connection type that supports publication delivery.
+
+The Requires column names the parent connection when one exists. A blank entry means the type stands alone. The Automatic triggers column draws directly from the trigger-event map, so it lists only the events that the system can emit for that type and leaves blank entries where no automatic event applies.
+
+Read the catalog as an index rather than a procedure. Each row identifies one supported type, its exact API value, the visible label, the role group, any parent requirement, and the trigger events linked to that type. When two rows share the same label, the table and footnotes separate the alternative API values and parent relationships that keep them distinct.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
@@ -33,5 +41,7 @@ Footnotes:
 - `bitbucketProject` and `bitbucketRepo` both appear as `Bitbucket Project`; `bitbucketProject` uses a Bitbucket Workspace Access Token parent, and `bitbucketRepo` uses a per-repository token.
 - `gcp` is the API value behind `Google Drive`.
 - `slackChannel` is the only connection type that can serve as a Publication notifier.
+
+This footnote set keeps the shared labels readable without repeating the full catalog in prose. It also captures the alternate API values that map to the same visible name and the single notifier type that serves publications. Together with the cross-links below, it places the page beside the source, trigger, and API references that supply the surrounding detail.
 
 See also: [Sources](/c1-sources.md), [trigger and event types](/j9-trigger-and-event-types.md), and [API connections](/j3-api-connections.md).
