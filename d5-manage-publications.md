@@ -25,16 +25,19 @@ Write access controls who can request work under the Publication. For broader ro
 
 ## Check publication health
 
-1. Open **Status** for a quick health check.
+1. Use the always-visible **Status** section for a quick health check.
 2. Read the **Health:** badge to see the current result.
-3. Select **Run Test** after a change or when a fresh check is needed.
-4. If the check fails, look for **Health Check Failed** and open **View Troubleshooting Docs** for help.
+3. The health check verifies the Publication's connections — the docs repository and each source.
+4. Select **Run Test** after a change or when a fresh check is needed.
+5. If the check fails, look for **Health Check Failed** and open **View Troubleshooting Docs** for help.
 
 ## Danger Zone
 
-1. Open **Danger Zone** only when the Publication is no longer needed.
-2. Select **Delete Publication**.
-3. Confirm **Permanently delete this publication.** and then **This cannot be undone.**
+1. Open the Publication, then select **Edit**.
+2. Scroll to the bottom of the edit form to find **Danger Zone**.
+3. The card shows **Delete Publication** with the warnings **Permanently delete this publication.** and **This cannot be undone.**
+4. Select **Delete Publication**.
+5. In the dialog titled **Delete Publication**, read **Are you sure you want to delete this publication?** and confirm with **Delete this publication**.
 
 ```
 SCREENSHOT PLACEHOLDER: manage-publications/danger-zone.png
