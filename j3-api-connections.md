@@ -1,4 +1,4 @@
-# Connections API reference
+# API: Connections
 
 This page covers direct integration with Doc Holiday's API.
 
