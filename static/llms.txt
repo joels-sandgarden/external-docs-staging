@@ -33,6 +33,7 @@ Append index.md to any page URL to fetch its raw Markdown source.
 - Writing Style Guides: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-style-guides/ — make everything Doc Holiday writes sound like your team.
 - Writing Planning Instructions: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-planning-instructions/ — shape what Doc Holiday decides to work on.
 - Prompt Patterns: https://joels-sandgarden.github.io/external-docs-staging/docs/prompt-patterns/ — request skeletons for common documentation jobs.
+- Fully Automated Setup: https://joels-sandgarden.github.io/external-docs-staging/docs/fully-automated-setup/ — set it up once: triggers, standing instructions, and the full prompts to paste.
 
 ## Sources
 - Sources: https://joels-sandgarden.github.io/external-docs-staging/docs/sources/ — what Doc Holiday reads and writes; freshness and health.

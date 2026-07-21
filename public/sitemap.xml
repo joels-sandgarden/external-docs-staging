@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1318/external-docs-staging/docs/add-your-openai-key/</loc>
-    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
+    <lastmod>2026-07-21T13:54:52-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/ai-provider-keys/</loc>
-    <lastmod>2026-07-21T13:30:07-07:00</lastmod>
+    <lastmod>2026-07-21T13:54:52-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/api-overview/</loc>
     <lastmod>2026-07-21T13:30:07-07:00</lastmod>
@@ -18,7 +18,7 @@
     <lastmod>2026-07-21T13:30:07-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/billing-and-plans/</loc>
-    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
+    <lastmod>2026-07-21T13:54:52-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/coding-agents/</loc>
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
@@ -63,7 +63,9 @@
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/</loc>
-    <lastmod>2026-07-21T13:30:07-07:00</lastmod>
+    <lastmod>2026-07-21T13:54:52-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/fully-automated-setup/</loc>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/github-action/</loc>
     <lastmod>2026-07-21T13:30:07-07:00</lastmod>
@@ -72,7 +74,7 @@
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/glossary/</loc>
-    <lastmod>2026-07-21T13:30:07-07:00</lastmod>
+    <lastmod>2026-07-21T13:54:52-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/how-doc-holiday-works/</loc>
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
@@ -129,7 +131,7 @@
     <lastmod>2026-07-21T13:30:07-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/security-and-data-handling/</loc>
-    <lastmod>2026-07-20T23:08:18-07:00</lastmod>
+    <lastmod>2026-07-21T13:54:52-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/slack-notifications/</loc>
     <lastmod>2026-07-21T13:30:07-07:00</lastmod>

@@ -166,6 +166,11 @@
 						Prompt Patterns
 					</a>
 				</li>
+				<li>
+					<a href="/external-docs-staging/docs/fully-automated-setup/" >
+						Fully Automated Setup
+					</a>
+				</li>
 				</ul>
 		</details>
 		<details open>
@@ -527,20 +532,14 @@
 <blockquote>
 <p><code>@doc.holiday write release notes covering PRs #212–#230, grouped by feature area, at /changelog/2026-07.md</code></p>
 </blockquote>
-<h2 id="set-the-contract-when-accuracy-is-critical">Set the contract when accuracy is critical</h2>
-<p>For pages where a wrong claim is expensive — security notes, API behavior, migration guides — say how to handle uncertainty:</p>
-<blockquote>
-<p><code>Include only behavior you can verify from the source; if something is uncertain, omit it rather than guess.</code></p>
-</blockquote>
-<p>For pages where breadth matters more, say the opposite: &ldquo;expand freely where the source supports it.&rdquo;</p>
-<h2 id="one-request-one-goal">One request, one goal</h2>
-<p>A request that asks for three pages gets three compromises. Send three requests. Each gets its own exploration, its own review, and its own clean approval — and a failure in one doesn&rsquo;t hold the others hostage.</p>
+<h2 id="say-how-to-spend-uncertainty">Say how to spend uncertainty</h2>
+<p>Doc Holiday verifies what it writes against the source automatically — you never need to ask for that. What a request can still set is the default when the source runs out: for pages where a wrong claim is expensive — security notes, API behavior, migration guides — say <code>if something is uncertain, omit it rather than guess</code>. For pages where breadth matters more, say <code>expand freely where the source supports it</code>.</p>
 <h2 id="before-and-after">Before and after</h2>
 <blockquote>
 <p><strong>Weak:</strong> <code>@doc.holiday the docs are out of date after the auth changes, can you fix them</code>
-<strong>Strong:</strong> <code>@doc.holiday update /docs/authentication.md to cover the token-refresh flow merged in PR #198. Keep the existing API-key section unchanged. Include only behavior you can verify from the source.</code></p>
+<strong>Strong:</strong> <code>@doc.holiday update /docs/authentication.md to cover the token-refresh flow merged in PR #198. Keep the existing API-key section unchanged.</code></p>
 </blockquote>
-<p>The strong version names the file, the change that triggered the work, the boundary, and the accuracy contract — four sentences, and the review is usually a rubber stamp.</p>
+<p>The strong version names the file, the change that triggered the work, and the boundary — two sentences, and the review is usually a rubber stamp.</p>
 <h2 id="next">Next</h2>
 <p>Durable preferences — voice, structure, coverage rules — don&rsquo;t belong in requests; put them in standing instructions so every run gets them. Start with <a href="/external-docs-staging/docs/prompting-guide/">the Prompting guide</a>, then <a href="/external-docs-staging/docs/writing-style-guides/">Writing style guides</a>. For ready-made request skeletons, see <a href="/external-docs-staging/docs/prompt-patterns/">Prompt patterns</a>.</p>
 
@@ -598,8 +597,7 @@
     <li><a href="#pin-the-path-when-you-care-where-it-lands">Pin the path when you care where it lands</a></li>
     <li><a href="#scope-both-directions">Scope both directions</a></li>
     <li><a href="#ground-it-in-real-references">Ground it in real references</a></li>
-    <li><a href="#set-the-contract-when-accuracy-is-critical">Set the contract when accuracy is critical</a></li>
-    <li><a href="#one-request-one-goal">One request, one goal</a></li>
+    <li><a href="#say-how-to-spend-uncertainty">Say how to spend uncertainty</a></li>
     <li><a href="#before-and-after">Before and after</a></li>
     <li><a href="#next">Next</a></li>
   </ul>

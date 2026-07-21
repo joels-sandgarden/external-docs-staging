@@ -4,14 +4,14 @@
 <head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Send Doc Holiday notifications to Slack.">
+  <meta name="description" content="Set Doc Holiday up once — triggers, standing instructions, and the full prompts to paste.">
   <meta name="author" content="doc.holiday">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
   
 
-  <title>Slack Notifications · Doc Holiday Documentation</title>
-  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/slack-notifications/">
+  <title>Fully Automated Setup · Doc Holiday Documentation</title>
+  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/fully-automated-setup/">
 
   
 
@@ -167,7 +167,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/fully-automated-setup/" >
+					<a href="/external-docs-staging/docs/fully-automated-setup/"  class="active" aria-current="page" >
 						Fully Automated Setup
 					</a>
 				</li>
@@ -277,7 +277,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/slack-notifications/"  class="active" aria-current="page" >
+					<a href="/external-docs-staging/docs/slack-notifications/" >
 						Slack Notifications
 					</a>
 				</li>
@@ -504,45 +504,105 @@
 
 
         <header id="article-header">
-          <h1 style="view-transition-name: external-docs-stagingdocsslack-notifications">Slack Notifications</h1>
+          <h1 style="view-transition-name: external-docs-stagingdocsfully-automated-setup">Fully Automated Setup</h1>
 					
 				</header>
 
 				<div id="article-body">
-					<p>This guide sets up Slack notifications for a Publication. Use it when you want Doc Holiday to send a Slack message after work merges.</p>
+					<p>Everything on this page happens once. Connect your repositories, create one Publication, turn on triggers, and paste in the two standing instructions below. From then on Doc Holiday reacts to what ships on its own: merged pull requests and releases go in; documentation updates and release notes come out as pull requests for your team to review. Nobody has to remember to ask.</p>
+<p>To drive Doc Holiday by hand instead, start with the <a href="/external-docs-staging/docs/quickstart/">Quickstart</a>.</p>
+<h2 id="the-setup">The setup</h2>
 <ol>
-<li>Open the Sources page, then the <strong>Providers</strong> tab.</li>
-<li>Select <strong>Add Provider</strong>, choose <strong>Slack Application</strong>, then click <strong>Connect Slack Workspace</strong>. Finish the Slack install flow.</li>
-<li>Switch to the <strong>Sources</strong> tab, then select <strong>Add Source</strong>. Create a Slack Channel source under that provider. Fill in <strong>Source Name</strong> and <strong>Channel</strong>. If more than one Slack workspace is connected, the <strong>Slack Workspace</strong> field appears; with a single workspace, Doc Holiday selects it automatically and hides the field. Use <strong>Select a workspace&hellip;</strong> to pick the workspace. If no channel is selected yet, the control shows <strong>Select a channel&hellip;</strong>. When channels are still loading, it shows <strong>Loading channels&hellip;</strong>. Use <strong>Search channels&hellip;</strong> to find one, and <strong>No channels found&hellip;</strong> appears when the list is empty.</li>
+<li><strong>Connect your repositories.</strong> The code repository is what Doc Holiday reads; the docs repository is where it writes. Follow <a href="/external-docs-staging/docs/connect-github/">Connect GitHub</a>, <a href="/external-docs-staging/docs/connect-gitlab/">Connect GitLab</a>, or <a href="/external-docs-staging/docs/connect-bitbucket/">Connect Bitbucket</a>.</li>
+<li><strong>Create one Publication.</strong> Put the code repository in <strong>Inputs</strong>, set the docs repository as the destination, and under <strong>Write:</strong> check <strong>Documentation</strong> and <strong>Release Notes</strong>. Follow <a href="/external-docs-staging/docs/create-your-first-publication/">Create your first publication</a>; the outputs are explained in <a href="/external-docs-staging/docs/output-types/">Output types</a>.</li>
+<li><strong>Turn on triggers.</strong> On the Publication form, under <strong>Inputs</strong>, select <strong>Add Triggering Event</strong>, choose the code Source, and enable <strong>Pull Requests</strong> (GitLab Sources show <strong>Merge Requests</strong>) and, where the Source supports it, <strong>Releases</strong>. Per-Source support is tabulated in <a href="/external-docs-staging/docs/configure-triggers/">Configure triggers</a>.</li>
+<li><strong>Paste in the two standing instructions below.</strong> The planning instructions go in the Publication&rsquo;s <strong>Writing Instructions</strong> slot; the style guide attaches as <strong>Style &amp; Formatting</strong> to the Documentation and Release Notes outputs. Add them inline on the Publication, or link them from <a href="/external-docs-staging/docs/the-library/">the Library</a> to reuse them across Publications.</li>
+<li><strong>Set the Slack notifier</strong> so merged work announces itself in a channel your team reads: on the Publication form, set <strong>Notify</strong> to a Slack Channel source. Follow <a href="/external-docs-staging/docs/slack-notifications/">Slack notifications</a>.</li>
 </ol>
+<h2 id="the-full-prompts">The full prompts</h2>
+<p>Both blocks are complete and ready to paste; adapt the bracketed parts to your site. The craft behind them is in <a href="/external-docs-staging/docs/writing-planning-instructions/">Writing planning instructions</a> and <a href="/external-docs-staging/docs/writing-style-guides/">Writing style guides</a>.</p>
+<p><strong>Planning instructions</strong> — the Publication&rsquo;s <strong>Writing Instructions</strong> slot:</p>
 
 
 
-<pre tabindex="0"><code>SCREENSHOT PLACEHOLDER: slack-notifications/channel-form.png</code></pre><p>When you save the source, Doc Holiday joins the channel.</p>
-<ol start="4">
-<li>Open the Publication form and set <strong>Notify</strong> to the Slack Channel source. The Publication form shows <strong>(optional)</strong> next to <strong>Notify</strong>. Use <strong>Select notifier</strong> to choose the source, or leave <strong>None</strong> selected to keep notifications off for that Publication.</li>
-</ol>
-<h2 id="what-you-get">What you get</h2>
-<p>When work merges, Doc Holiday sends a Slack message with a summary and a link to the merged work.</p>
+<pre tabindex="0"><code>- When a merged pull request changes existing behavior, update the affected
+  pages rather than creating new ones. Create a new page only for a genuinely
+  new capability.
+- Plan one page per user-facing feature area — never one page per API
+  endpoint, never one page per code module.
+- Only document behavior visible to users. Ignore internal tooling, internal
+  mechanisms, and anything behind a feature flag.
+- New guides go under [/docs/]. Whenever a page is added, add it to the
+  [sidebar file] in the same piece of work.
+- Release notes live in [/changelog/], one file per release, newest first.
+- Cross-link between pages instead of repeating material.</code></pre><p><strong>Style guide</strong> — attach as <strong>Style &amp; Formatting</strong> to the Documentation and Release Notes outputs:</p>
+
+
+
+<pre tabindex="0"><code># [Product] docs style
+
+## Audience
+- Readers are [product] administrators; comfortable with the dashboard, new
+  to the internals.
+
+## Voice
+- Second person, present tense, active voice.
+- Plain words. Banned: simply, easily, seamless, robust, leverage.
+- Bold exact UI labels: select **Settings**, then **API Keys**.
+
+## Structure
+- One H1 (the title). H2 sections. No H4 or deeper.
+- How-to pages: numbered steps, one action per step, expected result after
+  each.
+- Every page ends with a &#34;Next&#34; link to one related page.
+
+## Release notes
+- Group by: New features, Improvements, Fixes.
+- One line per change, written for customers — describe what they can do now.
+- Skip internal-only changes.</code></pre><h2 id="optional-a-scheduled-sweep">Optional: a scheduled sweep</h2>
+<p>Triggers react to events. To also catch drift on a fixed rhythm, run the <a href="/external-docs-staging/docs/github-action/">GitHub Action</a> on a schedule:</p>
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Weekly docs sweep</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">schedule</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">cron</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0 9 * * 1&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">docs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">sandgardenhq/doc-holiday-action@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">api-token</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.DOC_HOLIDAY_TOKEN }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">body</span><span class="p">:</span><span class="w"> </span><span class="p">&gt;</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">            Review the documentation against what shipped recently and update
+</span></span></span><span class="line"><span class="cl"><span class="sd">            any page that no longer matches current behavior.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">commits-count</span><span class="p">:</span><span class="w"> </span><span class="m">100</span></span></span></code></pre></div><p><code>commits-count: 100</code> scopes each run to the most recent 100 commits — size it to your merge rate. Creating the <code>DOC_HOLIDAY_TOKEN</code> secret and the full input list are covered in <a href="/external-docs-staging/docs/github-action/">GitHub Action</a>.</p>
+<h2 id="what-arrives-and-what-stays-human">What arrives, and what stays human</h2>
+<p>When a pull request merges or a release publishes, a new entry appears in <a href="/external-docs-staging/docs/work-history/">Work History</a>: Doc Holiday explores what changed, updates the affected pages or writes the release notes, and opens a pull request in your docs repository. Your team reviews and merges it like any other change — Doc Holiday never writes to your repositories without an approved pull request (<a href="/external-docs-staging/docs/security-and-data-handling/">Security and data handling</a>).</p>
+<p>One maintenance habit is worth keeping: when review keeps fixing the same kind of thing, add the rule that would have prevented it to your style guide. <a href="/external-docs-staging/docs/writing-style-guides/">Writing style guides</a> calls this iterating from output.</p>
 <h2 id="verify">Verify</h2>
-<p>Merge a small change, such as a one-line typo fix, and confirm that the Slack message arrives in the channel.</p>
+<ol>
+<li>Merge a small pull request in the code repository.</li>
+<li>Open <a href="/external-docs-staging/docs/work-history/">Work History</a> and confirm a new entry appears for the Publication.</li>
+<li>Review the pull request Doc Holiday opens in your docs repository, then merge it. If you set the Slack notifier, the message arrives after the merge.</li>
+</ol>
 <h2 id="next">Next</h2>
-<ul>
-<li><a href="/external-docs-staging/docs/manage-publications/">Manage publications</a></li>
-<li><a href="/external-docs-staging/docs/manage-connections/">Manage connections</a></li>
-</ul>
+<p>Per-Source trigger details are in <a href="/external-docs-staging/docs/configure-triggers/">Configure triggers</a>; tune coverage rules with <a href="/external-docs-staging/docs/writing-planning-instructions/">Writing planning instructions</a>; for the occasional one-off request, use <a href="/external-docs-staging/docs/prompt-patterns/">Prompt patterns</a>.</p>
 
 				</div>
 
 				<footer id="article-footer">
 	
 		
-		<time datetime="2026-07-21">
+		<time datetime="0001-01-01">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 2026-07-21
+</span>Updated: 0001-01-01
 		</time>
 	
 
@@ -554,16 +614,12 @@
 			
 			
 			
-			
-			
-			
-			
-			<a href="/external-docs-staging/docs/coding-agents/">
+			<a href="/external-docs-staging/docs/prompt-patterns/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/user-management/">Next 
+		<a href="/external-docs-staging/docs/sources/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
@@ -587,7 +643,10 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-you-get">What you get</a></li>
+    <li><a href="#the-setup">The setup</a></li>
+    <li><a href="#the-full-prompts">The full prompts</a></li>
+    <li><a href="#optional-a-scheduled-sweep">Optional: a scheduled sweep</a></li>
+    <li><a href="#what-arrives-and-what-stays-human">What arrives, and what stays human</a></li>
     <li><a href="#verify">Verify</a></li>
     <li><a href="#next">Next</a></li>
   </ul>

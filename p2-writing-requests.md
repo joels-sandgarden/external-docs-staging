@@ -29,24 +29,16 @@ Anchor the request to things that exist: file paths, PR numbers, release tags, e
 
 > `@doc.holiday write release notes covering PRs #212–#230, grouped by feature area, at /changelog/2026-07.md`
 
-## Set the contract when accuracy is critical
+## Say how to spend uncertainty
 
-For pages where a wrong claim is expensive — security notes, API behavior, migration guides — say how to handle uncertainty:
-
-> `Include only behavior you can verify from the source; if something is uncertain, omit it rather than guess.`
-
-For pages where breadth matters more, say the opposite: "expand freely where the source supports it."
-
-## One request, one goal
-
-A request that asks for three pages gets three compromises. Send three requests. Each gets its own exploration, its own review, and its own clean approval — and a failure in one doesn't hold the others hostage.
+Doc Holiday verifies what it writes against the source automatically — you never need to ask for that. What a request can still set is the default when the source runs out: for pages where a wrong claim is expensive — security notes, API behavior, migration guides — say `if something is uncertain, omit it rather than guess`. For pages where breadth matters more, say `expand freely where the source supports it`.
 
 ## Before and after
 
 > **Weak:** `@doc.holiday the docs are out of date after the auth changes, can you fix them`
-> **Strong:** `@doc.holiday update /docs/authentication.md to cover the token-refresh flow merged in PR #198. Keep the existing API-key section unchanged. Include only behavior you can verify from the source.`
+> **Strong:** `@doc.holiday update /docs/authentication.md to cover the token-refresh flow merged in PR #198. Keep the existing API-key section unchanged.`
 
-The strong version names the file, the change that triggered the work, the boundary, and the accuracy contract — four sentences, and the review is usually a rubber stamp.
+The strong version names the file, the change that triggered the work, and the boundary — two sentences, and the review is usually a rubber stamp.
 
 ## Next
 
