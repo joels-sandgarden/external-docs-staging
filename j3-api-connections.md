@@ -243,29 +243,11 @@ Success returns `204 No Content` and no response body.
 
 ### `POST /api/v1/connections/{id}/sync`
 
-Start a background sync for the connection.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Body | `wait`, `timeout` |
 | Success | `202 Accepted` |
-
-```bash
-curl -X POST "https://api.doc.holiday/api/v1/connections/123/sync" \
-  -H "Authorization: Bearer $SFS_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"wait":true,"timeout":30}'
-```
-
-```json
-{
-  "wait": true,
-  "timeout": 30
-}
-```
-
-The API accepts the request and starts background work. `wait` controls whether the call waits for completion, and `timeout` caps that wait.
 
 ### `GET /api/v1/connections/{id}/health`
 
