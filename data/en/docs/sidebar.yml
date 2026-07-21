@@ -6,11 +6,13 @@
 - title: Overview
   pages:
     - title: What Is Doc Holiday
+    - title: How Doc Holiday Works
     - title: Concepts
     - title: How This Site Is Made
 
 - title: Getting started
   pages:
+    - title: Quickstart
     - title: Connect GitHub
     - title: Connect GitLab
     - title: Connect Bitbucket
@@ -19,19 +21,23 @@
 
 - title: Working with Doc Holiday
   pages:
+    - title: Request Work in Git
+    - title: Request Work in the App
+    - title: Review and Revise
     - title: Work History
 
 - title: Prompting Guide
   pages:
+    - title: Prompting Guide
     - title: Writing Requests
     - title: Writing Style Guides
     - title: Writing Planning Instructions
     - title: Prompt Patterns
 
-# Connect Notion joins Sources once its re-fired page lands (c2 silent-miss).
 - title: Sources
   pages:
     - title: Sources
+    - title: Connect Notion
     - title: Connect Confluence and Jira
     - title: Connect Linear
     - title: Connect Google Drive
@@ -41,14 +47,44 @@
 - title: Publications
   pages:
     - title: Publications
+    - title: Configure Triggers
+    - title: Output Types
+    - title: Publishing Systems
+    - title: Manage Publications
+
+- title: The Library
+  pages:
+    - title: The Library
+    - title: Instruction Slots Reference
+
+- title: Automation & integrations
+  pages:
+    - title: GitHub Action
+    - title: GitLab Pipelines
+    - title: Coding Agents
+    - title: Slack Notifications
 
 - title: Administration
   pages:
+    - title: User Management
+    - title: Audit Log
+    - title: AI Provider Keys
+    - title: Billing and Plans
     - title: Security and Data Handling
 
 - title: Reference
   pages:
+    - title: API Overview
+    - title: Publications API
+    - title: Connections API
+    - title: Work History API
+    - title: Users API
+    - title: Instruction Library API
+    - title: Audit Log API
     - title: Connection Types
+    - title: Trigger and Event Types
+    - title: Work History States
+    - title: Glossary
 
 - title: Meta
   pages:

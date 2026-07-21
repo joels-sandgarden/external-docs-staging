@@ -14,7 +14,7 @@ Use this page when Linear should trigger documentation work in Doc Holiday. Line
 
 ## What it enables
 
-- New Linear issues can trigger documentation work.
+- New Linear issues that mention @doc.holiday at the start of the issue body can trigger documentation work.
 - New issue comments can trigger documentation work.
 - In issue comments, `@doc.holiday` mentions behave like mentions in git comments, so a comment that starts with the mention can request work in the same way.
 

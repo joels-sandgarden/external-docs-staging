@@ -23,11 +23,11 @@ A request can start in four places, and each path lands in the same work:
 
 ## Stage 2 — plan
 
-Doc Holiday reads the request together with what it already knows about the Publication and its connected Sources. It turns that into one work item for each file, so you can see what it plans to change before it drafts anything. The request and the plan appear in [Work History](/f4-work-history.md).
+Doc Holiday reads the request together with what it already knows about the Publication and its connected Sources. It turns that into file-level work items that name where the writing will land. The request and its progress appear in [Work History](/f4-work-history.md).
 
 ## Stage 3 — draft
 
-Doc Holiday reads the real source, compares it with the docs it maintains, and drafts proposed diffs. Those drafts stay in Doc Holiday until approval. It never writes straight to the docs repo, so the repo stays unchanged until review finishes.
+Doc Holiday reads the real source, compares it with the docs it maintains, and drafts proposed diffs. The drafts wait for your review on a working branch; nothing reaches your default branch except through a pull request you approve.
 
 ## Stage 4 — review
 

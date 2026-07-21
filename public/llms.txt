@@ -9,10 +9,12 @@ Append index.md to any page URL to fetch its raw Markdown source.
 
 ## Overview
 - What Is Doc Holiday: https://joels-sandgarden.github.io/external-docs-staging/docs/what-is-doc-holiday/ — documentation drift, and the product that closes it continuously.
+- How Doc Holiday Works: https://joels-sandgarden.github.io/external-docs-staging/docs/how-doc-holiday-works/ — the user-seat loop: request → plan → draft from source → review → pull request.
 - Concepts: https://joels-sandgarden.github.io/external-docs-staging/docs/concepts/ — Publication, Source, the Library, Work History.
 - How This Site Is Made: https://joels-sandgarden.github.io/external-docs-staging/docs/how-this-site-is-made/ — these docs are written and maintained by Doc Holiday itself.
 
 ## Getting started
+- Quickstart: https://joels-sandgarden.github.io/external-docs-staging/docs/quickstart/ — zero to your first merged Doc-Holiday-written doc.
 - Connect GitHub: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-github/ — install the GitHub Application and connect repositories.
 - Connect GitLab: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-gitlab/ — connect GitLab projects as Sources; Doc Holiday opens merge requests there.
 - Connect Bitbucket: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-bitbucket/ — workspace token provider or per-project tokens.
@@ -20,9 +22,13 @@ Append index.md to any page URL to fetch its raw Markdown source.
 - Add Your OpenAI Key: https://joels-sandgarden.github.io/external-docs-staging/docs/add-your-openai-key/ — add and test your organization's OpenAI key.
 
 ## Working with Doc Holiday
+- Request Work in Git: https://joels-sandgarden.github.io/external-docs-staging/docs/request-work-in-git/ — mention @doc.holiday in the PR or issue thread you are already using.
+- Request Work in the App: https://joels-sandgarden.github.io/external-docs-staging/docs/request-work-in-the-app/ — start and steer documentation work from the app.
+- Review and Revise: https://joels-sandgarden.github.io/external-docs-staging/docs/review-and-revise/ — diffs, comments, follow-up passes, approve into a pull request.
 - Work History: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history/ — the record of every request and its lifecycle.
 
 ## Prompting Guide
+- Prompting Guide: https://joels-sandgarden.github.io/external-docs-staging/docs/prompting-guide/ — standing instructions vs per-request prompts, and how they compose.
 - Writing Requests: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-requests/ — the craft of asking for exactly the page you want.
 - Writing Style Guides: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-style-guides/ — make everything Doc Holiday writes sound like your team.
 - Writing Planning Instructions: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-planning-instructions/ — shape what Doc Holiday decides to work on.
@@ -30,6 +36,7 @@ Append index.md to any page URL to fetch its raw Markdown source.
 
 ## Sources
 - Sources: https://joels-sandgarden.github.io/external-docs-staging/docs/sources/ — what Doc Holiday reads and writes; freshness and health.
+- Connect Notion: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-notion/ — share Notion pages with an integration so Doc Holiday can read them.
 - Connect Confluence and Jira: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-confluence-and-jira/ — Confluence as read-only context; Jira app-backed or read-only.
 - Connect Linear: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-linear/ — let Linear issues and comments trigger documentation work.
 - Connect Google Drive: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-google-drive/ — supply background material from Google Drive.
@@ -38,12 +45,40 @@ Append index.md to any page URL to fetch its raw Markdown source.
 
 ## Publications
 - Publications: https://joels-sandgarden.github.io/external-docs-staging/docs/publications/ — what a Publication defines and controls.
+- Configure Triggers: https://joels-sandgarden.github.io/external-docs-staging/docs/configure-triggers/ — control when Doc Holiday reacts on its own.
+- Output Types: https://joels-sandgarden.github.io/external-docs-staging/docs/output-types/ — documentation, release notes, and changelogs.
+- Publishing Systems: https://joels-sandgarden.github.io/external-docs-staging/docs/publishing-systems/ — supported docs frameworks and docs-repo expectations.
+- Manage Publications: https://joels-sandgarden.github.io/external-docs-staging/docs/manage-publications/ — edit a Publication, control access, delete safely.
+
+## The Library
+- The Library: https://joels-sandgarden.github.io/external-docs-staging/docs/the-library/ — instructions, slots, global vs scoped, precedence.
+- Instruction Slots Reference: https://joels-sandgarden.github.io/external-docs-staging/docs/instruction-slots-reference/ — the five instruction slots and where each is applied.
+
+## Automation & integrations
+- GitHub Action: https://joels-sandgarden.github.io/external-docs-staging/docs/github-action/ — run Doc Holiday from a GitHub Actions workflow.
+- GitLab Pipelines: https://joels-sandgarden.github.io/external-docs-staging/docs/gitlab-pipelines/ — invoke Doc Holiday from GitLab CI/CD pipelines.
+- Coding Agents: https://joels-sandgarden.github.io/external-docs-staging/docs/coding-agents/ — let coding agents request documentation work.
+- Slack Notifications: https://joels-sandgarden.github.io/external-docs-staging/docs/slack-notifications/ — send Doc Holiday notifications to Slack.
 
 ## Administration
+- User Management: https://joels-sandgarden.github.io/external-docs-staging/docs/user-management/ — invites, roles, and publication access.
+- Audit Log: https://joels-sandgarden.github.io/external-docs-staging/docs/audit-log/ — the event catalog and where to find it.
+- AI Provider Keys: https://joels-sandgarden.github.io/external-docs-staging/docs/ai-provider-keys/ — add, test, and rotate keys; active-key behavior.
+- Billing and Plans: https://joels-sandgarden.github.io/external-docs-staging/docs/billing-and-plans/ — plans, billing, and what each plan includes.
 - Security and Data Handling: https://joels-sandgarden.github.io/external-docs-staging/docs/security-and-data-handling/ — what Doc Holiday reads, stores, and never does.
 
 ## Reference
+- API Overview: https://joels-sandgarden.github.io/external-docs-staging/docs/api-overview/ — auth, base URL, and the shape of the REST API.
+- Publications API: https://joels-sandgarden.github.io/external-docs-staging/docs/publications-api/ — manage Publications over the REST API.
+- Connections API: https://joels-sandgarden.github.io/external-docs-staging/docs/connections-api/ — manage Sources and providers over the REST API.
+- Work History API: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history-api/ — create and follow work requests over the REST API.
+- Users API: https://joels-sandgarden.github.io/external-docs-staging/docs/users-api/ — manage users over the REST API.
+- Instruction Library API: https://joels-sandgarden.github.io/external-docs-staging/docs/instruction-library-api/ — manage Library instructions over the REST API.
+- Audit Log API: https://joels-sandgarden.github.io/external-docs-staging/docs/audit-log-api/ — query audit events over the REST API.
 - Connection Types: https://joels-sandgarden.github.io/external-docs-staging/docs/connection-types/ — every connection type, its role, and its triggers.
+- Trigger and Event Types: https://joels-sandgarden.github.io/external-docs-staging/docs/trigger-and-event-types/ — every trigger and event type, enumerated.
+- Work History States: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history-states/ — every state a work request can be in.
+- Glossary: https://joels-sandgarden.github.io/external-docs-staging/docs/glossary/ — Doc Holiday's terms, defined once.
 
 ## Meta
 - Release Notes: https://joels-sandgarden.github.io/external-docs-staging/docs/release-notes/ — user-visible changes, newest first.

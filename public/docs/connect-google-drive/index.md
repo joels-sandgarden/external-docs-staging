@@ -9,11 +9,10 @@ Connecting Google Drive adds a read-only Source that Doc Holiday can use while i
 
 ## How to connect Google Drive
 
-1. Open [Google Drive authentication instructions](https://doc.holiday/docs/connections/#google-drive) and prepare the JSON file before you open the form.
+1. Open **Sources**, select **Add Source**, and choose **Google Drive**.
 2. Enter a **Source Name**.
-3. Add the JSON file in **Service Account JSON**.
-4. Select **Upload**.
-5. Save the Source.
+3. Select **Upload** and choose the JSON file, or paste its contents into **Service Account JSON**.
+4. Select **Save Changes**.
 
 ## Verify
 

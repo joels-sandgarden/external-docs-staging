@@ -35,13 +35,28 @@ curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
 
 ## Agent rules snippet
 
+Drop a block like this into your agent's standing instructions (`CLAUDE.md`, agent rules, or the equivalent):
+
 ```text
-[CLAUDE_SECTION: agent-rules-snippet]
+When you change user-visible behavior in this repo (API shape, CLI flags,
+configuration, workflows), file a documentation request with Doc Holiday
+after the change merges:
+
+  curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
+    -H "Authorization: Bearer $DOC_HOLIDAY_API_KEY" \
+    -H 'Content-Type: application/json' \
+    -d '{"body": "<what changed and which page to update, with a PR link>", "publication": "<publication name>", "stage": true}'
+
+Rules:
+- One request per distinct documentation change; batch nothing.
+- Name the outcome and the page: "Update /docs/auth.md for the new token flow (PR #123)".
+- Keep "stage": true — a human reviews the draft before anything reaches the docs repo.
+- File once per change; duplicate requests create duplicate work items.
 ```
 
 ## Review by default
 
-That keeps the request in Work History, staged for human review, before it moves on.
+Setting `stage: true` keeps the request in Work History, staged for human review, before anything is opened against your repository.
 
 ## Reference
 

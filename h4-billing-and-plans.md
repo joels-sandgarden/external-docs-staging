@@ -1,6 +1,6 @@
 # Billing and plans
 
-Open **Settings → Billing** to see the available plans and what each one includes. You will see three plan cards for the current billing options.
+Open **Settings → Billing** to see the available plans and what each one includes. You will see three plan cards for the current billing options. The page is available to admins on the Bring Your Own Key and Open Source plans; Enterprise billing is handled with your account team.
 
 ```text
 SCREENSHOT PLACEHOLDER: billing-and-plans/tier-cards.png
