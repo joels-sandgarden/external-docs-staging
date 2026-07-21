@@ -92,6 +92,7 @@ Notes:
 - SFS token auth follows the standard flow in [/j1-api-overview.md](/j1-api-overview.md).
 - The get endpoint performs a per-ID permission check.
 - Malformed IDs fail with a 4xx response.
+
 ## Audit log types
 - `error` — general error event.
 - `assessment-pending` — assessment queued for review.
