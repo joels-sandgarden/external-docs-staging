@@ -8,7 +8,7 @@ Confluence gives Doc Holiday context for writing. It never starts work on its ow
 
 1. In **Sources**, choose `Confluence`.
 2. Enter **Source Name**.
-3. If the control appears, turn on **Pause Background Work for Source** when you want to pause updates for this Source.
+3. If the control appears, turn on **Pause Background Work for Source** to pause updates.
 4. Enter **URL**, **Username**, and **API Token**.
 5. Save the Source.
 
