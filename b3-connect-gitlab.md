@@ -4,11 +4,11 @@ Use this guide when GitLab needs to feed Doc Holiday with project changes and ke
 
 On GitLab, Doc Holiday opens merge requests rather than pull requests.
 
-## Main path: create a provider and a project Source
+## Main path: create a GitLab Access Token and GitLab Project Source
 
-1. Open **Sources**, then add a GitLab provider Source.
-2. Enter **Token Name** and **Access Token**, then save the provider.
-3. Add a GitLab Project Source under that provider.
+1. Open **Sources**, then add **GitLab Access Token**.
+2. Enter **Token Name** and **Access Token**, then save the access token.
+3. Add **GitLab Project** under that token.
 4. Fill in **Source Name**, **Project**, **Branch**, and **Publishing System**.
 5. Select the project and branch Doc Holiday should watch, then save the Source.
 6. Repeat the project step for each GitLab project that should use the same provider.
@@ -17,11 +17,11 @@ If the **Publishing System** choice needs a refresher, see [Publishing systems](
 
 ## Option: use one access token for multiple projects
 
-Use **Connect with Personal Access Token** when one token should create Sources for multiple projects.
+Use **GitLab** and select **Connect with Personal Access Token** when one token should create Sources for multiple projects.
 
 ## Verify
 
-Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open the Manage connections page and update the Source before continuing.
+Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open [Manage connections](/c7-manage-connections.md) and update the Source before continuing.
 
 ## Next
 
