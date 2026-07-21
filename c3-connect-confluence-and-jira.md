@@ -34,7 +34,7 @@ Use the `Atlassian Application` + `Jira Project` path when you can install the a
 
 1. In **Sources**, choose `Jira Read-Only`.
 2. Enter **Source Name**.
-3. If the control appears, turn on **Pause Background Work for Source** when you want to pause updates for this Source.
+3. If the control appears, turn on **Pause Background Work for Source** to pause updates.
 4. Enter **URL**, **Email Address**, **API Token**, and **Project Key**.
 5. Save the Source.
 
