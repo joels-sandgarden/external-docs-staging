@@ -10,7 +10,7 @@ Returns audit logs for the current organization.
 | --- | --- | --- |
 | `type` | query | Matches one exact `AuditLogType` value. Omit it to exclude `assessment-*` logs. |
 | `summary` | query | Matches text with `ILIKE`. |
-| Pagination | shared | Uses the list pagination contract from [/j1-api-overview.md](/j1-api-overview.md). If `pageSize` is omitted, Doc Holiday uses the default page size. |
+| pagination | shared | Uses the list pagination contract from [/j1-api-overview.md](/j1-api-overview.md). If `pageSize` is omitted, Doc Holiday uses the default page size. |
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
@@ -40,9 +40,9 @@ curl -H "Authorization: Bearer $TOKEN" \
 ```
 
 Notes:
-- Auth uses the standard SFS token flow described in [/j1-api-overview.md](/j1-api-overview.md).
-- If list permission is unavailable, Doc Holiday limits results to permitted audit-log IDs.
-- Unauthorized access remains the most common error when the caller cannot read the requested records.
+- SFS token auth follows the standard flow in [/j1-api-overview.md](/j1-api-overview.md).
+- When list permission is missing, Doc Holiday limits results to permitted audit-log IDs.
+- Unauthorized access remains the most common failure when the caller cannot read the records.
 
 ## Get an audit log
 `GET /api/v1/audit_logs/{id}`
@@ -91,9 +91,9 @@ Response body:
 | `updatedAt` | string | UTC timestamp. |
 
 Notes:
-- Auth uses the standard SFS token flow described in [/j1-api-overview.md](/j1-api-overview.md).
-- The API checks access to the specific audit log ID.
-- Unauthorized access and invalid ID formats can block the request.
+- SFS token auth follows the standard flow in [/j1-api-overview.md](/j1-api-overview.md).
+- The API checks the requested audit log ID.
+- Unauthorized access or an invalid ID format can block the request.
 
 ## Audit log types
 - `error` — general error event.
