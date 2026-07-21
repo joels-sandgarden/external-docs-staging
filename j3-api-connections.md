@@ -2,47 +2,18 @@
 
 This page covers direct integration with Doc Holiday's API.
 
-Use this reference when an integration needs to create, read, update, delete, sync, or inspect connection records. `/j8-connection-types.md` lists every connection type.
+Use this reference when an integration needs the public Connections endpoints. See [/j8-connection-types.md](/j8-connection-types.md) for the full type list.
 
-## Authentication
+## Common shapes
 
-Every endpoint below requires an SFS token. The server uses `AuthHandler: APIServer.authSFSToken` on each route.
+- Every endpoint requires an SFS token.
+- `config` is a one-of object. `POST /api/v1/connections` and `PUT /api/v1/connections/{id}` return `400` when `config` is missing or when more than one variant is set.
+- Connection responses include `id`, `orgId`, `name`, `type`, `allowedTriggerEvents`, `healthy`, `paused`, redacted `config`, `createdAt`, `updatedAt`, and `deletedAt`.
+- List responses return `connections`, `channels`, `repos`, or `statuses`, and include `nextPageToken` and `previousPageToken` when present.
 
-## Shared response shape
+### Config examples
 
-Connection responses include these fields:
-
-- `allowedTriggerEvents`
-- redacted `config`
-- `healthy`
-- `paused`
-- `createdAt`
-- `updatedAt`
-- `deletedAt`
-
-List responses add `nextPageToken` and `previousPageToken` when the schema includes them. The list payload name changes by route: `connections`, `channels`, `repos`, or `statuses`.
-
-## Success status summary
-
-| Method and path | Success status |
-| --- | --- |
-| `POST /api/v1/connections` | `201 Created` |
-| `GET /api/v1/connections` | `200 OK` |
-| `GET /api/v1/connections/{id}` | `200 OK` |
-| `PUT /api/v1/connections/{id}` | `200 OK` |
-| `DELETE /api/v1/connections/{id}` | `204 No Content` |
-| `POST /api/v1/connections/{id}/sync` | `202 Accepted` |
-| `GET /api/v1/connections/{id}/health` | `200 OK` |
-| `GET /api/v1/connections/{id}/channels` | `200 OK` |
-| `GET /api/v1/bitbucket/repos` | `200 OK` |
-| `GET /api/v1/connections/{id}/jira/statuses` | `200 OK` |
-| `POST /api/v1/connections/{id}/merges/summarize` | `202 Accepted` |
-
-## Connection config examples
-
-The `config` field uses a single-variant object with one sub-object per connection type.
-
-### `githubRepo`
+#### `githubRepo`
 
 ```json
 {
@@ -53,7 +24,7 @@ The `config` field uses a single-variant object with one sub-object per connecti
 }
 ```
 
-### `notion`
+#### `notion`
 
 ```json
 {
@@ -63,7 +34,7 @@ The `config` field uses a single-variant object with one sub-object per connecti
 }
 ```
 
-### `slackChannel`
+#### `slackChannel`
 
 ```json
 {
