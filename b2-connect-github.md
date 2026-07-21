@@ -6,6 +6,8 @@ That split keeps the shared GitHub app install separate from the per-repository 
 
 Start with the organization install only once. After that, each repository choice stays local to the Source you are creating, so the setup stays easy to review later.
 
+When a team shares one GitHub organization, that pattern keeps the admin work small and makes it easier to see which repositories belong to Doc Holiday.
+
 ## Install the GitHub App
 
 1. Select **Install GitHub App** to start the organization install flow.
@@ -13,6 +15,8 @@ Start with the organization install only once. After that, each repository choic
 3. After the install completes, return to Doc Holiday and continue with repository setup. The organization app install only needs to happen once.
 
 If your organization already has the app, you can move straight to repository setup. Otherwise, this step gives Doc Holiday the shared access it needs before you pick any repositories.
+
+If the admin link is the only path available, the administrator can finish the install from GitHub without changing the repository plan in Doc Holiday.
 
 ```
 SCREENSHOT PLACEHOLDER: connect-github/app-install.png
@@ -29,6 +33,8 @@ After the app is installed, Doc Holiday can create repository Sources under it w
 
 The onboarding picker works well when a whole team or product area belongs in the same setup. The single Source form works well when one repository needs careful review before you save it.
 
+That means you can add several repositories now and leave the rest for later, or focus on one repository when you want a smaller change.
+
 ```
 SCREENSHOT PLACEHOLDER: connect-github/repo-connection-form.png
 ```
@@ -43,6 +49,8 @@ This path works for repositories that still need access without an app based ins
 
 Keep the token private and reuse the same repository and branch values you would choose for an app connection. The token option changes the way Doc Holiday authenticates, but it does not change what repository Source you create.
 
+Use it for temporary access during onboarding or when policy blocks an app install. The resulting Source still points at one repository and one branch.
+
 ## Verify
 
 1. Open **Connections** and find the new Source row.
@@ -51,6 +59,8 @@ Keep the token private and reuse the same repository and branch values you would
 
 Healthy means the Source is ready for normal use. Unhealthy means Doc Holiday needs another look at the setup before you continue.
 
+A healthy row confirms the repository and branch choices worked as expected, so you can move on with confidence.
+
 ## Next
 
-Continue to [/b5-create-your-first-publication.md](/b5-create-your-first-publication.md) to create the Publication that uses these Sources. That page finishes the setup by pointing your documentation project at the Sources you just connected, so Doc Holiday can start working against real repository content.
+Continue to [/b5-create-your-first-publication.md](/b5-create-your-first-publication.md) to create the Publication that uses these Sources. That page finishes the setup by pointing your documentation project at the Sources you just connected, so Doc Holiday can start working against real repository content and keep the page current as repositories change.
