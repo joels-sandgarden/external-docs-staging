@@ -1,13 +1,13 @@
 # Connect cloud storage
 
-Cloud storage Sources add read-only context from a bucket or container. For the broader Sources model, see [Sources](/c1-sources.md).
+Cloud storage Sources provide read-only context from a bucket or container. They inform what Doc Holiday writes without triggering work. For the broader Sources model, see [Sources](/c1-sources.md).
 
 ## Option A: AWS (S3)
 
 1. Open **Sources** and select **Add Source**.
 2. Choose **AWS (S3)**.
 3. Enter **Source Name**.
-4. Set **Pause Background Work for Source**.
+4. Select or clear **Pause Background Work for Source**.
 5. Enter **Access Key ID**.
 6. Enter **Secret Access Key**.
 7. Enter **Region**.
@@ -18,7 +18,7 @@ Cloud storage Sources add read-only context from a bucket or container. For the 
 1. Open **Sources** and select **Add Source**.
 2. Choose **Azure Blob Storage**.
 3. Enter **Source Name**.
-4. Set **Pause Background Work for Source**.
+4. Select or clear **Pause Background Work for Source**.
 5. Enter **Account Name**.
 6. Enter **Account Key**.
 7. Enter **Container Name**.
