@@ -1,6 +1,6 @@
 # Manage an existing Publication
 
-Use this guide when a Publication already exists and needs updates, shared access, health checks, or removal.
+Use this guide when a Publication already exists and needs updates, shared access, health checks, or deletion.
 
 ## Edit configuration
 
@@ -18,10 +18,10 @@ Use this guide when a Publication already exists and needs updates, shared acces
 1. Open **Manage Access** or **View Access**.
 2. Review the **Publication Access** list to see who can work with the Publication.
 3. Select **Share Publication** to grant access.
-4. Search by **Search by name or email...**, then choose **Writer** for teammates who should request work under the Publication or **Reviewer** for review-only access.
+4. Use **Search by name or email...**, then choose **Writer** for teammates who should request work under the Publication or **Reviewer** for review-only access.
 5. Use **All access levels** to narrow the list, and select **Revoke access** when someone no longer needs access.
 
-Write access controls who can request work under the Publication. For broader role and access-control context, see [User management](/h1-user-management.md).
+Write access controls who can request work under the Publication. For broader role and access control context, see [User management](/h1-user-management.md).
 
 ## Check publication health
 
