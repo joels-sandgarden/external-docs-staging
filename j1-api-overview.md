@@ -9,7 +9,7 @@ The public API covers the published contract for `Connection`, `Conversation`, a
 ## Authentication and transport
 
 - Base URL: `https://api.doc.holiday/api/v1`
-- OpenAPI spec: `GET /api/v1/openapi.yaml`
+- OpenAPI spec: `https://api.doc.holiday/api/v1/openapi.yaml` (unauthenticated)
 - Create API keys in **Settings → API Keys**. That route is admin only.
 - The create form sets `expiresAt` to 48 hours from creation by default. Change the expiration date to keep a key valid longer.
 - The token appears only once after creation. Store it immediately.
