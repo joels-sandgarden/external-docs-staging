@@ -52,7 +52,7 @@ Choose only one changeset specification type per run.
 | Output | Description |
 | --- | --- |
 | `id` | Work request ID. |
-| `status` | One of `requested`, `running`, `done`, or `errored`. |
+| `status` | Job state, such as `requested`, `running`, `done`, or `errored`. |
 | `branch` | Branch created for the work. |
 | `output-url` | Link to the result. |
 
