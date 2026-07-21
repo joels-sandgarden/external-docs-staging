@@ -7,7 +7,7 @@ Use this guide to start a request in app.doc.holiday and check it in Work Histor
 1. In the left navigation, select "Create Work Request".
 2. In the "New Work Request" sheet, choose a "Publication" from "Select a publication". The selector shows only publications with write access.
 3. In "Description", enter one sentence that explains the work request. The placeholder reads "Describe the work request...".
-4. Select "Submit Request". The sheet also includes "Cancel" and "Close".
+4. Select "Submit Request". The sheet also offers "Cancel" and "Close".
 
 ```
 SCREENSHOT PLACEHOLDER: quickstart/create-work-request.png
