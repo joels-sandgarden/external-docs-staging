@@ -7,13 +7,21 @@
   site. This override resolves relative *.md destinations to the target page's
   URL (like Hugo's embedded link hook) and otherwise matches the theme:
   external http(s) links open in a new tab.
+
+  The site is built page by page against a fixed site map, so pages cross-link
+  siblings that have not been generated yet. A relative *.md destination that
+  does not resolve to a page renders as plain text; the link appears on the
+  next build after the target page lands.
 */ -}}
 {{- $u := urls.Parse .Destination -}}
 {{- $href := .Destination -}}
+{{- $unresolved := false -}}
 {{- if and (not $u.IsAbs) (strings.HasSuffix $u.Path ".md") -}}
+  {{- $unresolved = true -}}
   {{- with .PageInner.GetPage $u.Path -}}
     {{- $href = .RelPermalink -}}
     {{- with $u.Fragment -}}{{- $href = printf "%s#%s" $href . -}}{{- end -}}
+    {{- $unresolved = false -}}
   {{- end -}}
 {{- end -}}
-<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $href "http" }} target="_blank"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- if $unresolved -}}{{ .Text | safeHTML }}{{- else -}}<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $href "http" }} target="_blank"{{ end }}>{{ .Text | safeHTML }}</a>{{- end -}}

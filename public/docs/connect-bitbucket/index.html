@@ -4,14 +4,14 @@
 <head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="These docs are written and maintained by Doc Holiday itself.">
+  <meta name="description" content="Connect Bitbucket via a workspace token provider or per-project tokens.">
   <meta name="author" content="doc.holiday">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
   
 
-  <title>How This Site Is Made · Doc Holiday Documentation</title>
-  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/how-this-site-is-made/">
+  <title>Connect Bitbucket · Doc Holiday Documentation</title>
+  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/connect-bitbucket/">
 
   
 
@@ -67,7 +67,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/how-this-site-is-made/"  class="active" aria-current="page" >
+					<a href="/external-docs-staging/docs/how-this-site-is-made/" >
 						How This Site Is Made
 					</a>
 				</li>
@@ -87,7 +87,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/connect-bitbucket/" >
+					<a href="/external-docs-staging/docs/connect-bitbucket/"  class="active" aria-current="page" >
 						Connect Bitbucket
 					</a>
 				</li>
@@ -334,39 +334,50 @@
 
 
         <header id="article-header">
-          <h1 style="view-transition-name: external-docs-stagingdocshow-this-site-is-made">How This Site Is Made</h1>
+          <h1 style="view-transition-name: external-docs-stagingdocsconnect-bitbucket">Connect Bitbucket</h1>
 					
 				</header>
 
 				<div id="article-body">
-					<p>Short answer: by the product it documents.</p>
-<p>This site is a Doc Holiday <a href="/external-docs-staging/docs/publications/">Publication</a>. Its <a href="/external-docs-staging/docs/sources/">Sources</a> are Doc Holiday&rsquo;s own source code; its docs destination is the git repository this site is served from. Every documentation page here was written by Doc Holiday, one request per page, the same way a customer&rsquo;s docs are written.</p>
-<h2 id="the-loop-applied-to-ourselves">The loop, applied to ourselves</h2>
-<p>Each page begins as a written request: the file path, what the page must answer, and which parts of the product it covers. Doc Holiday explores the connected source, drafts the page as a set of reviewable changes, and stages the work in <a href="/external-docs-staging/docs/work-history/">Work History</a>.</p>
-<p>Then the human part — the same review gate we recommend to every customer:</p>
+					<p>Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments; issue and release triggers do not work. See Configure triggers.</p>
+<p>A Bitbucket setup uses two layers: a workspace access-token provider first, then Bitbucket Project connections underneath it. Use the workspace path when one token should cover more than one project. Use Option B when one project needs its own token.</p>
+<h2 id="option-a-workspace-access-token-provider-then-bitbucket-project-connections">Option A: workspace access-token provider, then Bitbucket Project connections</h2>
 <ol>
-<li><strong>Fact-check.</strong> Every claim on the drafted page — every screen label, status name, configuration field — is verified against the product source before the work is approved. Pages that fail are corrected the same way they were written: the exact corrections go back to Doc Holiday as a new request, so the page and its history stay in one pipeline.</li>
-<li><strong>Approve.</strong> Approved work becomes an ordinary pull request against this site&rsquo;s repository, and merging it publishes the page.</li>
-<li><strong>Maintain.</strong> When Doc Holiday&rsquo;s own code changes, the affected pages are reconciled the same way — which is the product&rsquo;s entire point.</li>
+<li>In Sources, select <strong>Add Provider</strong>.</li>
+<li>In the sheet titled <strong>Create Provider</strong>, choose <strong>Bitbucket Workspace Access Token</strong>.</li>
+<li>Enter <strong>Token Name</strong>, <strong>Workspace</strong>, and <strong>Access Token</strong>.</li>
+<li>Select <strong>Save Changes</strong>, then select <strong>Add Source</strong>.</li>
+<li>In the sheet titled <strong>Create Source</strong>, choose <strong>Bitbucket Repository</strong>.</li>
+<li>Enter <strong>Source Name</strong>, then choose <strong>Repository</strong> and the <strong>Select a repository</strong> picker.</li>
+<li>Select a <strong>Branch</strong> with <strong>Select branch</strong>, then choose a <strong>Publishing System</strong> with <strong>Select a publishing system</strong>.</li>
+<li>Turn on <strong>Pause Background Work for Source</strong> only if the Source should stay idle. Select <strong>Save Changes</strong> to finish the Source.</li>
 </ol>
-<h2 id="what-the-humans-do">What the humans do</h2>
-<p>People still review every page, take the screenshots, decide the site&rsquo;s structure, and write this meta page you&rsquo;re reading. Doc Holiday does the part humans can&rsquo;t keep up with: reading the source and keeping the words true to it.</p>
-<p>[REVIEW_PROCESS_NOTE]</p>
-<h2 id="the-honest-pitch">The honest pitch</h2>
-<p>If you&rsquo;re evaluating Doc Holiday, this site is a fair specimen of its output on a real codebase — including the review process around it. The same loop — request, draft, review, merge — is what it runs on your repositories.</p>
-<p>Start with <a href="/external-docs-staging/docs/what-is-doc-holiday/">What is Doc Holiday</a>, or go straight to the Quickstart.</p>
+<p>This path keeps one workspace token above the Bitbucket Project connections, so several projects can share the same access token.</p>
+<h2 id="option-b-repository-access-token">Option B: repository access token</h2>
+<ol>
+<li>In Sources, select <strong>Add Source</strong>.</li>
+<li>In the sheet titled <strong>Create Source</strong>, choose <strong>Bitbucket Repository</strong>.</li>
+<li>Enter <strong>Source Name</strong>, <strong>Repository</strong>, and <strong>Repository Access Token</strong>.</li>
+<li>Select a <strong>Branch</strong> and a <strong>Publishing System</strong>.</li>
+<li>Select <strong>Save Changes</strong> to finish the Source.</li>
+</ol>
+<p>Use this option when one repository needs its own token.</p>
+<h2 id="verify">Verify</h2>
+<p>Open the Sources page and confirm the Source shows <strong>Healthy</strong>. If it shows <strong>Unhealthy</strong>, open <a href="/external-docs-staging/docs/manage-connections/">Manage connections</a>.</p>
+<h2 id="next">Next</h2>
+<p>Continue with <a href="/external-docs-staging/docs/create-your-first-publication/">Create your first publication</a>.</p>
 
 				</div>
 
 				<footer id="article-footer">
 	
 		
-		<time datetime="2026-07-20">
+		<time datetime="0001-01-01">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 2026-07-20
+</span>Updated: 0001-01-01
 		</time>
 	
 
@@ -375,12 +386,12 @@
 		
 			
 			
-			<a href="/external-docs-staging/docs/concepts/">
+			<a href="/external-docs-staging/docs/connect-gitlab/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/connect-github/">Next 
+		<a href="/external-docs-staging/docs/create-your-first-publication/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
@@ -404,9 +415,10 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#the-loop-applied-to-ourselves">The loop, applied to ourselves</a></li>
-    <li><a href="#what-the-humans-do">What the humans do</a></li>
-    <li><a href="#the-honest-pitch">The honest pitch</a></li>
+    <li><a href="#option-a-workspace-access-token-provider-then-bitbucket-project-connections">Option A: workspace access-token provider, then Bitbucket Project connections</a></li>
+    <li><a href="#option-b-repository-access-token">Option B: repository access token</a></li>
+    <li><a href="#verify">Verify</a></li>
+    <li><a href="#next">Next</a></li>
   </ul>
 </nav>
 

@@ -4,14 +4,14 @@
 <head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="These docs are written and maintained by Doc Holiday itself.">
+  <meta name="description" content="Check health, restore access, edit details, or remove a Source or provider.">
   <meta name="author" content="doc.holiday">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
   
 
-  <title>How This Site Is Made · Doc Holiday Documentation</title>
-  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/how-this-site-is-made/">
+  <title>Manage Connections · Doc Holiday Documentation</title>
+  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/manage-connections/">
 
   
 
@@ -67,7 +67,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/how-this-site-is-made/"  class="active" aria-current="page" >
+					<a href="/external-docs-staging/docs/how-this-site-is-made/" >
 						How This Site Is Made
 					</a>
 				</li>
@@ -167,7 +167,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/manage-connections/" >
+					<a href="/external-docs-staging/docs/manage-connections/"  class="active" aria-current="page" >
 						Manage Connections
 					</a>
 				</li>
@@ -334,39 +334,76 @@
 
 
         <header id="article-header">
-          <h1 style="view-transition-name: external-docs-stagingdocshow-this-site-is-made">How This Site Is Made</h1>
+          <h1 style="view-transition-name: external-docs-stagingdocsmanage-connections">Manage Connections</h1>
 					
 				</header>
 
 				<div id="article-body">
-					<p>Short answer: by the product it documents.</p>
-<p>This site is a Doc Holiday <a href="/external-docs-staging/docs/publications/">Publication</a>. Its <a href="/external-docs-staging/docs/sources/">Sources</a> are Doc Holiday&rsquo;s own source code; its docs destination is the git repository this site is served from. Every documentation page here was written by Doc Holiday, one request per page, the same way a customer&rsquo;s docs are written.</p>
-<h2 id="the-loop-applied-to-ourselves">The loop, applied to ourselves</h2>
-<p>Each page begins as a written request: the file path, what the page must answer, and which parts of the product it covers. Doc Holiday explores the connected source, drafts the page as a set of reviewable changes, and stages the work in <a href="/external-docs-staging/docs/work-history/">Work History</a>.</p>
-<p>Then the human part — the same review gate we recommend to every customer:</p>
+					<p>Keep your Sources healthy, fix a broken Source, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, restore access, edit details, or remove a Source or provider.</p>
+
+
+
+<pre tabindex="0"><code>SCREENSHOT PLACEHOLDER: manage-connections/health-list.png</code></pre><h2 id="check-health">Check health</h2>
 <ol>
-<li><strong>Fact-check.</strong> Every claim on the drafted page — every screen label, status name, configuration field — is verified against the product source before the work is approved. Pages that fail are corrected the same way they were written: the exact corrections go back to Doc Holiday as a new request, so the page and its history stay in one pipeline.</li>
-<li><strong>Approve.</strong> Approved work becomes an ordinary pull request against this site&rsquo;s repository, and merging it publishes the page.</li>
-<li><strong>Maintain.</strong> When Doc Holiday&rsquo;s own code changes, the affected pages are reconciled the same way — which is the product&rsquo;s entire point.</li>
+<li>Open <strong>Sources</strong>.</li>
+<li>Find the row for the Source.</li>
+<li>Read the badge in the status column.</li>
+<li>Use the badge text as your quick check:
+<ul>
+<li><strong>Healthy</strong> means Doc Holiday can read the Source.</li>
+<li><strong>Unhealthy</strong> means Doc Holiday skips it until you fix the problem.</li>
+<li><strong>Checking&hellip;</strong> means Doc Holiday is still checking it.</li>
+</ul>
+</li>
+<li>Doc Holiday reads connected Sources regularly. When a Source stays <strong>Unhealthy</strong>, its information can go stale while other Sources keep updating.</li>
 </ol>
-<h2 id="what-the-humans-do">What the humans do</h2>
-<p>People still review every page, take the screenshots, decide the site&rsquo;s structure, and write this meta page you&rsquo;re reading. Doc Holiday does the part humans can&rsquo;t keep up with: reading the source and keeping the words true to it.</p>
-<p>[REVIEW_PROCESS_NOTE]</p>
-<h2 id="the-honest-pitch">The honest pitch</h2>
-<p>If you&rsquo;re evaluating Doc Holiday, this site is a fair specimen of its output on a real codebase — including the review process around it. The same loop — request, draft, review, merge — is what it runs on your repositories.</p>
-<p>Start with <a href="/external-docs-staging/docs/what-is-doc-holiday/">What is Doc Holiday</a>, or go straight to the Quickstart.</p>
+<h2 id="fix-an-unhealthy-source">Fix an unhealthy Source</h2>
+<ol>
+<li>Open the Source in <strong>Sources</strong> or the provider in <strong>Providers</strong>.</li>
+<li>Select <strong>Edit</strong>.</li>
+<li>Check these common causes:
+<ul>
+<li>Credentials expired or were revoked.</li>
+<li>A provider app no longer exists in the workspace.</li>
+<li>The repository or project moved, or someone deleted it.</li>
+</ul>
+</li>
+<li>Update the visible fields in the sheet, then select <strong>Save Changes</strong>.</li>
+<li>If you need to reinstall a GitHub App on the provider side, open <strong>Manage GitHub Application</strong> and complete that setup again.</li>
+<li>Return to <strong>Sources</strong> and confirm the status badge reads <strong>Healthy</strong>.</li>
+</ol>
+<h2 id="edit-a-source">Edit a Source</h2>
+<ol>
+<li>Open the Source in <strong>Sources</strong> or the provider in <strong>Providers</strong>.</li>
+<li>Select <strong>Edit</strong>.</li>
+<li>Change <strong>Source Name</strong> when you want to rename a Source.</li>
+<li>Change <strong>Branch</strong> when you want Doc Holiday to track a different branch for a repository Source.</li>
+<li>The sheet title reads <strong>Update Source</strong> or <strong>Update Provider</strong>.</li>
+<li>Select <strong>Save Changes</strong> when you finish. Select <strong>Cancel</strong> or <strong>Close</strong> to leave the current values unchanged.</li>
+</ol>
+<h2 id="delete-a-source">Delete a Source</h2>
+<ol>
+<li>Update any Publication that still points at the Source before you delete it.</li>
+<li>If you delete a provider, move dependent Sources first.</li>
+<li>Open the Source or provider.</li>
+<li>Select <strong>Delete this source</strong> or <strong>Delete this provider</strong>.</li>
+<li>Review the warning, then confirm the delete.</li>
+<li>Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation.</li>
+<li>The repository itself stays in place, and already merged documentation remains unchanged.</li>
+</ol>
+<p>Next: <a href="/external-docs-staging/docs/sources/">Sources</a>.</p>
 
 				</div>
 
 				<footer id="article-footer">
 	
 		
-		<time datetime="2026-07-20">
+		<time datetime="0001-01-01">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 2026-07-20
+</span>Updated: 0001-01-01
 		</time>
 	
 
@@ -375,12 +412,16 @@
 		
 			
 			
-			<a href="/external-docs-staging/docs/concepts/">
+			
+			
+			
+			
+			<a href="/external-docs-staging/docs/connect-cloud-storage/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/connect-github/">Next 
+		<a href="/external-docs-staging/docs/publications/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
@@ -404,9 +445,10 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#the-loop-applied-to-ourselves">The loop, applied to ourselves</a></li>
-    <li><a href="#what-the-humans-do">What the humans do</a></li>
-    <li><a href="#the-honest-pitch">The honest pitch</a></li>
+    <li><a href="#check-health">Check health</a></li>
+    <li><a href="#fix-an-unhealthy-source">Fix an unhealthy Source</a></li>
+    <li><a href="#edit-a-source">Edit a Source</a></li>
+    <li><a href="#delete-a-source">Delete a Source</a></li>
   </ul>
 </nav>
 

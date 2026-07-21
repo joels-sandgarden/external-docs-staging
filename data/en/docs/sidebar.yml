@@ -12,6 +12,10 @@
 - title: Getting started
   pages:
     - title: Connect GitHub
+    - title: Connect GitLab
+    - title: Connect Bitbucket
+    - title: Create Your First Publication
+    - title: Add Your OpenAI Key
 
 - title: Working with Doc Holiday
   pages:
@@ -24,9 +28,15 @@
     - title: Writing Planning Instructions
     - title: Prompt Patterns
 
+# Connect Notion joins Sources once its re-fired page lands (c2 silent-miss).
 - title: Sources
   pages:
     - title: Sources
+    - title: Connect Confluence and Jira
+    - title: Connect Linear
+    - title: Connect Google Drive
+    - title: Connect Cloud Storage
+    - title: Manage Connections
 
 - title: Publications
   pages:

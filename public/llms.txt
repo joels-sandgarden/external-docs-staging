@@ -14,6 +14,10 @@ Append index.md to any page URL to fetch its raw Markdown source.
 
 ## Getting started
 - Connect GitHub: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-github/ — install the GitHub Application and connect repositories.
+- Connect GitLab: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-gitlab/ — connect GitLab projects as Sources; Doc Holiday opens merge requests there.
+- Connect Bitbucket: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-bitbucket/ — workspace token provider or per-project tokens.
+- Create Your First Publication: https://joels-sandgarden.github.io/external-docs-staging/docs/create-your-first-publication/ — Sources, docs destination, output types.
+- Add Your OpenAI Key: https://joels-sandgarden.github.io/external-docs-staging/docs/add-your-openai-key/ — add and test your organization's OpenAI key.
 
 ## Working with Doc Holiday
 - Work History: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history/ — the record of every request and its lifecycle.
@@ -26,6 +30,11 @@ Append index.md to any page URL to fetch its raw Markdown source.
 
 ## Sources
 - Sources: https://joels-sandgarden.github.io/external-docs-staging/docs/sources/ — what Doc Holiday reads and writes; freshness and health.
+- Connect Confluence and Jira: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-confluence-and-jira/ — Confluence as read-only context; Jira app-backed or read-only.
+- Connect Linear: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-linear/ — let Linear issues and comments trigger documentation work.
+- Connect Google Drive: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-google-drive/ — supply background material from Google Drive.
+- Connect Cloud Storage: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-cloud-storage/ — read-only context from S3 or Azure Blob.
+- Manage Connections: https://joels-sandgarden.github.io/external-docs-staging/docs/manage-connections/ — health, access recovery, edits, removal.
 
 ## Publications
 - Publications: https://joels-sandgarden.github.io/external-docs-staging/docs/publications/ — what a Publication defines and controls.

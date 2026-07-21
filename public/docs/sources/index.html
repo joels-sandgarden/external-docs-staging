@@ -52,7 +52,7 @@
 	</a>
 
 	
-	<nav aria-label="Field Guide Pages">
+	<nav aria-label="Docs Pages">
 		<details open>
 			<summary>Overview</summary>
 			<ul>
@@ -79,6 +79,26 @@
 				<li>
 					<a href="/external-docs-staging/docs/connect-github/" >
 						Connect GitHub
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/connect-gitlab/" >
+						Connect GitLab
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/connect-bitbucket/" >
+						Connect Bitbucket
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/create-your-first-publication/" >
+						Create Your First Publication
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/add-your-openai-key/" >
+						Add Your OpenAI Key
 					</a>
 				</li>
 				</ul>
@@ -124,6 +144,31 @@
 				<li>
 					<a href="/external-docs-staging/docs/sources/"  class="active" aria-current="page" >
 						Sources
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/connect-confluence-and-jira/" >
+						Connect Confluence and Jira
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/connect-linear/" >
+						Connect Linear
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/connect-google-drive/" >
+						Connect Google Drive
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/connect-cloud-storage/" >
+						Connect Cloud Storage
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/manage-connections/" >
+						Manage Connections
 					</a>
 				</li>
 				</ul>
@@ -236,7 +281,7 @@
 		</a>
 
 		
-		<a id="header-cta" class="btn btn-primary" href="/external-docs-staging/docs/the-big-picture/">Read the guide</a>
+		<a id="header-cta" class="btn btn-primary" href="/external-docs-staging/docs/what-is-doc-holiday/">Read the docs</a>
 	</div>
 
 	
@@ -254,13 +299,13 @@
 			
 		
 			
-			<a href="/external-docs-staging/docs/the-big-picture/" class="active">
+			<a href="/external-docs-staging/docs/what-is-doc-holiday/" class="active">
 				<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M256-288q49.42 0 96.21 11Q399-266 444-246v-454q-43-23-89.53-33.5-46.52-10.5-94.06-10.5-36.41 0-72.41 6t-68 21.98V-264q32-14 66.5-19t69.5-5Zm260 42q45-20 91.79-31 46.79-11 96.21-11 35 0 69.5 5t66.5 19v-452q-35-13-72.49-20.5Q730.02-744 692-744q-46 0-90 11.5T516-700v454Zm-59.5 89q-10.5-6-21.72-12-39.78-23-83.76-35-43.99-12-90.02-12-32 0-64.5 4T134-195q-31 14-58.5 3.5T48-229v-503q0-14 8-25.5T76-776q42-24 88.38-32 46.38-8 94.62-8 58 0 110.5 12T480-762q58-30 110.5-42T701-816q44.47 0 87.24 7.5Q831-801 870-783q17 8 30 20.5t13 30.5v503q0 24-23.5 35t-50.5 1q-35-13-71.5-18t-73.5-5q-44.66 0-87.33 11.5T526-169q-11 7-22 12.5t-24 5.5q-13 0-23.5-6ZM282-491Zm282-132q0-14 8.5-25t22.5-14q25-5 49.25-8 24.26-3 51.02-3 16.73 0 34.55 1.67 17.82 1.66 35.18 4.33 12 2 19.5 11.54T792-634q0 17-12 28t-29 8.71q-14-1.71-27.8-3.21t-28.05-1.5q-23.15 0-44.65 2.5t-43.38 8.37Q590-586 577-596t-13-27Zm2 235q0-14 8.5-25t22.5-14q25-5 49.25-8 24.26-3 51.02-3 16.73 0 34.55 1.67 17.82 1.66 35.18 4.33 12 2 19.5 11.54T794-399q0 17-12 28t-29 8.71q-14-1.71-27.8-3.21t-28.05-1.5q-23.15 0-44.65 2.5t-43.38 8.37Q592-351 579-361t-13-27Zm0-117q0-14 8.5-25t22.5-14q25-5 49.25-8 24.26-3 51.02-3 16.73 0 34.55 1.67 17.82 1.66 35.18 4.33 12 2 19.5 11.54T794-516q0 17-12 28t-29 8.71q-14-1.71-27.8-3.21t-28.05-1.5q-23.15 0-44.65 2.5t-43.38 8.37Q592-468 579-478t-13-27Z"/></svg>
 
 </span>
-				Field Guide
+				Docs
 			</a>
 			
 		
@@ -299,8 +344,7 @@
 <p>Other sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.</p>
 <p>Doc Holiday uses that mix of sources in one workflow. A Publication points at one source for the docs destination and at other sources for context, so the same page can describe writable sources and read only sources without treating them as separate ideas.</p>
 <p>That single model helps people who keep product notes in one place, source content in another, and the publication destination somewhere else. Doc Holiday can read across those places without making the reader learn three different kinds of connection logic.</p>
-<p>For the shared vocabulary behind this page, see <a href="/external-docs-staging/docs/concepts/">Concepts</a>
-.</p>
+<p>For the shared vocabulary behind this page, see <a href="/external-docs-staging/docs/concepts/">Concepts</a>.</p>
 <h2 id="provider-connections-and-child-sources">Provider connections and child sources</h2>
 <p>Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared source stays distinct from the child source it powers.</p>
 <p>That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent source again or changing the rest of the workspace.</p>
@@ -319,8 +363,7 @@
 <p>Doc Holiday rereads connected sources on a background cadence, roughly every couple of hours for each source. That keeps it close to the current state of the connected systems without waiting for manual refreshes.</p>
 <p>Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday stops re-reading that source until someone fixes the problem, so its information goes stale rather than fresh. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.</p>
 <p>The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, Doc Holiday stops re-reading that source until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.</p>
-<p>For the operational details around credentials, health, and deletion, see <a href="./c7-manage-connections.md">Manage connections</a>
-.</p>
+<p>For the operational details around credentials, health, and deletion, see <a href="/external-docs-staging/docs/manage-connections/">Manage connections</a>.</p>
 <p>That page covers the day to day maintenance work, while this page stays with the idea of what health means and why Doc Holiday skips an unhealthy source instead of guessing.</p>
 <h2 id="external-documentation">External Documentation</h2>
 <p>External Documentation connects Doc Holiday to an existing hosted docs site by URL. It reads that site as context and nothing more. Optional username and password fields support protected sites, which lets Doc Holiday reach material that sits behind a login.</p>
@@ -328,30 +371,20 @@
 <p>This source never publishes content back to the remote site, so it works as a read only reference rather than another docs destination.</p>
 <p>If a team already keeps docs context in a managed site, External Documentation lets Doc Holiday read that material without copying it into another system first.</p>
 <h2 id="documentation-can-mean-more-than-one-thing">Documentation can mean more than one thing</h2>
-<p>Documentation has three meanings in Doc Holiday. It can mean External Documentation, which is a source. It can also mean the docs destination repository that a Publication writes into, which gives the Publication its target. Finally, it can mean the documentation output type <a href="./d3-output-types.md">Documentation</a>
-, which is one of the outputs a Publication can ask Doc Holiday to produce.</p>
-<p>That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication&rsquo;s docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that choice, see <a href="/external-docs-staging/docs/publications/">Publications</a>
-.</p>
+<p>Documentation has three meanings in Doc Holiday. It can mean External Documentation, which is a source. It can also mean the docs destination repository that a Publication writes into, which gives the Publication its target. Finally, it can mean the documentation output type Documentation, which is one of the outputs a Publication can ask Doc Holiday to produce.</p>
+<p>That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication&rsquo;s docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that choice, see <a href="/external-docs-staging/docs/publications/">Publications</a>.</p>
 <p>That wording prevents confusion when the UI asks for a documentation source, a Publication destination, or a documentation output selection in the same flow.</p>
 <h2 id="set-up-a-source">Set up a source</h2>
 <p>When a team needs to add a new source, the provider page shows the fields, validation, and workspace selection specific to that system. These pages cover setup, so this list stays short.</p>
 <ul>
-<li><a href="/external-docs-staging/docs/connect-github/">GitHub</a>
-</li>
-<li><a href="./b3-connect-gitlab.md">GitLab</a>
-</li>
-<li><a href="./b4-connect-bitbucket.md">Bitbucket</a>
-</li>
-<li><a href="./c2-connect-notion.md">Notion</a>
-</li>
-<li><a href="./c3-connect-confluence-and-jira.md">Confluence and Jira</a>
-</li>
-<li><a href="./c4-connect-linear.md">Linear</a>
-</li>
-<li><a href="./c5-connect-google-drive.md">Google Drive</a>
-</li>
-<li><a href="./c6-connect-cloud-storage.md">Cloud storage</a>
-</li>
+<li><a href="/external-docs-staging/docs/connect-github/">GitHub</a></li>
+<li><a href="/external-docs-staging/docs/connect-gitlab/">GitLab</a></li>
+<li><a href="/external-docs-staging/docs/connect-bitbucket/">Bitbucket</a></li>
+<li>Notion</li>
+<li><a href="/external-docs-staging/docs/connect-confluence-and-jira/">Confluence and Jira</a></li>
+<li><a href="/external-docs-staging/docs/connect-linear/">Linear</a></li>
+<li><a href="/external-docs-staging/docs/connect-google-drive/">Google Drive</a></li>
+<li><a href="/external-docs-staging/docs/connect-cloud-storage/">Cloud storage</a></li>
 </ul>
 
 				</div>
@@ -376,13 +409,12 @@
 			
 			
 			
-			
 			<a href="/external-docs-staging/docs/prompt-patterns/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/publications/">Next 
+		<a href="/external-docs-staging/docs/connect-confluence-and-jira/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
