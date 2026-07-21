@@ -40,7 +40,7 @@ If the token can reach more than one repository, pick the one you want Doc Holid
 
 ## Verify
 
-Open the Connections page and find the GitHub Source. Check the badge beside it. A working Source shows **Healthy**. If it shows **Unhealthy**, open [/c7-manage-connections.md](/c7-manage-connections.md) and fix the Source before you add another repository or create a publication. Use this check before moving on, because a healthy badge confirms the Source is ready for the next step. That check saves time before you create a publication, because later steps assume the Source is already healthy.
+Open the **Sources** page and find the GitHub Source. Check the badge beside it. A working Source shows **Healthy**. If it shows **Unhealthy**, open [/c7-manage-connections.md](/c7-manage-connections.md) and fix the Source before you add another repository or create a publication. Use this check before moving on, because a healthy badge confirms the Source is ready for the next step. That check saves time before you create a publication, because later steps assume the Source is already healthy.
 
 ## Next
 
