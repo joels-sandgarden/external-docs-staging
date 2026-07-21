@@ -19,7 +19,7 @@ SCREENSHOT PLACEHOLDER: quickstart/publication-form.png
 
 4. On "Verify your setup", select "Create Test Pull Request" until "View Pull Request" appears, then continue through "Choose your plan", "Add your AI provider key", and "Go to the Doc Holiday App". For the key step, see [Add your OpenAI key](/b6-add-your-openai-key.md).
 
-5. In Work History, select "Create Work Request", then fill in "Publication" and "Description" with "Write a getting-started page for this project". Select "Submit Request" and wait for the "Work Request Created" success message. The entry then appears in Work History with the staged status "Ready for Review".
+5. In Work History, select "Create Work Request"; the sheet opens as "New Work Request". Fill in "Publication" and "Description" with "Write a getting-started page for this project". Select "Submit Request" and wait for the "Work Request Created" success message. The entry then appears in Work History with the staged status "Ready for Review".
 
 ```
 SCREENSHOT PLACEHOLDER: quickstart/create-work-request.png
