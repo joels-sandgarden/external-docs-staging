@@ -34,8 +34,8 @@ An API key acts as the user who created it, so that user's organization membersh
 | Page | Use it for |
 | --- | --- |
 | [Publications](/j2-api-publications.md) | publication records and publication-scoped operations |
-| [Connections](./j3-api-connections.md) | connection records and connection-scoped operations |
-| [Work History](./j4-api-work-history.md) | conversations, turns, and comments |
-| [Users](./j5-api-users.md) | user identity and account data |
-| [Instruction Library](./j6-api-instruction-library.md) | instructions and instruction links |
-| [Audit Logs](./j7-api-audit-logs.md) | audit log records |
+| [Connections](/j3-api-connections.md) | connection records and connection-scoped operations |
+| [Work History](/j4-api-work-history.md) | conversations, turns, and comments |
+| [Users](/j5-api-users.md) | user identity and account data |
+| [Instruction Library](/j6-api-instruction-library.md) | instructions and instruction links |
+| [Audit Logs](/j7-api-audit-logs.md) | audit log records |
