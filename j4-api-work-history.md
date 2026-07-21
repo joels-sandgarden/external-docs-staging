@@ -77,7 +77,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `ids`, `conversationId`, `connectionId`, `workRequested`, `source`, `externalId`, `filePath`.
 - Response: `ModelsListConversationCommentsResponse` with `comments`, `nextPageToken`, `previousPageToken`, and `error`.
 - Notes: when `conversationId` is present, Doc Holiday checks read access on that Publication. Each comment can include `anchor`, `batchItemIds`, `batchedIntoIds`, and `replyIds`.
-- `curl`: `curl -H 'Authorization: Bearer …' '/api/v1/conversation_comments?conversationId=conv_123&workRequested=false'`
+- `curl`: `curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_comments?conversationId=conv_123&workRequested=false"`
 - `json`: `{"comments":[{"id":"c1","workRequested":false}],"nextPageToken":"","previousPageToken":""}`
 
 ### `PATCH /api/v1/conversation_comments/{id}`
