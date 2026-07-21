@@ -1,16 +1,22 @@
 # Connection types
 
-This reference lists every supported Doc Holiday connection type, its role, parent requirements, and automatic triggers.
+This reference lists every supported Doc Holiday connection type, its role, parent requirement, and automatic trigger set. The table below stays a lookup register. It does not explain setup or workflow. It records the product model as it exists in the app.
 
-Doc Holiday treats connection types as a closed set. Git provider rows sit above repository rows, and the repository rows are the triggerable connections for pull request, issue, and release events. Context source rows cover documentation systems and other external content sources. Slack Channel is the only notifier connection, and Slack App and Atlassian Forge App are the parent rows that support other connections.
+Doc Holiday keeps the set closed. Each row pairs the Type label shown in the app with the API value used by the model. The Role column groups rows into git provider, git repository, context source, or notifier. The Requires column names a parent only when one exists. The Automatic triggers column lists exact trigger identifiers or `—`.
 
-GitHub, GitLab, and Bitbucket each appear as a provider row plus one or more repository rows. Provider rows are the parent layer. Repository rows are the direct or provider-backed source connections that can emit pull request, issue, and release events.
+Git provider rows sit above repository rows. GitHub App, GitLab provider, and Bitbucket provider serve as parent rows. GitHub also uses a personal access token path, which creates a direct repository row without a parent. GitLab and Bitbucket each split provider and project rows. Repository rows are the direct or provider-backed source connections that emit trigger events.
 
-Documentation, Notion, Google Drive, AWS, Confluence, and Azure Blob are standalone context sources. Linear is the standalone context source with issue events. Jira project and Atlassian Forge Jira project are the issue-tracking rows with send-to-doc and issue-status-change events. Slack App and Atlassian Forge App are parent rows only; Slack Channel is the notifier row and depends on Slack App.
+Context source rows usually stand alone. Documentation, Notion, Google Drive, AWS, Confluence, and Azure Blob do not require parents. Linear is the only standalone context source with trigger support, and it exposes `newIssues` and `issueComments`. Jira project and Atlassian Forge Jira project also belong to the context source family, but they add trigger support of their own.
 
-The Type column uses the user-facing label shown in the app. The API value column keeps the wire identifier from the connection model. The Requires column shows the parent connection only when the source config points to one; otherwise it is `—`. The Automatic triggers column shows the exact event identifiers used by Doc Holiday, or `—` when a connection type does not emit events. Rows without a parent or trigger use `—` to keep the register compact.
+Jira project and Atlassian Forge Jira project expose `sendToDoc` and `issueStatusChange`. Atlassian Forge App serves as the parent row for Atlassian Forge Jira project. Slack App serves as the parent row for Slack Channel, and Slack Channel remains the only notifier connection. Slack App and Atlassian Forge App stay as parent rows only.
 
-The supported trigger event identifiers are `pullRequests`, `newIssues`, `issueComments`, `releases`, `sendToDoc`, and `issueStatusChange`. In the current model, only the repository and issue-tracking types in the table expose those events. Repository rows use the pull-request, issue, and release events; Jira project rows use the send-to-doc and issue-status-change events; Linear uses issue creation and comments.
+The supported trigger identifiers are `pullRequests`, `newIssues`, `issueComments`, `releases`, `sendToDoc`, and `issueStatusChange`. Repository rows use the pull request, issue, comment, and release identifiers. Jira project rows and Atlassian Forge Jira project rows use the two Jira-specific identifiers. Rows without event support show `—`.
+
+The Role column groups families rather than platform features. A git provider row does not emit events by itself. A git repository row does. A context source row describes external content sources or issue-tracking systems. A notifier row handles publication notifications only.
+
+The table uses `—` deliberately. It marks rows with no parent and rows with no automatic events. That keeps the register narrow while still showing which entries participate in trigger handling and which entries only provide context or notification.
+
+Atlassian Forge follows the same split as GitLab and Bitbucket. One row names the app parent, and the other row names the Jira project source. The parent row stays triggerless, and the project row carries the event set.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
