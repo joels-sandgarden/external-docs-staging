@@ -210,7 +210,7 @@ Lists the Jira statuses that a connection can use.
 - Returns: `statuses`
 - curl:
 ```bash
-curl "https://api.doc.holiday/api/v1/connections/12/jira/statuses" \
+curl "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef/jira/statuses" \
   -H "Authorization: Bearer {{sfsToken}}"
 ```
 - JSON:
