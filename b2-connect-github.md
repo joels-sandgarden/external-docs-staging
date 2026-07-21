@@ -1,4 +1,4 @@
-# Connect GitHub to Doc Holiday
+# Connect GitHub
 
 GitHub setup in Doc Holiday uses two steps. First, connect the organization-wide **GitHub Application**. Then add one **GitHub Repository** Source for each repository Doc Holiday should read or write. Use this page when you set up GitHub for the first time or when you add another repository to an existing organization install.
 
