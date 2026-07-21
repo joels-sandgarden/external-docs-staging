@@ -17,11 +17,10 @@ Cloud storage Sources provide read-only context from your storage account — th
 1. Open **Sources** and select **Add Source**.
 2. Choose **Azure Blob Storage**.
 3. Enter **Source Name**.
-4. Keep **Pause Background Work for Source** selected.
-5. Enter **Account Name**.
-6. Enter **Account Key**.
-7. Enter **Container Name**.
-8. Select **Save Changes**.
+4. Enter **Account Name**.
+5. Enter **Account Key**.
+6. Enter **Container Name**.
+7. Select **Save Changes**.
 
 ## Verify
 
