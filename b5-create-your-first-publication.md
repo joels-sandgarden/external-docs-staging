@@ -12,16 +12,16 @@ SCREENSHOT PLACEHOLDER: quickstart/publication-form.png
 ```
 
 1. Open **Publications**, then select **Add Publication** and **Create Publication**.
-2. Enter a **"Name"** that makes the Publication easy to recognize later.
-3. Under **"Inputs"** (**"select all that apply"**), choose the Sources this Publication should read from.
-4. Under **"Targets"** (**"select one"**), choose the docs destination.
-5. Under **"Write:"**, Doc Holiday starts **"Documentation"**, **"Release Notes"**, and **"Changelog"** on by default. For a first Publication, leave only **"Documentation"** on and turn **"Release Notes"** and **"Changelog"** off. See [Output types](/d3-output-types.md) for the broader explanation.
-6. Leave **"Commit Instructions"** and **"Writing Instructions"** at their defaults for now.
-7. Trigger setup comes later; see [Configure triggers](/d2-configure-triggers.md). Finish by selecting **"Save Changes"**.
+2. Enter a **Name** that makes the Publication easy to recognize later.
+3. Under **Inputs** (**select all that apply**), choose the Sources this Publication should read from.
+4. Under **Targets** (**select one**), choose the docs destination.
+5. Under **Write:**, Doc Holiday starts **Documentation**, **Release Notes**, and **Changelog** on by default. For a first Publication, leave only **Documentation** on and turn **Release Notes** and **Changelog** off. See [Output types](/d3-output-types.md) for the broader explanation.
+6. Leave **Commit Instructions** and **Writing Instructions** at their defaults for now.
+7. Trigger setup comes later; see [Configure triggers](/d2-configure-triggers.md). Finish by selecting **Save Changes**.
 
 ## Verify
 
-Open the publication details view and confirm the **"Status"** section shows **"Healthy"**. Select **"Run Test"** to check it again.
+Open the publication details view and confirm the **Status** section shows **Healthy**. Select **Run Test** to check it again.
 
 ## Next
 
