@@ -3,17 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1318/external-docs-staging/docs/concepts/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connect-github/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/connection-types/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/how-this-site-is-made/</loc>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/prompt-patterns/</loc>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/publications/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/release-notes/</loc>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/release-notes-archive/</loc>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/security-and-data-handling/</loc>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/sources/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/troubleshooting-and-faq/</loc>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/what-is-doc-holiday/</loc>
   </url><url>
     <loc>http://localhost:1318/external-docs-staging/docs/work-history/</loc>
+    <lastmod>2026-07-20T19:57:03-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/writing-planning-instructions/</loc>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/writing-requests/</loc>
+  </url><url>
+    <loc>http://localhost:1318/external-docs-staging/docs/writing-style-guides/</loc>
   </url>
 </urlset>

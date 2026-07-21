@@ -1,14 +1,28 @@
 # Sidebar structure for the docs section. The theme builds each link as
 # /docs/<urlize(title)>/ — so every `title` here must urlize to the same slug
 # as the corresponding page's `url` front matter.
-# Wave-1 pages only; groups grow as later waves merge (full IA: dh-docs-prompts/SITE_MAP.md).
+# Grows as waves merge (full IA: dh-docs-prompts/SITE_MAP.md). The release-notes
+# archive page is deliberately not listed (linked from Release Notes).
 - title: Overview
   pages:
+    - title: What Is Doc Holiday
     - title: Concepts
+    - title: How This Site Is Made
 
 - title: Getting started
   pages:
     - title: Connect GitHub
+
+- title: Working with Doc Holiday
+  pages:
+    - title: Work History
+
+- title: Prompting Guide
+  pages:
+    - title: Writing Requests
+    - title: Writing Style Guides
+    - title: Writing Planning Instructions
+    - title: Prompt Patterns
 
 - title: Sources
   pages:
@@ -18,10 +32,15 @@
   pages:
     - title: Publications
 
-- title: Working with Doc Holiday
+- title: Administration
   pages:
-    - title: Work History
+    - title: Security and Data Handling
 
 - title: Reference
   pages:
     - title: Connection Types
+
+- title: Meta
+  pages:
+    - title: Release Notes
+    - title: Troubleshooting and FAQ

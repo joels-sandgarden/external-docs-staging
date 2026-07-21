@@ -4,14 +4,14 @@
 <head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="What Doc Holiday reads and writes: connection roles, freshness, and health.">
+  <meta name="description" content="Shape what Doc Holiday decides to work on before it writes.">
   <meta name="author" content="doc.holiday">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
   
 
-  <title>Sources · Doc Holiday Documentation</title>
-  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/sources/">
+  <title>Writing Planning Instructions · Doc Holiday Documentation</title>
+  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/writing-planning-instructions/">
 
   
 
@@ -107,7 +107,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/writing-planning-instructions/" >
+					<a href="/external-docs-staging/docs/writing-planning-instructions/"  class="active" aria-current="page" >
 						Writing Planning Instructions
 					</a>
 				</li>
@@ -122,7 +122,7 @@
 			<summary>Sources</summary>
 			<ul>
 				<li>
-					<a href="/external-docs-staging/docs/sources/"  class="active" aria-current="page" >
+					<a href="/external-docs-staging/docs/sources/" >
 						Sources
 					</a>
 				</li>
@@ -289,83 +289,73 @@
 
 
         <header id="article-header">
-          <h1 style="view-transition-name: external-docs-stagingdocssources">Sources</h1>
+          <h1 style="view-transition-name: external-docs-stagingdocswriting-planning-instructions">Writing Planning Instructions</h1>
 					
 				</header>
 
 				<div id="article-body">
-					<h2 id="what-sources-are">What sources are</h2>
-<p>Doc Holiday treats a Source as a connected system that contributes content or receives notifications. A source can be a repository that Doc Holiday reads and writes, a context system it only reads, or the Slack Channel that carries notifications.</p>
-<p>Other sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.</p>
-<p>Doc Holiday uses that mix of sources in one workflow. A Publication points at one source for the docs destination and at other sources for context, so the same page can describe writable sources and read only sources without treating them as separate ideas.</p>
-<p>That single model helps people who keep product notes in one place, source content in another, and the publication destination somewhere else. Doc Holiday can read across those places without making the reader learn three different kinds of connection logic.</p>
-<p>For the shared vocabulary behind this page, see <a href="/external-docs-staging/docs/concepts/">Concepts</a>
-.</p>
-<h2 id="provider-connections-and-child-sources">Provider connections and child sources</h2>
-<p>Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared connection stays distinct from the child connection it powers.</p>
-<p>That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent connection again or changing the rest of the workspace.</p>
-<p>The parent connection usually holds the shared workspace or app access, while the child source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content sources.</p>
-<p>The pattern is the same across the supported providers:</p>
+					<p>Planning instructions shape what Doc Holiday <em>decides to work on</em> before it writes a word: which pages should exist, what gets updated when something ships, and where the boundaries of the docs are. Style guides govern how prose reads; planning instructions govern coverage. They apply to every run for the <a href="/external-docs-staging/docs/publications/">Publication</a>
+ — which is both their power and their hazard.</p>
+<h2 id="good-uses">Good uses</h2>
+<p><strong>Coverage rules</strong> — the unit of documentation:</p>
+<blockquote>
+<p>Plan one page per user-facing feature area — never one page per API endpoint, never one page per code module.</p>
+</blockquote>
+<p><strong>Boundaries</strong> — what the docs deliberately ignore:</p>
+<blockquote>
+<p>Only document features visible in the dashboard or the public API. Ignore internal tooling, admin-only surfaces, and anything behind a feature flag.</p>
+</blockquote>
+<p><strong>Site conventions</strong> — where things go and what else must change:</p>
+<blockquote>
+<p>New guides go under /guides/. Whenever a page is added, add it to the sidebar file and the navigation index in the same piece of work.</p>
+</blockquote>
+<p><strong>Update discipline</strong> — what &ldquo;react to a change&rdquo; means:</p>
+<blockquote>
+<p>When a release changes existing behavior, update the affected pages rather than creating new ones. Create a new page only for a genuinely new capability.</p>
+</blockquote>
+<h2 id="the-overreach-warning">The overreach warning</h2>
+<p>Planning instructions apply to <strong>every</strong> run — including runs whose request asks for something else. A rule like:</p>
+<blockquote>
+<p>Only write to /content/release-notes.md.</p>
+</blockquote>
+<p>…will make Doc Holiday redirect an explicit &ldquo;update the install guide&rdquo; request toward release notes, and report success. The rule did exactly what it said; it just said too much.</p>
+<p>The discipline: keep planning instructions <strong>structural</strong> (units, boundaries, locations) and keep them <strong>out of content decisions</strong> (what any single page says). If a rule names a specific file as the only permitted output, or dictates what topic every run must produce, it will eventually fight a legitimate request — and the instruction wins.</p>
+<h2 id="worked-examples">Worked examples</h2>
+<p>For a product-docs publication:</p>
+<blockquote>
 <ul>
-<li>GitHub Application provides access for GitHub Repository sources.</li>
-<li>GitLab Access Token provides access for GitLab Project sources.</li>
-<li>Bitbucket Workspace Access Token provides access for Bitbucket Project sources.</li>
-<li>Atlassian Application provides access for Jira Project sources.</li>
-<li>Slack Application provides access for Slack Channel sources.</li>
+<li>One page per feature area; cross-link between pages instead of repeating material.</li>
+<li>Only document behavior visible to customers. Never document internal mechanisms.</li>
+<li>New pages: /docs/. Update the sidebar in the same piece of work.</li>
+<li>Never plan tutorial content — this publication is how-to and reference only.</li>
 </ul>
-<p>The same structure appears wherever Doc Holiday needs one shared permission set and many child sources.</p>
-<p>The pattern also keeps the setup story easy to follow. Once the provider exists, the child source only needs the fields that belong to that specific repository, project, or channel, which keeps repeated setup work to a minimum.</p>
-<h2 id="freshness-and-health">Freshness and health</h2>
-<p>Doc Holiday rereads connected sources on a background cadence, roughly every couple of hours for each source. That keeps it close to the current state of the connected systems without waiting for manual refreshes.</p>
-<p>Before it writes, Doc Holiday refreshes the stalest source first. That extra pass matters when several sources feed one Publication, because the first draft should start from the newest available material from every place it reads.</p>
-<p>Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday leaves it out of the write cycle until someone fixes the problem. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.</p>
-<p>The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, the source drops out of the write cycle until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.</p>
-<p>For the operational details around credentials, health, and deletion, see <a href="./c7-manage-connections.md">Manage connections</a>
-.</p>
-<p>That page covers the day to day maintenance work, while this page stays with the idea of what health means and why Doc Holiday skips an unhealthy source instead of guessing.</p>
-<h2 id="external-documentation">External Documentation</h2>
-<p>External Documentation connects Doc Holiday to an existing hosted docs site by URL. It reads that site as context and nothing more. Optional username and password fields support protected sites, which lets Doc Holiday reach material that sits behind a login.</p>
-<p>That makes External Documentation useful when product notes, policies, or design references live in another system. Doc Holiday can read those pages alongside code and repository history without turning that external site into a publishing target.</p>
-<p>This source never publishes content back to the remote site, so it works as a read only reference rather than another docs destination.</p>
-<p>If a team already keeps docs context in a managed site, External Documentation lets Doc Holiday read that material without copying it into another system first.</p>
-<h2 id="documentation-can-mean-more-than-one-thing">Documentation can mean more than one thing</h2>
-<p>Documentation has three meanings in Doc Holiday. It can mean External Documentation, which is a source. It can also mean the docs destination repository that a Publication writes into, which gives the Publication its target. Finally, it can mean the documentation output type <a href="./d3-output-types.md">Documentation</a>
-, which is one of the outputs a Publication can ask Doc Holiday to produce.</p>
-<p>That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication&rsquo;s docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that choice, see <a href="/external-docs-staging/docs/publications/">Publications</a>
-.</p>
-<p>That wording prevents confusion when the UI asks for a documentation source, a Publication destination, or a documentation output selection in the same flow.</p>
-<h2 id="set-up-a-source">Set up a source</h2>
-<p>When a team needs to add a new source, the provider page shows the fields, validation, and workspace selection specific to that system. These pages cover setup, so this list stays short.</p>
+</blockquote>
+<p>For a from-scratch docs build driven one page at a time:</p>
+<blockquote>
 <ul>
-<li><a href="/external-docs-staging/docs/connect-github/">GitHub</a>
-</li>
-<li><a href="./b3-connect-gitlab.md">GitLab</a>
-</li>
-<li><a href="./b4-connect-bitbucket.md">Bitbucket</a>
-</li>
-<li><a href="./c2-connect-notion.md">Notion</a>
-</li>
-<li><a href="./c3-connect-confluence-and-jira.md">Confluence and Jira</a>
-</li>
-<li><a href="./c4-connect-linear.md">Linear</a>
-</li>
-<li><a href="./c5-connect-google-drive.md">Google Drive</a>
-</li>
-<li><a href="./c6-connect-cloud-storage.md">Cloud storage</a>
-</li>
+<li>Plan only the page the request names; never add, split, or reorganize pages on your own.</li>
+<li>The requested file path is exact and final.</li>
+<li>Cross-link using the site map in the request, even to pages that don&rsquo;t exist yet.</li>
 </ul>
+</blockquote>
+<p>That second set is how this documentation site was built — each page arrived as one request carrying its own brief, with planning instructions keeping every run inside its lane.</p>
+<h2 id="next">Next</h2>
+<p>Pair with <a href="/external-docs-staging/docs/writing-style-guides/">Writing style guides</a>
+ (the how-it-reads lever) and <a href="/external-docs-staging/docs/writing-requests/">Writing requests</a>
+ (the per-run lever). How the levers compose: <a href="./p1-prompting-guide.md">Prompting guide</a>
+.</p>
 
 				</div>
 
 				<footer id="article-footer">
 	
 		
-		<time datetime="2026-07-20">
+		<time datetime="0001-01-01">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 2026-07-20
+</span>Updated: 0001-01-01
 		</time>
 	
 
@@ -376,14 +366,12 @@
 			
 			
 			
-			
-			
-			<a href="/external-docs-staging/docs/prompt-patterns/">
+			<a href="/external-docs-staging/docs/writing-style-guides/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/publications/">Next 
+		<a href="/external-docs-staging/docs/prompt-patterns/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
@@ -407,12 +395,10 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-sources-are">What sources are</a></li>
-    <li><a href="#provider-connections-and-child-sources">Provider connections and child sources</a></li>
-    <li><a href="#freshness-and-health">Freshness and health</a></li>
-    <li><a href="#external-documentation">External Documentation</a></li>
-    <li><a href="#documentation-can-mean-more-than-one-thing">Documentation can mean more than one thing</a></li>
-    <li><a href="#set-up-a-source">Set up a source</a></li>
+    <li><a href="#good-uses">Good uses</a></li>
+    <li><a href="#the-overreach-warning">The overreach warning</a></li>
+    <li><a href="#worked-examples">Worked examples</a></li>
+    <li><a href="#next">Next</a></li>
   </ul>
 </nav>
 

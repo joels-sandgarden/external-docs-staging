@@ -4,14 +4,14 @@
 <head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="What Doc Holiday reads and writes: connection roles, freshness, and health.">
+  <meta name="description" content="User-visible changes to Doc Holiday, newest first.">
   <meta name="author" content="doc.holiday">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
   
 
-  <title>Sources · Doc Holiday Documentation</title>
-  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/sources/">
+  <title>Release Notes · Doc Holiday Documentation</title>
+  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/release-notes/">
 
   
 
@@ -122,7 +122,7 @@
 			<summary>Sources</summary>
 			<ul>
 				<li>
-					<a href="/external-docs-staging/docs/sources/"  class="active" aria-current="page" >
+					<a href="/external-docs-staging/docs/sources/" >
 						Sources
 					</a>
 				</li>
@@ -162,7 +162,7 @@
 			<summary>Meta</summary>
 			<ul>
 				<li>
-					<a href="/external-docs-staging/docs/release-notes/" >
+					<a href="/external-docs-staging/docs/release-notes/"  class="active" aria-current="page" >
 						Release Notes
 					</a>
 				</li>
@@ -289,83 +289,362 @@
 
 
         <header id="article-header">
-          <h1 style="view-transition-name: external-docs-stagingdocssources">Sources</h1>
+          <h1 style="view-transition-name: external-docs-stagingdocsrelease-notes">Release Notes</h1>
 					
 				</header>
 
 				<div id="article-body">
-					<h2 id="what-sources-are">What sources are</h2>
-<p>Doc Holiday treats a Source as a connected system that contributes content or receives notifications. A source can be a repository that Doc Holiday reads and writes, a context system it only reads, or the Slack Channel that carries notifications.</p>
-<p>Other sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.</p>
-<p>Doc Holiday uses that mix of sources in one workflow. A Publication points at one source for the docs destination and at other sources for context, so the same page can describe writable sources and read only sources without treating them as separate ideas.</p>
-<p>That single model helps people who keep product notes in one place, source content in another, and the publication destination somewhere else. Doc Holiday can read across those places without making the reader learn three different kinds of connection logic.</p>
-<p>For the shared vocabulary behind this page, see <a href="/external-docs-staging/docs/concepts/">Concepts</a>
-.</p>
-<h2 id="provider-connections-and-child-sources">Provider connections and child sources</h2>
-<p>Some sources come in pairs. A provider holds shared access once, then Doc Holiday reuses that access for each individual repository or project underneath it. The UI shows provider labels and source labels separately, so the shared connection stays distinct from the child connection it powers.</p>
-<p>That split keeps workspace access in one place. It also lets a team add or remove individual repositories, projects, or channels without setting up the parent connection again or changing the rest of the workspace.</p>
-<p>The parent connection usually holds the shared workspace or app access, while the child source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content sources.</p>
-<p>The pattern is the same across the supported providers:</p>
+					<h2 id="2026-07-17">2026-07-17</h2>
+<h3 id="-new-features">🚀 New Features</h3>
 <ul>
-<li>GitHub Application provides access for GitHub Repository sources.</li>
-<li>GitLab Access Token provides access for GitLab Project sources.</li>
-<li>Bitbucket Workspace Access Token provides access for Bitbucket Project sources.</li>
-<li>Atlassian Application provides access for Jira Project sources.</li>
-<li>Slack Application provides access for Slack Channel sources.</li>
+<li><strong>Use source-specific triggers</strong>
+<ul>
+<li>Publications now react only to the events configured for each source.</li>
 </ul>
-<p>The same structure appears wherever Doc Holiday needs one shared permission set and many child sources.</p>
-<p>The pattern also keeps the setup story easy to follow. Once the provider exists, the child source only needs the fields that belong to that specific repository, project, or channel, which keeps repeated setup work to a minimum.</p>
-<h2 id="freshness-and-health">Freshness and health</h2>
-<p>Doc Holiday rereads connected sources on a background cadence, roughly every couple of hours for each source. That keeps it close to the current state of the connected systems without waiting for manual refreshes.</p>
-<p>Before it writes, Doc Holiday refreshes the stalest source first. That extra pass matters when several sources feed one Publication, because the first draft should start from the newest available material from every place it reads.</p>
-<p>Every source also shows a health state. Healthy means Doc Holiday can use the source. Unhealthy means Doc Holiday leaves it out of the write cycle until someone fixes the problem. If a source stays unhealthy, the next draft can still use the healthy sources, but the missing source will not contribute until it recovers.</p>
-<p>The health badge gives a quick answer to a simple question: can Doc Holiday trust this source right now? If the answer changes, the source drops out of the write cycle until the health problem clears. That keeps drafts from mixing current content with stale or inaccessible material.</p>
-<p>For the operational details around credentials, health, and deletion, see <a href="./c7-manage-connections.md">Manage connections</a>
-.</p>
-<p>That page covers the day to day maintenance work, while this page stays with the idea of what health means and why Doc Holiday skips an unhealthy source instead of guessing.</p>
-<h2 id="external-documentation">External Documentation</h2>
-<p>External Documentation connects Doc Holiday to an existing hosted docs site by URL. It reads that site as context and nothing more. Optional username and password fields support protected sites, which lets Doc Holiday reach material that sits behind a login.</p>
-<p>That makes External Documentation useful when product notes, policies, or design references live in another system. Doc Holiday can read those pages alongside code and repository history without turning that external site into a publishing target.</p>
-<p>This source never publishes content back to the remote site, so it works as a read only reference rather than another docs destination.</p>
-<p>If a team already keeps docs context in a managed site, External Documentation lets Doc Holiday read that material without copying it into another system first.</p>
-<h2 id="documentation-can-mean-more-than-one-thing">Documentation can mean more than one thing</h2>
-<p>Documentation has three meanings in Doc Holiday. It can mean External Documentation, which is a source. It can also mean the docs destination repository that a Publication writes into, which gives the Publication its target. Finally, it can mean the documentation output type <a href="./d3-output-types.md">Documentation</a>
-, which is one of the outputs a Publication can ask Doc Holiday to produce.</p>
-<p>That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication&rsquo;s docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that choice, see <a href="/external-docs-staging/docs/publications/">Publications</a>
-.</p>
-<p>That wording prevents confusion when the UI asks for a documentation source, a Publication destination, or a documentation output selection in the same flow.</p>
-<h2 id="set-up-a-source">Set up a source</h2>
-<p>When a team needs to add a new source, the provider page shows the fields, validation, and workspace selection specific to that system. These pages cover setup, so this list stays short.</p>
-<ul>
-<li><a href="/external-docs-staging/docs/connect-github/">GitHub</a>
-</li>
-<li><a href="./b3-connect-gitlab.md">GitLab</a>
-</li>
-<li><a href="./b4-connect-bitbucket.md">Bitbucket</a>
-</li>
-<li><a href="./c2-connect-notion.md">Notion</a>
-</li>
-<li><a href="./c3-connect-confluence-and-jira.md">Confluence and Jira</a>
-</li>
-<li><a href="./c4-connect-linear.md">Linear</a>
-</li>
-<li><a href="./c5-connect-google-drive.md">Google Drive</a>
-</li>
-<li><a href="./c6-connect-cloud-storage.md">Cloud storage</a>
 </li>
 </ul>
+<h3 id="-enhancements">✨ Enhancements</h3>
+<ul>
+<li><strong>Link completion comments to Work History</strong>
+<ul>
+<li>When background tasks finish without opening a pull request, completion comments now point to the related Work History entry.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-bug-fixes">🐛 Bug Fixes</h3>
+<ul>
+<li><strong>Treat GitLab 404s as not found</strong>
+<ul>
+<li>Downloads and webhook health checks now report missing GitLab resources more accurately instead of surfacing a generic failure.</li>
+</ul>
+</li>
+<li><strong>Anchor review comment edits within lines</strong>
+<ul>
+<li>Review comment edits now stay pinned to the intended lines instead of deleting surrounding content.</li>
+</ul>
+</li>
+<li><strong>Skip deleted publications in access lookup</strong>
+<ul>
+<li>Deleted publication records no longer appear when Doc Holiday loads user access.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2026-07-06">2026-07-06</h2>
+<h3 id="-new-features-1">🚀 New Features</h3>
+<ul>
+<li><strong>Open conversation feedback to authenticated users without roles</strong>
+<ul>
+<li>Authenticated users without roles can now open conversation feedback.</li>
+</ul>
+</li>
+<li><strong>Allow comments on staged Work History messages</strong>
+<ul>
+<li>Staged Work History messages can now receive comments when they were blocked before.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-enhancements-1">✨ Enhancements</h3>
+<ul>
+<li><strong>Add the required Slack scope</strong>
+<ul>
+<li>Slack installation now asks for the additional <code>groups:read</code> scope.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-bug-fixes-1">🐛 Bug Fixes</h3>
+<ul>
+<li><strong>Clarify instruction link audit logs</strong>
+<ul>
+<li>Instruction link entries now read more clearly in the audit log.</li>
+</ul>
+</li>
+<li><strong>Delay completion status until background work finishes</strong>
+<ul>
+<li>Completion status no longer appears before work finishes.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2026-06-26">2026-06-26</h2>
+<h3 id="-new-features-2">🚀 New Features</h3>
+<ul>
+<li><strong>Open files in full-screen review mode</strong>
+<ul>
+<li>The Files tab can now open a single file in a full-screen overlay with previous and next navigation.</li>
+</ul>
+</li>
+<li><strong>Switch the Files tab to a present-state view</strong>
+<ul>
+<li>The Files tab can now show the current file contents without the diff presentation while keeping comment placement intact.</li>
+</ul>
+</li>
+<li><strong>Drag the comment marker to select a range</strong>
+<ul>
+<li>The comment anchor now supports drag selection across multiple lines in the Files tab.</li>
+</ul>
+</li>
+<li><strong>Resolve Linear comment authors</strong>
+<ul>
+<li>Linear comments and issue creators now show profile names, display names, or email addresses instead of UUIDs.</li>
+</ul>
+</li>
+<li><strong>Create publication sharing notifications</strong>
+<ul>
+<li>Publication sharing now records in-app notifications so recipients can review shared access inside the app.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-enhancements-2">✨ Enhancements</h3>
+<ul>
+<li><strong>Add a Files tab return link for anchored messages</strong>
+<ul>
+<li>Anchored messages in Work History now provide a direct way back to the related file.</li>
+</ul>
+</li>
+<li><strong>Displayed created and updated comment times</strong>
+<ul>
+<li>Edited comments now show an updated timestamp, and a hover tooltip reveals the original created time.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-breaking-changes">⚠️ Breaking Changes</h3>
+<ul>
+<li><strong>Update Doc Holiday terminology</strong>
+<ul>
+<li>The dashboard, SDK, and backend APIs now use publication terminology and publication endpoints across the product.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-bug-fixes-2">🐛 Bug Fixes</h3>
+<ul>
+<li><strong>Jump to the selected conversation page</strong>
+<ul>
+<li>Work History now opens deep-linked conversations on the correct page and scrolls the selected row into view.</li>
+</ul>
+</li>
+<li><strong>Preserve comment mode across rerenders</strong>
+<ul>
+<li>The Work History comment composer now keeps the chosen mode while the same conversation remains open.</li>
+</ul>
+</li>
+<li><strong>React only to create webhooks</strong>
+<ul>
+<li>Linear issue webhooks now trigger reactions only on create events, which avoids duplicate downstream processing.</li>
+</ul>
+</li>
+<li><strong>Log successful eyes reactions</strong>
+<ul>
+<li>Doc Holiday now records a clear log line when it successfully adds the eyes acknowledgment reaction.</li>
+</ul>
+</li>
+<li><strong>Fixed cancelled progress updates</strong>
+<ul>
+<li>Cancelled requests now still update the posted progress comment instead of leaving it stuck.</li>
+</ul>
+</li>
+<li><strong>Wrapped audit log cells</strong>
+<ul>
+<li>Long audit log values now wrap onto multiple lines, keeping the event, object name, timestamp, and user email columns from overlapping.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2026-06-19">2026-06-19</h2>
+<h3 id="-new-features-3">🚀 New Features</h3>
+<ul>
+<li><strong>Provide shareable Jira Application installation links</strong>
+<ul>
+<li>The Jira Application install flow now supports link sharing for Site Admins not provisioned within Doc Holiday.</li>
+</ul>
+</li>
+<li><strong>Select a Linear team during connection setup</strong>
+<ul>
+<li>Linear connections now support team selection during configuration.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-enhancements-3">✨ Enhancements</h3>
+<ul>
+<li><strong>Sort instruction lists by name or last updated</strong>
+<ul>
+<li>Instruction lists now remember the selected sort order.</li>
+</ul>
+</li>
+<li><strong>Show global instructions in the library list</strong>
+<ul>
+<li>Global instructions now appear in the library list.</li>
+</ul>
+</li>
+<li><strong>Search doc type dropdowns during bulk attach</strong>
+<ul>
+<li>Doc type dropdowns now support search during bulk attach.</li>
+</ul>
+</li>
+<li><strong>Style and formatting guidance</strong>
+<ul>
+<li>Style and formatting guidance now appears in publication editors.</li>
+</ul>
+</li>
+<li><strong>Mark attached instructions as In Use</strong>
+<ul>
+<li>Attached instructions now show an <code>In Use</code> label.</li>
+</ul>
+</li>
+<li><strong>Display library badges for linked instructions</strong>
+<ul>
+<li>Linked items now show a library badge.</li>
+</ul>
+</li>
+<li><strong>Keep publication editors open after save</strong>
+<ul>
+<li>Publication editors stay open after save.</li>
+</ul>
+</li>
+<li><strong>Separate style and formatting edits from output checkboxes</strong>
+<ul>
+<li>Style and formatting edits now appear apart from the output checkboxes in publication editors.</li>
+</ul>
+</li>
+<li><strong>Require non-empty instruction content</strong>
+<ul>
+<li>Saved instructions now require content before they can be stored.</li>
+</ul>
+</li>
+<li><strong>Block duplicate global instruction names and types</strong>
+<ul>
+<li>The library now rejects duplicate global instruction name and type combinations.</li>
+</ul>
+</li>
+<li><strong>Preserve style and formatting context when saving</strong>
+<ul>
+<li>Saving to the library now keeps the correct style and formatting context.</li>
+</ul>
+</li>
+<li><strong>Rename Atlassian Forge to Atlassian Application</strong>
+<ul>
+<li>Atlassian Forge now appears as Atlassian Application.</li>
+</ul>
+</li>
+<li><strong>Rename Jira connection labels</strong>
+<ul>
+<li>Jira connections now use <code>Jira Read-Only</code> and <code>Jira Project</code>.</li>
+</ul>
+</li>
+<li><strong>Clarify connection toast feedback</strong>
+<ul>
+<li>Connection toasts now show clearer setup and validation states.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2026-06-12">2026-06-12</h2>
+<h3 id="-new-features-4">🚀 New Features</h3>
+<ul>
+<li><strong>Added open pull request interactions</strong>
+<ul>
+<li>Work History now lets users send messages, comments, and file edits while a conversation is tied to an open pull request.</li>
+</ul>
+</li>
+<li><strong>Released Jira-based issue triggers</strong>
+<ul>
+<li>Atlassian app-based Jira connections can now trigger work in Doc Holiday.</li>
+</ul>
+</li>
+<li><strong>Introduced &ldquo;Send to Doc&rdquo; in Jira comment menus</strong>
+<ul>
+<li>Comment dropdowns in Jira now include a &ldquo;Send to Doc&rdquo; action for individual comments.</li>
+</ul>
+</li>
+<li><strong>Executed background tasks in batches</strong>
+<ul>
+<li>Background tasks now process merge batches asynchronously until the work is complete.</li>
+</ul>
+</li>
+<li><strong>Display merge metadata in Work History</strong>
+<ul>
+<li>Merged conversations now show who merged the request and when the merge happened.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-enhancements-4">✨ Enhancements</h3>
+<ul>
+<li><strong>Restored type specific placeholders</strong>
+<ul>
+<li>The publication form now shows type specific guidance again and uses the selected instruction type to choose placeholder text.</li>
+</ul>
+</li>
+<li><strong>Improved scrolling when applying instructions</strong>
+<ul>
+<li>The interface now scrolls newly attached publication cards and the bulk attach form into view automatically.</li>
+</ul>
+</li>
+<li><strong>Separated style and formatting controls from output options</strong>
+<ul>
+<li>Style and formatting instruction editing now appears apart from the output checkboxes in the publication form.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2026-06-05">2026-06-05</h2>
+<h3 id="-new-features-5">🚀 New Features</h3>
+<ul>
+<li><strong>New permission levels</strong>
+<ul>
+<li>People provisioned in the Doc Holiday can now be set as admins or users.</li>
+</ul>
+</li>
+<li><strong>New role types</strong>
+<ul>
+<li>Users can now be set as reviewers (read and make edit suggestions) or writers (full edit permissions), per Publication.</li>
+</ul>
+</li>
+<li><strong>User permissions set on invite</strong>
+<ul>
+<li>Admins can set invited folks to be either admins or users on invite.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-enhancements-5">✨ Enhancements</h3>
+<ul>
+<li><strong>Expand publication editing for writers</strong>
+<ul>
+<li>Writers with publication access can edit publications, while reviewers have view-only access.</li>
+</ul>
+</li>
+<li><strong>Alphabetize user and invitation lists</strong>
+<ul>
+<li>User lists are now sorted alphabetically.</li>
+</ul>
+</li>
+<li><strong>Improve settings page speed</strong>
+<ul>
+<li>Settings pages now load faster.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-bug-fixes-3">🐛 Bug Fixes</h3>
+<ul>
+<li><strong>Fix sign out routing</strong>
+<ul>
+<li>Sign out now returns people to the sign in page more reliably instead of leaving them on a logout screen.</li>
+</ul>
+</li>
+<li><strong>Correct documentation URL validation</strong>
+<ul>
+<li>Documentation connections now reject invalid URLs more consistently in both the form and the saved configuration.</li>
+</ul>
+</li>
+</ul>
+<p>Older entries: <a href="/external-docs-staging/docs/release-notes-archive/">Release notes archive</a>
+</p>
 
 				</div>
 
 				<footer id="article-footer">
 	
 		
-		<time datetime="2026-07-20">
+		<time datetime="0001-01-01">
 			<span>
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-60q0-15.3 10.29-25.65Q308.58-864 323.79-864t25.71 10.35Q360-843.3 360-828v60h240v-60q0-15.3 10.29-25.65Q620.58-864 635.79-864t25.71 10.35Q672-843.3 672-828v60h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
 
-</span>Updated: 2026-07-20
+</span>Updated: 0001-01-01
 		</time>
 	
 
@@ -378,12 +657,14 @@
 			
 			
 			
-			<a href="/external-docs-staging/docs/prompt-patterns/">
+			
+			
+			<a href="/external-docs-staging/docs/connection-types/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/publications/">Next 
+		<a href="/external-docs-staging/docs/troubleshooting-and-faq/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
@@ -407,12 +688,47 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-sources-are">What sources are</a></li>
-    <li><a href="#provider-connections-and-child-sources">Provider connections and child sources</a></li>
-    <li><a href="#freshness-and-health">Freshness and health</a></li>
-    <li><a href="#external-documentation">External Documentation</a></li>
-    <li><a href="#documentation-can-mean-more-than-one-thing">Documentation can mean more than one thing</a></li>
-    <li><a href="#set-up-a-source">Set up a source</a></li>
+    <li><a href="#2026-07-17">2026-07-17</a>
+      <ul>
+        <li><a href="#-new-features">🚀 New Features</a></li>
+        <li><a href="#-enhancements">✨ Enhancements</a></li>
+        <li><a href="#-bug-fixes">🐛 Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#2026-07-06">2026-07-06</a>
+      <ul>
+        <li><a href="#-new-features-1">🚀 New Features</a></li>
+        <li><a href="#-enhancements-1">✨ Enhancements</a></li>
+        <li><a href="#-bug-fixes-1">🐛 Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#2026-06-26">2026-06-26</a>
+      <ul>
+        <li><a href="#-new-features-2">🚀 New Features</a></li>
+        <li><a href="#-enhancements-2">✨ Enhancements</a></li>
+        <li><a href="#-breaking-changes">⚠️ Breaking Changes</a></li>
+        <li><a href="#-bug-fixes-2">🐛 Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#2026-06-19">2026-06-19</a>
+      <ul>
+        <li><a href="#-new-features-3">🚀 New Features</a></li>
+        <li><a href="#-enhancements-3">✨ Enhancements</a></li>
+      </ul>
+    </li>
+    <li><a href="#2026-06-12">2026-06-12</a>
+      <ul>
+        <li><a href="#-new-features-4">🚀 New Features</a></li>
+        <li><a href="#-enhancements-4">✨ Enhancements</a></li>
+      </ul>
+    </li>
+    <li><a href="#2026-06-05">2026-06-05</a>
+      <ul>
+        <li><a href="#-new-features-5">🚀 New Features</a></li>
+        <li><a href="#-enhancements-5">✨ Enhancements</a></li>
+        <li><a href="#-bug-fixes-3">🐛 Bug Fixes</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

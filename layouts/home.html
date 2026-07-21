@@ -1,0 +1,16 @@
+{{/* The site's landing page is the "What is Doc Holiday?" doc (gloria pattern):
+     the home URL issues an immediate client-side redirect. The theme's data-driven
+     hero/bento home is intentionally unused. */}}
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ "docs/what-is-doc-holiday/" | relLangURL }}">
+  <link rel="canonical" href="{{ "docs/what-is-doc-holiday/" | absLangURL }}">
+  <title>{{ site.Title }}</title>
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <p><a href="{{ "docs/what-is-doc-holiday/" | relLangURL }}">Doc Holiday documentation</a></p>
+</body>
+</html>

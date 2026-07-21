@@ -8,10 +8,21 @@
 Append index.md to any page URL to fetch its raw Markdown source.
 
 ## Overview
+- What Is Doc Holiday: https://joels-sandgarden.github.io/external-docs-staging/docs/what-is-doc-holiday/ — documentation drift, and the product that closes it continuously.
 - Concepts: https://joels-sandgarden.github.io/external-docs-staging/docs/concepts/ — Publication, Source, the Library, Work History.
+- How This Site Is Made: https://joels-sandgarden.github.io/external-docs-staging/docs/how-this-site-is-made/ — these docs are written and maintained by Doc Holiday itself.
 
 ## Getting started
 - Connect GitHub: https://joels-sandgarden.github.io/external-docs-staging/docs/connect-github/ — install the GitHub Application and connect repositories.
+
+## Working with Doc Holiday
+- Work History: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history/ — the record of every request and its lifecycle.
+
+## Prompting Guide
+- Writing Requests: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-requests/ — the craft of asking for exactly the page you want.
+- Writing Style Guides: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-style-guides/ — make everything Doc Holiday writes sound like your team.
+- Writing Planning Instructions: https://joels-sandgarden.github.io/external-docs-staging/docs/writing-planning-instructions/ — shape what Doc Holiday decides to work on.
+- Prompt Patterns: https://joels-sandgarden.github.io/external-docs-staging/docs/prompt-patterns/ — request skeletons for common documentation jobs.
 
 ## Sources
 - Sources: https://joels-sandgarden.github.io/external-docs-staging/docs/sources/ — what Doc Holiday reads and writes; freshness and health.
@@ -19,8 +30,13 @@ Append index.md to any page URL to fetch its raw Markdown source.
 ## Publications
 - Publications: https://joels-sandgarden.github.io/external-docs-staging/docs/publications/ — what a Publication defines and controls.
 
-## Working with Doc Holiday
-- Work History: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history/ — the record of every request and its lifecycle.
+## Administration
+- Security and Data Handling: https://joels-sandgarden.github.io/external-docs-staging/docs/security-and-data-handling/ — what Doc Holiday reads, stores, and never does.
 
 ## Reference
 - Connection Types: https://joels-sandgarden.github.io/external-docs-staging/docs/connection-types/ — every connection type, its role, and its triggers.
+
+## Meta
+- Release Notes: https://joels-sandgarden.github.io/external-docs-staging/docs/release-notes/ — user-visible changes, newest first.
+- Release Notes Archive: https://joels-sandgarden.github.io/external-docs-staging/docs/release-notes-archive/ — entries prior to June 2026.
+- Troubleshooting and FAQ: https://joels-sandgarden.github.io/external-docs-staging/docs/troubleshooting-and-faq/ — symptom-first answers.
