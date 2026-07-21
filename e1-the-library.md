@@ -12,7 +12,7 @@ When a Publication has both Library instructions and inline text in its own conf
 
 The Library list supports search by name, an **In Use** column, and a type filter with **All types**, **Style & Formatting**, **Writing**, and **Commit**. The **New Instruction** action creates a new instruction.
 
-```text
+```
 SCREENSHOT PLACEHOLDER: the-library/library-page.png
 ```
 
