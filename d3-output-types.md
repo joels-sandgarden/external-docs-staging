@@ -1,6 +1,6 @@
-# What the Write switches do
+# Output types
 
-The **Write:** switches tell Doc Holiday what a Publication should produce. Each switch works on its own, so any combination is valid. A Publication that writes only documentation is normal.
+The Publication form's `Write:` section tells Doc Holiday what a Publication should produce. It offers `Documentation`, `Release Notes`, and `Changelog`, and each option works on its own, so any combination is valid. A Publication that writes only documentation is normal.
 
 ## Documentation
 
@@ -16,4 +16,4 @@ The **Write:** switches tell Doc Holiday what a Publication should produce. Each
 
 ## Style guidance and links
 
-Each output type gets its own **Style & Formatting Instructions:** area. Use [the Library](/e1-the-library.md) and [instruction slots reference](/e2-instruction-slots-reference.md) for the shared guidance model.
+Each output type gets its own `Style & Formatting Instructions:` slot. Use [the Library](/e1-the-library.md) and [instruction slots reference](/e2-instruction-slots-reference.md) for the shared guidance model.
