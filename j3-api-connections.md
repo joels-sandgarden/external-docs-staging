@@ -215,7 +215,7 @@ curl "https://api.doc.holiday/api/v1/connections/12/jira/statuses" \
 ```
 - JSON:
 ```json
-{"statuses":["To Do","In Progress","Done"]}
+{"statuses":[{"id":"100","name":"To Do"},{"id":"101","name":"Done"}]}
 ```
 - Behaviors: Requires an SFS token. Returns `400` for an invalid or missing `id`.
 
