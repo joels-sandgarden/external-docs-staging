@@ -79,7 +79,6 @@ Use this reference when an integration needs the public Connections endpoints. S
 | Path parameter | `id` |
 | Body | `name`, `paused`, `config` |
 | Success | `200 OK` |
-| Notes | `config` must set exactly one variant; missing or ambiguous config returns `400` |
 
 ### `DELETE /api/v1/connections/{id}`
 
