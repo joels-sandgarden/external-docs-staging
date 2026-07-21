@@ -102,6 +102,6 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Purpose: retry one failed turn.
 - Request: `id`.
 - Response: `ModelsGetConversationTurnResponse` with `id`, `status`, `errorMessage`, `retryCount`, `request`, and `triggeringCommentId`.
-- Notes: Doc Holiday accepts only turns in an error state, resets `status` to `running`, clears `errorMessage`, increments `retryCount`, and requeues the manual job after retry permission checks and Publication write access checks.
-- `curl`: `curl -X POST -H 'Authorization: Bearer …' /api/v1/conversation_turns/turn_123/retry`
+- Notes: The app offers Retry on failed turns; the endpoint resets the turn to running, clears its error, and requeues the work.
+- `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_turns/turn_123/retry"`
 - `json`: `{"id":"turn_123","status":"running","retryCount":2}`
