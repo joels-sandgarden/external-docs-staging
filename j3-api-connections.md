@@ -56,11 +56,11 @@ Creates a connection that Doc Holiday can use to read from or write to an extern
 curl -X POST "https://api.doc.holiday/api/v1/connections" \
   -H "Authorization: Bearer {{sfsToken}}" \
   -H "Content-Type: application/json" \
-  -d '{"name":"Docs repo","paused":false,"sync":true,"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}'
+  -d '{"name":"Docs repo","paused":false,"sync":true,"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}'
 ```
 - JSON:
 ```json
-{"id":"12","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"12","repositoryUrl":"https://github.com/acme/docs"}}}
+{"id":"cnn-0123456789abcdef","name":"Docs repo","type":"githubRepo","healthy":true,"paused":false,"allowedTriggerEvents":["pullRequests","newIssues","issueComments","releases"],"config":{"githubRepo":{"githubAppConnectionId":"cnn-0123456789abcdef","repositoryUrl":"https://github.com/acme/docs"}}}
 ```
 - Behaviors: Requires an SFS token. Returns `400` when `config` is missing or more than one connection type is set.
 
