@@ -18,7 +18,7 @@ When a Work History entry reaches Ready for Review, open its sheet and review ea
 
 ## Reviewing proposed file changes
 
-The **Files** tab shows each file row, its diff count, and its status. Open a file to review the diff, then use **Discard** to remove it from the final request or **Restore** to add it back.
+The **Files** tab shows each file row, its diff count, and its status. Open a file to review the diff, then use the icon-only buttons whose tooltips read "Discard file" and "Restore file" to remove it from the final request or add it back.
 
 ```text
 SCREENSHOT PLACEHOLDER: review-and-revise/files-tab-diff.png
