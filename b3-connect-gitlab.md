@@ -4,14 +4,14 @@ Use this guide when GitLab needs to feed Doc Holiday with project changes and ke
 
 On GitLab, Doc Holiday opens merge requests rather than pull requests.
 
-## Main path: create a GitLab Access Token and GitLab Project Source
+## Main path: create a GitLab Access Token and GitLab Project
 
 1. Open **Sources**, then add **GitLab Access Token**.
 2. Enter **Token Name** and **Access Token**, then save the access token.
 3. Add **GitLab Project** under that token.
 4. Fill in **Source Name**, **Project**, **Branch**, and **Publishing System**.
 5. Select the project and branch Doc Holiday should watch, then save the Source.
-6. Repeat the project step for each GitLab project that should use the same provider.
+6. Repeat the project step for each GitLab project that should use the same access token.
 
 If the **Publishing System** choice needs a refresher, see [Publishing systems](/d4-publishing-systems.md).
 
