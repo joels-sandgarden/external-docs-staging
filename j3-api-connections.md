@@ -124,12 +124,8 @@ Removes a connection and can keep dependent records when needed.
 - Returns: no content
 - curl:
 ```bash
-curl -X DELETE "https://api.doc.holiday/api/v1/connections/12?preserveDependencies=true" \
+curl -X DELETE "https://api.doc.holiday/api/v1/connections/cnn-0123456789abcdef?preserveDependencies=true" \
   -H "Authorization: Bearer {{sfsToken}}"
-```
-- JSON:
-```json
-null
 ```
 - Behaviors: Requires an SFS token. Returns `204 No Content` with no response body.
 
