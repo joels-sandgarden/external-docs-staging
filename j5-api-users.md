@@ -2,7 +2,7 @@
 
 This page covers direct integration with Doc Holiday's API.
 
-See [API overview](/j1-api-overview.md) for the wider surface.
+See [API overview](/j1-api-overview.md) for the full API surface.
 
 ## GET /api/v1/me
 
@@ -20,7 +20,7 @@ curl https://api.doc.holiday/api/v1/me
 {"id":"string","authId":"string","email":"string","name":"string","sfsToken":"string","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
-Requires authenticated SFS token requests. Common errors: `400`, `500`.
+Requires authenticated SFS token access. Common errors: `400`, `500`.
 
 ## GET /api/v1/users
 
@@ -45,7 +45,7 @@ curl "https://api.doc.holiday/api/v1/users?email=string"
 {"users":[{"id":"string","email":"string","name":"string"}],"nextPageToken":"string","previousPageToken":"string"}
 ```
 
-Requires authenticated SFS token requests. Common errors: `400`, `500`.
+Requires authenticated SFS token access. Common errors: `400`, `500`.
 
 ## GET /api/v1/users/{id}
 
@@ -63,4 +63,4 @@ curl https://api.doc.holiday/api/v1/users/string
 {"id":"string","authId":"string","email":"string","name":"string","sfsToken":"string","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
-Requires authenticated SFS token requests. Common errors: `400`, `500`.
+Requires authenticated SFS token access. Common errors: `400`, `500`.
