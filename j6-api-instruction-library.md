@@ -4,7 +4,7 @@ Authentication, pagination, and general API conventions live in [j1-api-overview
 
 ## Instructions
 
-The Instructions resource stores reusable text for a slot. The API accepts `documentation`, `releaseNotes`, `changelog`, `commit`, `planning`, and `styleGuide`. `styleGuide` validates like the others, but it is not a publication slot. For slot meaning, see [e2-instruction-slots-reference.md](/e2-instruction-slots-reference.md).
+The Instructions resource stores reusable text for a slot. The API accepts the instruction type enum. `styleGuide` validates like the others, but it is not a publication slot. For slot meaning, see [e2-instruction-slots-reference.md](/e2-instruction-slots-reference.md).
 
 ### GET /api/v1/instructions
 Retrieves instructions. Query by `type` or `global`.
