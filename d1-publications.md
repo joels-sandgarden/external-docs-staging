@@ -16,6 +16,12 @@ It also controls when Doc Holiday reacts on its own. Triggers tell the product w
 
 The Publication also carries the writing guidance that keeps its output consistent. Style guides, planning instructions, and instructions from the Library shape the voice and structure of the work that appears under that Publication. The Library provides shared instructions that can apply across Publications or only to selected ones. See [the Library](/e1-the-library.md) for that shared guidance model.
 
+## Why the boundary matters
+
+A Publication lets Doc Holiday keep several kinds of output in one place without blurring the source of truth. The same Publication can lead to a documentation page, a release note, and a changelog entry when those pieces describe the same product area. Because those outputs share the same Sources and the same guidance, the result stays aligned even when the work begins from different triggers.
+
+The boundary also makes the setup easier to understand at a glance. A team can see which Sources drive the content, which destination receives it, and which instructions shape the writing. That shared contract gives everyone the same frame for judging whether the Publication matches the work it is meant to cover.
+
 ## What work looks like under a Publication
 
 Every request becomes a Work History entry for one Publication. That entry gathers the context for the work, the drafts that Doc Holiday proposes, and the outcome that follows. The Publication gives each request a clear home and keeps the record of the work attached to the right documentation set.
@@ -25,6 +31,8 @@ Work History also helps readers understand continuity. When the same Publication
 ## Publication health
 
 Publication health gives a quick read on whether Doc Holiday can work with the Publication’s configured Sources and documentation destination. A healthy Publication signals that the connected inputs and destination are ready for work. When something is wrong, the health badge helps readers spot it quickly.
+
+Health does not promise that every request will succeed. It only tells whether Doc Holiday can reach the configured Sources and destination now. That makes it a fast check for access issues, missing setup, or a destination that no longer matches the Publication.
 
 In the Publications area, the details and status panels show the inputs, the target destination, the optional notifier, the enabled outputs, the last updated time, user access, and the health badge with its run test action. That view gives a concise picture of what the Publication controls and whether it is ready.
 
