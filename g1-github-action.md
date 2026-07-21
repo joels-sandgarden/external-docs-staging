@@ -44,7 +44,7 @@ Choose only one changeset specification type per run.
 | Changeset specification | `releases-count` | Release count. |
 | Changeset specification | `time-range-start` + `time-range-end` | ISO 8601 timestamps. |
 | Changeset specification | `commits-count` | Commit count. |
-| Changeset specification | `commits-since-sha` | Start from one commit SHA. |
+| Changeset specification | `commits-since-sha` | Commits since a SHA. |
 | Changeset specification | `commits-shas` | Comma-separated commit SHAs. |
 | Changeset specification | `commits-start-sha` + `commits-end-sha` + `commits-include-start` | Commit range. |
 | Changeset specification | `tags-start` + `tags-end` | Tag range. |
@@ -52,7 +52,7 @@ Choose only one changeset specification type per run.
 | Output | Description |
 | --- | --- |
 | `id` | Work request ID. |
-| `status` | Job state, such as `requested`, `running`, `done`, or `errored`. |
+| `status` | One of `requested`, `running`, `done`, or `errored`. |
 | `branch` | Branch created for the work. |
 | `output-url` | Link to the result. |
 
