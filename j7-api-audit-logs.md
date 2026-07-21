@@ -42,8 +42,7 @@ curl -H "Authorization: Bearer $TOKEN" \
 Notes:
 - SFS token auth follows the standard flow in [/j1-api-overview.md](/j1-api-overview.md).
 - When list permission is missing, Doc Holiday limits results to permitted audit-log IDs.
-- Unauthorized access remains the most common failure when the caller cannot read the records.
-
+- The get endpoint performs a per-ID permission check.
 ## Get an audit log
 `GET /api/v1/audit_logs/{id}`
 
