@@ -1,14 +1,14 @@
 # Sources in Doc Holiday
 
-Doc Holiday uses Sources to describe every connected system it can read from, and sometimes write to. A Publication points at the Sources it should read for context, the connected git repository it should write into, and an optional Slack Channel Source for notifications. That makes a Source the common shape for a repository, a context system, a notification channel, or the docs destination itself.
+Doc Holiday uses Sources for every connected system it can read from, and sometimes write to. A Publication points at the Sources it should read for context, the connected git repository it should write into, and an optional Slack Channel Source for notifications. That makes a Source the common shape for a repository, a context system, a notification channel, or the repository that receives documentation.
 
-A Publication can choose any connected git repository as its docs destination. GitHub, GitLab, and Bitbucket all fit that pattern, and Doc Holiday still treats the destination as a Source rather than as a special case. The difference comes from the Publication: it decides which connected repository supplies context and which connected repository receives the documentation output.
+A Publication can choose any connected git repository as its docs destination. GitHub, GitLab, and Bitbucket all fit that pattern, and Doc Holiday still treats the destination as a Source rather than a special case. The Publication decides which connected repository supplies context and which connected repository receives the documentation output.
 
 In the Sources list, each row shows an icon, a name, and a health badge. When a child Source sits under a provider, the parent appears underneath it so the relationship stays visible at a glance.
 
 ## Provider Sources and the Sources under them
 
-Provider Sources work as the first step in an install-once flow. You connect the provider once, then add the repositories, projects, or channels that belong under it. The app changes the form fields to match the Source type you selected, so the provider setup and the child Source setup stay separate.
+Provider Sources work as the first step in an install-once flow. You connect the provider once, then add the repositories, projects, or channels that belong under it. The form changes to match the Source type you selected, so the provider setup and the child Source setup stay separate.
 
 That pattern shows up across the supported Source types. GitHub App opens access to repositories. GitLab provider connects once, then GitLab projects sit beneath it. Bitbucket provider connects once, then Bitbucket repositories and Bitbucket projects sit beneath it. Slack App follows the same idea for notifications: you connect the Slack App once, then choose the Slack Channel Source that should receive updates.
 
@@ -18,7 +18,7 @@ This structure keeps the setup model simple. The provider carries the shared acc
 
 Doc Holiday rereads connected Sources roughly every couple of hours, and it checks the latest Source again before it writes. That keeps the visible documentation close to the current state of the connected systems without making the reader manage refresh timing by hand.
 
-Every Source also reports a health state. Healthy Sources stay available for Publications, while Unhealthy Sources stay out of the way until the problem clears. If a Source turns Unhealthy, Doc Holiday skips it until it works again. See [Manage Sources](/c7-manage-connections.md) for the UI that shows and repairs Source health.
+Every Source also reports a health state. Healthy Sources stay available for Publications. Unhealthy Sources stay out of the way until they work again. See [Manage Sources](/c7-manage-connections.md) for the UI that shows and repairs Source health.
 
 ## External Documentation
 
