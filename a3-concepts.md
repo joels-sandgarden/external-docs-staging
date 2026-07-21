@@ -22,7 +22,9 @@ Sources are the connected systems Doc Holiday works with. Some Sources give Doc 
 
 The product supports three roles here. A git repository Source can be both a place Doc Holiday reads from and a place it writes to. A context Source only supplies background information. Slack fills the notifier role, so it helps carry signals and updates without becoming the main documentation destination.
 
-A Publication points to the Sources it depends on, and the Sources in turn explain what Doc Holiday can verify for that Publication. That keeps the relationship clear: the Publication defines the documentation set, while the Sources provide the surrounding truth it uses to keep that set current. [Sources](/c1-sources.md) That is why source selection matters as soon as a Publication takes shape.
+A Publication points to the Sources it depends on, and the Sources in turn explain what Doc Holiday can verify for that Publication. That keeps the relationship clear: the Publication defines the documentation set, while the Sources provide the surrounding truth it uses to keep that set current. [Sources](/c1-sources.md)
+
+That is why source selection matters as soon as a Publication takes shape.
 
 ## The Library and instructions
 
@@ -30,7 +32,7 @@ The Library is the organization-wide collection of editable guidance. It gives t
 
 An instruction is one entry in the Library. It can apply everywhere or only to selected Publications, which lets one piece of guidance shape all documentation or just the work for a specific Publication.
 
-The Library influences how Doc Holiday writes, not what it invents. A Publication can inherit guidance from the Library, so the same organization can keep documentation style aligned while still allowing different Publications to use their own instructions when needed. [the Library](/e1-the-library.md)
+The Library influences how Doc Holiday writes, not what it invents. A Publication can inherit guidance from the Library, so the same Organization can keep documentation style aligned while still allowing different Publications to use their own instructions when needed. [the Library](/e1-the-library.md)
 
 ## Work History
 
@@ -40,4 +42,4 @@ A Work History entry follows the request as it moves through its stages. It open
 
 Work History shows the current stage of the request rather than a status chosen by hand. That makes it the clearest place to understand what Doc Holiday is doing right now for a specific Publication and Source. [Work History](/f4-work-history.md)
 
-Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, the Library guides the writing, and Work History records the result. Together, the words describe one path from a source change to maintained documentation and a visible record of the work.
+Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, the Library guides the writing, and Work History records the result. The words describe one path from a source change to maintained documentation and a visible record of the work.
