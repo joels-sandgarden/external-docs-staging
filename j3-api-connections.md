@@ -295,33 +295,11 @@ The response tells you whether Doc Holiday can use the connection as configured.
 
 ### `GET /api/v1/connections/{id}/channels`
 
-List the channels available to the connection.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Returns | `channels` |
 | Success | `200 OK` |
-
-```bash
-curl "https://api.doc.holiday/api/v1/connections/123/channels" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
-```json
-{
-  "channels": [
-    {
-      "id": "C01234567",
-      "name": "docs"
-    }
-  ],
-  "nextPageToken": "token-2",
-  "previousPageToken": "token-1"
-}
-```
-
-The response uses `channels` and includes pagination tokens when the result set spans more than one page.
 
 ### `GET /api/v1/bitbucket/repos`
 
