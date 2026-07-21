@@ -24,5 +24,5 @@ Merge a small change, such as a one-line typo fix, and confirm that the Slack me
 
 ## Next
 
-- [Create your first publication](/g4-create-your-first-publication.md)
-- [Work History](/g4-work-history.md)
+- [Manage publications](/d5-manage-publications.md)
+- [Manage connections](/c7-manage-connections.md)
