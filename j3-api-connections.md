@@ -151,38 +151,11 @@ List responses keep the same connection shape as `GET /api/v1/connections/{id}` 
 
 ### `GET /api/v1/connections/{id}`
 
-Retrieve one connection record.
-
 | Key | Value |
 | --- | --- |
 | Path parameter | `id` |
 | Returns | one connection record |
 | Success | `200 OK` |
-
-```bash
-curl "https://api.doc.holiday/api/v1/connections/123" \
-  -H "Authorization: Bearer $SFS_TOKEN"
-```
-
-```json
-{
-  "id": "123",
-  "orgId": "org_1",
-  "name": "Docs GitHub",
-  "type": "githubRepo",
-  "healthy": true,
-  "paused": false,
-  "config": {
-    "githubRepo": {
-      "githubAppConnectionId": "12",
-      "repositoryUrl": "https://github.com/example/docs"
-    }
-  },
-  "createdAt": "2026-07-21T12:00:00Z",
-  "updatedAt": "2026-07-21T12:00:00Z",
-  "deletedAt": null
-}
-```
 
 
 ### `PUT /api/v1/connections/{id}`
