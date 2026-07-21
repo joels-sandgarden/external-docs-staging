@@ -4,9 +4,9 @@ Doc Holiday uses a shared vocabulary to describe where documentation belongs, wh
 
 ## Organization
 
-An Organization is the top-level account for a workspace. It owns the Publications, Sources, and the Library, so every other concept starts inside one shared boundary. That ownership keeps settings, content, and guidance from drifting apart when more than one team uses the product.
-
-Organization sits above the rest of the model, so every Publication, Source, and instruction already belongs somewhere before it takes on its own role. That makes the hierarchy easy to read: one Organization provides the home, and the child concepts do the work inside it. When a team adds a new Publication or Source, it still lands inside the same ownership model.
+An Organization is the top-level account for a workspace, and it gives every other concept a shared home for settings, content, and guidance that need to stay together as the workspace grows.
+It owns Publications, Sources, and the Library, so those pieces stay under one boundary instead of drifting into separate spaces as several teams work in the same place.
+That ownership makes the rest of the model easier to read because every child concept belongs to the same Organization before it takes on its own role, scope, and relationship.
 
 ## Publication
 
