@@ -17,11 +17,11 @@ If the **Publishing System** choice needs a refresher, see [Publishing systems](
 
 ## Option: use one access token for multiple projects
 
-Use **Connect with Personal Access Token** when one token should create Sources to multiple projects.
+Use **Connect with Personal Access Token** when one token should create Sources for multiple projects.
 
 ## Verify
 
-Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open Manage connections and update the Source before continuing.
+Open [Sources](/c1-sources.md) and confirm that the new Source shows **Healthy**. If it shows **Unhealthy**, open the Manage connections page and update the Source before continuing.
 
 ## Next
 
