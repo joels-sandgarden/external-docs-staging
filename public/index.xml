@@ -93,7 +93,7 @@
 				<link>http://localhost:1318/external-docs-staging/docs/what-is-doc-holiday/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1318/external-docs-staging/docs/what-is-doc-holiday/</guid>
-				<description>&lt;p&gt;Code changes constantly; documentation is updated occasionally, by hand, when someone remembers. The gap between what your product now does and what&amp;rsquo;s written down — documentation drift — widens with every release, and closing it manually is the tedious 80% of a documentation job that nobody wants.&lt;/p&gt;&#xA;&lt;p&gt;Doc Holiday closes that gap continuously. It writes and maintains documentation and release notes from what actually shipped: it reads your real source — code, commits, pull requests, and the context around them — and produces docs that are reconciled against the source every time something ships, not rewritten from memory once a quarter.&lt;/p&gt;</description>
+				<description>&lt;p&gt;Code changes constantly; documentation is updated occasionally, by hand, when someone remembers. The gap between what your product now does and what&amp;rsquo;s written down — documentation drift — widens with every release, and closing it manually is the tedious 80% of a documentation job that nobody wants.&lt;/p&gt;&#xA;&lt;p&gt;Doc Holiday closes that gap continuously. It writes and maintains documentation and release notes from what actually shipped: it reads your real source — code, commits, pull requests, and the context around them — and produces docs that are reconciled against the source every time something ships.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Work History</title>
@@ -114,7 +114,7 @@
 				<link>http://localhost:1318/external-docs-staging/docs/writing-requests/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1318/external-docs-staging/docs/writing-requests/</guid>
-				<description>&lt;p&gt;A request is the single biggest lever on what Doc Holiday produces for one piece of work. The same product, the same sources, and the same instructions can yield a mediocre page from a vague request and an excellent one from a precise request. This guide is the craft; where to type a request is covered in &lt;a href=&#34;./f1-request-work-in-git.md&#34;&gt;Request work from git&lt;/a&gt;&#xA; and &lt;a href=&#34;./f2-request-work-in-the-app.md&#34;&gt;Request work from the app&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;name-the-outcome-not-the-method&#34;&gt;Name the outcome, not the method&lt;/h2&gt;&#xA;&lt;p&gt;Ask for the artifact you want to exist, not the investigation you imagine producing it.&lt;/p&gt;</description>
+				<description>&lt;p&gt;A request is the single biggest lever on what Doc Holiday produces for one piece of work. The same product, the same sources, and the same instructions can yield a mediocre page from a vague request and an excellent one from a precise request. This guide is the craft; where to type a request is covered in &lt;a href=&#34;./f1-request-work-in-git.md&#34;&gt;Request work from git&lt;/a&gt;&#xA; and &lt;a href=&#34;./f2-request-work-in-the-app.md&#34;&gt;Request work from the app&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;name-the-outcome&#34;&gt;Name the outcome&lt;/h2&gt;&#xA;&lt;p&gt;Ask for the artifact you want to exist.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Writing Style Guides</title>

@@ -295,7 +295,7 @@
 
 				<div id="article-body">
 					<p>Code changes constantly; documentation is updated occasionally, by hand, when someone remembers. The gap between what your product now does and what&rsquo;s written down — documentation drift — widens with every release, and closing it manually is the tedious 80% of a documentation job that nobody wants.</p>
-<p>Doc Holiday closes that gap continuously. It writes and maintains documentation and release notes from what actually shipped: it reads your real source — code, commits, pull requests, and the context around them — and produces docs that are reconciled against the source every time something ships, not rewritten from memory once a quarter.</p>
+<p>Doc Holiday closes that gap continuously. It writes and maintains documentation and release notes from what actually shipped: it reads your real source — code, commits, pull requests, and the context around them — and produces docs that are reconciled against the source every time something ships.</p>
 <h2 id="how-people-use-it">How people use it</h2>
 <p><strong>An engineer, without leaving the pull request.</strong> Comment <code>@doc.holiday update the authentication guide to cover the new token flow</code> on a PR, and Doc Holiday replies on the thread with a documentation pull request ready for review.</p>
 <p><strong>A product manager or support engineer, from the app.</strong> Type a plain-language request into <a href="https://app.doc.holiday" target="_blank">app.doc.holiday</a>
@@ -304,9 +304,9 @@
  to react to merged pull requests or releases, and the affected pages get reconciled and the release notes written without anyone having to ask — with your team still approving every change.</p>
 <h2 id="what-makes-it-different">What makes it different</h2>
 <ul>
-<li><strong>It writes from the source, not from memory.</strong> Every page is grounded in the actual repository state at the time of writing. Doc Holiday explores the code and its history before it writes; it does not guess.</li>
-<li><strong>Humans stay in the loop.</strong> Doc Holiday drafts; people review. Work is staged as reviewable diffs, commented on, revised, and only then merged as a normal pull request into your docs repo. It behaves like a diligent teammate opening PRs — not a pipeline overwriting files.</li>
-<li><strong>It maintains, not just generates.</strong> The first draft is the easy part. Doc Holiday&rsquo;s job is the ongoing loop: something ships, the docs keep pace — release after release.</li>
+<li><strong>It writes from the source.</strong> Every page is grounded in the actual repository state at the time of writing — Doc Holiday explores the code and its history first, and writes only what it finds there.</li>
+<li><strong>Humans stay in the loop.</strong> Doc Holiday drafts; people review. Work is staged as reviewable diffs, commented on, revised, and only then merged as a normal pull request into your docs repo. It behaves like a diligent teammate opening PRs.</li>
+<li><strong>It keeps the docs current, release after release.</strong> The first draft is the easy part. The value is the ongoing loop: something ships, the affected pages get reconciled, the release notes get written.</li>
 <li><strong>It fits the tools you already use.</strong> GitHub, GitLab, and Bitbucket; docs sites in ordinary git repos; CI pipelines; Slack; and the context systems around your code — Notion, Confluence, Jira, Linear, Google Drive.</li>
 </ul>
 <p>And one more thing: <strong>this site is the proof.</strong> The documentation you&rsquo;re reading is written and maintained by Doc Holiday itself — see <a href="/external-docs-staging/docs/how-this-site-is-made/">How this site is made</a>

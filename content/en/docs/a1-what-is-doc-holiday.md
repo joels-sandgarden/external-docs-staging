@@ -6,7 +6,7 @@ description: "Documentation drift, and the product that closes it continuously."
 
 Code changes constantly; documentation is updated occasionally, by hand, when someone remembers. The gap between what your product now does and what's written down — documentation drift — widens with every release, and closing it manually is the tedious 80% of a documentation job that nobody wants.
 
-Doc Holiday closes that gap continuously. It writes and maintains documentation and release notes from what actually shipped: it reads your real source — code, commits, pull requests, and the context around them — and produces docs that are reconciled against the source every time something ships, not rewritten from memory once a quarter.
+Doc Holiday closes that gap continuously. It writes and maintains documentation and release notes from what actually shipped: it reads your real source — code, commits, pull requests, and the context around them — and produces docs that are reconciled against the source every time something ships.
 
 ## How people use it
 
@@ -18,9 +18,9 @@ Doc Holiday closes that gap continuously. It writes and maintains documentation 
 
 ## What makes it different
 
-- **It writes from the source, not from memory.** Every page is grounded in the actual repository state at the time of writing. Doc Holiday explores the code and its history before it writes; it does not guess.
-- **Humans stay in the loop.** Doc Holiday drafts; people review. Work is staged as reviewable diffs, commented on, revised, and only then merged as a normal pull request into your docs repo. It behaves like a diligent teammate opening PRs — not a pipeline overwriting files.
-- **It maintains, not just generates.** The first draft is the easy part. Doc Holiday's job is the ongoing loop: something ships, the docs keep pace — release after release.
+- **It writes from the source.** Every page is grounded in the actual repository state at the time of writing — Doc Holiday explores the code and its history first, and writes only what it finds there.
+- **Humans stay in the loop.** Doc Holiday drafts; people review. Work is staged as reviewable diffs, commented on, revised, and only then merged as a normal pull request into your docs repo. It behaves like a diligent teammate opening PRs.
+- **It keeps the docs current, release after release.** The first draft is the easy part. The value is the ongoing loop: something ships, the affected pages get reconciled, the release notes get written.
 - **It fits the tools you already use.** GitHub, GitLab, and Bitbucket; docs sites in ordinary git repos; CI pipelines; Slack; and the context systems around your code — Notion, Confluence, Jira, Linear, Google Drive.
 
 And one more thing: **this site is the proof.** The documentation you're reading is written and maintained by Doc Holiday itself — see [How this site is made](./a4-how-this-site-is-made.md).

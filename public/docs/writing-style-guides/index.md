@@ -55,9 +55,9 @@ Every line is checkable — a reviewer (human or Doc Holiday's own review pass) 
 - **Contradictions.** "Be concise" plus "be comprehensive" makes every run a coin flip. Pick the default; let requests override per page.
 - **Novel-length guides.** Fifty rules dilute each other. Ten rules that always apply beat fifty that sometimes do.
 - **Uncheckable vibes.** "Make it engaging" gives the writer nothing to obey and the reviewer nothing to enforce. Convert taste into mechanics: sentence length, banned words, required sections.
-- **Scope rules in disguise.** "Only write release notes to /changelog.md" is a planning rule, not a style rule — it belongs in [planning instructions](./p4-writing-planning-instructions.md), where its blast radius is explicit.
+- **Scope rules in disguise.** "Only write release notes to /changelog.md" is a planning rule — it belongs in [planning instructions](./p4-writing-planning-instructions.md), where its blast radius is explicit.
 
-## Iterate from output, not theory
+## Iterate from output
 
 Write a modest guide, run real work, then read the output asking one question: *what rule would have prevented the thing I just fixed?* Add that rule; delete rules that never fire. Three cycles of this beats any style guide written in advance.
 

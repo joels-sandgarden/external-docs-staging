@@ -9,7 +9,7 @@ Doc Holiday reads the [Sources](./c1-sources.md) you connect: the repositories a
 
 ## What Doc Holiday stores
 
-**Derived knowledge, not a copy of your repository.** To write well without re-deriving everything on every run, Doc Holiday keeps summaries and structured notes about your connected sources, together with reference pointers back to where each fact came from. Long-term knowledge about your code is stored in this derived form; when a connection or publication is removed, the knowledge derived from it is cleaned up.
+**Derived knowledge.** To write well without re-deriving everything on every run, Doc Holiday keeps summaries and structured notes about your connected sources, together with reference pointers back to where each fact came from. Long-term knowledge about your code is stored in this derived form; when a connection or publication is removed, the knowledge derived from it is cleaned up.
 
 **Your work record.** Requests, plans, proposed changes (including the before-and-after content of edited files), comments, and revision history are stored in Doc Holiday's database as the [Work History](./f4-work-history.md) record — that's what makes review, revision, and an audit trail possible. Approved content additionally becomes ordinary commits in your own docs repository, which remains the home of your published documentation.
 

@@ -56,7 +56,7 @@ Apply exactly these corrections and change nothing else:
 3. Delete the sentence claiming exports run "hourly" — exports are on-demand only.
 ```
 
-Why it works: "apply exactly / change nothing else" turns the writer into a surgeon. This is also the right way to *correct* Doc Holiday's own output — corrections through the same pipeline keep the page's history in one place, instead of hand-edits it doesn't know about.
+Why it works: "apply exactly / change nothing else" turns the writer into a surgeon. This is also the right way to *correct* Doc Holiday's own output — corrections through the same pipeline keep the page's history in one place.
 
 ## Building a doc set page by page
 
@@ -88,7 +88,7 @@ Why it works: without the "verbatim, do not attempt to determine" clause, a dili
 
 ## The review pass
 
-When to use: you want a page checked, not changed.
+When to use: you want to know what's wrong with a page before anything moves.
 
 ```
 @doc.holiday review /docs/api-limits.md against the current source. List every

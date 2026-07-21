@@ -21,7 +21,7 @@ Open the connection, update the credentials or reinstall the provider applicatio
 
 ## An entry says Needs Attention
 
-That's not an error — Doc Holiday is asking *you* something. Open the entry's **Messages** tab, read the question, and reply. Your reply starts a new pass and the work continues.
+Needs Attention means Doc Holiday is asking *you* something. Open the entry's **Messages** tab, read the question, and reply. Your reply starts a new pass and the work continues.
 
 ## The draft touched files I didn't want
 
@@ -40,7 +40,7 @@ Doc Holiday's PRs are ordinary git PRs, and they age like anyone else's. If the 
 
 ## It wrote about the wrong thing
 
-The request was probably broader than it felt when you typed it. The fix is steering, not luck: name the outcome, pin the file path, and set boundaries — the [Prompting guide](./p1-prompting-guide.md) is the five-minute version, and durable preferences belong in [style guides](./p3-writing-style-guides.md) rather than repeated in every request.
+The request was probably broader than it felt when you typed it. The fix is steering: name the outcome, pin the file path, and set boundaries — the [Prompting guide](./p1-prompting-guide.md) is the five-minute version, and durable preferences belong in [style guides](./p3-writing-style-guides.md) rather than repeated in every request.
 
 ## It keeps making the same stylistic mistake
 

@@ -2,9 +2,9 @@
 
 A request is the single biggest lever on what Doc Holiday produces for one piece of work. The same product, the same sources, and the same instructions can yield a mediocre page from a vague request and an excellent one from a precise request. This guide is the craft; where to type a request is covered in [Request work from git](/f1-request-work-in-git.md) and [Request work from the app](/f2-request-work-in-the-app.md).
 
-## Name the outcome, not the method
+## Name the outcome
 
-Ask for the artifact you want to exist, not the investigation you imagine producing it.
+Ask for the artifact you want to exist.
 
 > **Weak:** `@doc.holiday look at the changes to the webhook code`
 > **Strong:** `@doc.holiday write a troubleshooting section for webhook delivery failures and add it to /docs/integrations.md`
