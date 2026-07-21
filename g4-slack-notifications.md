@@ -12,7 +12,7 @@ SCREENSHOT PLACEHOLDER: slack-notifications/channel-form.png
 
 When you save the source, Doc Holiday joins the channel.
 
-4. Open the Publication form and set **Notify** to the Slack Channel source. The field is marked **optional**. Use **Select notifier** to choose the source, or leave **None** selected if you do not want notifications on that Publication.
+4. Open the Publication form and set **Notify** to the Slack Channel source. The Publication form shows **optional** next to **Notify**. Use **Select notifier** to choose the source, or leave **None** selected to keep notifications off for that Publication.
 
 ## What you get
 
