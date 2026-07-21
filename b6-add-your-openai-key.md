@@ -13,7 +13,7 @@ Only OpenAI keys are accepted.
 2. Add the key in the place that fits your flow.
    - **Onboarding:** On the **"Add your AI provider key"** step, select **"Add Provider Key"** and enter your key.
    - **Settings:** Admins on BYOK and OSS can open **"AI Provider Keys"**, select **"Add AI Provider Key"**, and fill in **"Name"**, **"Provider"**, and **"API Key"**. The **"Provider"** field accepts OpenAI only. Select **"Add Key"** to save it.
-3. Doc Holiday verifies the key with a live OpenAI request before it saves anything. If it shows "the provider rejected this api key", get a new key. If it shows "could not verify the api key, try again", the check could not complete, so try again.
+3. Doc Holiday verifies the key with a live OpenAI request before it saves anything. If Doc Holiday returns "the provider rejected this api key", get a new key. If Doc Holiday returns "could not verify the api key, try again", the check could not complete, so try again.
 4. Confirm the key saved successfully.
 
 ```
