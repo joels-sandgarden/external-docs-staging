@@ -23,14 +23,14 @@ A request can start in four places, and each path lands in the same work:
 
 ## Stage 2 — plan
 
-Doc Holiday reads the request together with what it already knows about the Publication and its connected Sources. It turns that into file by file work items, so you can see what it plans to change before it drafts anything. The request and the plan appear in [Work History](/f4-work-history.md).
+Doc Holiday reads the request together with what it already knows about the Publication and its connected Sources. It turns that into one work item for each file, so you can see what it plans to change before it drafts anything. The request and the plan appear in [Work History](/f4-work-history.md).
 
 ## Stage 3 — draft
 
-Doc Holiday reads the real source, compares it with the docs it maintains, and drafts proposed diffs. Those drafts stay in Doc Holiday until approval. It never writes straight to your git repository, so the docs repo does not change until the review step finishes.
+Doc Holiday reads the real source, compares it with the docs it maintains, and drafts proposed diffs. Those drafts stay in Doc Holiday until approval. It never writes straight to the docs repo, so the repo stays unchanged until review finishes.
 
 ## Stage 4 — review
 
 You review the draft, leave comments, and ask for changes when something needs another pass. Doc Holiday revises the same work and keeps the draft visible until it is ready. When you approve it, Doc Holiday opens a normal pull request in the docs repo. See [Review and revise](/f3-review-and-revise.md).
 
-Your docs repo stays yours: Doc Holiday only lands approved content as a normal git pull request, and the merged result lives in your repository like any other change.
+Your docs repo stays yours: approved content lands there only as a normal git pull request, and the merged result lives in your repository like any other change.
