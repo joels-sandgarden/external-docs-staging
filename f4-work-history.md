@@ -1,12 +1,12 @@
 # Work History
 
-Work History records one documentation request from the first trigger to the final result. It keeps that record for a single [Publication](/a3-concepts.md) and [Source](/a3-concepts.md), so the reader can follow one stream of work without mixing it with another Publication. A request can begin in a Source comment, a trigger event, the app, or the API.
+Work History records one documentation request from its first trigger to its final result. Each entry belongs to one [Publication](/a3-concepts.md) and one [Source](/a3-concepts.md), so the reader can follow one stream of work without mixing it with another. A request can begin in a Source comment, a trigger event, the app, or the API.
 
 The page shows the request as it moves through its lifecycle. Doc Holiday starts in Running while it works. When the draft is ready, the entry moves to Ready for Review. From there, the work can move to Open, Merged, Closed, Cancelled, or Needs Attention. Open means the draft has opened for review. Merged means the changes landed. Closed means the review ended without landing the changes. Cancelled means someone stopped running work before it finished. Needs Attention means Doc Holiday wants a reply in Messages, so the reader should open that tab and answer there.
 
 A single Work History entry can take more than one pass. A new comment or reply can start another pass, and each pass can propose changes to one or more files. The Files tab shows those proposed changes, so the reader can review them before the work moves ahead. The Messages tab keeps the thread attached to the entry and makes follow-up replies easy to find.
 
-The Work History page in the app lists these entries for the selected Publication. The Publication filter narrows the list to one Publication at a time, and the status filter narrows it by lifecycle stage. The list can still show Cancelled when the work stops, even though the filter menu does not promise to expose every status label shown in the list.
+The Work History page in the app lists these entries for one Publication at a time. The Publication filter narrows the list, and the status filter narrows it by lifecycle stage. The list can still show Cancelled when the work stops, even though the filter menu does not promise to expose every status label shown in the list.
 
 Each row in the list shows the Publication name, a summary, the current status, and the start and last update times. That gives the reader a quick view of which requests are still active and which ones already reached a final result.
 
