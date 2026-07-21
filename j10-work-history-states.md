@@ -20,13 +20,13 @@ The app shows `Needs Attention` only when a staged conversation's latest bot com
 
 | API value | app label | meaning |
 | --- | --- | --- |
-| `running` | `Running` | The pass is in progress. |
-| `success` | `Completed` | The pass finished successfully. |
-| `skipped` | `Skipped` | The pass did not run. |
-| `error` | `Failed` | The pass stopped with an error. |
-| `no_changes` | `No Changes` | The pass found nothing to change. |
-| `cancelRequested` | Not surfaced | A cancel request is in progress. |
-| `cancelled` | `Cancelled` | The pass stopped after cancellation. |
+| `running` | `Running` | The pass continues now. |
+| `success` | `Completed` | The pass finishes successfully. |
+| `skipped` | `Skipped` | The pass does not run. |
+| `error` | `Failed` | The pass stops with an error. |
+| `no_changes` | `No Changes` | The pass finds nothing to change. |
+| `cancelRequested` | Not surfaced | The app records a cancel request. |
+| `cancelled` | `Cancelled` | The pass stops after cancellation. |
 
 Retry is available only for `error` turns, and retry sends the turn back to `running`.
 
