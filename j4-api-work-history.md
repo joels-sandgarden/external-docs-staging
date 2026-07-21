@@ -59,7 +59,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `message`, `itemCommentIds`.
 - Response: `200 OK` with no JSON body.
 - Notes: Doc Holiday only accepts discussion-only comments from the same conversation, and it rejects work-requesting items.
-- `curl`: `curl -X POST -H 'Content-Type: application/json' -d '{"message":"Please review","itemCommentIds":["c1","c2"]}' /api/v1/conversations/conv_123/comments/sendBatch`
+- `curl`: `curl -X POST -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"message":"Please review","itemCommentIds":["c1","c2"]}' "https://api.doc.holiday/api/v1/conversations/conv_123/comments/sendBatch"`
 - `json`: `{"message":"Please review","itemCommentIds":["c1","c2"]}`
 
 ### `POST /api/v1/conversations/{id}/notify`
