@@ -28,8 +28,9 @@ The Library shapes how Doc Holiday writes, not what it invents. It keeps recurri
 
 ## Work History
 
-Work History is the record of one documentation request from the first signal to the final result. Each entry belongs to one Publication and one Source, so the record shows exactly which documentation set and which connected system the work came from. That scope keeps the history specific while still showing the full path from request to review. It also lets a team trace how one request moved without losing the context around it.
+Work History is the record of one documentation request from the first signal to the final result, so it preserves the path of a single piece of work from start to finish.
+Each entry belongs to one Publication and one Source, which shows exactly which documentation set and which connected system started the work and why it matters there at review time.
+A single entry opens when something triggers it, moves through review and revision, and settles into a result such as finished, closed, cancelled, or waiting for more attention; [Work History](/f4-work-history.md) keeps that path visible when the request needs another round of comments or another follow-up pass.
 
-A Work History entry follows the request as it moves through its stages. It opens when something triggers the work, moves through review and revision, and settles into a result such as finished, closed, cancelled, or waiting on more attention. The entry always shows the current stage of the request rather than a status chosen by hand, which makes it the clearest place to see what Doc Holiday is doing right now. A single entry can also pick up follow-up passes when a request needs another round of work. [Work History](/f4-work-history.md)
-
-Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, the Library guides the writing, and Work History records the result. That one flow keeps the vocabulary connected from input to outcome, so the relationships stay clear even when the request moves through several rounds of review.
+Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, the Library guides the writing, and Work History records the result in one continuous loop.
+This model keeps the vocabulary connected from input to outcome, so the rest of the documentation can stay consistent even when a request needs several passes before it settles.
