@@ -2,7 +2,7 @@
 
 Doc Holiday keeps documentation aligned with shipped behavior when code changes. This guide covers the REST request a coding agent sends directly when code changes need a matching documentation update.
 
-Any coding agent that can run a tool or script can use this REST API.
+Any coding agent with tool or script access can use this REST API.
 
 ## Request the work
 
