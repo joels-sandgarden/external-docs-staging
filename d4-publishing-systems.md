@@ -1,6 +1,6 @@
 # Publishing systems
 
-Doc Holiday uses the **Publishing System** field to match a docs site with the structure and conventions it expects. This page lists the available options, how the setting gets chosen, and what to do when the site does not fit a named system.
+Doc Holiday uses the **Publishing System** field to match a docs site with the structure and conventions it expects. The page below lists the available options, how the setting gets chosen, and which fallback to use when the site does not fit a named system.
 
 ## Supported systems
 
@@ -37,6 +37,6 @@ Doc Holiday uses the publishing system to understand a site’s structure and co
 
 ## Fallback guidance
 
-If the site generator is not listed, or if no better match exists, choose `Generic Markdown`. Use `None` only as the literal UI option for no selection; it is not the recommended choice for an unrecognized site.
+If the site generator is not listed, or if no better match exists, choose `Generic Markdown`. Treat `None` as the literal UI option for no selection, not the recommended choice for an unrecognized site.
 
 For publication setup and source selection, see [Publications](/d1-publications.md) and [Sources](/c1-sources.md).
