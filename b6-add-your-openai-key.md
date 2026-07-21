@@ -1,11 +1,11 @@
 # Add your OpenAI key
 
 Use this page when you already have an OpenAI key and need to finish setup in onboarding or add it later in Settings.
-Only OpenAI keys are accepted.
 
 ## Who needs this
 
 Use this page for Bring Your Own Key and Open Source Software plans. Enterprise does not use this setup page; see [Billing and plans](/h4-billing-and-plans.md) for plan details.
+Only OpenAI keys are accepted.
 
 ## Add the key
 
