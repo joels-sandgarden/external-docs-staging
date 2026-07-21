@@ -4,7 +4,7 @@ This page covers direct integration with Doc Holiday's API.
 
 ## Overview
 
-The public API exposes the contract for external systems that create and read `Connection`, `Conversation`, and related records. The generated OpenAPI spec defines the published surface, base URL, response statuses, and error schema. Only endpoints exposed in the public contract belong in this reference.
+The public API covers the published contract for `Connection`, `Conversation`, and related records. The generated OpenAPI spec defines the base URL, response statuses, and error shape. Only endpoints exposed in the public contract belong here.
 
 ## Authentication and transport
 
@@ -17,7 +17,7 @@ The public API exposes the contract for external systems that create and read `C
 
 ## Naming and errors
 
-Doc Holiday's API predates the rename from Automations to Publications. Current public endpoints use `/api/v1/publications/*`; `/api/v1/automations/*` remains as deprecated backward-compatible aliases.
+Doc Holiday's API predates the rename from Automations to Publications. Current public endpoints use `/api/v1/publications/*`; `/api/v1/automations/*` remains available only as a deprecated alias.
 
 API responses follow the OpenAPI contract:
 
@@ -27,7 +27,7 @@ API responses follow the OpenAPI contract:
 
 ## Permissions
 
-An API key acts as the user who created it. That user's organization membership and role permissions determine what the key can access.
+An API key acts as the user who created it, so that user's organization membership and role permissions determine what the key can access.
 
 ## Resource map
 
