@@ -1,6 +1,6 @@
 # Manage connections
 
-Keep your Sources healthy, fix a broken connection, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, repair access, edit details, or remove a Source or provider.
+Keep your Sources healthy, repair a broken Source, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, repair access, edit details, or remove a Source or provider.
 
 ```
 SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
@@ -17,7 +17,7 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
    - **Checking...** means Doc Holiday is still checking it.
 5. Doc Holiday re-reads connected sources regularly. When a Source stays **Unhealthy**, its information can go stale while other Sources keep updating.
 
-## Fix an unhealthy connection
+## Fix an unhealthy Source
 
 1. Open the Source in **Sources** or the provider in **Providers**.
 2. Select **Edit**.
@@ -29,7 +29,7 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 5. If you need to reinstall a GitHub App on the provider side, open **Manage GitHub Application** and complete that setup again.
 6. Return to **Sources** and confirm the status badge reads **Healthy**.
 
-## Edit a connection
+## Edit a Source
 
 1. Open the Source in **Sources** or the provider in **Providers**.
 2. Select **Edit**.
@@ -38,7 +38,7 @@ SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
 5. The sheet title reads **Update Source** or **Update Provider**.
 6. Select **Save Changes** when you finish. Select **Cancel** or **Close** to leave the current values unchanged.
 
-## Delete a connection
+## Delete a Source
 
 1. Update any Publication that still points at the Source before you delete it.
 2. If you delete a provider, move dependent Sources first.
