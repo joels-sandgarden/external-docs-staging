@@ -15,7 +15,7 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 
 ## Manage active and failover keys
 
-Each key card shows **Active** and the overflow menu actions **Test**, **Set Active**, and **Delete**.
+Each key card shows the **Active** badge, and the overflow menu includes **Test**, **Set Active**, and **Delete**.
 
 1. The first OpenAI key becomes active automatically.
 2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key to failover.
