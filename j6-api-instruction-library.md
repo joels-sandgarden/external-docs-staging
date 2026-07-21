@@ -122,9 +122,9 @@ Behaviors: Requires delete permission. Returns `204`. Missing IDs do not fail.
 
 ## Instruction links
 
-Instruction links attach one instruction to one publication slot. The resolver joins live links with blank lines. When no live links exist, or when the library feature is off, it falls back to the publication's inline text.
+Instruction links attach one instruction to one publication slot. The resolver joins live links with blank lines and falls back to the publication's inline text when no live links exist or the library feature is off.
 
-The slot types are `documentation`, `releaseNotes`, `changelog`, `commit`, `planning`, and `styleGuide`. See [e2-instruction-slots-reference.md](/e2-instruction-slots-reference.md) for what each slot governs.
+See the slot table below for the enum values and the slot reference page.
 
 | Slot type | Notes |
 | --- | --- |
