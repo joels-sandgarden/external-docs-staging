@@ -27,7 +27,7 @@ SCREENSHOT PLACEHOLDER: configure-triggers/trigger-config.png
 2. Go to **Inputs**.
 3. Select **Add Triggering Event**.
 4. Choose a Source from the list.
-5. Select the trigger or triggers that Source supports. For Jira Sources, select one or more statuses with **Select statuses...**.
+5. Select the triggers that Source supports. For Jira Sources, choose one or more statuses with **Select statuses...**.
 6. Save the Publication.
 
 To remove a trigger setup, use the trash button on the Source card. Removing the Source from **Inputs** also clears that Source’s trigger settings.
