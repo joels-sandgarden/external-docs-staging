@@ -13,11 +13,11 @@ Returns the authenticated user as `ModelsGetUserResponse`, the same shape used b
 | none | No query or path parameters. |
 
 ```bash
-curl https://api.doc.holiday/api/v1/me
+curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/me
 ```
 
 ```json
-{"id":"string","authId":"string","email":"string","name":"string","sfsToken":"string","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
+{"id":"string","authId":"string","email":"string","name":"string","sfsToken":"","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
 Requires authenticated SFS token access. Common errors: `400`, `500`.
@@ -33,12 +33,12 @@ Returns `ModelsListUsersResponse` for users in the authenticated org, with `user
 | authId | Filter by auth ID. |
 | query | Free-text search. |
 | roleIds | Filter by role IDs. |
-| noBuiltinRole | Exclude builtin roles. |
+| noBuiltinRole | Filters to users who hold no builtin role. |
 | invitationAccepted | Filter by invitation state. |
 | shared pagination | Shared pagination fields from the API. |
 
 ```bash
-curl "https://api.doc.holiday/api/v1/users?email=string"
+curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/users?email=string"
 ```
 
 ```json
@@ -56,11 +56,11 @@ Returns one user in `ModelsGetUserResponse`.
 | id | Required path parameter. |
 
 ```bash
-curl https://api.doc.holiday/api/v1/users/string
+curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/users/string
 ```
 
 ```json
-{"id":"string","authId":"string","email":"string","name":"string","sfsToken":"string","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
+{"id":"string","authId":"string","email":"string","name":"string","sfsToken":"","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
 Requires authenticated SFS token access. Common errors: `400`, `500`.
