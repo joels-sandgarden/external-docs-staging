@@ -25,7 +25,7 @@ A Publication points to Sources rather than owning them, so [Sources](/c1-source
 
 The Library is the organization-wide collection of editable guidance, and [the Library](/e1-the-library.md) keeps that shared direction visible for every Publication in the Organization without forcing identical behavior everywhere or flattening local needs.
 Each instruction is one entry in the Library, and it can apply to every Publication or only to selected Publications when a team needs a narrower rule for specific work.
-The Library shapes how Doc Holiday writes by giving each Publication the same source of guidance while still letting it use the instructions it needs for its own subject matter and audience.
+The Library shapes how Doc Holiday writes by giving each Publication the same source of guidance while still letting it use the instructions it needs for its own subject matter and audience, so the tone stays steady across the site.
 
 ## Work History
 
