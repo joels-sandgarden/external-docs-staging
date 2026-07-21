@@ -2,7 +2,7 @@
 
 ## Overview
 
-A Publication is the defined set of documentation Doc Holiday keeps current. It is the unit most work starts from, because it tells Doc Holiday which docs it maintains, which Sources it reads, and which writing guidance it applies.
+A Publication is the set of documentation Doc Holiday keeps current. Most work starts with a Publication because it identifies the Sources Doc Holiday reads, the docs destination it writes to, and the guidance it applies.
 
 ## What a Publication points at
 
@@ -16,19 +16,19 @@ The docs destination can live in a repository that is separate from the code rep
 
 ## What a Publication controls
 
-A Publication controls the output and guidance that shape the work it receives:
+A Publication controls three things:
 
 - Which output types it writes, through [Output types](/d3-output-types.md).
 - When it reacts on its own, through [trigger configuration](/d2-configure-triggers.md).
 - Which writing guidance applies, through [the Library](/e1-the-library.md).
 
-That guidance can include style guides, planning instructions, and other publication-specific instructions. The Library can supply reusable instructions that apply to one Publication or many, and the publication form brings those choices together with the Publication name, its Sources, its docs destination, and the optional notification channel.
+That guidance can include style guides, planning instructions, and other reusable instructions. The Library can supply reusable instructions that apply to one Publication or many.
 
 ## Work History and lifecycle
 
-Every request becomes a Work History entry scoped to one Publication. Work History records the request from first trigger to final result, so the record stays attached to the Publication it affects rather than floating across the product.
+Every request becomes a Work History entry scoped to one Publication. Work History records the request from the first trigger to the final result, so the record stays with the Publication it affects rather than floating across the product.
 
-A Work History entry opens, gathers the work for that Publication, and then settles into a visible result such as ready for review, completed, cancelled, or needing attention. The page for [Work History](/f4-work-history.md) explains that record in more detail.
+A Work History entry opens, does the work for that Publication, and then settles into a visible result such as ready for review, completed, cancelled, or needing attention. The page for [Work History](/f4-work-history.md) explains that record in more detail.
 
 ## Publication health
 
