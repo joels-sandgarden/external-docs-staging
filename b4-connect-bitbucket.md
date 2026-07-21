@@ -1,35 +1,41 @@
 # Connect Bitbucket
 
-Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments; issue and release triggers do not work. See [Configure triggers](/d2-configure-triggers.md).
+Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments; issue and release triggers do not apply. See [Configure triggers](/d2-configure-triggers.md).
 
-A Bitbucket setup uses two layers: a workspace access-token provider first, then Bitbucket Project connections underneath it. Use the workspace path when one token should cover more than one project. Use Option B when one project needs its own token.
+If the Source already exists, update it in [Manage connections](/c7-manage-connections.md).
 
-## Option A: workspace access-token provider, then Bitbucket Project connections
+## Option A: workspace token provider and Bitbucket Project
 
-1. In Sources, select **Add Provider**.
-2. In the sheet titled **Create Provider**, choose **Bitbucket Workspace Access Token**.
-3. Enter **Token Name**, **Workspace**, and **Access Token**.
-4. Select **Save Changes**, then select **Add Source**.
-5. In the sheet titled **Create Source**, choose **Bitbucket Repository**.
-6. Enter **Source Name**, then choose **Repository** and the **Select a repository** picker.
-7. Select a **Branch** with **Select branch**, then choose a **Publishing System** with **Select a publishing system**.
-8. Turn on **Pause Background Work for Source** only if the Source should stay idle. Select **Save Changes** to finish the Source.
+1. Open **Sources**, then select the **Providers** tab.
+2. Select **Add Provider**.
+3. Choose **Bitbucket Workspace Access Token**.
+4. Enter **Token Name**, **Workspace**, and **Access Token**.
+5. Select **Save Changes**.
+6. Open the **Sources** tab and select **Add Source**.
+7. Choose **Bitbucket Project**.
+8. Enter **Source Name**.
+9. Select **Repository**.
+10. Select **Branch**.
+11. Select **Publishing System**.
+12. Select **Save Changes**.
 
-This path keeps one workspace token above the Bitbucket Project connections, so several projects can share the same access token.
+Use this path when one workspace token should cover multiple projects.
 
-## Option B: repository access token
+## Option B: repository access token for one repository
 
-1. In Sources, select **Add Source**.
-2. In the sheet titled **Create Source**, choose **Bitbucket Repository**.
-3. Enter **Source Name**, **Repository**, and **Repository Access Token**.
-4. Select a **Branch** and a **Publishing System**.
-5. Select **Save Changes** to finish the Source.
+1. Open **Sources** and select **Add Source**.
+2. Choose **Bitbucket Project**.
+3. Select **Click here to connect with a repository access token instead**.
+4. Enter **Source Name**, **Repository Access Token**, and **Repository**.
+5. Select **Branch**.
+6. Select **Publishing System**.
+7. Select **Save Changes**.
 
-Use this option when one repository needs its own token.
+Use this path when one repository needs its own access token.
 
 ## Verify
 
-Open the Sources page and confirm the Source shows **Healthy**. If it shows **Unhealthy**, open [Manage connections](/c7-manage-connections.md).
+Open the **Sources** page and confirm the Source shows **Healthy**.
 
 ## Next
 
