@@ -56,7 +56,7 @@ Returns one user in `ModelsGetUserResponse`.
 | id | Required path parameter. |
 
 ```bash
-curl https://api.doc.holiday/api/v1/users/string
+curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/users/string
 ```
 
 ```json
