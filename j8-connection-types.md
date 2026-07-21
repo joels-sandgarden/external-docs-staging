@@ -20,6 +20,8 @@ The same label can point to more than one API value. The table and footnotes kee
 
 This layout keeps the page stable as the supported list changes, because new rows can fit the same five column pattern.
 
+Each provider parent sits beside its child types, so the required parent stays visible at a glance. The API value separates rows that share a label but differ by parent or trigger support.
+
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
 | GitHub Application | `githubApp` | git provider | — | — |
