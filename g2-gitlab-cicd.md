@@ -10,7 +10,7 @@ This component lets you file a work request from a GitLab pipeline with a prompt
 
 ## Quick-start include
 
-Use this include when the pipeline should send a prompt and accept the generated draft for review.
+Use this include when the pipeline should send a prompt and produce a draft for review.
 
 ```yaml
 include:
@@ -21,7 +21,7 @@ include:
 
 ## Tag-based release example
 
-Use this pattern when the pipeline runs from a release tag and the prompt needs the tag and project name.
+Use this pattern when the pipeline runs from a release tag and the prompt should include the tag and project name.
 
 ```yaml
 include:
@@ -36,4 +36,4 @@ GitLab CI variable substitution such as `${CI_COMMIT_TAG}` and `${CI_PROJECT_NAM
 
 ## CI versus triggers
 
-Choose GitLab CI/CD when the work should start from a pipeline and the prompt belongs with the repo change. Choose triggers when the request should start from an event instead; see [Configure triggers](/d2-configure-triggers.md). Pick the entry point that matches how the team already works.
+Choose GitLab CI/CD when the work should start from a pipeline and the prompt belongs with the repo change. Choose triggers when the request should start from an event instead; see [Configure triggers](/d2-configure-triggers.md) for that path. Pick the entry point that matches how the team already works.
