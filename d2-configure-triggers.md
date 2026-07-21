@@ -1,6 +1,6 @@
 # Configure triggers
 
-This guide explains how to configure automatic trigger behavior for an existing Publication. Use it when a Publication should react to new activity in one of its connected Sources.
+This guide explains how to configure automatic trigger behavior for an existing Publication. See [Concepts](/a3-concepts.md) for the definitions of Publication and Source. Use it when a Publication should react to new activity in one of its connected Sources.
 
 ## Where trigger settings live
 
