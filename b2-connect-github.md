@@ -29,7 +29,7 @@ If the repository list looks empty, return to the app install and confirm that t
 
 ## Option B: use a personal access token
 
-Use this path when the GitHub App cannot be installed for the organization, or when an admin cannot finish the app install right away. This still creates a repository Source, but it uses a token instead of the app. It works best for recovery or for organizations that block the app install. Choose it when the app route is unavailable and you still need the repository connected. The token path asks for the same repository details, so the Source behaves the same way after setup.
+Use this path when the GitHub App cannot be installed for the organization, or when an admin cannot finish the app install right away. This still creates a repository Source, but it uses a token instead of the app. Choose it when the app route is unavailable and the organization still needs the repository connected. The token path asks for the same repository details, so the Source behaves the same way after setup.
 
 1. Enter a **Source Name** that identifies the Source clearly.
 2. Paste the **Personal Access Token**.
