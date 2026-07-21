@@ -16,7 +16,9 @@ Use this include when the pipeline should send a prompt and produce a draft for 
 include:
   - component: gitlab.com/sandgarden/doc-holiday-ci-job/generate-docs@1.0.0
     inputs:
-      prompt: "Write the documentation update for this change."
+      title: "Release notes for ${CI_COMMIT_TAG}"
+      body: "Generate release notes from the latest commits"
+      commits-count: 10
 ```
 
 ## Tag-based release example
