@@ -21,7 +21,7 @@ Use the app-backed path when Jira connects through an **Atlassian Application**.
 3. Select **Install Atlassian Application**.
 4. If another Atlassian Site Admin must complete installation, copy the read-only installation link shown in the form and share it with that admin.
 5. Open **Sources**, select **Add Source**, and choose **Jira Project**.
-6. Complete **Source Name** and **Jira Project**. When more than one application exists, the form also shows **Atlassian Application**.
+6. Complete **Source Name** and **Jira Project**. When more than one application exists, the form also shows the **Atlassian Application** selector.
 7. Select **Save Changes**.
 
 ## Jira token-based setup
