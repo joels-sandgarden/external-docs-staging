@@ -37,7 +37,7 @@ Returns `ModelsListUsersResponse` for users in the authenticated org, with `user
 | authId | Filter by auth ID. |
 | query | Free-text search. |
 | roleIds | Filter by role IDs. |
-| noBuiltinRole | Filters to users with no builtin role. |
+| noBuiltinRole | Returns only users with no builtin role.|
 | invitationAccepted | Filter by invitation state. |
 | shared pagination | Shared pagination fields from the API. |
 
