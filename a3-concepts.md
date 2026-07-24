@@ -18,7 +18,7 @@ A Publication points at Sources instead of owning them, so it defines what the d
 
 Sources are the connected systems that feed Doc Holiday or receive its output.
 One Source can provide context for a Publication, another can accept documentation updates, and another can do both.
-A Publication points to Sources rather than owning them, so it defines what the docs set covers while the Sources define where the information comes from and where the result belongs.
+That relationship keeps each Publication tied to the right source material without turning Sources into owned content.
 
 ## The Library and instructions
 
