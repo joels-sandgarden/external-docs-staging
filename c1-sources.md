@@ -6,7 +6,7 @@ Doc Holiday treats a Source as a connected system that either accepts documentat
 
 Other Sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.
 
-Doc Holiday uses that mix of Sources in one workflow. A Publication points at one writable Source for the docs destination and at other Sources for context, so the same page can describe writable and read only Sources without treating them as separate ideas.
+Doc Holiday uses that mix of Sources in one workflow. A Publication points at one writable Source for the docs destination and at other Sources for context, so the same page can describe writable and read-only Sources without treating them as separate ideas.
 
 That single model helps people who keep product notes in one place, source content in another, and the Publication destination somewhere else. Doc Holiday can read across those places without making the reader learn three different kinds of source logic.
 
@@ -38,7 +38,7 @@ Doc Holiday rereads connected Sources on a background cadence, roughly every cou
 
 Every Source also shows a health state. Healthy means Doc Holiday can use the Source. Unhealthy means Doc Holiday stops re-reading that Source until someone fixes the problem. A draft can still use the healthy Sources that remain available, but the unhealthy Source does not contribute.
 
-The health badge gives a quick answer to a simple question: can Doc Holiday trust this Source right now? Healthy means Doc Holiday can read the Source. Unhealthy means it has paused re-reading that Source. Checking... means Doc Holiday is still checking that Source.
+The health badge gives a quick answer to a simple question: can Doc Holiday trust this Source right now? Healthy means Doc Holiday can read the Source. Unhealthy means it has paused re-reading that Source. Checking... means it is still checking.
 
 For the operational details around credentials, health, and deletion, see [Manage connections](/c7-manage-connections.md).
 
