@@ -11,8 +11,8 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Request: `branch`, `outputUrl`, `jobId`, `publicationId`, `operationType`, `status`, `summary`, `staged`, `originType`, `originURL`.
 - Response: `ModelsListConversationsResponse` with `conversations`, `nextPageToken`, `previousPageToken`, and `error`.
 - Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. Omit `staged` for no filter; `staged=null` returns `400`.
- - Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. Omit `staged` for no filter. `staged=null` returns `400`.
 - `curl`: `curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversations?publicationId=pub_123&staged=true"`
+ - Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. Omit `staged` for no filter; `staged=null` returns `400`.
 - `json`: `{"conversations":[{"id":"conv_123","status":"running"}],"nextPageToken":"","previousPageToken":""}`
 
 ### `POST /api/v1/conversations/`
@@ -103,7 +103,6 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Purpose: retry one failed turn.
 - Request: `id`.
 - Response: `ModelsGetConversationTurnResponse` with `id`, `status`, `errorMessage`, `retryCount`, `request`, and `triggeringCommentId`.
-- Notes: The app offers Retry on failed turns; the endpoint resets the turn to running, clears its error, and requeues the work.
  - Notes: Retry resets the turn to `running`, clears its error, and requeues the work.
 - `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_turns/turn_123/retry"`
 - `json`: `{"id":"turn_123","status":"running","retryCount":2}`
