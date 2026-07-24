@@ -61,7 +61,6 @@ description: "User-visible changes to Doc Holiday, newest first."
   - OSS-tier markdown files edited during a director step now receive a single attribution footer, and later passes do not add a duplicate footer.
 - **Support Groq BYOK routing**
   - Groq keys can now route inference through Groq while avoiding unsupported request fields and compaction behavior.
-
 - **Refine writer Bedrock GPT-5.6 settings**
   - When `bedrock-gpt-5.6` is enabled, the writer now uses GPT-5.6 Terra with matching prompt, reasoning, and compaction settings instead of the default configuration.
 - **Extend explorer Bedrock GPT-5.6 coverage**
