@@ -48,3 +48,13 @@ Key changes apply immediately, even to work already in flight.
 
 - Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise inference.
 - See [Security and data handling](./h5-security-and-data-handling.md) for key handling and inference behavior.
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

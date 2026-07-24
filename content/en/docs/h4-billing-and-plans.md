@@ -25,3 +25,13 @@ Use [AI provider keys](./h3-ai-provider-keys.md) for provider key setup and mana
 ## Enterprise
 
 Please book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo — inference is managed for you.
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

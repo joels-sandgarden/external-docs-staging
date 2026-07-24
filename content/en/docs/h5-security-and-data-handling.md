@@ -34,3 +34,14 @@ Access is role-based — Reviewer, Writer, and Admin, in increasing order of cap
 Deleting a connection removes its stored secrets and, together with publication deletion, cleans up the knowledge derived from it. For complete removal of an organization and its data, contact the Doc Holiday team — full-organization deletion and purge are performed on request.
 
 Questions this page doesn't answer are worth asking — reach us via [doc.holiday](https://doc.holiday/).
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
