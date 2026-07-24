@@ -51,7 +51,6 @@ Keep Sources and providers healthy, restore access when a Source breaks, edit So
 
 Next: [Sources](./c1-sources.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
