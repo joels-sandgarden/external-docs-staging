@@ -4,7 +4,7 @@ url: "docs/connect-bitbucket"
 description: "Connect Bitbucket via a workspace token provider or per-project tokens."
 ---
 
-Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments; issue and release triggers do not apply. See [Configure triggers](./d2-configure-triggers.md).
+Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments. Issue and release triggers do not apply. See [Configure triggers](./d2-configure-triggers.md).
 
 If the Source already exists, update it in [Manage connections](./c7-manage-connections.md).
 
