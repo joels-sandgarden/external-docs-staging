@@ -70,7 +70,7 @@ description: "User-visible changes to Doc Holiday, newest first."
   - When `bedrock-gpt-5.6` is enabled, the Director now uses GPT-5.6 Terra with a dedicated prompt and client-side compaction for Bedrock sessions.
 - **Align model selection with prompt templates**
   - Annotator, Director, Explorer, Merge Summarizer, and Writer now resolve their model choice and prompt from the same shared binding.
-- **Configure Cerebras BYOK routing**
+- **Enable Cerebras BYOK routing**
   - Cerebras keys can now route inference through the Cerebras-backed model with provider-specific request handling.
 
 ### 🐛 Bug Fixes
