@@ -47,7 +47,6 @@ Open **Sources** and confirm the Source status reads **Healthy**.
 
 See [Sources](./c1-sources.md) or [Configure triggers](./d2-configure-triggers.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
