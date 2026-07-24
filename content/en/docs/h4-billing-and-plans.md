@@ -10,7 +10,7 @@ Open **Settings → Billing** to see the available plans and what each one inclu
 
 ## Open Source Plan
 
-Our Open Source Plan is free for public open-source projects and runs on your own OpenAI key for inference. See [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
+Our Open Source Plan is free for public open source projects and runs on the provider key the organization connects for inference. Doc Holiday adds a Doc Holiday attribution footer to edited Markdown files on the OSS tier. See [AI provider keys](./h3-ai-provider-keys.md) for setup context.
 
 The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
 
@@ -20,7 +20,7 @@ Bring Your Own Key costs $100/month. It is a self-serve subscription with a free
 
 If the subscription lapses, your work pauses until billing is current. The banner reads: "Your BYOK subscription is no longer active. You can still view Doc Holiday, but new requests are disabled until you resubscribe."
 
-Use [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for OpenAI key setup and management.
+Use [AI provider keys](./h3-ai-provider-keys.md) for provider key setup and management.
 
 ## Enterprise
 
