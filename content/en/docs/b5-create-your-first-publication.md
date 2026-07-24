@@ -30,7 +30,6 @@ Open the publication details page and confirm the **Status** section shows **Hea
 
 Next: [Request work in the app](./f2-request-work-in-the-app.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
