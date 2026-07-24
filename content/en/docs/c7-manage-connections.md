@@ -28,7 +28,7 @@ Keep Sources and providers healthy, restore access when a Source breaks, edit So
    - A provider app no longer exists in the workspace.
    - The repository or project moved, or someone deleted it.
 4. Update the visible fields in the sheet, then select **Save Changes**.
-5. If the provider uses GitHub and still fails, open **Manage GitHub Application** and complete that setup again.
+5. If a GitHub provider still fails, open **Manage GitHub Application** and complete that setup again.
 6. Return to **Sources** and confirm the status badge reads **Healthy**.
 
 ## Edit a Source
