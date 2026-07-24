@@ -29,12 +29,3 @@ Open the publication details page and confirm the **Status** section shows **Hea
 ## Next
 
 Next: [Request work in the app](./f2-request-work-in-the-app.md).
-
-
-<!-- doc-holiday-watermark -->
-<p align="center">
-  <a href="https://doc.holiday">
-    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
-  </a>
-</p>
-<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
