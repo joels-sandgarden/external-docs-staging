@@ -36,7 +36,6 @@ Verify that the Source shows **Healthy** on the **Sources** page.
 
 See [Sources](./c1-sources.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
