@@ -102,6 +102,6 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Purpose: retry one failed turn.
 - Request: `id`.
 - Response: `ModelsGetConversationTurnResponse` with `id`, `status`, `errorMessage`, `retryCount`, `request`, and `triggeringCommentId`.
- - Notes: Retry resets the turn to `running`, clears its error, and requeues the work.
+- Notes: Retry resets the turn to `running`, clears its error, and requeues the work.
 - `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_turns/turn_123/retry"`
 - `json`: `{"id":"turn_123","status":"running","retryCount":2}`
