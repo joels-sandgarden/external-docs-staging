@@ -16,13 +16,7 @@ The Role column groups families rather than platform features. A provider row do
 
 The table uses `—` deliberately. It marks rows with no parent and rows with no automatic events. That keeps the register narrow while still showing which entries participate in trigger handling and which entries only provide context or notification.
 
-Atlassian Application follows the same parent pattern as the other provider rows. One row names the parent app, and the other row names the child source. The parent row stays triggerless, and the child row carries the event set.
-
-GitHub keeps both a parent app path and a direct token path. That gives the family one parent row and one direct repository row.
-
-GitLab and Bitbucket use the same parent and child pattern. The parent rows stay triggerless, and the child rows carry the trigger set. Atlassian Application uses the same pattern across its app and Jira Project rows.
-
-Linear stays the only standalone context source that emits events. Jira Project rows carry `sendToDoc` and `issueStatusChange`. Slack Channel remains the only notifier row.
+GitHub keeps both a parent app path and a direct token path. GitLab and Bitbucket use the same parent and child pattern. Atlassian Application follows that split for Jira Project, Linear remains the only standalone context source with events, and Slack Channel remains the only notifier row.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
