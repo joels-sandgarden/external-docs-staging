@@ -39,4 +39,3 @@ A request can show stages such as Running, Ready for Review, Open, Needs Attenti
 Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, and the Library guides the writing.
 Work History records that result, so the vocabulary stays connected from input to outcome.
 
-<!-- doc-holiday-watermark -->
