@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1318&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
+<head><script src="/external-docs-staging/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=external-docs-staging/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Let coding agents request documentation work.">
+  <meta name="description" content="Two ways a coding agent works with Doc Holiday: the plugin, or the API.">
   <meta name="author" content="doc.holiday">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
   
 
   <title>Coding Agents · Doc Holiday Documentation</title>
-  <link rel="canonical" href="http://localhost:1318/external-docs-staging/docs/coding-agents/">
+  <link rel="canonical" href="http://localhost:1313/external-docs-staging/docs/coding-agents/">
 
   
 
@@ -267,13 +267,33 @@
 					</a>
 				</li>
 				<li>
+					<a href="/external-docs-staging/docs/slack-notifications/" >
+						Slack Notifications
+					</a>
+				</li>
+				</ul>
+		</details>
+		<details open>
+			<summary>Coding agents &amp; MCP</summary>
+			<ul>
+				<li>
 					<a href="/external-docs-staging/docs/coding-agents/"  class="active" aria-current="page" >
 						Coding Agents
 					</a>
 				</li>
 				<li>
-					<a href="/external-docs-staging/docs/slack-notifications/" >
-						Slack Notifications
+					<a href="/external-docs-staging/docs/install-the-doc-holiday-plugin/" >
+						Install the Doc Holiday Plugin
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/plan-and-generate-docs-with-skills/" >
+						Plan and Generate Docs with Skills
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/request-docs-via-the-api/" >
+						Request Docs via the API
 					</a>
 				</li>
 				</ul>
@@ -359,6 +379,11 @@
 				<li>
 					<a href="/external-docs-staging/docs/work-history-states/" >
 						Work History States
+					</a>
+				</li>
+				<li>
+					<a href="/external-docs-staging/docs/mcp-tools/" >
+						MCP Tools
 					</a>
 				</li>
 				<li>
@@ -504,57 +529,20 @@
 				</header>
 
 				<div id="article-body">
-					<p>Doc Holiday keeps documentation aligned with shipped behavior when code changes. This guide covers the REST request a coding agent sends directly when code changes need a matching documentation update.</p>
-<p>Any coding agent with tool or script access can use this REST API.</p>
-<h2 id="request-the-work">Request the work</h2>
-<ol>
-<li>Send a <code>POST /api/v1/conversations/</code> request with a Doc Holiday API key in <code>Authorization: Bearer &lt;token&gt;</code>.</li>
-<li>Set <code>stage: true</code> by default.</li>
-<li>Include <code>body</code>, <code>publication</code>, and <code>stage</code>.</li>
-</ol>
-<h3 id="curl">curl</h3>
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s1">&#39;https://api.doc.holiday/api/v1/conversations/&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  -H <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">  -d <span class="s1">&#39;{
-</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;body&#34;: &#34;Update the authentication guide for the new token flow.&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;publication&#34;: &#34;docs-site&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;stage&#34;: true
-</span></span></span><span class="line"><span class="cl"><span class="s1">  }&#39;</span></span></span></code></pre></div><h3 id="json-payload">JSON payload</h3>
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="s2">&#34;Update the authentication guide for the new token flow.&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;publication&#34;</span><span class="p">:</span> <span class="s2">&#34;docs-site&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;stage&#34;</span><span class="p">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="agent-rules-snippet">Agent rules snippet</h2>
-<p>Drop a block like this into your agent&rsquo;s standing instructions (<code>CLAUDE.md</code>, agent rules, or the equivalent):</p>
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">When you change user-visible behavior in this repo (API shape, CLI flags,
-</span></span><span class="line"><span class="cl">configuration, workflows), file a documentation request with Doc Holiday
-</span></span><span class="line"><span class="cl">after the change merges:
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  curl -X POST &#39;https://api.doc.holiday/api/v1/conversations/&#39; \
-</span></span><span class="line"><span class="cl">    -H &#34;Authorization: Bearer $DOC_HOLIDAY_API_KEY&#34; \
-</span></span><span class="line"><span class="cl">    -H &#39;Content-Type: application/json&#39; \
-</span></span><span class="line"><span class="cl">    -d &#39;{&#34;body&#34;: &#34;&lt;what changed and which page to update, with a PR link&gt;&#34;, &#34;publication&#34;: &#34;&lt;publication name&gt;&#34;, &#34;stage&#34;: true}&#39;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Rules:
-</span></span><span class="line"><span class="cl">- One request per distinct documentation change; batch nothing.
-</span></span><span class="line"><span class="cl">- Name the outcome and the page: &#34;Update /docs/auth.md for the new token flow (PR #123)&#34;.
-</span></span><span class="line"><span class="cl">- Keep &#34;stage&#34;: true — a human reviews the draft before anything reaches the docs repo.
-</span></span><span class="line"><span class="cl">- File once per change; duplicate requests create duplicate work items.</span></span></code></pre></div><h2 id="review-by-default">Review by default</h2>
-<p>Setting <code>stage: true</code> keeps the request in Work History, staged for human review, before anything is opened against your repository.</p>
-<h2 id="reference">Reference</h2>
-<p>For the complete Work History API resource, see <a href="/external-docs-staging/docs/work-history-api/">Work History API reference</a>.</p>
-<h2 id="coming-soon">Coming soon</h2>
-<p>A first-party MCP endpoint is coming soon.</p>
+					<p>Doc Holiday keeps your documentation aligned with your code as it ships. Coding agents — the assistants and CLIs your team already runs — can request that work directly, so a documentation update is filed the moment the code that needs it lands.</p>
+<p>There are two ways an agent works with Doc Holiday. Pick based on how much you want the agent to do.</p>
+<h2 id="install-the-plugin">Install the plugin</h2>
+<p>Install the <strong>Doc Holiday plugin</strong> and your agent gains Doc Holiday&rsquo;s documentation <strong>skills</strong> plus a set of <strong>MCP tools</strong> for driving the service — planning a site, generating pages, and tracking work — without writing any HTTP calls yourself. This is the path for an agent that actively helps you plan and produce docs.</p>
+<ul>
+<li><a href="/external-docs-staging/docs/install-the-doc-holiday-plugin/">Install the Doc Holiday plugin</a> — set it up in Claude Code, Codex, OpenCode, or Cursor.</li>
+<li><a href="/external-docs-staging/docs/plan-and-generate-docs-with-skills/">Plan and generate docs with skills</a> — take a codebase to a planned, generated docs site.</li>
+</ul>
+<h2 id="call-the-api-directly">Call the API directly</h2>
+<p>Any agent with shell or HTTP access can file a request without the plugin, by calling the Doc Holiday REST API. This is the path for a lightweight, scripted &ldquo;when code changes, ask for a docs update&rdquo; step in an agent&rsquo;s standing instructions.</p>
+<ul>
+<li><a href="/external-docs-staging/docs/request-docs-via-the-api/">Request docs via the API</a> — the one REST call, plus a drop-in rule for your agent.</li>
+</ul>
+<p>Both paths file the same kind of work request, staged for human review before anything reaches your repository.</p>
 
 				</div>
 
@@ -581,12 +569,13 @@
 			
 			
 			
-			<a href="/external-docs-staging/docs/gitlab-pipelines/">
+			
+			<a href="/external-docs-staging/docs/slack-notifications/">
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="m438-480 164 164q11 11 11 25.5T602-265q-11 11-25.5 11T551-265L361-455q-5-5-7.5-11.5T351-480q0-7 2.5-13.5T361-505l190-190q11-11 25.5-11t25.5 11q11 11 11 25.5T602-644L438-480Z"/></svg>
 
  Previous</a>
-		<a href="/external-docs-staging/docs/slack-notifications/">Next 
+		<a href="/external-docs-staging/docs/install-the-doc-holiday-plugin/">Next 
 
 	<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M522-480 358-644q-11-11-11-25.5t11-25.5q11-11 25.5-11t25.5 11l190 190q5 5 7.5 11.5T609-480q0 7-2.5 13.5T599-455L409-265q-11 11-25 10.5T359-266q-11-11-11-25.5t11-25.5l163-163Z"/></svg>
 
@@ -610,16 +599,8 @@
 
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#request-the-work">Request the work</a>
-      <ul>
-        <li><a href="#curl">curl</a></li>
-        <li><a href="#json-payload">JSON payload</a></li>
-      </ul>
-    </li>
-    <li><a href="#agent-rules-snippet">Agent rules snippet</a></li>
-    <li><a href="#review-by-default">Review by default</a></li>
-    <li><a href="#reference">Reference</a></li>
-    <li><a href="#coming-soon">Coming soon</a></li>
+    <li><a href="#install-the-plugin">Install the plugin</a></li>
+    <li><a href="#call-the-api-directly">Call the API directly</a></li>
   </ul>
 </nav>
 

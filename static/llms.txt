@@ -57,8 +57,13 @@ Append index.md to any page URL to fetch its raw Markdown source.
 ## Automation & integrations
 - GitHub Action: https://joels-sandgarden.github.io/external-docs-staging/docs/github-action/ — run Doc Holiday from a GitHub Actions workflow.
 - GitLab Pipelines: https://joels-sandgarden.github.io/external-docs-staging/docs/gitlab-pipelines/ — invoke Doc Holiday from GitLab CI/CD pipelines.
-- Coding Agents: https://joels-sandgarden.github.io/external-docs-staging/docs/coding-agents/ — let coding agents request documentation work.
 - Slack Notifications: https://joels-sandgarden.github.io/external-docs-staging/docs/slack-notifications/ — send Doc Holiday notifications to Slack.
+
+## Coding agents & MCP
+- Coding Agents: https://joels-sandgarden.github.io/external-docs-staging/docs/coding-agents/ — two ways a coding agent works with Doc Holiday: the plugin, or the API.
+- Install the Doc Holiday Plugin: https://joels-sandgarden.github.io/external-docs-staging/docs/install-the-doc-holiday-plugin/ — install the plugin in Claude Code, Codex, OpenCode, or Cursor.
+- Plan and Generate Docs with Skills: https://joels-sandgarden.github.io/external-docs-staging/docs/plan-and-generate-docs-with-skills/ — the three skills that take a codebase to a generated docs site.
+- Request Docs via the API: https://joels-sandgarden.github.io/external-docs-staging/docs/request-docs-via-the-api/ — file a documentation request from any agent with one REST call.
 
 ## Administration
 - User Management: https://joels-sandgarden.github.io/external-docs-staging/docs/user-management/ — invites, roles, and publication access.
@@ -78,6 +83,7 @@ Append index.md to any page URL to fetch its raw Markdown source.
 - Connection Types: https://joels-sandgarden.github.io/external-docs-staging/docs/connection-types/ — every connection type, its role, and its triggers.
 - Trigger and Event Types: https://joels-sandgarden.github.io/external-docs-staging/docs/trigger-and-event-types/ — every trigger and event type, enumerated.
 - Work History States: https://joels-sandgarden.github.io/external-docs-staging/docs/work-history-states/ — every state a work request can be in.
+- MCP Tools: https://joels-sandgarden.github.io/external-docs-staging/docs/mcp-tools/ — the doc_holiday_* MCP tools the plugin registers, and their arguments.
 - Glossary: https://joels-sandgarden.github.io/external-docs-staging/docs/glossary/ — Doc Holiday's terms, defined once.
 
 ## Meta
