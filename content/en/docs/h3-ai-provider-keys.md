@@ -17,7 +17,7 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 3. Select **Add Key**. Use **Cancel** to close the dialog without saving.
    Doc Holiday sends a real request to the selected provider before it saves the key, and it rejects keys that cannot run inference.
 
-Provider-specific secrets or deployment settings must exist wherever the selected provider requires them.
+Provider-specific secrets or deployment settings must exist wherever the selected provider requires them. Gemini uses `GEMINI_API_KEY`, Groq uses `GROQ_API_KEY`, and Cerebras uses `CEREBRAS_API_KEY`.
 
 ## Manage active and failover keys
 
