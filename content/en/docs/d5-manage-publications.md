@@ -30,10 +30,10 @@ Write access controls who can request work under the Publication. For broader ro
 ## Check publication health
 
 1. Use the always-visible **Status** section for a quick health check.
-2. Read the **Health:** badge to see the current result.
+2. Read the **Health** badge to see the current state.
 3. The health check verifies the Publication's Inputs and Targets, including the docs destination and each Source.
 4. Select **Run Test** after a change or when a fresh check is needed.
-5. If the check fails, look for **Health Check Failed** and open **View Troubleshooting Docs** for help.
+5. If the check fails, open **View Troubleshooting Docs** and review **Health Check Failed**.
 
 ## Danger Zone
 
