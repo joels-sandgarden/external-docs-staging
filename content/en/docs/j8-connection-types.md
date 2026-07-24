@@ -65,12 +65,3 @@ Linear stays the only standalone context source that emits events. Jira Read-Onl
 ## See also
 
 [Sources](./c1-sources.md), [trigger and event types](./j9-trigger-and-event-types.md), and [API connections](./j3-api-connections.md).
-
-
-<!-- doc-holiday-watermark -->
-<p align="center">
-  <a href="https://doc.holiday">
-    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
-  </a>
-</p>
-<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
