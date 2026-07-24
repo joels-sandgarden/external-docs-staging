@@ -37,4 +37,4 @@ A request can show stages such as Running, Ready for Review, Open, Needs Attenti
 [Work History](./f4-work-history.md) keeps that path visible when the request needs another pass or another reply.
 
 Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, and the Library guides the writing.
-Work History records the result from the first request to the final page, so the vocabulary stays connected from input to outcome.
+Work History records that result, so the vocabulary stays connected from input to outcome.
