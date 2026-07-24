@@ -49,7 +49,7 @@ Requires authenticated SFS token access. Common errors: `400`, `500`.
 
 ## GET /api/v1/users/{id}
 
-Returns one user in `ModelsGetUserResponse`.
+Returns one user in `ModelsGetUserResponse`, the same shape used by `GET /api/v1/me`.
 
 | Parameter | Notes |
 | --- | --- |
