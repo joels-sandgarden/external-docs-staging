@@ -79,7 +79,6 @@ When a team needs to add a new Source, the setup pages show the fields, validati
 - [Google Drive](./c5-connect-google-drive.md)
 - [Cloud storage](./c6-connect-cloud-storage.md)
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
