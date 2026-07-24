@@ -28,7 +28,6 @@ Open **Sources** and confirm the Linear Source shows **Healthy**.
 
 Next: [Configure triggers](./d2-configure-triggers.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
