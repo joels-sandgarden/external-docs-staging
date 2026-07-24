@@ -18,23 +18,23 @@ description: "User-visible changes to Doc Holiday, newest first."
   - The docs now explain how Work History tracks a request from start to finish.
 - **Update Source type references**
   - The docs now list the main Source types more clearly.
-- **Publish GitHub setup guide**
+- **Launch GitHub setup guide**
   - The docs now walk through connecting GitHub and starting a first workflow.
-- **Enable GitLab setup guide**
+- **Add GitLab setup guide**
   - The docs now cover connecting GitLab and using it as a Source.
-- **Add Bitbucket setup guide**
+- **Document Bitbucket setup guide**
   - The docs now explain how to connect Bitbucket as a Source.
-- **Document first Publication onboarding**
+- **Guide first Publication onboarding**
   - The docs now guide new teams through setting up a first Publication.
 - **Configure OpenAI key setup**
   - The docs now explain how to add the OpenAI key needed for content generation.
-- **Clarify Confluence and Jira setup**
+- **Explain Confluence and Jira setup**
   - The docs now cover connecting Confluence and Jira for added context.
 - **Expand Linear setup**
   - The docs now show how to connect Linear and use it in a workflow.
-- **Add Google Drive setup**
+- **Cover Google Drive setup**
   - The docs now explain how to connect Google Drive as a Source.
-- **Map Cloud storage setup**
+- **Map cloud storage setup**
   - The docs now describe how to connect cloud storage for source content.
 - **Improve Manage Connections**
   - The docs now make connection management easier to follow.
