@@ -12,7 +12,7 @@ Other Sources stay read only and feed background material into Doc Holiday. Noti
 
 Doc Holiday uses that mix of Sources in one workflow. A Publication points at one Source for the docs destination and at other Sources for context, so the same page can describe writable Sources and read only Sources without treating them as separate ideas.
 
-That single model helps people who keep product notes in one place, source content in another, and the Publication destination somewhere else. Doc Holiday can read across those places without making readers learn three different setup paths.
+That single model helps people who keep product notes in one place, source content in another, and the Publication destination somewhere else. Doc Holiday can read across those places without making readers learn three separate setup paths.
 
 For the shared vocabulary behind this page, see [Concepts](./a3-concepts.md).
 
@@ -24,7 +24,7 @@ This split keeps workspace access in one place. It also lets a team add or remov
 
 The parent provider usually holds the shared workspace or app access, while the child Source keeps its own name and settings. The child inherits the access it needs from the provider, which gives Doc Holiday a clean boundary between shared permissions and individual content Sources.
 
-The pattern is the same across the supported providers:
+The pattern is the same across the supported provider families:
 
 - GitHub Application provides access for GitHub Repository Sources.
 - GitLab Access Token provides access for GitLab Project Sources.
@@ -68,7 +68,7 @@ That wording prevents confusion when the UI asks for a documentation source, a P
 
 ## Set up a source
 
-When a team needs to add a new Source, the setup page shows the fields, validation, and workspace selection specific to that system. These pages cover setup, so this list stays short.
+When a team needs to add a new Source, the setup pages show the fields, validation, and workspace selection specific to that system. These pages cover setup, so this list stays short.
 
 - [GitHub](./b2-connect-github.md)
 - [GitLab](./b3-connect-gitlab.md)
