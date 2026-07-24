@@ -49,6 +49,18 @@ description: "User-visible changes to Doc Holiday, newest first."
   - The API reference now gives clearer details for Work History lookups.
 - **Refresh Users API reference**
   - The API reference now reflects the latest user information.
+- **Introduce Bedrock GPT-5.6 routing**
+  - The `bedrock-gpt-5.6` path now sends Bedrock-capable GPT tasks through AWS Bedrock with GPT-5.6 Luna and the matching prompt while keeping the default GPT-5.4 path unchanged.
+- **Add Anthropic BYOK support**
+  - Anthropic keys can now route inference to Claude models with the expected timeout behavior.
+- **Route the annotator through Bedrock GPT-5.6**
+  - When `bedrock-gpt-5.6` is enabled, the annotator now uses GPT-5.6 Terra with its dedicated prompt instead of the default OpenAI model.
+- **Expand Gemini BYOK support**
+  - Gemini API keys can now power BYOK requests with model equivalents mapped automatically when OpenAI is unavailable.
+- **Append attribution watermarks to edited markdown**
+  - OSS-tier markdown files edited during a director step now receive a single attribution footer, and later passes do not add a duplicate footer.
+- **Support Groq BYOK routing**
+  - Groq keys can now route inference through Groq while avoiding unsupported request fields and compaction behavior.
 
 ## 2026-07-17
 
