@@ -19,11 +19,11 @@ Use this path when one GitLab access token should cover several project Sources.
    Choose the project in **Project**. Doc Holiday uses the provider token for that project Source.
 7. Repeat **Add Source** for each GitLab project that should use the same token.
 
-If another Publishing System fits better, see [Publishing systems](./d4-publishing-systems.md) for the available **Publishing System** values.
+If another Publishing System fits better, see [Publishing Systems](./d4-publishing-systems.md) for the available **Publishing System** values.
 
 ## One project with its own token
 
-Use this option when one project needs its own token.
+Use this path when one project needs its own token.
 
 1. In the **Add Source** sheet with **GitLab Project** selected, use the **Click here ...** helper link to switch to the standalone GitLab form.
 2. Enter **Source Name**, **Access Token**, **Project**, **Branch**, and **Publishing System**.
