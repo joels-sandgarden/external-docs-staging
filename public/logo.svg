@@ -1,3 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 190 28">
-  <text x="0" y="21" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="currentColor">Doc Holiday</text>
+  <style>
+    .logo-text { fill: rgb(34, 40, 40); }
+    @media (prefers-color-scheme: dark) {
+      .logo-text { fill: rgb(255, 255, 255); }
+    }
+  </style>
+  <text class="logo-text" x="0" y="21" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700">Doc Holiday</text>
 </svg>

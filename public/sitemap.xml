@@ -21,7 +21,7 @@
     <lastmod>2026-07-21T16:25:30-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/coding-agents/</loc>
-    <lastmod>2026-07-21T10:03:34-07:00</lastmod>
+    <lastmod>2026-07-23T18:32:23-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/concepts/</loc>
     <lastmod>2026-07-20T22:54:28-07:00</lastmod>
@@ -63,7 +63,7 @@
     <lastmod>2026-07-21T16:25:30-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/</loc>
-    <lastmod>2026-07-21T16:25:30-07:00</lastmod>
+    <lastmod>2026-07-23T18:32:23-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/fully-automated-setup/</loc>
     <lastmod>2026-07-21T14:15:47-07:00</lastmod>
@@ -81,6 +81,7 @@
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/install-the-doc-holiday-plugin/</loc>
+    <lastmod>2026-07-23T18:32:23-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/instruction-library-api/</loc>
     <lastmod>2026-07-21T13:30:07-07:00</lastmod>
@@ -95,11 +96,13 @@
     <lastmod>2026-07-21T16:25:30-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/mcp-tools/</loc>
+    <lastmod>2026-07-23T18:32:23-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/output-types/</loc>
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/plan-and-generate-docs-with-skills/</loc>
+    <lastmod>2026-07-23T18:32:23-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/prompt-patterns/</loc>
     <lastmod>2026-07-21T14:22:46-07:00</lastmod>
@@ -126,6 +129,7 @@
     <lastmod>2026-07-20T21:47:28-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/request-docs-via-the-api/</loc>
+    <lastmod>2026-07-23T18:32:23-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/external-docs-staging/docs/request-work-in-git/</loc>
     <lastmod>2026-07-21T10:03:34-07:00</lastmod>
