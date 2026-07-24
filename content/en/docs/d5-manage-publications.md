@@ -49,13 +49,3 @@ SCREENSHOT PLACEHOLDER: manage-publications/danger-zone.png
 5. In the dialog titled **Delete Publication**, read **Are you sure you want to delete this publication?** and confirm with **Delete this publication**.
 
 Deleting the Publication stops its triggers and new work under that Publication. Repositories and already merged documentation remain untouched.
-
----
-
-<!-- doc-holiday-watermark -->
-<p align="center">
-  <a href="https://doc.holiday">
-    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
-  </a>
-</p>
-<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
