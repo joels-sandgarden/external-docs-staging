@@ -65,7 +65,6 @@ curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/users/str
 
 Requires authenticated SFS token access. Common errors: `400`, `500`.
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
