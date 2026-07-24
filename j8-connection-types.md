@@ -56,7 +56,6 @@ Linear remains the only standalone context source with events, and Slack Channel
 
 [Sources](/c1-sources.md), [trigger and event types](/j9-trigger-and-event-types.md), and [API connections](/j3-api-connections.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
