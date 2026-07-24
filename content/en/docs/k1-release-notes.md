@@ -8,16 +8,16 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
-- **Add Concepts guidance**
-  - The docs now explain the shared vocabulary behind core product concepts.
-- **Clarify Publication terminology**
-  - The docs now describe how Publications organize documentation work.
-- **Explain Sources**
+- **Add Concepts overview**
+  - The docs now define the shared vocabulary used across core product concepts.
+- **Clarify Publication scope**
+  - The docs now explain how Publications organize documentation work.
+- **Explain Source roles**
   - The docs now show how Sources provide context and receive documentation updates.
-- **Define Work History**
+- **Define Work History lifecycle**
   - The docs now explain how Work History tracks a request from start to finish.
-- **Update Connection Types**
-  - The docs now list the main Source types in a clearer way.
+- **Update Source type references**
+  - The docs now list the main Source types more clearly.
 - **Publish GitHub setup guide**
   - The docs now walk through connecting GitHub and starting a first workflow.
 - **Enable GitLab setup guide**
