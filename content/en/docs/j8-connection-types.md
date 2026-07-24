@@ -20,15 +20,15 @@ The Role column groups families rather than platform features. A provider row do
 
 The table uses `—` deliberately. It marks rows with no parent and rows with no automatic events. That keeps the register narrow while still showing which entries participate in trigger handling and which entries only provide context or notification.
 
-Atlassian Forge follows the same split as GitLab and Bitbucket. One row names the app parent, and the other row names the Jira project source. The parent row stays triggerless, and the project row carries the event set.
+GitHub, GitLab, Bitbucket, Slack, and Atlassian Application rows stay grouped by family so the parent rows remain easy to scan before the child rows.
 
 The table keeps parent-only rows near the top, event-bearing rows in the middle, and the notifier row at the end. That order matches the way the product model groups families.
 
 GitHub keeps both a parent app path and a direct token path. That gives the family one parent-backed repository row and one direct repository row.
 
-GitLab and Bitbucket use the same provider-and-project pattern. The provider rows stay parent only, and the project rows carry the trigger set. Atlassian Forge uses the same pattern across its app and Jira project rows.
+GitLab and Bitbucket use the same provider-and-project pattern. The provider rows stay parent only, and the project rows carry the trigger set. Atlassian Application uses the same pattern across its app and Jira project rows.
 
-Linear stays the only standalone context source that emits events. Jira project and Atlassian Forge Jira project carry `sendToDoc` and `issueStatusChange`. Slack Channel remains the only notifier row.
+Linear stays the only standalone context source that emits events. Jira Read-Only and Jira Project carry `sendToDoc` and `issueStatusChange`. Slack Channel remains the only notifier row.
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
