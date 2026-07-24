@@ -4,7 +4,7 @@ url: "docs/create-your-first-publication"
 description: "Set up your first Publication: Sources, docs destination, output types."
 ---
 
-A Publication is the defined set of documentation Doc Holiday keeps current over time; see [Publications](./d1-publications.md). This guide walks through the first setup in the app and shows how to choose Sources, one docs destination, and the output types that belong in the first Publication.
+A Publication is the defined set of documentation Doc Holiday keeps current over time; see [Publications](./d1-publications.md). This guide walks through the first setup in the app and shows how to choose Sources, exactly one docs destination, and the output types the first Publication should produce.
 
 ## Prerequisites
 
@@ -18,13 +18,13 @@ A Publication is the defined set of documentation Doc Holiday keeps current over
 2. Enter a **Name** that makes the Publication easy to recognize later.
 3. Under **Inputs**, choose the Sources this Publication should read from.
 4. Under **Targets**, choose the docs destination.
-5. Under **Write**, turn on **Documentation** only. Leave **Release Notes** and **Changelog** off for the first Publication. See [Output types](./d3-output-types.md) for the full set of options.
+5. Under **Write**, turn on **Documentation** only. Leave **Release Notes** and **Changelog** off for the first Publication. See [Output types](./d3-output-types.md) for the full list of options.
 6. Leave **Commit Instructions** and **Writing Instructions** at their defaults for now.
-7. Below **Inputs**, the form shows trigger settings under **Add Triggering Event**. Leave them empty for now; see [Configure triggers](./d2-configure-triggers.md). Finish by selecting **Save Changes**.
+7. Below **Inputs**, the form shows trigger settings under **Add Triggering Event**. Leave them empty for now; see [Configure triggers](./d2-configure-triggers.md). Select **Save Changes** to finish.
 
 ## Verify
 
-Open the publication details view and confirm the **Status** section shows **Healthy**. Select **Run Test** to check it again.
+Open the publication details page and confirm the **Status** section shows **Healthy**. Select **Run Test** to verify it again.
 
 ## Next
 
