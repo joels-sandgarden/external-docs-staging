@@ -42,7 +42,7 @@ The health badge gives a quick answer to a simple question: can Doc Holiday trus
 
 For the operational details around credentials, health, and deletion, see [Manage connections](/c7-manage-connections.md).
 
-That page covers the day to day maintenance work, while this page stays with the idea of what health means and why Doc Holiday skips an unhealthy source instead of guessing.
+That page covers the day to day maintenance work, while this page stays with what health means and why Doc Holiday skips an unhealthy Source instead of guessing.
 
 ## External Documentation
 
@@ -50,7 +50,7 @@ External Documentation connects Doc Holiday to an existing hosted docs site by U
 
 That makes External Documentation useful when product notes, policies, or design references live in another system. Doc Holiday can read those pages alongside code and repository history without turning that external site into a publishing target.
 
-This Source never publishes content back to the remote site, so it works as a read-only reference rather than another docs destination.
+This source never publishes content back to the remote site, so it works as a read only reference rather than another docs destination.
 
 If a team already keeps docs context in a managed site, External Documentation lets Doc Holiday read that material without copying it into another system first.
 
