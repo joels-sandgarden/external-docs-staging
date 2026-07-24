@@ -4,9 +4,9 @@ url: "docs/connect-github"
 description: "Install the GitHub Application and connect repositories to Doc Holiday."
 ---
 
-Use this page when a GitHub Publication needs one or more repository Sources. Install the GitHub Application first, then add one repository Source for each repository Doc Holiday should read or write. If the word Source is new, start with [Concepts](./a3-concepts.md).
+Use this page when a Publication needs one or more GitHub repository Sources. Install the GitHub Application first, then add one repository Source for each repository Doc Holiday should read or write. If the word Source is new, start with [Concepts](./a3-concepts.md).
 
-## Install the GitHub App
+## Install the GitHub Application
 
 1. Open the GitHub setup flow and select **Install GitHub Application**.
 2. Choose the GitHub organization that owns the repositories, then complete the GitHub prompts.
@@ -26,11 +26,11 @@ After installation, Doc Holiday returns to the same setup flow with the organiza
 
 ![The Create Source form for a GitHub Repository: repository, branch, and publishing system fields](/screenshots/connect-github/repo-connection-form.png)
 
-If the repository list is empty, return to the GitHub Application install and confirm that the organization grant includes the repository.
+If the repository list is empty, return to the GitHub Application install and confirm that the organization grant includes the repository you expect.
 
-## Option B: use a personal access token
+## Use a personal access token
 
-Use this path when the GitHub Application cannot be installed for the organization.
+Use this path when the GitHub Application cannot be installed for the organization. It still creates a repository Source, but it uses a personal access token instead.
 
 1. Enter a **Source Name** that clearly identifies the repository.
 2. Paste the **Personal Access Token**.
@@ -46,7 +46,7 @@ Keep the repository and branch aligned with the work that the Source should cove
 2. Find the GitHub Source.
 3. Check the badge beside it.
 4. Continue when the badge reads **Healthy**.
-5. If the badge reads **Unhealthy**, open [Manage connections](./c7-manage-connections.md) and fix the Source before adding another repository or creating a Publication.
+5. If the badge reads **Unhealthy**, open [Manage connections](./c7-manage-connections.md) and fix the Source before adding another repository or creating the first Publication.
 
 ## Next
 
