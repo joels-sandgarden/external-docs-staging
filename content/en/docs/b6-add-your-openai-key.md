@@ -31,7 +31,6 @@ The **Test** action in the key menu shows **Key is valid** when the key works an
 
 Continue with [AI provider keys](./h3-ai-provider-keys.md) or review [Billing and plans](./h4-billing-and-plans.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
