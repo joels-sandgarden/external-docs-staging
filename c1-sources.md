@@ -75,7 +75,6 @@ When a team needs a new Source, the provider page shows the fields, validation, 
 - [Google Drive](/c5-connect-google-drive.md)
 - [Cloud storage](/c6-connect-cloud-storage.md)
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
