@@ -5,7 +5,7 @@ description: "The shared vocabulary: Publication, Source, the Library, and Work 
 ---
 
 Doc Holiday uses a shared vocabulary for where documentation belongs, where source information comes from, and how work moves from request to result.
-Read this page first when the rest of the docs uses those terms.
+Read this page first when the rest of the documentation uses those terms.
 
 ## Organization
 
@@ -20,7 +20,7 @@ It names a body of content rather than a single page, and it points at Sources i
 ## Sources
 
 Sources are the connected systems that provide context or receive documentation.
-A Publication points at one Source for the docs destination and at other Sources for context.
+A Publication points at one Source that receives the documentation and at other Sources for context.
 [Sources](./c1-sources.md) explain the kinds of systems Doc Holiday can read from or write to.
 
 ## The Library and instructions
@@ -36,5 +36,5 @@ Each entry belongs to one Publication and one Source.
 A request can show stages such as Running, Ready for Review, Open, Needs Attention, Merged, Closed, or Cancelled.
 [Work History](./f4-work-history.md) keeps that path visible when the request needs another pass or another reply.
 
-Something happens in a Source. Doc Holiday turns that change into reviewed documentation in a Publication. The Library guides the writing. Work History records the result in one loop from the first request to the final page.
-This model keeps the vocabulary connected from input to outcome, so the rest of the documentation stays consistent when a request needs several passes before it settles.
+Something happens in a Source, Doc Holiday turns that change into reviewed documentation in a Publication, and the Library guides the writing.
+Work History records the result from the first request to the final page, so the vocabulary stays connected from input to outcome.
