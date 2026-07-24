@@ -4,7 +4,7 @@
 
 Doc Holiday treats a Source as a connected system that either accepts documentation updates or supplies context. A writable Source can receive documentation from a Publication. A read-only Source contributes background material and never receives documentation back.
 
-Other Sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.
+Other Sources stay read-only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.
 
 Doc Holiday uses that mix of Sources in one workflow. A Publication points at one writable Source for the docs destination and at other Sources for context, so the same page can describe writable and read only Sources without treating them as separate ideas.
 
@@ -46,7 +46,7 @@ That page covers the day to day maintenance work, while this page stays with the
 
 ## External Documentation
 
-External Documentation connects Doc Holiday to an existing hosted docs site by URL. It reads that site as context and nothing more. Optional username and password fields support protected sites and let Doc Holiday reach material behind a login.
+External Documentation connects Doc Holiday to an existing hosted docs site by URL. It reads that site as context and nothing more. Optional username and password fields support protected sites, which lets Doc Holiday reach material that sits behind a login.
 
 That makes External Documentation useful when product notes, policies, or design references live in another system. Doc Holiday can read those pages alongside code and repository history without turning that external site into a publishing target.
 
