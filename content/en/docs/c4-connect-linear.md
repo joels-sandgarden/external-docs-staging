@@ -4,7 +4,7 @@ url: "docs/connect-linear"
 description: "Let Linear issues and comments trigger documentation work."
 ---
 
-Use this page to connect Linear as a trigger Source in Doc Holiday. Linear issue bodies and issue comments can start new work requests, so this setup fits those events.
+Use this page to connect Linear as a Source in Doc Holiday. Linear issue bodies and issue comments can trigger documentation work, so this setup fits those events.
 
 ## Set up the Linear Source
 
@@ -16,7 +16,7 @@ Use this page to connect Linear as a trigger Source in Doc Holiday. Linear issue
 
 - New Linear issues can trigger documentation work when the issue body starts with `@doc.holiday`.
 - New issue comments can trigger documentation work when the comment starts with `@doc.holiday`.
-- In issue comments, `@doc.holiday` mentions behave like mentions in git comments, so the same request pattern applies.
+- In issue comments, `@doc.holiday` mentions behave like mentions in git comments.
 
 See [Request work from GitHub, GitLab, or Bitbucket with @doc.holiday](./f1-request-work-in-git.md) for the comment-based request flow, and [Configure triggers](./d2-configure-triggers.md) for trigger settings.
 
