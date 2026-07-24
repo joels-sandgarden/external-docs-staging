@@ -229,7 +229,6 @@ description: "User-visible changes to Doc Holiday, newest first."
 Older entries: [Release notes archive](./k1b-release-notes-archive.md)
 
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
