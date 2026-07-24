@@ -38,7 +38,7 @@ Doc Holiday rereads connected Sources on a background cadence, roughly every cou
 
 Every Source also shows a health state. Healthy means Doc Holiday can use the Source. Unhealthy means Doc Holiday stops re-reading that Source until someone fixes the problem. A draft can still use the healthy Sources that remain available, but the unhealthy Source does not contribute.
 
-The health badge gives a quick answer to a simple question: can Doc Holiday trust this Source right now? Healthy means Doc Holiday can read the Source. Unhealthy means it has paused re-reading that Source. Checking... means it is still checking.
+The health badge gives a quick answer to a simple question: can Doc Holiday trust this Source right now? Healthy means Doc Holiday can read the Source. Unhealthy means it has paused re-reading that Source. Checking... means Doc Holiday is still checking that Source.
 
 For the operational details around credentials, health, and deletion, see [Manage connections](/c7-manage-connections.md).
 
@@ -58,7 +58,7 @@ If a team already keeps docs context in a managed site, External Documentation l
 
 Documentation has three meanings in Doc Holiday. It can mean External Documentation, which is a Source. It can also mean the docs destination repository that a Publication writes into, which gives the Publication its target. Finally, it can mean the documentation output type [Documentation](/d3-output-types.md), which is one of the outputs a Publication can ask Doc Holiday to produce.
 
-That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication's docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that layout, see [Publications](/d1-publications.md).
+That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication's docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that choice, see [Publications](/d1-publications.md).
 
 That wording prevents confusion when the UI asks for a documentation Source, a Publication destination, or a documentation output selection in the same flow.
 
