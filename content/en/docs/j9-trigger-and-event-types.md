@@ -4,7 +4,7 @@ url: "docs/trigger-and-event-types"
 description: "Every trigger and event type, enumerated."
 ---
 
-This reference lists the trigger events Doc Holiday can react to and the supported Sources. See [Configure triggers](./d2-configure-triggers.md) and [Connection Types](./j8-connection-types.md).
+This reference lists the trigger events Doc Holiday can react to and the Source types that support each one. See [Configure triggers](./d2-configure-triggers.md) and [Connection Types](./j8-connection-types.md).
 
 | Event | Typical output | GitHub Repository | GitHub Repository (personal access token) | GitLab (multi-project access token) | GitLab Project | Bitbucket Repository (repository access token) | Bitbucket Project | Linear | Jira Read-Only | Jira Project |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
