@@ -41,6 +41,15 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Refine Manage Publications**
   - The docs now make publication management clearer.
 
+### ✨ Enhancements
+
+- **Update trigger and event types**
+  - The docs now describe available trigger and event types more clearly.
+- **Expand Work History API reference**
+  - The API reference now gives clearer details for Work History lookups.
+- **Refresh Users API reference**
+  - The API reference now reflects the latest user information.
+
 ## 2026-07-17
 
 ### 🚀 New Features
