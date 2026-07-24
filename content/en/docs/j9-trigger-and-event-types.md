@@ -16,13 +16,3 @@ This reference lists the trigger events Doc Holiday can react to and the Source 
 | Issue status changes to | Workflow page updates | — | — | — | — | — | — | — | ✓ | ✓ |
 
 Doc Holiday does not offer a scheduled trigger. For recurring cadence, use CI through [/g1-github-action.md](./g1-github-action.md).
-
----
-
-<!-- doc-holiday-watermark -->
-<p align="center">
-  <a href="https://doc.holiday">
-    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
-  </a>
-</p>
-<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
