@@ -1,6 +1,6 @@
 # Concepts
 
-This page is the shared vocabulary reference for Doc Holiday. Read it first so the rest of the docs use the same terms for ownership, sources, guidance, and work history.
+This page is the shared vocabulary reference for Doc Holiday. Read it first so the rest of the docs use the same terms for Organization, Publication, Sources, the Library, and Work History.
 
 ## Organization
 
@@ -18,7 +18,7 @@ A Publication points at Sources instead of owning them, so it defines what the d
 
 Sources are the connected systems that feed Doc Holiday or receive its output.
 One Source can provide context for a Publication, another can accept documentation updates, and another can do both.
-A Publication points to Sources rather than owning them, so [Sources](/c1-sources.md) show where the information comes from and where the finished work belongs.
+A Publication points to Sources rather than owning them, so it defines what the docs set covers while the Sources define where the information comes from and where the result belongs.
 
 ## The Library and instructions
 
