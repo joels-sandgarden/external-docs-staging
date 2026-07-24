@@ -10,7 +10,7 @@ Open **Settings → Billing** to see the available plans and what each one inclu
 
 ## Open Source Plan
 
-Our Open Source Plan is free for public open source projects and runs on the provider key the organization connects for inference. Doc Holiday adds a Doc Holiday attribution footer to edited Markdown files on the OSS tier. See [AI provider keys](./h3-ai-provider-keys.md) for setup context.
+Our Open Source Plan is free for public open source projects and runs on the provider key the organization connects for inference. Doc Holiday appends a Doc Holiday attribution footer to Markdown files on the OSS tier. See [AI provider keys](./h3-ai-provider-keys.md) for provider setup details.
 
 The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
 
