@@ -23,3 +23,14 @@ For a fuller status reference, see [/j10-work-history-states.md](./j10-work-hist
 | Merged | The changes reached the Publication’s docs repository. | The merge completes and the result is recorded. |
 | Closed | The request ended without a merge. | No further work moves it on. |
 | Cancelled | The request stopped before completion. | A new request starts a fresh Work History entry. |
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
