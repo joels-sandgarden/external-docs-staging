@@ -14,7 +14,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Purpose: list Work History entries.
 - Request: `branch`, `outputUrl`, `jobId`, `publicationId`, `operationType`, `status`, `summary`, `staged`, `originType`, `originURL`.
 - Response: `ModelsListConversationsResponse` with `conversations`, `nextPageToken`, `previousPageToken`, and `error`.
-- Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. `staged=true` returns staged entries, `staged=false` returns unstaged entries, and omitting `staged` leaves the result set unfiltered. `staged=null` returns `400`.
+- Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. `staged=true` returns staged entries, `staged=false` returns unstaged entries, omitting `staged` leaves the result set unfiltered, and `staged=null` returns `400`.
 - `curl`: `curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversations?publicationId=pub_123&staged=true"`
 - `json`: `{"conversations":[{"id":"conv_123","status":"running"}],"nextPageToken":"","previousPageToken":""}`
 
