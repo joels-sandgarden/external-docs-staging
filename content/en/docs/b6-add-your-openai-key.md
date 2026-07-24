@@ -25,7 +25,7 @@ Only OpenAI keys are accepted.
 
 ## Verify
 
-The key shows status **Active**, and the **Test** action in the key menu confirms it works.
+The **Test** action in the key menu shows **Key is valid** when the key works and **Key test failed** when it does not. The key also shows status **Active** after a successful save.
 
 ## Next
 
