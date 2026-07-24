@@ -4,7 +4,7 @@
 
 Doc Holiday treats a Source as a connected system that either accepts documentation updates or supplies context. A writable Source can receive documentation from a Publication. A read-only Source contributes background material and never receives documentation back.
 
-Other Sources stay read-only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.
+Other Sources stay read only and feed background material into Doc Holiday. Notion, Confluence, Linear, Google Drive, AWS (S3), and Azure Blob Storage all fit that shape when a team needs context instead of a writable destination.
 
 Doc Holiday uses that mix of Sources in one workflow. A Publication points at one writable Source for the docs destination and at other Sources for context, so the same page can describe writable and read only Sources without treating them as separate ideas.
 
@@ -58,7 +58,7 @@ If a team already keeps docs context in a managed site, External Documentation l
 
 Documentation has three meanings in Doc Holiday. It can mean External Documentation, which is a Source. It can also mean the docs destination repository that a Publication writes into, which gives the Publication its target. Finally, it can mean the documentation output type [Documentation](/d3-output-types.md), which is one of the outputs a Publication can ask Doc Holiday to produce.
 
-That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication's docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that choice, see [Publications](/d1-publications.md).
+That distinction matters because the product uses the same word in different parts of the workflow. Think of the Publication's docs repository as the place where the final page lives, and think of Documentation output as the kind of content the Publication asks Doc Holiday to produce. For the Publication model behind that layout, see [Publications](/d1-publications.md).
 
 That wording prevents confusion when the UI asks for a documentation Source, a Publication destination, or a documentation output selection in the same flow.
 
