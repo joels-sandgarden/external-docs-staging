@@ -52,7 +52,6 @@ Keep the repository and branch aligned with the work that the Source should cove
 
 Next: [Create your first publication](./b5-create-your-first-publication.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
