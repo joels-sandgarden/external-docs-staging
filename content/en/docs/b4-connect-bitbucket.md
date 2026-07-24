@@ -45,7 +45,6 @@ Open the **Sources** page and confirm the Source shows **Healthy**.
 
 Continue with [Create your first publication](./b5-create-your-first-publication.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
