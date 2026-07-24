@@ -62,6 +62,29 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Support Groq BYOK routing**
   - Groq keys can now route inference through Groq while avoiding unsupported request fields and compaction behavior.
 
+- **Refine writer Bedrock GPT-5.6 settings**
+  - When `bedrock-gpt-5.6` is enabled, the writer now uses GPT-5.6 Terra with matching prompt, reasoning, and compaction settings instead of the default configuration.
+- **Extend explorer Bedrock GPT-5.6 coverage**
+  - When `bedrock-gpt-5.6` is enabled, the Explorer agent now uses GPT-5.6 Terra with Bedrock session settings and a dedicated prompt instead of the default OpenAI path.
+- **Direct the director through Bedrock GPT-5.6**
+  - When `bedrock-gpt-5.6` is enabled, the Director now uses GPT-5.6 Terra with a dedicated prompt and client-side compaction for Bedrock sessions.
+- **Align model selection with prompt templates**
+  - Annotator, Director, Explorer, Merge Summarizer, and Writer now resolve their model choice and prompt from the same shared binding.
+- **Configure Cerebras BYOK routing**
+  - Cerebras keys can now route inference through the Cerebras-backed model with provider-specific request handling.
+
+### 🐛 Bug Fixes
+
+- **Limit feature flag context to dashboard pages**
+  - Feature flag context now initializes only for dashboard routes instead of every page in the app.
+- **Reduce GPT-5.6 reasoning effort**
+  - Director, Explorer, and Writer now use Medium reasoning effort with GPT-5.6 Terra instead of High.
+
+### 💼 Known Issues
+
+- **Refresh Go dependencies**
+  - Builds now use the refreshed dependency graph and regenerated vendored code after the July dependency update.
+
 ## 2026-07-17
 
 ### 🚀 New Features
