@@ -26,7 +26,6 @@ Open **Sources** and confirm the Google Drive Source shows **Healthy**.
 
 Next: [Sources](./c1-sources.md).
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
