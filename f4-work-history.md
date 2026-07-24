@@ -12,10 +12,10 @@ For a fuller status reference, see [/j10-work-history-states.md](/j10-work-histo
 
 | App label | What it means | What moves it forward |
 | --- | --- | --- |
-| Running | Doc Holiday is still working on the request. | The current pass finishes and the request moves to review. |
-| Ready for Review | The draft is ready for a person to check. | A review, reply, or approval moves the request onward. |
-| Open | The request is active and still collecting work. | New comments, replies, or updates keep the work moving. |
+| Running | Doc Holiday is still working on the request. | The current pass finishes and the request moves to the next stage. |
+| Ready for Review | The draft is ready for a person to check. | A review, reply, or approval moves the request forward. |
+| Open | The request is active and still collecting work. | New comments, replies, or updates keep the request moving. |
 | Needs Attention | Doc Holiday asked for input and is waiting on a reply. | A response in Messages lets the next pass continue. |
-| Merged | The changes reached the Publication’s docs repository. | The merge completes and the result is recorded. |
-| Closed | The request ended without a merge. | No further work moves it on. |
+| Merged | The changes reached the Publication’s docs repository. | The merge completes and records the result. |
+| Closed | The request ended without a merge. | No further work moves the request forward. |
 | Cancelled | The request stopped before completion. | A new request starts a fresh Work History entry. |
