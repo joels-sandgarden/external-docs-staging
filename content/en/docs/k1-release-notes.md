@@ -4,6 +4,86 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-24
+
+### 🚀 New Features
+
+- **Add Concepts overview**
+  - The docs now define the shared vocabulary used across core product concepts.
+- **Clarify Publication scope**
+  - The docs now explain how Publications organize documentation work.
+- **Explain Source roles**
+  - The docs now show how Sources provide context and receive documentation updates.
+- **Define Work History lifecycle**
+  - The docs now explain how Work History tracks a request from start to finish.
+- **Update Source type references**
+  - The docs now list the main Source types more clearly.
+- **Launch GitHub setup guide**
+  - The docs now walk through connecting GitHub and starting a first workflow.
+- **Add GitLab setup guide**
+  - The docs now cover connecting GitLab and using it as a Source.
+- **Document Bitbucket setup guide**
+  - The docs now explain how to connect Bitbucket as a Source.
+- **Guide first Publication onboarding**
+  - The docs now guide new teams through setting up a first Publication.
+- **Configure OpenAI key setup**
+  - The docs now explain how to add the OpenAI key needed for content generation.
+- **Explain Confluence and Jira setup**
+  - The docs now cover connecting Confluence and Jira for added context.
+- **Expand Linear setup**
+  - The docs now show how to connect Linear and use it in a workflow.
+- **Cover Google Drive setup**
+  - The docs now explain how to connect Google Drive as a Source.
+- **Map cloud storage setup**
+  - The docs now describe how to connect cloud storage for source content.
+- **Improve Manage Connections**
+  - The docs now make connection management easier to follow.
+- **Refine Manage Publications**
+  - The docs now make publication management clearer.
+
+### ✨ Enhancements
+
+- **Update trigger and event types**
+  - The docs now describe available trigger and event types more clearly.
+- **Expand Work History API reference**
+  - The API reference now gives clearer details for Work History lookups.
+- **Refresh Users API reference**
+  - The API reference now reflects the latest user information.
+- **Introduce Bedrock GPT-5.6 routing**
+  - The `bedrock-gpt-5.6` path now sends Bedrock-capable GPT tasks through AWS Bedrock with GPT-5.6 Luna and the matching prompt while keeping the default GPT-5.4 path unchanged.
+- **Add Anthropic BYOK support**
+  - Anthropic keys can now route inference to Claude models with the expected timeout behavior.
+- **Route the annotator through Bedrock GPT-5.6**
+  - When `bedrock-gpt-5.6` is enabled, the annotator now uses GPT-5.6 Terra with its dedicated prompt instead of the default OpenAI model.
+- **Broaden Gemini BYOK support**
+  - Gemini API keys can now power BYOK requests with model equivalents mapped automatically when OpenAI is unavailable.
+- **Append attribution watermarks to edited markdown**
+  - OSS-tier markdown files edited during a director step now receive a single attribution footer, and later passes do not add a duplicate footer.
+- **Support Groq BYOK routing**
+  - Groq keys can now route inference through Groq while avoiding unsupported request fields and compaction behavior.
+- **Refine writer Bedrock GPT-5.6 settings**
+  - When `bedrock-gpt-5.6` is enabled, the writer now uses GPT-5.6 Terra with matching prompt, reasoning, and compaction settings instead of the default configuration.
+- **Extend explorer Bedrock GPT-5.6 coverage**
+  - When `bedrock-gpt-5.6` is enabled, the Explorer agent now uses GPT-5.6 Terra with Bedrock session settings and a dedicated prompt instead of the default OpenAI path.
+- **Direct the director through Bedrock GPT-5.6**
+  - When `bedrock-gpt-5.6` is enabled, the Director now uses GPT-5.6 Terra with a dedicated prompt and client-side compaction for Bedrock sessions.
+- **Align model selection with prompt templates**
+  - Annotator, Director, Explorer, Merge Summarizer, and Writer now resolve their model choice and prompt from the same shared binding.
+- **Enable Cerebras BYOK routing**
+  - Cerebras keys can now route inference through the Cerebras-backed model with provider-specific request handling.
+
+### 🐛 Bug Fixes
+
+- **Limit feature flag context to dashboard pages**
+  - Feature flag context now initializes only for dashboard routes instead of every page in the app.
+- **Reduce GPT-5.6 reasoning effort**
+  - Director, Explorer, and Writer now use Medium reasoning effort with GPT-5.6 Terra instead of High.
+
+### 💼 Known Issues
+
+- **Refresh Go dependencies**
+  - Builds now use the refreshed dependency graph and regenerated vendored code after the July dependency update.
+
 ## 2026-07-17
 
 ### 🚀 New Features
@@ -181,3 +261,14 @@ description: "User-visible changes to Doc Holiday, newest first."
   * Documentation connections now reject invalid URLs more consistently in both the form and the saved configuration.
 
 Older entries: [Release notes archive](./k1b-release-notes-archive.md)
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

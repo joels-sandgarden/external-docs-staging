@@ -14,7 +14,7 @@ We do not retain any code in our systems. We read your code only while writing d
 
 ## Where inference runs
 
-- On the **Bring Your Own Key** and **Open Source** plans, all writing runs on your own OpenAI key — requests go to OpenAI under your account. If your key is missing or rejected, work stops; Doc Holiday never falls back to anyone else's key.
+- On the **Bring Your Own Key** and **Open Source** plans, inference runs on the AI provider key configured for the organization. Doc Holiday supports the providers listed on [AI provider keys](./h3-ai-provider-keys.md). If that key is missing or rejected, work stops; Doc Holiday never falls back to another provider key.
 - On the **Enterprise** plan, inference runs on model providers managed by the Doc Holiday team.
 
 See [Billing and plans](./h4-billing-and-plans.md) for the plans themselves.
@@ -34,3 +34,14 @@ Access is role-based — Reviewer, Writer, and Admin, in increasing order of cap
 Deleting a connection removes its stored secrets and, together with publication deletion, cleans up the knowledge derived from it. For complete removal of an organization and its data, contact the Doc Holiday team — full-organization deletion and purge are performed on request.
 
 Questions this page doesn't answer are worth asking — reach us via [doc.holiday](https://doc.holiday/).
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

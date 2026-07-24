@@ -4,7 +4,7 @@ url: "docs/trigger-and-event-types"
 description: "Every trigger and event type, enumerated."
 ---
 
-This reference page lists the trigger events Doc Holiday can react to and the connection types that support each one. See [/d2-configure-triggers.md](./d2-configure-triggers.md) for setup and [/j8-connection-types.md](./j8-connection-types.md) for the full source catalog.
+This reference lists the trigger events Doc Holiday can react to and the Source types that support each one. See [Configure triggers](./d2-configure-triggers.md) and [Connection Types](./j8-connection-types.md).
 
 | Event | Typical output | GitHub Repository | GitHub Repository (personal access token) | GitLab (multi-project access token) | GitLab Project | Bitbucket Repository (repository access token) | Bitbucket Project | Linear | Jira Read-Only | Jira Project |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -13,6 +13,17 @@ This reference page lists the trigger events Doc Holiday can react to and the co
 | Issue Comments | Targeted updates | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — |
 | Releases | Release notes | ✓ | ✓ | ✓ | ✓ | — | — | — | — | — |
 | Send to Doc | Page updates from a Jira issue | — | — | — | — | — | — | — | ✓ | ✓ |
-| Issue status changes | Workflow page updates | — | — | — | — | — | — | — | ✓ | ✓ |
+| Issue status changes to | Workflow page updates | — | — | — | — | — | — | — | ✓ | ✓ |
 
 Doc Holiday does not offer a scheduled trigger. For recurring cadence, use CI through [/g1-github-action.md](./g1-github-action.md).
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

@@ -14,7 +14,7 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Purpose: list Work History entries.
 - Request: `branch`, `outputUrl`, `jobId`, `publicationId`, `operationType`, `status`, `summary`, `staged`, `originType`, `originURL`.
 - Response: `ModelsListConversationsResponse` with `conversations`, `nextPageToken`, `previousPageToken`, and `error`.
-- Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. Omit `staged` for no filter; `staged=null` returns `400`.
+- Notes: list permission applies to `Conversation`. `publicationId` narrows the result set. `staged=true` returns staged entries, `staged=false` returns unstaged entries, omitting `staged` leaves the result set unfiltered, and `staged=null` returns `400`.
 - `curl`: `curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversations?publicationId=pub_123&staged=true"`
 - `json`: `{"conversations":[{"id":"conv_123","status":"running"}],"nextPageToken":"","previousPageToken":""}`
 
@@ -109,3 +109,14 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - Notes: The app offers Retry on failed turns; the endpoint resets the turn to running, clears its error, and requeues the work.
 - `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_turns/turn_123/retry"`
 - `json`: `{"id":"turn_123","status":"running","retryCount":2}`
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

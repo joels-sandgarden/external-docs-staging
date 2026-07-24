@@ -31,10 +31,20 @@ Doc Holiday reads the request together with what it already knows about the Publ
 
 ## Stage 3 — draft
 
-Doc Holiday reads the real source, compares it with the docs it maintains, and drafts proposed diffs. The drafts wait for your review on a working branch; nothing reaches your default branch except through a pull request you approve.
+Doc Holiday reads the real source, compares it with the docs it maintains, and drafts proposed diffs. Supported organizations can opt into a Bedrock GPT-5.6 drafting mode. The visible request, plan, draft, review, and pull request flow stays the same. The drafts wait for review on a working branch; nothing reaches the default branch except through a pull request that gets approved.
 
 ## Stage 4 — review
 
 You review the draft, leave comments, and ask for changes when something needs another pass. Doc Holiday revises the same work and keeps the draft visible until it is ready. When you approve it, Doc Holiday opens a normal pull request in the docs repo. See [Review and revise](./f3-review-and-revise.md).
 
 Your docs repo stays yours: approved content lands there only as a normal git pull request, and the merged result lives in your repository like any other change.
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

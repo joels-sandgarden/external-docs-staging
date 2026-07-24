@@ -33,7 +33,7 @@ Returns `ModelsListUsersResponse` for users in the authenticated org, with `user
 | authId | Filter by auth ID. |
 | query | Free-text search. |
 | roleIds | Filter by role IDs. |
-| noBuiltinRole | Filters to users who hold no builtin role. |
+| noBuiltinRole | Filters for users who hold no builtin role. |
 | invitationAccepted | Filter by invitation state. |
 | shared pagination | Shared pagination fields from the API. |
 
@@ -49,7 +49,7 @@ Requires authenticated SFS token access. Common errors: `400`, `500`.
 
 ## GET /api/v1/users/{id}
 
-Returns one user in `ModelsGetUserResponse`.
+Returns one user in `ModelsGetUserResponse`, the same shape used by `GET /api/v1/me`.
 
 | Parameter | Notes |
 | --- | --- |
@@ -64,3 +64,14 @@ curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/users/str
 ```
 
 Requires authenticated SFS token access. Common errors: `400`, `500`.
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

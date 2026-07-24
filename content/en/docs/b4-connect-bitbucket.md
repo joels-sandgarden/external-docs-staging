@@ -4,11 +4,11 @@ url: "docs/connect-bitbucket"
 description: "Connect Bitbucket via a workspace token provider or per-project tokens."
 ---
 
-Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments; issue and release triggers do not apply. See [Configure triggers](./d2-configure-triggers.md).
+Use this guide to connect Bitbucket Sources in Doc Holiday. Bitbucket Sources react only to pull requests and pull request comments. Issue and release triggers do not apply. See [Configure triggers](./d2-configure-triggers.md).
 
 If the Source already exists, update it in [Manage connections](./c7-manage-connections.md).
 
-## Option A: workspace token provider and Bitbucket Project
+## Option A: Bitbucket Workspace Access Token provider and Bitbucket Project
 
 1. Open **Sources**, then select the **Providers** tab.
 2. Select **Add Provider**.
@@ -23,7 +23,7 @@ If the Source already exists, update it in [Manage connections](./c7-manage-conn
 11. Select **Publishing System**.
 12. Select **Save Changes**.
 
-Use this path when one workspace token should cover multiple projects.
+Use this path for multi-project setups where one workspace access token covers multiple Bitbucket Project Sources.
 
 ## Option B: repository access token for one repository
 
@@ -44,3 +44,14 @@ Open the **Sources** page and confirm the Source shows **Healthy**.
 ## Next
 
 Continue with [Create your first publication](./b5-create-your-first-publication.md).
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

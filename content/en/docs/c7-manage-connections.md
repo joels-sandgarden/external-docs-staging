@@ -4,18 +4,18 @@ url: "docs/manage-connections"
 description: "Check health, restore access, edit details, or remove a Source or provider."
 ---
 
-Keep your Sources healthy, fix a broken Source, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, restore access, edit details, or remove a Source or provider.
+Keep Sources and providers healthy, restore access when a Source breaks, edit Source details, and remove Sources or providers only after dependent Publications are updated. This guide covers the routine checks and fixes that keep connected Sources ready for Doc Holiday to read.
 
 ![The Sources list with a health badge on each connection](/screenshots/manage-connections/health-list.png)
 
 ## Check health
 
 1. Open **Sources**.
-2. Find the row for the Source.
+2. Find the Source row.
 3. Read the badge in the status column.
-4. Use the badge text as your quick check:
+4. Use the badge text as a quick check:
    - **Healthy** means Doc Holiday can read the Source.
-   - **Unhealthy** means Doc Holiday skips it until you fix the problem.
+   - **Unhealthy** means Doc Holiday stops reading it until the problem clears.
    - **Checking...** means Doc Holiday is still checking it.
 5. Doc Holiday reads connected Sources regularly. When a Source stays **Unhealthy**, its information can go stale while other Sources keep updating.
 
@@ -28,25 +28,36 @@ Keep your Sources healthy, fix a broken Source, edit details, or remove a Source
    - A provider app no longer exists in the workspace.
    - The repository or project moved, or someone deleted it.
 4. Update the visible fields in the sheet, then select **Save Changes**.
-5. If you need to reinstall a GitHub App on the provider side, open **Manage GitHub Application** and complete that setup again.
+5. If a GitHub provider still fails, open **Manage GitHub Application** and complete that setup again.
 6. Return to **Sources** and confirm the status badge reads **Healthy**.
 
 ## Edit a Source
 
 1. Open the Source in **Sources** or the provider in **Providers**.
 2. Select **Edit**.
-3. Change **Source Name** when you want to rename a Source.
-4. Change **Branch** when you want Doc Holiday to track a different branch for a repository Source.
+3. Change **Source Name** to rename a Source.
+4. Change **Branch** to point a repository Source at a different branch.
 5. The sheet title reads **Update Source** or **Update Provider**.
-6. Select **Save Changes** when you finish. Select **Cancel** or **Close** to leave the current values unchanged.
+6. Select **Save Changes** to keep the updates. Select **Cancel** or **Close** to leave the current values unchanged.
 
 ## Delete a Source
 
-1. Update any Publication that still points at the Source before you delete it.
-2. If you delete a provider, remove its dependent Sources first.
+1. Update any Publication that still points at the Source before deleting it.
+2. Remove dependent Sources before deleting a provider.
 3. Select **Delete** in the row's menu.
-4. Review the warning, then select **Delete this source** (or **Delete this provider**) to confirm.
+4. Review the warning, then select **Delete this source** or **Delete this provider** to confirm.
 5. Doc Holiday removes provider-side setup it created, such as webhooks or a GitHub App installation.
-6. The repository itself stays in place, and already merged documentation remains unchanged.
+6. The repository stays in place, and already merged documentation remains unchanged.
 
 Next: [Sources](./c1-sources.md).
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

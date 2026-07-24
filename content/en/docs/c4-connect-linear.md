@@ -4,7 +4,7 @@ url: "docs/connect-linear"
 description: "Let Linear issues and comments trigger documentation work."
 ---
 
-Use this page when Linear should trigger documentation work in Doc Holiday. Linear issues and issue comments can trigger new work requests, so this is the setup to use for those events.
+Use this page to connect Linear as a Source in Doc Holiday. Linear issue bodies and issue comments can trigger documentation work, so this setup fits those events.
 
 ## Set up the Linear Source
 
@@ -14,11 +14,11 @@ Use this page when Linear should trigger documentation work in Doc Holiday. Line
 
 ## What it enables
 
-- New Linear issues that mention @doc.holiday at the start of the issue body can trigger documentation work.
-- New issue comments can trigger documentation work.
-- In issue comments, `@doc.holiday` mentions behave like mentions in git comments, so a comment that starts with the mention can request work in the same way.
+- New Linear issues can trigger documentation work when the issue body starts with `@doc.holiday`.
+- New issue comments can trigger documentation work when the comment starts with `@doc.holiday`.
+- In issue comments, `@doc.holiday` mentions behave like mentions in git comments.
 
-See [Request work from GitHub, GitLab, or Bitbucket with @doc.holiday](./f1-request-work-in-git.md) for the comment-based request flow, and [Configure triggers: when Doc Holiday reacts on its own](./d2-configure-triggers.md) for trigger settings.
+See [Request work from GitHub, GitLab, or Bitbucket with @doc.holiday](./f1-request-work-in-git.md) for the comment-based request flow, and [Configure triggers](./d2-configure-triggers.md) for trigger settings.
 
 ## Verify
 
@@ -26,4 +26,15 @@ Open **Sources** and confirm the Linear Source shows **Healthy**.
 
 ## Next
 
-Next: [Configure triggers: when Doc Holiday reacts on its own](./d2-configure-triggers.md).
+Next: [Configure triggers](./d2-configure-triggers.md).
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
