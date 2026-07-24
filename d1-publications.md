@@ -19,16 +19,13 @@ Trigger behavior decides when Doc Holiday reacts to a Source, and [trigger confi
 
 ## Work History and lifecycle
 
-Every request becomes a Work History entry scoped to one Publication. That scope keeps the record attached to the same documentation destination, Sources, and writing guidance that shaped the request, which makes the history easier to read later. Work History shows the full lifecycle of the request for that Publication, from the first trigger through the final result, instead of mixing it with unrelated work elsewhere in the product.
+Every request becomes a Work History entry scoped to one Publication. That scope keeps the record tied to the same documentation destination, Sources, and writing guidance that shaped the request, which makes the history easy to read later. Each entry shows the request from the first trigger through the final result, so a reader can follow one Publication without sorting through unrelated work. An entry can move through visible states such as running, ready for review, open, needs attention, merged, closed, or cancelled.
 
-That narrow scope matters when a team wants to understand why a page changed, what changed next, or which request still needs attention. Each entry stays easy to trace because the visible history belongs to one Publication, not to the organization at large. A single Publication can accumulate many requests over time, and Work History keeps them readable as a sequence rather than as isolated edits. That structure also makes it easier to compare past requests, since the history uses the same Publication as its frame of reference every time. An entry can move through visible states such as running, ready for review, open, needs attention, merged, closed, or cancelled. The page for [Work History](/f4-work-history.md) explains that record in more detail and shows how it helps people trace the outcome of a request without leaving the Publication it belongs to.
+The page for [Work History](/f4-work-history.md) explains that record in more detail and shows how it helps people trace the outcome of a request without leaving the Publication it belongs to.
 
 ## Publication health
 
-Publication health shows whether the Publication, its Sources, and its docs destination are ready for Doc Holiday to use. It gives a quick readiness signal before work starts and a more detailed view when someone opens the Publication itself. In the Publications list, health appears as a badge. On the publication details page, it appears in a status section that brings the current state into view.
-That visibility makes it easy to tell whether the Publication is ready for new work or needs a retry and a closer look at the troubleshooting guidance.
-
-That status makes the difference between a Publication that can accept work and one that needs attention easy to spot. A healthy Publication gives a clear signal that the docs destination and connected Sources are ready. When health is unhealthy, the details page shows the **Run Test** button, and the troubleshooting guidance stays visible so the next check stays close at hand. The result is a simple scan for the list view and a deeper explanation for the details view. In both places, the status turns a setup check into something visible and easy to act on.
+Publication health shows whether the Publication, its Sources, and its docs destination are ready for Doc Holiday to use. In the Publications list, health appears as a badge. On the publication details page, it appears in a status section that brings the current state into view. The badge gives the quick read, while the details page adds the **Run Test** button and the troubleshooting guidance when health is unhealthy. A healthy Publication gives a clear signal that the docs destination and connected Sources are ready. In both places, the status turns a setup check into something visible and easy to act on.
 
 ## Next
 
