@@ -227,3 +227,14 @@ description: "User-visible changes to Doc Holiday, newest first."
   * Documentation connections now reject invalid URLs more consistently in both the form and the saved configuration.
 
 Older entries: [Release notes archive](./k1b-release-notes-archive.md)
+
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

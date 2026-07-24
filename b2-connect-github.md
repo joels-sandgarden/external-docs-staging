@@ -41,3 +41,13 @@ Open the **Sources** page and find the GitHub Source. Check the badge beside it.
 ## Next
 
 Next: [Create your first publication](/b5-create-your-first-publication.md).
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

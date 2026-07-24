@@ -35,3 +35,13 @@ A single entry can take more than one pass when new comments or replies add cont
 
 Something happens in a Source. Doc Holiday turns that change into reviewed documentation in a Publication. The Library guides the writing, and Work History records the result.
 This model keeps the vocabulary connected from input to outcome, even when a request needs several passes before it settles.
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

@@ -30,3 +30,13 @@ The **Test** action in the key menu shows **Key is valid** when the key works an
 ## Next
 
 Continue with [AI provider keys](./h3-ai-provider-keys.md) or review [Billing and plans](./h4-billing-and-plans.md).
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>

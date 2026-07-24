@@ -78,3 +78,13 @@ When a team needs to add a new Source, the setup pages show the fields, validati
 - [Linear](./c4-connect-linear.md)
 - [Google Drive](./c5-connect-google-drive.md)
 - [Cloud storage](./c6-connect-cloud-storage.md)
+
+---
+
+<!-- doc-holiday-watermark -->
+<p align="center">
+  <a href="https://doc.holiday">
+    <img alt="Doc Holiday logo" src="https://doc.holiday/assets/docs-by-doc-holiday.png" width="200">
+  </a>
+</p>
+<p align="center">Docs authored by <a href="https://doc.holiday">Doc Holiday</a></p>
