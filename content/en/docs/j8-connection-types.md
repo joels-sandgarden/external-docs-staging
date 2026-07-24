@@ -8,9 +8,9 @@ This reference lists every supported Doc Holiday connection type, its role, pare
 
 Doc Holiday keeps the set closed. Each row pairs the Type label shown in the app with the API value used by the model. The Role column groups rows into provider, git repository, context source, or notifier. The Requires column names a parent only when one exists. The Automatic triggers column lists exact trigger identifiers or `—`.
 
-GitHub, GitLab, and Bitbucket each split parent and direct access rows. GitHub also uses a personal access token path. GitLab also uses a multi-project access token path. Bitbucket also uses a repository access token path. Repository rows are the direct or provider backed source connections that emit trigger events.
+GitHub, GitLab, and Bitbucket each split parent and direct access rows. GitHub also uses a personal access token path. GitLab also uses a multi-project access token path. Bitbucket also uses a repository access token path. Repository rows are the direct or provider-backed source connections that emit trigger events.
 
-Context source rows usually stand alone. Documentation, Notion, Google Drive, AWS, Confluence, and Azure Blob do not require parents. Linear is the only standalone context source with trigger support, and it exposes `newIssues` and `issueComments`. Jira Read-Only and Jira Project also belong to the context source family, and both use the Jira specific identifiers.
+Context source rows usually stand alone. External Documentation, Notion, Google Drive, AWS, Confluence, and Azure Blob Storage do not require parents. Linear is the only standalone context source with trigger support, and it exposes `newIssues` and `issueComments`. Jira Read-Only and Jira Project also belong to the context source family, and both use the Jira specific identifiers.
 
 Jira Read-Only and Jira Project expose `sendToDoc` and `issueStatusChange`. Jira Read-Only stands alone. Atlassian Application serves as the parent row for Jira Project. Slack Application serves as the parent row for Slack Channel, and Slack Channel remains the only notifier connection.
 
