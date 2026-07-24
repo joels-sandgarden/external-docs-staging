@@ -106,7 +106,6 @@ This page documents only the public `/api/v1/conversations*`, `/api/v1/conversat
 - `curl`: `curl -X POST -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/conversation_turns/turn_123/retry"`
 - `json`: `{"id":"turn_123","status":"running","retryCount":2}`
 
----
 
 <!-- doc-holiday-watermark -->
 <p align="center">
