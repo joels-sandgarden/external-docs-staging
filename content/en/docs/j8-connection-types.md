@@ -32,9 +32,9 @@ Linear stays the only standalone context source that emits events. Jira Read-Onl
 
 | Type | API value | Role | Requires | Automatic triggers |
 | --- | --- | --- | --- | --- |
-| GitHub Application | `githubApp` | `git provider` | — | — |
-| GitLab Access Token | `gitlabProvider` | `git provider` | — | — |
-| Bitbucket Workspace Access Token | `bitbucketProvider` | `git provider` | — | — |
+| GitHub Application | `githubApp` | `provider` | — | — |
+| GitLab Access Token | `gitlabProvider` | `provider` | — | — |
+| Bitbucket Workspace Access Token | `bitbucketProvider` | `provider` | — | — |
 | Slack Application | `slackApp` | `provider` | — | — |
 | Atlassian Application | `atlassianForgeApp` | `provider` | — | — |
 | GitHub Repository | `githubRepo` | `git repository` | `GitHub Application` | `pullRequests`, `newIssues`, `issueComments`, `releases` |
