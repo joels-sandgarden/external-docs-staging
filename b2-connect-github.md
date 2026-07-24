@@ -17,7 +17,7 @@ After installation, Doc Holiday returns to the same flow so repository Sources c
 1. Open the repository Source form under the installed GitHub App. Use this form for each repository in the same GitHub organization, and keep each Source separate so the health status stays easy to check later.
 2. Enter a **Source Name** that makes the repository easy to identify later, especially when one organization connects several repos. Pick a name that matches the repository or team that uses it. Clear names help when the same organization also connects a docs repo or a staging repo.
 3. Select **Repository** from the picker. Doc Holiday fills in the repository and the default branch automatically. The selected repository should match the project the Source belongs to, and the default branch usually matches the branch that should drive documentation. Change **Branch** only when a different branch should drive documentation.
-4. Submit the form to create the repository Source. Repeat the same flow for every repository that should belong to the organization or publication.
+4. Submit the form to create the repository Source. Repeat the same flow for every repository that should belong to the organization or the Publication.
 
 ![The Create Source form for a GitHub Repository: repository, branch, and publishing system fields](/screenshots/connect-github/repo-connection-form.png)
 
@@ -36,7 +36,7 @@ If the token can reach more than one repository, select the one Doc Holiday shou
 
 ## Verify
 
-Open the **Sources** page and find the GitHub Source. Check the badge beside it. A working Source shows **Healthy**. If it shows **Unhealthy**, open [/c7-manage-connections.md](/c7-manage-connections.md) and fix the Source before adding another repository or creating a publication.
+Open the **Sources** page and find the GitHub Source. Check the badge beside it. A working Source shows **Healthy**. If it shows **Unhealthy**, open [/c7-manage-connections.md](/c7-manage-connections.md) and fix the Source before adding another repository or creating a Publication.
 
 ## Next
 
