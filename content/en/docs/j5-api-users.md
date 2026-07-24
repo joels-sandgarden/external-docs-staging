@@ -24,7 +24,7 @@ curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/me
 {"id":"string","authId":"string","email":"string","name":"string","sfsToken":"","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
-Requires authenticated SFS token access. Common errors: `400`, `500`.
+Requires an `Authorization: Bearer <token>` header. Common errors: `400`, `500`.
 
 ## GET /api/v1/users
 
@@ -37,7 +37,7 @@ Returns `ModelsListUsersResponse` for users in the authenticated org, with `user
 | authId | Filter by auth ID. |
 | query | Free-text search. |
 | roleIds | Filter by role IDs. |
-| noBuiltinRole | Filters to users who hold no builtin role. |
+| noBuiltinRole | Filters to users with no builtin role. |
 | invitationAccepted | Filter by invitation state. |
 | shared pagination | Shared pagination fields from the API. |
 
@@ -49,7 +49,7 @@ curl -H "Authorization: Bearer <token>" "https://api.doc.holiday/api/v1/users?em
 {"users":[{"id":"string","email":"string","name":"string"}],"nextPageToken":"string","previousPageToken":"string"}
 ```
 
-Requires authenticated SFS token access. Common errors: `400`, `500`.
+Requires an `Authorization: Bearer <token>` header. Common errors: `400`, `500`.
 
 ## GET /api/v1/users/{id}
 
@@ -67,4 +67,4 @@ curl -H "Authorization: Bearer <token>" https://api.doc.holiday/api/v1/users/str
 {"id":"string","authId":"string","email":"string","name":"string","sfsToken":"","invitationAccepted":true,"orgId":"string","createdAt":"string","updatedAt":"string"}
 ```
 
-Requires authenticated SFS token access. Common errors: `400`, `500`.
+Requires an `Authorization: Bearer <token>` header. Common errors: `400`, `500`.
