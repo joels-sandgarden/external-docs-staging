@@ -4,7 +4,7 @@ url: "docs/connect-cloud-storage"
 description: "Read-only context from S3 or Azure Blob buckets and containers."
 ---
 
-Cloud storage Sources provide read-only context from storage services — AWS S3 buckets that the credentials can access in a region, or a single Azure Blob container. They inform what Doc Holiday writes without starting new work. For the broader Sources model, see [Sources](./c1-sources.md).
+Cloud storage Sources provide read-only context from cloud storage services. AWS S3 uses the buckets that the credentials can access in a region, and Azure Blob Storage uses a single container. They inform what Doc Holiday writes without starting new work. For the broader Sources model, see [Sources](./c1-sources.md).
 
 ## Option A — AWS (S3)
 
