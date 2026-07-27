@@ -19,6 +19,20 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Validate BYOK keys for inference**
   - Doc Holiday now confirms that a BYOK provider key can run inference before it accepts the key.
 
+- **Clarify provider error messages**
+  - Doc Holiday now surfaces clearer BYOK provider errors when validation or inference fails.
+
+### 🐛 Bug Fixes
+
+- **Restore public route handling**
+  - Doc Holiday now resolves login, signup, and organization selection paths correctly when people open them directly.
+
+- **Show the correct publication share error title**
+  - The share error dialog now shows the correct title.
+
+- **Fix the instruction form submit button**
+  - The instruction form submit button now works again.
+
 ## 2026-07-17
 
 ### 🚀 New Features
