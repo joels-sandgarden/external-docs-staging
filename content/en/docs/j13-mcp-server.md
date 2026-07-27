@@ -1,14 +1,14 @@
 ---
 title: MCP Server
 url: "docs/mcp-server"
-description: "Direct integration with Doc Holiday's public MCP server and authentication requirements."
+description: "Reference for Doc Holiday's public MCP server and authentication requirements."
 ---
 
-This reference covers direct integration with Doc Holiday's API.
+This reference covers Doc Holiday's public MCP server and direct integration with its API.
 
 ## Overview
 
-Doc Holiday provides a public MCP server over HTTP at `/mcp` for API-key authenticated clients. The server exposes the same `doc_holiday_*` tool set documented on [MCP Tools](./j12-mcp-tools.md).
+Doc Holiday provides a public MCP server over HTTP at `/mcp` for API-key authenticated clients. The server exposes the same `doc_holiday_*` tools documented on [MCP Tools](./j12-mcp-tools.md).
 
 ## Authentication
 
