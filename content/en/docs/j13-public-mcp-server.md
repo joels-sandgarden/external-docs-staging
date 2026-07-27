@@ -22,12 +22,12 @@ The server stays stateless and serves MCP traffic over streamable HTTP. Each req
 
 ## Tool surface
 
-The public endpoint groups its surface into four broad capabilities:
+The public endpoint groups its surface into four capabilities:
 
-- Request submission for starting a new documentation request or extending an existing one.
-- Work tracking for checking the current state of a request and following the active work history.
-- Content review for reading turns, comments, and diffs attached to a request.
-- Publication lookup for resolving the publication that the request targets.
+- Request submission: start a new documentation request or extend an existing one.
+- Work tracking: check the current state of a request and follow its history.
+- Content review: read turns, comments, and diffs attached to a request.
+- Publication lookup: resolve the publication that the request targets.
 
 ## Related
 
