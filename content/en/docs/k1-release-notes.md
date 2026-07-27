@@ -8,12 +8,8 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
-- **Add trial payment fallback**
-  - Stripe checkout now ends a trial when no payment method is available.
-- **Require payment methods only when needed**
-  - Stripe checkout now asks for a payment method only when the flow requires one.
 - **Open OSS applications**
-  - Organizations can apply for OSS access, and approved organizations gain the right billing access.
+  - Organizations can now apply for OSS access, and approved organizations gain billing access.
 - **Add Anthropic keys for BYOK**
   - BYOK organizations can save Anthropic keys and route inference through Claude models.
 - **Add Gemini keys for BYOK**
@@ -181,6 +177,10 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🐛 Bug Fixes
 
+- **End trials without payment methods**
+  - Stripe checkout now ends a trial when no payment method is available.
+- **Request payment methods only when needed**
+  - Stripe checkout now asks for a payment method only when the flow requires one.
 - **Fix superuser organization paging**
   - Superuser organization paging now uses the same next cursor field across the UI and hook.
 - **Limit feature flag context to the dashboard**
