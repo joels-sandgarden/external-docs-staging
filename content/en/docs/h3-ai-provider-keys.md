@@ -4,7 +4,6 @@ url: "docs/ai-provider-keys"
 description: "Add, test, and rotate the keys Doc Holiday uses; active-key behavior."
 ---
 
-Use this page to manage the OpenAI keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. OpenAI is the only supported provider on this page. The page applies to organizations on the Bring Your Own Key and Open Source plans. Doc Holiday manages enterprise inference; see [Billing and plans](./h4-billing-and-plans.md).
 Use this page to manage the AI provider keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. The page can show the providers that the organization supports, and each key applies to the provider selected when it is added. The page applies to organizations on the Bring Your Own Key and Open Source plans. Doc Holiday manages enterprise inference; see [Billing and plans](./h4-billing-and-plans.md).
 
 ![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
@@ -26,7 +25,7 @@ The active key card shows the **Active** badge. Every key card menu includes **T
 2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key for that provider to failover.
 3. If the active key for a provider fails, Doc Holiday fails over to another stored key for the same provider within the same request. If every key for that provider fails, the work errors.
 
-Doc Holiday only ever uses keys your organization has added — there is no fallback to any other key.
+Doc Holiday only ever uses keys the organization has added — there is no fallback to any other key.
 
 ## Rotate a key
 
@@ -45,5 +44,5 @@ Key changes apply immediately, even to work already in flight.
 
 ## Next
 
-- Start setup in [Add your key](./b6-add-your-openai-key.md).
+- Start setup in [Add a key](./b6-add-your-openai-key.md).
 - Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise inference.
