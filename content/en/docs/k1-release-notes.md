@@ -9,13 +9,13 @@ description: "User-visible changes to Doc Holiday, newest first."
 ### 🚀 New Features
 
 - **Select from multiple AI providers**
-  - Settings now lets organizations choose the provider for each saved key.
+  - Settings now lets organizations choose a provider for each saved key.
 
 - **Add provider keys in Settings**
   - Organizations can add new provider keys from Settings.
 
 - **List saved provider keys**
-  - Settings now shows saved keys for each configured provider.
+  - Settings now lists saved keys for each provider.
 
 - **Set an active provider key**
   - Organizations can mark one saved key as the active provider key.
@@ -41,15 +41,15 @@ description: "User-visible changes to Doc Holiday, newest first."
   - BYOK organizations now need current billing to keep using BYOK workflows.
 
 - **Support OSS tier applications**
-  - Billing and onboarding now include OSS tier application flows.
+  - Billing and onboarding now include OSS tier application requests.
 
 - **Update BYOK billing pages**
-  - Billing pages now surface the information BYOK organizations need during setup.
+  - Billing pages now give BYOK organizations the setup details they need.
 
 ### 🐛 Bug Fixes
 
 - **Restore direct navigation to public routes**
-  - Login, signup, and organization selection now open correctly when a route loads directly.
+  - Login, signup, and organization selection now resolve correctly when opened directly.
 
 - **Show the correct publication share error title**
   - The publication share error dialog now shows the correct title.
