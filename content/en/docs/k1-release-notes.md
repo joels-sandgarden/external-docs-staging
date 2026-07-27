@@ -8,19 +8,19 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
- - **Appended attribution blocks to OSS markdown edits**
-  - OSS plan organizations now append a Doc Holiday attribution block to edited markdown files.
- - **Restricted feature flag context to the dashboard**
-  - Feature flag context now appears only inside the dashboard area.
- - **Added Groq as a BYOK provider**
+- **Appended attribution blocks to OSS markdown edits**
+  - OSS plan organizations now append a Doc Holiday attribution block to edited markdown files in the current turn.
+- **Restricted feature flag context to the dashboard**
+  - Feature flag context now stays inside the dashboard area, so non-dashboard pages no longer receive it.
+- **Added Groq as a BYOK provider**
   - Groq now appears as a supported AI provider for BYOK and default provider settings, with key validation and request routing.
- - **Enabled Bedrock GPT-5.6 for Writer**
-  - Writer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
- - **Extended Bedrock GPT-5.6 to Explorer**
-  - Explorer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
- - **Adopted Bedrock GPT-5.6 for Director**
-  - Director can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
- - **Introduced Cerebras as a BYOK provider**
+- **Enabled Bedrock GPT-5.6 for Writer**
+  - Writer can now run on Bedrock GPT-5.6 behind the feature flag, using a dedicated prompt and tuned compaction.
+- **Extended Bedrock GPT-5.6 to Explorer**
+  - Explorer can now run on Bedrock GPT-5.6 behind the feature flag, using a dedicated prompt and tuned compaction.
+- **Adopted Bedrock GPT-5.6 for Director**
+  - Director can now run on Bedrock GPT-5.6 behind the feature flag, using a dedicated prompt and tuned compaction.
+- **Introduced Cerebras as a BYOK provider**
   - Cerebras now appears as a supported AI provider for BYOK with key validation and request routing.
 
 - **Added a billing page**
