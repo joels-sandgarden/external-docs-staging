@@ -16,11 +16,13 @@ The Apply dialog asks for project name, public repo URL, and description. After 
 
 ## Bring Your Own Key
 
-Bring Your Own Key costs $100/month. It is a self-serve subscription with a free trial, and you manage billing in the billing portal.
+Bring Your Own Key costs $100/month. It includes a free trial, and you manage billing in the billing portal.
 
-If the subscription lapses, your work pauses until billing is current. The banner reads: "Your BYOK subscription is no longer active. You can still view Doc Holiday, but new requests are disabled until you resubscribe."
+The billing page shows when the trial is close to ending so teams can update billing before new work stops.
 
-Use [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for OpenAI key setup and management.
+If the subscription lapses, Doc Holiday pauses new work until billing is current again. The banner reads: "Your BYOK subscription is no longer active. You can still view Doc Holiday, but new requests are disabled until you resubscribe."
+
+Use [Add Your AI Provider Key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for provider setup and management.
 
 ## Enterprise
 
