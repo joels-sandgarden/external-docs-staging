@@ -64,19 +64,19 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Document API and prompting references**
   - It documents the instruction library API, audit log API, trigger and event types, and prompting guidance for advanced workflows.
 
-- **Add BYOK onboarding for AI provider keys**
+- **Introduced BYOK onboarding for AI provider keys**
   - Self-serve BYOK onboarding now includes a step for adding an AI provider key.
-- **Add Stripe billing for BYOK subscriptions**
+- **Enabled Stripe billing for BYOK subscriptions**
   - Organizations on the BYOK plan now rely on Stripe subscription status for billing access.
-- **Add free trials for BYOK subscriptions**
+- **Granted free trials for BYOK subscriptions**
   - Eligible BYOK organizations now get a free trial and see trial timing in the billing UI.
-- **Add a public Doc Holiday MCP server**
+- **Opened a public Doc Holiday MCP server**
   - Clients can connect to the new `/mcp` endpoint with a Doc Holiday API key.
-- **Add provider-agnostic BYOK routing**
+- **Directed provider-agnostic BYOK routing**
   - BYOK and OSS customers can now attach keys for non-OpenAI providers that match the session target provider.
-- **Add AI provider selection in the dashboard**
+- **Improved AI provider selection in the dashboard**
   - The AI provider key screen now lets users choose from multiple providers and see the selected value.
-- **Return MCP merge summaries immediately**
+- **Returned MCP merge summaries immediately**
   - MCP pull request summaries now respond at once while summary generation continues in the background.
 
 ### ✨ Enhancements
