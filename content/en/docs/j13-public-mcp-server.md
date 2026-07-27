@@ -4,11 +4,11 @@ slug: "docs/public-mcp-server"
 description: "The `/mcp` endpoint for direct integration with external MCP clients."
 ---
 
-This page describes the public `MCP` endpoint for external clients that need a direct integration path to Doc Holiday.
+This page describes the `/mcp` endpoint as a direct integration point for external MCP clients.
 
 ## Overview
 
-External MCP clients use `/mcp` when they need to request documentation work without installing the plugin. The endpoint provides a direct path for integrations that already speak MCP and do not need the plugin-installed `doc_holiday_*` tools.
+External MCP clients use `/mcp` when they need to request documentation work without installing the plugin. The endpoint gives direct access to Doc Holiday from tools that already speak MCP.
 
 For the full plugin tool reference, see [MCP Tools](./j12-mcp-tools.md).
 
@@ -22,7 +22,7 @@ The server stays stateless and serves MCP traffic over streamable HTTP. Each req
 
 ## Tool surface
 
-The public endpoint exposes the same broad capabilities as the plugin path, grouped around a few common tasks:
+The public endpoint groups its surface into four broad capabilities:
 
 - Request submission for starting a new documentation request or extending an existing one.
 - Work tracking for checking the current state of a request and following the active work history.
