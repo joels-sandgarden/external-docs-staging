@@ -32,15 +32,18 @@ description: "User-visible changes to Doc Holiday, newest first."
   - MCP clients can now fetch feature details.
 
 - **Added a free trial for Bring Your Own Key billing**
-  - New Bring Your Own Key accounts now start with a free trial.
-- **Added Open Source Plan applications and billing access**
-  - Organizations can now apply for the Open Source Plan and manage billing access in the app.
-- **Added a public `/mcp` endpoint**
-  - External MCP clients can connect to Doc Holiday with API key authentication and stateless streamable HTTP.
-- **Added broader provider key support**
-  - Provider key management now works across more AI services.
+  - Bring Your Own Key plans now include a free trial.
+- **Introduced Open Source Plan applications and billing access**
+  - Organizations can now apply for the Open Source Plan and access billing in the app.
+- **Enabled a public `/mcp` endpoint**
+  - External MCP clients can now connect to Doc Holiday with API key authentication and stateless streamable HTTP.
+
+### ✨ Enhancements
+
+- **Expanded provider key support across more AI services**
+  - Provider key management now works across more services.
 - **Updated organization deletion and billing behavior**
-  - Deleting an organization now cancels its subscription and preserves trial eligibility when appropriate.
+  - Deleting an organization now cancels its subscription and keeps trial eligibility available when appropriate.
 
 ## 2026-07-17
 
