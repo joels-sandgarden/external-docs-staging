@@ -4,22 +4,22 @@ url: "docs/mcp-tools"
 description: "The doc_holiday_* MCP tools the plugin registers, and their arguments."
 ---
 
-The Doc Holiday plugin registers a set of MCP tools your coding agent uses to drive the documentation service — listing your publications, submitting work, and tracking each request. Every tool name is prefixed `doc_holiday_`. The tools require an API key configured for your organization; the first call prompts a one-time sign-in.
+The Doc Holiday plugin connects to the public `/mcp` endpoint and uses the MCP tools to drive the documentation service — listing publications, submitting work, and tracking each request. Every tool name is prefixed `doc_holiday_`. The tools use API-key authentication, and each request is stateless.
 
-The tools fall into two groups: **request** tools that submit new work, and **read** tools that report on your publications and work. Listing tools use passthrough pagination — pass `pageSize` and `next`, and read `nextPageToken` from the result.
+The tools fall into two groups: **request** tools that submit new work, and **read** tools that report on publications and work. Listing tools use passthrough pagination — pass `pageSize` and `next`, and read `nextPageToken` from the result.
 
 ## Request tools
 
 | Tool | Purpose | Arguments |
 | --- | --- | --- |
 | `doc_holiday_request_documentation` | Submit a documentation prompt for a publication and get the handle back immediately. Omit `conversationId` to start a new conversation; pass it to add the prompt to an existing one. | `publicationId` (required), `prompt` (required), `conversationId`, `labels[]` |
-| `doc_holiday_request_work` | Post a work request to an existing conversation — adds a work-requested comment with your message and returns it as a handle to track. | `conversationId` (required), `body` (required), `labels[]` |
+| `doc_holiday_request_work` | Post a work request to an existing conversation — adds a work-requested comment with the message and returns it as a handle to track. | `conversationId` (required), `body` (required), `labels[]` |
 
 ## Read tools
 
 | Tool | Purpose | Arguments |
 | --- | --- | --- |
-| `doc_holiday_list_publications` | List the publications for your organization. | `pageSize`, `next` |
+| `doc_holiday_list_publications` | List the publications for the organization. | `pageSize`, `next` |
 | `doc_holiday_get_publication` | Return one publication by id. | `id` (required) |
 | `doc_holiday_list_conversations` | List conversations, optionally filtered. | `publicationId`, `status`, `jobId`, `pageSize`, `next` |
 | `doc_holiday_list_conversation_turns` | List the turns of conversations, optionally filtered. | `conversationId`, `status`, `pageSize`, `next` |

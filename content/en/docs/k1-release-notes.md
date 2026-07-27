@@ -4,6 +4,195 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-27
+
+### 🚀 New Features
+
+- **Open OSS applications**
+  - Organizations can now apply for OSS access, and approved organizations gain billing access.
+- **Add Anthropic keys for BYOK**
+  - BYOK organizations can save Anthropic keys and route inference through Claude models.
+- **Add Gemini keys for BYOK**
+  - BYOK organizations can save Gemini keys and route inference through Gemini-backed models.
+- **Add Groq keys for BYOK**
+  - BYOK organizations can save Groq keys and send eligible traffic through Groq.
+- **Add Cerebras keys for BYOK**
+  - BYOK organizations can save Cerebras keys and route inference through Cerebras-backed models.
+- **Enable Bedrock GPT-5.6 in the annotator**
+  - Flagged annotator runs can use the Bedrock GPT-5.6 configuration.
+- **Keep model and prompt choices aligned**
+  - Agent setup now keeps the selected model and prompt template paired.
+
+- **Clarify the Concepts reference**
+  - The page now explains Organization, Publication, Sources, the Library, and Work History in clearer customer-facing language.
+- **Expand the Sources explanation**
+  - It now explains provider and child Source relationships, health behavior, External Documentation, and key terms more clearly.
+- **Refine the Publications guide**
+  - It defines Inputs and Targets, explains output types, and shows how health status affects the workflow.
+- **Describe the Work History page**
+  - It covers lifecycle stages, multiple passes, entry views, and filtering in one place.
+- **Document supported connection types**
+  - It lists supported Source types, parent requirements, trigger identifiers, and hierarchy notes.
+- **Install the GitHub setup guide**
+  - It walks through GitHub App installation, repository Sources, token fallback, health checks, and troubleshooting.
+- **Configure the GitLab setup guide**
+  - It covers token setup, project Sources, multi-project tokens, and health verification.
+- **Set up the Bitbucket guide**
+  - It explains trigger behavior, workspace token options, repository and project setup, and verification.
+
+- **Launch the first Publication onboarding guide**
+  - It walks through prerequisites, output selection, health checks, Run Test, and the next steps after setup.
+- **Introduce the OpenAI key setup guide**
+  - It covers onboarding and settings flows, verification behavior, and plan eligibility.
+- **Explain the Confluence and Jira guide**
+  - It explains read-only Confluence, app-backed Jira, token-based Jira, and health checks.
+- **Cover the Linear setup guide**
+  - It covers issue and comment triggers and health verification.
+- **Outline the Google Drive setup guide**
+  - It explains Google Drive as a read-only Source and shows how to verify a healthy connection.
+- **Present the cloud storage guide**
+  - It covers AWS S3 and Azure Blob Storage as read-only context Sources with health verification.
+
+- **Manage the connections guide**
+  - It covers health checks, remediation, edits, deletions, and dependency guidance.
+- **Map the workflow overview page**
+  - It explains intake, planning, drafting, review, and pull request stages from start to finish.
+- **Walk through the quickstart tutorial**
+  - It walks through the end-to-end onboarding flow from sign in through publish.
+- **Note the Notion setup guide**
+  - It covers Notion as a read-only context Source and shows how to verify it.
+- **Reference the Output Types page**
+  - It explains Documentation, Release Notes, and Changelog output types along with their instructions.
+
+- **Clarify publishing system selection**
+  - It explains which publishing systems doc.holiday supports and how to switch to a fallback.
+- **Streamline publication management**
+  - Publication owners can edit, share, check health, and delete Publications from the management screen.
+- **Explain Library instruction precedence**
+  - It shows how the Library works, how instruction slots are selected, and which instruction applies when more than one rule matches.
+- **Add request and review workflows**
+  - Teams can request work in the app and review and revise Work History entries.
+- **Expand delivery and notification guides**
+  - It adds guidance for GitHub Action, GitLab CI/CD, coding agents, and Slack notifications so teams can route documentation work through their existing tools.
+- **Broaden administration and billing guidance**
+  - Account owners can manage user access, audit logs, AI provider keys, and billing and plans from one place.
+- **Document API and prompting references**
+  - It documents the instruction library API, audit log API, trigger and event types, and prompting guidance for advanced workflows.
+
+- **Introduced BYOK onboarding for AI provider keys**
+  - Self-serve BYOK onboarding now includes a step for adding an AI provider key.
+- **Enabled Stripe billing for BYOK subscriptions**
+  - Organizations on the BYOK plan now rely on Stripe subscription status for billing access.
+- **Granted free trials for BYOK subscriptions**
+  - Eligible BYOK organizations now get a free trial and see trial timing in the billing UI.
+- **Opened a public Doc Holiday MCP server**
+  - Clients can connect to the new `/mcp` endpoint with a Doc Holiday API key.
+- **Expanded provider-agnostic BYOK routing**
+  - BYOK and OSS customers can now attach keys for non-OpenAI providers that match the session target provider.
+- **Improved AI provider selection in the dashboard**
+  - The AI provider key screen now lets users choose from multiple providers and see the selected value.
+- **Returned MCP merge summaries immediately**
+  - MCP pull request summaries now respond at once while summary generation continues in the background.
+
+### ✨ Enhancements
+
+- **Use first names in email greetings**
+  - Outgoing email greetings now use a first name when one is available.
+- **Add attribution footers to OSS markdown**
+  - OSS markdown edits now include a single attribution footer.
+- **Use Bedrock GPT-5.6 for the director**
+  - Flagged director runs can use the Bedrock GPT-5.6 configuration.
+- **Use Bedrock GPT-5.6 for the explorer**
+  - Flagged explorer runs can use the Bedrock GPT-5.6 configuration.
+- **Use Bedrock GPT-5.6 for the writer**
+  - Flagged writer runs can use the Bedrock GPT-5.6 configuration.
+- **Use a lighter GPT-5.6 reasoning setting**
+  - Flagged director, explorer, and writer runs now use the medium reasoning setting.
+- **Refresh Go dependencies**
+  - Builds now use the refreshed Go dependency graph and vendor tree.
+
+- **Tighten the Concepts page wording**
+  - It reads more clearly while keeping the core concepts intact.
+- **Polish the GitHub setup guidance**
+  - It explains verification steps and fallback behavior more clearly.
+- **Clarify the Sources relationships**
+  - It explains provider and Source relationships and health behavior with less ambiguity.
+- **Update the Publications terminology**
+  - It clarifies Inputs and Targets mapping, Changelog naming, and how unhealthy states affect the workflow.
+- **Sharpen Work History filters**
+  - It explains the summary search box and other filters more clearly.
+- **Standardize connection type naming**
+  - It explains provider and token pairings and Source relationships with more consistent terminology.
+- **Refine onboarding and key setup**
+  - It clarifies admin-only Publication creation, trigger wording, OpenAI key verification, and the first setup flow.
+- **Tighten connection setup and cleanup**
+  - It sharpens the guidance for Linear, Google Drive, cloud storage, source deletion, and GitLab connection steps so the documented flow matches the app.
+
+- **Expanded the Library guide**
+  - It now explains what the Library is, how attached instructions shape Publication output, what the list shows in the UI, and where the next related guides live.
+
+- **Clarified the instruction slots reference**
+  - It now lists the slot values, shows which instruction appears in the app, and explains how shared style and formatting guidance applies across Documentation, Release Notes, and Changelog slots.
+
+- **Simplified the Notion setup guide**
+  - It now follows the current setup flow: open Sources, select Add Source, choose Notion, enter the Integration Key, and save changes.
+
+- **Improved shared AI client lifecycle**
+  - The shared AI client now follows the process lifecycle, which keeps shutdown behavior consistent.
+- **Expanded GitHub E2E instructions**
+  - The agent guide now explains how to run the full end-to-end test suite on GitHub.
+- **Reduced retry error logging**
+  - Retried inference timeouts now log at a lower severity, which cuts down noisy error entries.
+- **Clarified production log downloads**
+  - The agent guide now explains how to download production logs for a specific conversation ID.
+- **Marked Billing route for BYOK handling**
+  - The Settings Billing route now shows the BYOK-only marker.
+- **Aligned route gating with shared BYOK constants**
+  - The AI Provider Keys and Billing routes now use the shared BYOK constant for gating.
+- **Streamlined pre-push checks**
+  - Pre-push hooks now run only the Go and JavaScript lint pipelines for the languages affected by a push.
+- **Explained release merge fallback**
+  - Release documentation now finds merged pull requests even when only the merge commit SHA is recorded.
+- **Linked merge commit SHAs to change records**
+  - Merge commit SHAs now point to the matching change record, which improves merge resolution.
+- **Enabled stateless MCP handling**
+  - Multiple MCP instances can now serve requests without session-not-found errors from another instance.
+- **Switched get-logs to CloudWatch Logs Insights**
+  - The get-logs tool now retrieves conversation logs through CloudWatch Logs Insights instead of FilterLogEvents.
+- **Refreshed the repository package manager version**
+  - The repository now uses pnpm 10.34.5.
+- **Replayed the seed state**
+  - The repository now matches the replayed dependency and tracking event state, including remote IP CIDR support.
+- **Adjusted the js-yaml dependency**
+  - The `js/apps/evals` workspace now uses the updated `js-yaml` version from the lockfile.
+- **Cancelled Stripe subscriptions on organization deletion**
+  - Deleting an organization now cancels its Stripe subscription and soft-deletes the subscription row.
+
+### ⚠️ Breaking Changes
+
+- **Enforced current billing for BYOK conversations**
+  - Conversation creation and comment work requests now fail with a billing-required error when BYOK is enabled but the subscription is not current.
+- **Moved BYOK access to `org.customerType`**
+  - BYOK access to OSS flows and inference key routing now depend on `org.customerType` instead of the feature flag.
+
+### 🐛 Bug Fixes
+
+- **End trials without payment methods**
+  - Stripe checkout now ends a trial when no payment method is available.
+- **Request payment methods only when needed**
+  - Stripe checkout now asks for a payment method only when the flow requires one.
+- **Fix superuser organization paging**
+  - Superuser organization paging now uses the same next cursor field across the UI and hook.
+- **Limit feature flag context to the dashboard**
+  - Feature flag context now initializes only inside the dashboard route group.
+
+- **Resolved release merge lookups for squash and rebase merges**
+  - Release documentation scheduling now finds merged pull requests even when only the merge commit SHA is recorded.
+- **Connected merge commit SHAs to change records**
+  - Merge commit SHAs now point to the correct change record, which improves merge summary and release resolution.
+- **Recovered duplicate-input sessions**
+  - Sessions that hit a duplicate item error can now recover once and continue.
+
 ## 2026-07-17
 
 ### 🚀 New Features
