@@ -25,6 +25,19 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Add the Bitbucket setup guide**
   - The guide now explains trigger behavior, workspace token options, repository and project setup, and verification.
 
+- **Add the first Publication onboarding guide**
+  - The guide now walks through prerequisites, output selection, health checks, Run Test, and the next steps after setup.
+- **Add the OpenAI key setup guide**
+  - The guide now covers onboarding and settings flows, verification behavior, and plan eligibility.
+- **Add the Confluence and Jira guide**
+  - The guide now explains read-only Confluence, app-backed Jira, token-based Jira, and health checks.
+- **Add the Linear setup guide**
+  - The guide now covers issue and comment triggers along with health verification.
+- **Add the Google Drive setup guide**
+  - The guide now explains Google Drive as a read-only Source and shows how to verify a healthy connection.
+- **Add the cloud storage guide**
+  - The guide now covers AWS S3 and Azure Blob Storage as read-only context Sources with health verification.
+
 ## 2026-07-17
 
 ### 🚀 New Features
