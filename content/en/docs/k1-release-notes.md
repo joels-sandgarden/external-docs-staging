@@ -26,17 +26,17 @@ description: "User-visible changes to Doc Holiday, newest first."
   - It explains trigger behavior, workspace token options, repository and project setup, and verification.
 
 - **Launch the first Publication onboarding guide**
-  - The guide now walks through prerequisites, output selection, health checks, Run Test, and the next steps after setup.
+  - It walks through prerequisites, output selection, health checks, Run Test, and the next steps after setup.
 - **Introduce the OpenAI key setup guide**
-  - The guide now covers onboarding and settings flows, verification behavior, and plan eligibility.
+  - It covers onboarding and settings flows, verification behavior, and plan eligibility.
 - **Explain the Confluence and Jira guide**
-  - The guide now explains read-only Confluence, app-backed Jira, token-based Jira, and health checks.
+  - It explains read-only Confluence, app-backed Jira, token-based Jira, and health checks.
 - **Cover the Linear setup guide**
-  - The guide now covers issue and comment triggers along with health verification.
+  - It covers issue and comment triggers and health verification.
 - **Outline the Google Drive setup guide**
-  - The guide now explains Google Drive as a read-only Source and shows how to verify a healthy connection.
+  - It explains Google Drive as a read-only Source and shows how to verify a healthy connection.
 - **Present the cloud storage guide**
-  - The guide now covers AWS S3 and Azure Blob Storage as read-only context Sources with health verification.
+  - It covers AWS S3 and Azure Blob Storage as read-only context Sources with health verification.
 
 - **Manage the connections guide**
   - The guide now covers health checks, remediation, edits, deletions, and dependency guidance.
