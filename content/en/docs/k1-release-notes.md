@@ -107,6 +107,53 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Simplified the Notion setup guide**
   - It now follows the current setup flow: open Sources, select Add Source, choose Notion, enter the Integration Key, and save changes.
 
+- **Improved shared AI client lifecycle**
+  - The shared AI client now follows the process lifecycle, which keeps shutdown behavior consistent.
+- **Expanded GitHub E2E instructions**
+  - The agent guide now explains how to run the full end-to-end test suite on GitHub.
+- **Reduced retry error logging**
+  - Retried inference timeouts now log at a lower severity, which cuts down noisy error entries.
+- **Documented production log downloads**
+  - The agent guide now explains how to download production logs for a specific conversation ID.
+- **Marked Billing route for BYOK handling**
+  - The Settings Billing route now shows the BYOK-only marker.
+- **Aligned route gating with shared BYOK constants**
+  - The AI Provider Keys and Billing routes now use the shared BYOK constant for gating.
+- **Streamlined pre-push checks**
+  - Pre-push hooks now run only the Go and JavaScript lint pipelines for the languages affected by a push.
+- **Explained release merge fallback**
+  - Release documentation now finds merged pull requests even when only the merge commit SHA is recorded.
+- **Linked merge commit SHAs to change records**
+  - Merge commit SHAs now point to the matching change record, which improves merge resolution.
+- **Enabled stateless MCP handling**
+  - Multiple MCP instances can now serve requests without session-not-found errors from another instance.
+- **Switched get-logs to CloudWatch Logs Insights**
+  - The get-logs tool now retrieves conversation logs through CloudWatch Logs Insights instead of FilterLogEvents.
+- **Refreshed the repository package manager version**
+  - The repository now uses pnpm 10.34.5.
+- **Replayed the seed state**
+  - The repository now matches the replayed dependency and tracking event state, including remote IP CIDR support.
+- **Adjusted the js-yaml dependency**
+  - The `js/apps/evals` workspace now uses the updated `js-yaml` version from the lockfile.
+- **Cancelled Stripe subscriptions on organization deletion**
+  - Deleting an organization now cancels its Stripe subscription and soft-deletes the subscription row.
+
+### ⚠️ Breaking Changes
+
+- **Blocked BYOK conversations without current billing**
+  - Conversation creation and comment work requests now fail with a billing-required error when BYOK is enabled but the subscription is not current.
+- **Shifted BYOK access to `org.customerType`**
+  - BYOK access to OSS flows and inference key routing now depend on `org.customerType` instead of the feature flag.
+
+### 🐛 Bug Fixes
+
+- **Resolved release merge lookups for squash and rebase merges**
+  - Release documentation scheduling now finds merged pull requests even when only the merge commit SHA is recorded.
+- **Relinked merge commit SHAs to change records**
+  - Merge commit SHAs now point to the correct change record, which improves merge summary and release resolution.
+- **Recovered duplicate-input sessions**
+  - Sessions that hit a duplicate item error can now recover once and continue.
+
 ## 2026-07-17
 
 ### 🚀 New Features
