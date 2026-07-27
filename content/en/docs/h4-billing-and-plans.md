@@ -4,24 +4,22 @@ url: "docs/billing-and-plans"
 description: "Plans, billing, and what each plan includes."
 ---
 
-Open **Settings → Billing** to see the available plans and what each one includes. You will see three plan cards for the current billing options. The page is available to admins on the Bring Your Own Key and Open Source plans; Enterprise billing is handled with your account team.
+The Billing page under **Settings → Billing** shows the available plans, the checkout flow for starting Bring Your Own Key, the billing portal for updating subscription details, and whether billing stays current. Admins on the Bring Your Own Key and Open Source plans can access it; Enterprise billing still runs through the account team.
 
 ![The Billing page with the three plan cards](/screenshots/billing-and-plans/tier-cards.png)
 
 ## Open Source Plan
 
-Our Open Source Plan is free for public open-source projects and runs on your own OpenAI key for inference. See [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
-
-The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
+The Open Source Plan is free for public open-source projects and uses the organization's own AI provider key to power AI features. Markdown files edited on the Open Source Plan include a Doc Holiday attribution footer, and the footer stays in place without duplicating on later edits. See [Add your AI provider key](./b6-add-your-openai-key.md) for setup and [AI provider keys](./h3-ai-provider-keys.md) for key management.
 
 ## Bring Your Own Key
 
-Bring Your Own Key costs $100/month. It is a self-serve subscription with a free trial, and you manage billing in the billing portal.
+Bring Your Own Key costs $100 per month. It includes a free trial, and admins start the checkout flow from **Settings → Billing**.
 
-If the subscription lapses, your work pauses until billing is current. The banner reads: "Your BYOK subscription is no longer active. You can still view Doc Holiday, but new requests are disabled until you resubscribe."
+The billing portal handles later changes such as payment updates, invoices, and subscription changes. When billing falls behind or the subscription ends, Doc Holiday keeps the workspace visible but pauses new requests until billing returns to current status.
 
-Use [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for OpenAI key setup and management.
+Bring Your Own Key organizations complete a billing step during onboarding before they can start new work. After that step, admins add provider keys in [AI provider keys](./h3-ai-provider-keys.md).
 
 ## Enterprise
 
-Please book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo — inference is managed for you.
+Enterprise customers book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo. Enterprise inference remains managed for the organization.

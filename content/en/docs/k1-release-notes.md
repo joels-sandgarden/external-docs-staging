@@ -4,6 +4,54 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-27
+
+### 🚀 New Features
+
+- **Appended a Doc Holiday attribution footer to OSS markdown edits**
+  - OSS markdown edits now include a Doc Holiday attribution footer.
+- **Added Groq as a supported AI provider**
+  - Groq now appears as a supported AI provider with key validation and request routing.
+- **Added Cerebras as a supported AI provider**
+  - Cerebras now appears as a supported AI provider with key validation and request routing.
+
+- **Added a billing page**
+  - BYOK organizations now manage plans and subscriptions from a dedicated billing page.
+- **Enabled Stripe checkout and portal flows**
+  - BYOK organizations can now complete checkout and open the customer portal from the app.
+- **Displayed billing status and plan details**
+  - The app now shows current billing status and plan details for BYOK organizations.
+- **Included a billing step in onboarding**
+  - BYOK onboarding now includes billing setup before the next step.
+- **Prevented BYOK work when billing is not current**
+  - The app now blocks BYOK work when a subscription is not current.
+- **Managed organization AI provider keys**
+  - Organizations can now register, test, activate, list, and delete AI provider keys.
+- **Improved provider key validation with live inference**
+  - Key checks now use live inference and surface provider error details.
+- **Expanded onboarding with AI provider key setup**
+  - BYOK onboarding now includes AI provider key setup.
+- **Exposed billing and provider key settings pages**
+  - The settings area now links to billing and AI provider key management pages.
+- **Listed extracted features through MCP**
+  - MCP clients can now list identified features.
+- **Fetched feature details through MCP**
+  - MCP clients can now fetch feature details.
+
+- **Added a free trial for Bring Your Own Key billing**
+  - Bring Your Own Key plans now include a free trial.
+- **Introduced Open Source Plan applications and billing access**
+  - Organizations can now apply for the Open Source Plan and access billing in the app.
+- **Enabled a public `/mcp` endpoint**
+  - External MCP clients can now connect to Doc Holiday with API key authentication and stateless streamable HTTP.
+
+### ✨ Enhancements
+
+- **Expanded provider key support across more AI services**
+  - Provider key management now works across more services.
+- **Updated organization deletion and billing behavior**
+  - Deleting an organization now cancels its subscription and keeps trial eligibility available when appropriate.
+
 ## 2026-07-17
 
 ### 🚀 New Features
