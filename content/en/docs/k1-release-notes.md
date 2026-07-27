@@ -4,6 +4,65 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-27
+
+### 🚀 New Features
+
+- **Select from multiple AI providers**
+  - Settings now lets organizations choose a provider for each saved key.
+
+- **Add provider keys in Settings**
+  - Organizations can add new provider keys from Settings.
+
+- **List saved provider keys**
+  - Settings now lists saved keys for each provider.
+
+- **Set an active provider key**
+  - Organizations can mark one saved key as the active provider key.
+
+- **Delete provider keys in Settings**
+  - Organizations can remove provider keys they no longer use.
+
+- **Added OSS attribution watermarking for markdown files**
+  - OSS organizations now receive an attribution footer on eligible markdown files edited during a director step, and files that already include the watermark stay unchanged.
+
+- **Expanded AI provider support**
+  - Organizations can now configure additional AI providers for saved keys in Settings.
+
+### ✨ Enhancements
+
+- **Show provider-specific hints and icons**
+  - The provider key flow now displays hints and icons for each provider.
+
+- **Validate BYOK keys for inference**
+  - Doc Holiday now confirms that a BYOK key can run inference before it accepts the key.
+
+- **Clarify BYOK provider errors**
+  - Doc Holiday now shows clearer errors when BYOK validation or inference fails.
+
+- **Support free-trial BYOK onboarding**
+  - BYOK onboarding now includes free-trial flows.
+
+- **Require billing to stay current for BYOK**
+  - BYOK organizations now need current billing to keep using BYOK workflows.
+
+- **Support OSS tier applications**
+  - Billing and onboarding now include OSS tier application requests.
+
+- **Update BYOK billing pages**
+  - Billing pages now give BYOK organizations the setup details they need.
+
+### 🐛 Bug Fixes
+
+- **Restore direct navigation to public routes**
+  - Login, signup, and organization selection now resolve correctly when opened directly.
+
+- **Show the correct publication share error title**
+  - The publication share error dialog now shows the correct title.
+
+- **Restore the instruction form submit button**
+  - The instruction form submit button now submits the form again.
+
 ## 2026-07-17
 
 ### 🚀 New Features

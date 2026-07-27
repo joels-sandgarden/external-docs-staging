@@ -31,4 +31,5 @@ The tools fall into two groups: **request** tools that submit new work, and **re
 
 - [Install the Doc Holiday plugin](./g5-install-plugin.md) — how these tools get registered.
 - [Plan and generate docs with skills](./g6-plan-generate-with-skills.md) — the skills that produce the prompts these tools submit.
+- [Public MCP server](./j13-mcp-server.md) — direct HTTP access and authentication details.
 - [Work History API](./j4-api-work-history.md) — the same operations over plain REST.

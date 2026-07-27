@@ -1,10 +1,10 @@
 ---
 title: AI Provider Keys
 url: "docs/ai-provider-keys"
-description: "Add, test, and rotate the keys Doc Holiday uses; active-key behavior."
+description: "Add, test, and manage the AI provider keys Doc Holiday uses."
 ---
 
-Use this page to manage the OpenAI keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. OpenAI is the only supported provider on this page. The page applies to organizations on the Bring Your Own Key and Open Source plans. Doc Holiday manages enterprise inference; see [Billing and plans](./h4-billing-and-plans.md).
+Use this page to manage the AI provider keys for an organization. The app page title is **AI Provider Keys**. Doc Holiday supports OpenAI, Anthropic, and Gemini on this page. The page applies to organizations on the Bring Your Own Key and Open Source plans. Enterprise uses a separate billing setup; see [Billing and plans](./h4-billing-and-plans.md).
 
 ![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
 
@@ -13,17 +13,17 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 ## Add a key
 
 1. Select **Add AI Provider Key**.
-2. In the dialog, enter **Name**, choose **Provider** as **OpenAI**, and paste the **API Key**.
+2. In the dialog, choose a provider from the list, then enter **Name** and the **API Key**. The dialog shows provider specific icons, hints, and placeholder text for each provider.
 3. Select **Add Key**. Use **Cancel** to close the dialog without saving.
-   Doc Holiday sends a real OpenAI verification call before it saves the key, and it rejects keys that cannot run inference.
+   Doc Holiday checks the key with the selected provider before it saves the key.
 
 ## Manage active and failover keys
 
-The active key card shows the **Active** badge. Every key card menu includes **Test** and **Delete**. Inactive key card menus also include **Set Active**.
+Each provider has its own active key. The active key card shows the **Active** badge. Every key card menu includes **Test** and **Delete**. Inactive key card menus also include **Set Active**.
 
-1. The first OpenAI key becomes active automatically.
-2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key to failover.
-3. If your provider rejects the active key, Doc Holiday fails over to another stored key within the same request. If every key fails, the work errors.
+1. The first saved key for a provider becomes active automatically.
+2. Open a key card and select **Set Active** to move the active badge to that key for the same provider.
+3. If the active key fails, Doc Holiday uses another saved key for that provider. If every key fails, the work errors.
 
 Doc Holiday only ever uses keys your organization has added — there is no fallback to any other key.
 
@@ -40,9 +40,9 @@ Key changes apply immediately, even to work already in flight.
 1. Open the overflow menu on any key card and select **Test** when needed.
 2. Check the result. Doc Holiday shows **Key is valid** when the key works and **Key test failed** when it does not.
 3. Open the overflow menu again and select **Delete** to remove a key.
-4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday deletes the stored key and scrubs the secret.
+4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday removes the stored key.
 
 ## Next
 
-- Start setup in [Add your OpenAI key](./b6-add-your-openai-key.md).
-- Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise inference.
+- Start setup in [Add Your AI Provider Key](./b6-add-your-openai-key.md).
+- Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise provider access.
