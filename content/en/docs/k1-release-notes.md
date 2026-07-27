@@ -14,6 +14,11 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Keep BYOK billing current**
   - BYOK organizations now see billing related onboarding screens and steps, and they must keep billing current to continue some work.
 
+### ✨ Enhancements
+
+- **Validate BYOK keys for inference**
+  - Doc Holiday now confirms that a BYOK provider key can run inference before it accepts the key.
+
 ## 2026-07-17
 
 ### 🚀 New Features
