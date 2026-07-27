@@ -10,7 +10,6 @@ Use this page when onboarding or Settings asks for an AI provider key. Select th
 
 Use this page for the Bring Your Own Key and Open Source plans. Enterprise does not use this setup page; see [Billing and plans](./h4-billing-and-plans.md) for plan details.
 
-Only OpenAI keys are accepted.
 
 ## Add the key
 
