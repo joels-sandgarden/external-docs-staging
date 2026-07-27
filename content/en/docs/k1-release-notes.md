@@ -8,8 +8,8 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
-- **Appended Doc Holiday attribution footers to OSS markdown edits**
-  - OSS plan organizations now add a Doc Holiday attribution footer to edited markdown files.
+- **Appended a Doc Holiday attribution footer to OSS markdown edits**
+  - OSS markdown edits now include a Doc Holiday attribution footer.
 - **Added Groq as a supported AI provider**
   - Groq now appears as a supported AI provider with key validation and request routing.
 - **Added Cerebras as a supported AI provider**
