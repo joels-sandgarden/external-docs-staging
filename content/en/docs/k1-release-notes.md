@@ -72,7 +72,7 @@ description: "User-visible changes to Doc Holiday, newest first."
   - Eligible BYOK organizations now get a free trial and see trial timing in the billing UI.
 - **Opened a public Doc Holiday MCP server**
   - Clients can connect to the new `/mcp` endpoint with a Doc Holiday API key.
-- **Directed provider-agnostic BYOK routing**
+- **Expanded provider-agnostic BYOK routing**
   - BYOK and OSS customers can now attach keys for non-OpenAI providers that match the session target provider.
 - **Improved AI provider selection in the dashboard**
   - The AI provider key screen now lets users choose from multiple providers and see the selected value.
