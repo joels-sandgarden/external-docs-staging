@@ -16,7 +16,7 @@ Use this page for the Bring Your Own Key and Open Source plans. Enterprise does 
 1. Get a key from a supported provider that can run real inference. A key that can only list models fails verification.
 2. Add the key in the place that fits the flow.
    - **Onboarding:** On the **"Add your AI provider key"** step, select the provider and enter the key.
-   - **Settings:** Admins on BYOK and OSS can open **"AI Provider Keys"**, select **"Add AI Provider Key"**, and fill in **"Name"**, **"Provider"**, and **"API Key"**. The **"Provider"** field lists the supported providers.
+   - **Settings:** Admins on Bring Your Own Key and Open Source can open **"AI Provider Keys"**, select **"Add AI Provider Key"**, and fill in **"Name"**, **"Provider"**, and **"API Key"**. The **"Provider"** field lists the supported providers.
 3. Doc Holiday verifies the key with a live provider request before it saves anything. If Doc Holiday returns "the provider rejected this API key", get a new key. If Doc Holiday returns "could not verify the API key, try again", the check could not complete, so try again.
 4. Confirm the key saved successfully. The first saved key for that provider becomes **Active** automatically.
 
