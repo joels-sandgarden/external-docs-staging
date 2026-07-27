@@ -50,18 +50,18 @@ description: "User-visible changes to Doc Holiday, newest first."
   - It explains Documentation, Release Notes, and Changelog output types along with their instructions.
 
 - **Clarify publishing system selection**
-  - It explains which publishing systems doc.holiday supports and when to switch to a fallback.
+  - It explains which publishing systems doc.holiday supports and how to switch to a fallback.
 - **Streamline publication management**
-  - It covers editing, sharing, checking health, and deleting Publications from the management screen.
+  - Publication owners can edit, share, check health, and delete Publications from the management screen.
 - **Explain Library instruction precedence**
   - It shows how the Library works, how instruction slots are selected, and which instruction applies when more than one rule matches.
 - **Add request and review workflows**
-  - It shows how to request work in the app and how to review and revise Work History entries.
+  - Teams can request work in the app and review and revise Work History entries.
 - **Expand delivery and notification guides**
   - It adds guidance for GitHub Action, GitLab CI/CD, coding agents, and Slack notifications so teams can route documentation work through their existing tools.
 - **Broaden administration and billing guidance**
-  - It adds user management, audit log, AI provider keys, and billing and plans guidance for account owners.
-- **Support API and prompting references**
+  - Account owners can manage user access, audit logs, AI provider keys, and billing and plans from one place.
+- **Document API and prompting references**
   - It documents the instruction library API, audit log API, trigger and event types, and prompting guidance for advanced workflows.
 
 ### ✨ Enhancements
