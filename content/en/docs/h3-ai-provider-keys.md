@@ -4,7 +4,7 @@ url: "docs/ai-provider-keys"
 description: "Add, test, and rotate the keys Doc Holiday uses; active-key behavior."
 ---
 
-Use this page to manage the OpenAI keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. OpenAI is the only supported provider on this page. The page applies to organizations on the Bring Your Own Key and Open Source plans. Bring Your Own Key organizations finish billing during onboarding, then add provider keys here before they start new work. Enterprise inference remains managed elsewhere; see [Billing and plans](./h4-billing-and-plans.md).
+The page helps admins manage the OpenAI keys that power an organization’s writing runs. The page title is **AI Provider Keys**. OpenAI is the only supported provider on this page. The page applies to organizations on the Bring Your Own Key and Open Source plans. Bring Your Own Key organizations finish billing during onboarding, then add provider keys here before they start new work. Enterprise inference remains managed elsewhere; see [Billing and plans](./h4-billing-and-plans.md).
 
 ![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
 
@@ -12,9 +12,9 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 
 ## Add a key
 
-1. Select **Add AI Provider Key**.
-2. In the dialog, enter **Name**, choose **Provider** as **OpenAI**, and paste the **API Key**.
-3. Select **Add Key**. Use **Cancel** to close the dialog without saving.
+1. Admins select **Add AI Provider Key**.
+2. In the dialog, admins enter **Name**, choose **Provider** as **OpenAI**, and paste the **API Key**.
+3. Admins select **Add Key**. **Cancel** closes the dialog without saving.
    Doc Holiday sends a real OpenAI inference call before it saves the key. If OpenAI returns an error, the page shows that provider error and keeps the key out of service.
 
 ## Manage active and failover keys
@@ -22,27 +22,27 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 The active key card shows the **Active** badge. Every key card menu includes **Test** and **Delete**. Inactive key card menus also include **Set Active**.
 
 1. The first valid OpenAI key becomes active automatically.
-2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday keeps the previous active key as failover.
+2. Admins open a key card and select **Set Active** to move the active badge to that key. Doc Holiday keeps the previous active key as failover.
 3. If the active key stops working, Doc Holiday tries another stored key during the request. If every key fails, the work errors and the page shows the provider problem.
 
 Doc Holiday only uses keys that the organization has added — there is no fallback to any other key.
 
 ## Rotate a key
 
-1. Add the new key.
-2. Select **Set Active** on it.
-3. Delete the old key.
+1. Admins add the new key.
+2. Admins select **Set Active** on it.
+3. Admins delete the old key.
 
 Key changes apply immediately, including to work that starts after the change.
 
 ## Test and delete a key
 
-1. Open the overflow menu on any key card and select **Test** when needed.
-2. Check the result. Doc Holiday shows **Key is valid** when the key works and **Key test failed** when it does not. If OpenAI returns an error, the message appears in the page results.
-3. Open the overflow menu again and select **Delete** to remove a key.
-4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday removes the stored key from the organization.
+1. Admins open the overflow menu on any key card and select **Test** when needed.
+2. The result shows **Key is valid** when the key works and **Key test failed** when it does not. If OpenAI returns an error, the message appears in the page results.
+3. Admins open the overflow menu again and select **Delete** to remove a key.
+4. Admins confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday removes the stored key from the organization.
 
 ## Next
 
-- Start setup in [Add your OpenAI key](./b6-add-your-openai-key.md).
-- Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise billing.
+- Setup begins in [Add your OpenAI key](./b6-add-your-openai-key.md).
+- The [Billing and plans](./h4-billing-and-plans.md) page covers plan coverage and Enterprise billing.
