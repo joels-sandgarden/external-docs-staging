@@ -32,15 +32,6 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Extended Cerebras provider support**
   - Organizations can now configure Cerebras for default traffic and BYOK routing, and Cerebras requests now avoid unsupported fields so provider-specific workflows stay compatible.
 
-- **Updated writer support for Bedrock GPT-5.6**
-  - The Bedrock GPT-5.6 flag now makes the writer use the GPT-5.6 Terra prompt and model settings with client-side compaction tuned to that model.
-
-- **Refined Explorer support for Bedrock GPT-5.6**
-  - The Bedrock GPT-5.6 flag now makes the Explorer use the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
-
-- **Improved Director support for Bedrock GPT-5.6**
-  - The Bedrock GPT-5.6 flag now makes the Director use the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
-
 ### ✨ Enhancements
 
 - **Show provider-specific hints and icons**
@@ -63,18 +54,6 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 - **Update BYOK billing pages**
   - Billing pages now give BYOK organizations the setup details they need.
-
-- **Enhanced feature-flag scoping for dashboard routes**
-  - Dashboard pages still receive feature-flag context, while other routes now stay on the default app setup.
-
-- **Cleaner model and prompt pairing across agents**
-  - The annotator, director, explorer, merge summarizer, and writer now keep each model paired with its matching prompt, which prevents mismatched configurations.
-
-- **More efficient Bedrock GPT-5.6 reasoning effort**
-  - The director, Explorer, and writer now use Medium reasoning effort on the Bedrock GPT-5.6 path, which reduces overhead for that model.
-
-- **Refreshed bundled Go dependencies**
-  - Builds now use the refreshed Go dependency set and regenerated vendored code.
 
 ### 🐛 Bug Fixes
 
