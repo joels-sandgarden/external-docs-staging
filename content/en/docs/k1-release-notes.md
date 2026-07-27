@@ -26,11 +26,8 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Added OSS attribution watermarking for markdown files**
   - OSS organizations now receive an attribution footer on eligible markdown files edited during a director step, and files that already include the watermark stay unchanged.
 
-- **Expanded Groq provider support**
-  - Organizations can now configure Groq for default traffic and BYOK routing, and Groq requests now avoid unsupported fields so multi-turn runs fail less often.
-
-- **Extended Cerebras provider support**
-  - Organizations can now configure Cerebras for default traffic and BYOK routing, and Cerebras requests now avoid unsupported fields so provider-specific workflows stay compatible.
+- **Expanded AI provider support**
+  - Organizations can now configure additional AI providers for saved keys in Settings.
 
 ### ✨ Enhancements
 
