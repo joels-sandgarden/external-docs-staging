@@ -89,6 +89,9 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Clarify the instruction slots reference**
   - It now lists the slot values, shows which instruction appears in the app, and explains how shared style and formatting guidance applies across Documentation, Release Notes, and Changelog.
 
+- **Simplify the Notion setup guide**
+  - It now matches the current setup flow by showing Add Source, Notion, Integration Key, and Save Changes in order.
+
 ## 2026-07-17
 
 ### 🚀 New Features
