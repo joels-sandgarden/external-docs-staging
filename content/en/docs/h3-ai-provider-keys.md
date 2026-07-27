@@ -6,9 +6,7 @@ description: "Add, test, and rotate the keys Doc Holiday uses; active-key behavi
 
 Use this page to manage the OpenAI keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. OpenAI is the only supported provider on this page. The page applies to organizations on the Bring Your Own Key and Open Source plans. Doc Holiday manages enterprise inference; see [Billing and plans](./h4-billing-and-plans.md).
 
-```
-SCREENSHOT PLACEHOLDER: add-your-openai-key/keys-page.png
-```
+![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
 
 If no keys exist, the page shows **No AI Provider Keys yet**.
 

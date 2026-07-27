@@ -20,7 +20,7 @@ Doc Holiday closes that gap continuously. It writes and maintains documentation 
 - **It keeps the docs current, release after release.** The first draft is the easy part. The value is the ongoing loop: something ships, the affected pages get reconciled, the release notes get written.
 - **It fits the tools you already use.** GitHub, GitLab, and Bitbucket; docs sites in ordinary git repos; CI pipelines; Slack; and the context systems around your code — Notion, Confluence, Jira, Linear, Google Drive.
 
-And one more thing: **this site is the proof.** The documentation you're reading is written and maintained by Doc Holiday itself — see [How this site is made](./a4-how-this-site-is-made.md).
+And one more thing: **this site is the proof.** The documentation you're reading is written and maintained by Doc Holiday itself.
 
 ## Where to go next
 

@@ -21,9 +21,7 @@ When a Work History entry reaches Ready for Review, open its sheet and review ea
 
 The **Files** tab shows each file row, its diff count, and its status. Open a file to review the diff, then use the icon-only buttons whose tooltips read "Discard file" and "Restore file" to remove it from the final request or add it back.
 
-```text
-SCREENSHOT PLACEHOLDER: review-and-revise/files-tab-diff.png
-```
+![The work item's Files tab showing a file diff with a Doc Holiday comment](/screenshots/review-and-revise/files-tab-diff.png)
 
 Inside the diff, review the lines in order. In the diff gutter, use "Comment on this line, or drag to select multiple" to anchor a comment; "Extend comment to this line" grows the selection. Use `Add Comment` to leave feedback, `Send to Doc` to send the comment for another revision pass, or `Add to Batch` to collect several comments first. Use `Add a file-level comment` when the note applies to the whole file. Expand hidden context with `Expand unchanged lines`, and close open sections with `Collapse all expanded sections`.
 
@@ -40,10 +38,6 @@ Use the icon-only buttons whose tooltips read "Discard file" and "Restore file" 
 ## Approving and opening the PR/MR
 
 When the draft looks right, use **Open Pull Request** on GitHub or **Open Merge Request** on GitLab. The confirmation dialog shows how many files will be committed and how many will be permanently discarded.
-
-```text
-SCREENSHOT PLACEHOLDER: quickstart/open-pr-dialog.png
-```
 
 After approval, the opened request is a normal pull request or merge request in the docs repo, and the standard merge flow applies. If Slack notifications are configured, Doc Holiday posts the Slack notification after merge. See [Slack notifications](./g4-slack-notifications.md).
 

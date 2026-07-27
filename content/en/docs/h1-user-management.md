@@ -27,9 +27,7 @@ The role dropdowns offer two choices:
 
 On **Settings** → **Users**, you see the table columns **Name**, **Email**, **Role**, and **Publication Access**. Open a user sheet to select **Edit Role** and then **Save**. To remove someone from the organization, select **Remove user** and confirm **Remove user?**.
 
-```
-SCREENSHOT PLACEHOLDER: user-management/users-invite.png
-```
+![The Settings Invitations screen with the Invite User action](/screenshots/user-management/users-invite.png)
 
 ## Publication access
 

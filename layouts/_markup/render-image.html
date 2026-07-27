@@ -1,0 +1,10 @@
+{{- /*
+  Image render hook: site-rooted destinations (e.g. /screenshots/...) get the
+  baseURL subpath prepended via relURL, so images resolve both on localhost and
+  under the /external-docs-staging/ project subpath on GitHub Pages.
+*/ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $src := .Destination -}}
+{{- /* relURL leaves leading-slash paths untouched, so trim it first */ -}}
+{{- if not $u.IsAbs -}}{{- $src = relURL (strings.TrimPrefix "/" $src) -}}{{- end -}}
+<img src="{{ $src | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">

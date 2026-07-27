@@ -7,9 +7,7 @@ This guide explains how to configure automatic trigger behavior for an existing 
 
 Each Source in a Publication has its own trigger settings on the Publication form. Open the Publication, go to **Inputs**, and use **React to** to add triggers for a selected Source. The **Add Triggering Event** control only shows Sources that appear in **Inputs** and can emit at least one trigger event.
 
-```
-SCREENSHOT PLACEHOLDER: configure-triggers/trigger-config.png
-```
+![A Publication's React to section with triggering events enabled for a GitHub Source](/screenshots/configure-triggers/trigger-config.png)
 
 ## Trigger events by Source type
 

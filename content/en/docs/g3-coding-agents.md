@@ -1,71 +1,24 @@
 ---
 title: Coding Agents
 url: "docs/coding-agents"
-description: "Let coding agents request documentation work."
+description: "Two ways a coding agent works with Doc Holiday: the plugin, or the API."
 ---
 
-Doc Holiday keeps documentation aligned with shipped behavior when code changes. This guide covers the REST request a coding agent sends directly when code changes need a matching documentation update.
+Doc Holiday keeps your documentation aligned with your code as it ships. Coding agents — the assistants and CLIs your team already runs — can request that work directly, so a documentation update is filed the moment the code that needs it lands.
 
-Any coding agent with tool or script access can use this REST API.
+There are two ways an agent works with Doc Holiday. Pick based on how much you want the agent to do.
 
-## Request the work
+## Install the plugin
 
-1. Send a `POST /api/v1/conversations/` request with a Doc Holiday API key in `Authorization: Bearer <token>`.
-2. Set `stage: true` by default.
-3. Include `body`, `publication`, and `stage`.
+Install the **Doc Holiday plugin** and your agent gains Doc Holiday's documentation **skills** plus a set of **MCP tools** for driving the service — planning a site, generating pages, and tracking work — without writing any HTTP calls yourself. This is the path for an agent that actively helps you plan and produce docs.
 
-### curl
+- [Install the Doc Holiday plugin](./g5-install-plugin.md) — set it up in Claude Code, Codex, OpenCode, or Cursor.
+- [Plan and generate docs with skills](./g6-plan-generate-with-skills.md) — take a codebase to a planned, generated docs site.
 
-```bash
-curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
-  -H 'Authorization: Bearer <token>' \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "body": "Update the authentication guide for the new token flow.",
-    "publication": "docs-site",
-    "stage": true
-  }'
-```
+## Call the API directly
 
-### JSON payload
+Any agent with shell or HTTP access can file a request without the plugin, by calling the Doc Holiday REST API. This is the path for a lightweight, scripted "when code changes, ask for a docs update" step in an agent's standing instructions.
 
-```json
-{
-  "body": "Update the authentication guide for the new token flow.",
-  "publication": "docs-site",
-  "stage": true
-}
-```
+- [Request docs via the API](./g7-request-docs-api.md) — the one REST call, plus a drop-in rule for your agent.
 
-## Agent rules snippet
-
-Drop a block like this into your agent's standing instructions (`CLAUDE.md`, agent rules, or the equivalent):
-
-```text
-When you change user-visible behavior in this repo (API shape, CLI flags,
-configuration, workflows), file a documentation request with Doc Holiday
-after the change merges:
-
-  curl -X POST 'https://api.doc.holiday/api/v1/conversations/' \
-    -H "Authorization: Bearer $DOC_HOLIDAY_API_KEY" \
-    -H 'Content-Type: application/json' \
-    -d '{"body": "<what changed and which page to update, with a PR link>", "publication": "<publication name>", "stage": true}'
-
-Rules:
-- One request per distinct documentation change; batch nothing.
-- Name the outcome and the page: "Update /docs/auth.md for the new token flow (PR #123)".
-- Keep "stage": true — a human reviews the draft before anything reaches the docs repo.
-- File once per change; duplicate requests create duplicate work items.
-```
-
-## Review by default
-
-Setting `stage: true` keeps the request in Work History, staged for human review, before anything is opened against your repository.
-
-## Reference
-
-For the complete Work History API resource, see [Work History API reference](./j4-api-work-history.md).
-
-## Coming soon
-
-A first-party MCP endpoint is coming soon.
+Both paths file the same kind of work request, staged for human review before anything reaches your repository.

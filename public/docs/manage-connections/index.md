@@ -3,9 +3,7 @@
 
 Keep your Sources healthy, fix a broken Source, edit details, or remove a Source or provider when it no longer belongs in Doc Holiday. Use this guide after setup when you need to check health, restore access, edit details, or remove a Source or provider.
 
-```
-SCREENSHOT PLACEHOLDER: manage-connections/health-list.png
-```
+![The Sources list with a health badge on each connection](/screenshots/manage-connections/health-list.png)
 
 ## Check health
 

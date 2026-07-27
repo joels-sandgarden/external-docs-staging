@@ -1,0 +1,4 @@
+# Project-level i18n overrides for the E25DX theme (the theme is a submodule;
+# override strings here instead of editing it).
+builtByAndCopyright:
+  other: Built with

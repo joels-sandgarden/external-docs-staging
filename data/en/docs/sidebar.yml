@@ -8,7 +8,6 @@
     - title: What Is Doc Holiday
     - title: How Doc Holiday Works
     - title: Concepts
-    - title: How This Site Is Made
 
 - title: Getting started
   pages:
@@ -62,8 +61,14 @@
   pages:
     - title: GitHub Action
     - title: GitLab Pipelines
-    - title: Coding Agents
     - title: Slack Notifications
+
+- title: Coding agents & MCP
+  pages:
+    - title: Coding Agents
+    - title: Install the Doc Holiday Plugin
+    - title: Plan and Generate Docs with Skills
+    - title: Request Docs via the API
 
 - title: Administration
   pages:
@@ -85,6 +90,7 @@
     - title: Connection Types
     - title: Trigger and Event Types
     - title: Work History States
+    - title: MCP Tools
     - title: Glossary
 
 - title: Meta
