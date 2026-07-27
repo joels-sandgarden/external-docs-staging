@@ -40,7 +40,7 @@ Key changes apply immediately, even to work already in flight.
 1. Open the overflow menu on any key card and select **Test** when needed.
 2. Check the result. Doc Holiday shows **Key is valid** when the key works and **Key test failed** when it does not.
 3. Open the overflow menu again and select **Delete** to remove a key.
-4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday deletes the stored key and scrubs the secret.
+4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday removes the stored key.
 
 ## Next
 
