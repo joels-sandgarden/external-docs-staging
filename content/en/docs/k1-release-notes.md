@@ -11,19 +11,19 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Clarify the Concepts reference**
   - The page now explains Organization, Publication, Sources, the Library, and Work History in clearer customer-facing language.
 - **Expand the Sources explanation**
-  - The page now explains provider and child Source relationships, health behavior, External Documentation, and key terms more clearly.
+  - It now explains provider and child Source relationships, health behavior, External Documentation, and key terms more clearly.
 - **Refine the Publications guide**
-  - The page now defines Inputs and Targets, explains output types, and describes how health status affects the workflow.
+  - It defines Inputs and Targets, explains output types, and shows how health status affects the workflow.
 - **Describe the Work History page**
-  - The page now covers lifecycle stages, multiple passes, entry views, and filtering in one place.
+  - It covers lifecycle stages, multiple passes, entry views, and filtering in one place.
 - **Document supported connection types**
-  - The reference now lists supported Source types, parent requirements, trigger identifiers, and hierarchy notes.
+  - It lists supported Source types, parent requirements, trigger identifiers, and hierarchy notes.
 - **Install the GitHub setup guide**
-  - The guide now walks through GitHub App installation, repository Sources, token fallback, health checks, and troubleshooting.
+  - It walks through GitHub App installation, repository Sources, token fallback, health checks, and troubleshooting.
 - **Configure the GitLab setup guide**
-  - The guide now covers token setup, project Sources, multi-project tokens, and health verification.
+  - It covers token setup, project Sources, multi-project tokens, and health verification.
 - **Set up the Bitbucket guide**
-  - The guide now explains trigger behavior, workspace token options, repository and project setup, and verification.
+  - It explains trigger behavior, workspace token options, repository and project setup, and verification.
 
 - **Launch the first Publication onboarding guide**
   - The guide now walks through prerequisites, output selection, health checks, Run Test, and the next steps after setup.
