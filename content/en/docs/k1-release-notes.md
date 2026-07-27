@@ -23,6 +23,24 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Delete provider keys in Settings**
   - Organizations can remove provider keys they no longer use.
 
+- **Added OSS attribution watermarking for markdown files**
+  - OSS organizations now receive an attribution footer on eligible markdown files edited during a director step, and files that already include the watermark stay unchanged.
+
+- **Added Groq provider support**
+  - Organizations can now configure Groq for default traffic and BYOK routing, giving Groq-backed orgs a path for flows that previously depended on OpenAI.
+
+- **Added Cerebras provider support**
+  - Organizations can now configure Cerebras for default traffic and BYOK routing, and Cerebras keys now map to the supported model profile automatically.
+
+- **Added Bedrock GPT-5.6 support to the writer**
+  - When the Bedrock GPT-5.6 flag is enabled, the writer now uses the GPT-5.6 prompt and model settings with client-side compaction tuned to that model.
+
+- **Added Bedrock GPT-5.6 support to the Explorer**
+  - When the Bedrock GPT-5.6 flag is enabled, the Explorer now uses the GPT-5.6 prompt and model settings with Bedrock-specific compaction.
+
+- **Added Bedrock GPT-5.6 support to the Director**
+  - When the Bedrock GPT-5.6 flag is enabled, the Director now uses the GPT-5.6 prompt and model settings with Bedrock-specific compaction.
+
 ### ✨ Enhancements
 
 - **Show provider-specific hints and icons**
