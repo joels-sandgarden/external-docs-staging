@@ -113,7 +113,7 @@ description: "User-visible changes to Doc Holiday, newest first."
   - The agent guide now explains how to run the full end-to-end test suite on GitHub.
 - **Reduced retry error logging**
   - Retried inference timeouts now log at a lower severity, which cuts down noisy error entries.
-- **Documented production log downloads**
+- **Clarified production log downloads**
   - The agent guide now explains how to download production logs for a specific conversation ID.
 - **Marked Billing route for BYOK handling**
   - The Settings Billing route now shows the BYOK-only marker.
