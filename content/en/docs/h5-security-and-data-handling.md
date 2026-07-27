@@ -14,10 +14,10 @@ We do not retain any code in our systems. We read your code only while writing d
 
 ## Where inference runs
 
-- On the **Bring Your Own Key** and **Open Source** plans, all writing runs on your own OpenAI key — requests go to OpenAI under your account. If your key is missing or rejected, work stops; Doc Holiday never falls back to anyone else's key.
+- On the **Bring Your Own Key** and **Open Source** plans, all writing runs on the customer's connected AI provider key. If the key is missing or rejected, work stops; Doc Holiday never falls back to anyone else's key.
 - On the **Enterprise** plan, inference runs on model providers managed by the Doc Holiday team.
 
-See [Billing and plans](./h4-billing-and-plans.md) for the plans themselves.
+See [Billing and plans](./h4-billing-and-plans.md) for the plans themselves, and [AI provider keys](./h3-ai-provider-keys.md) for setup.
 
 ## What Doc Holiday never does
 
