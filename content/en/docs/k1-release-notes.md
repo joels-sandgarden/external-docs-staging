@@ -20,6 +20,16 @@ description: "User-visible changes to Doc Holiday, newest first."
   - The app now blocks BYOK work when a subscription is not current.
 - **Managed organization AI provider keys**
   - Organizations can now register, test, activate, list, and delete AI provider keys.
+- **Improved provider key validation with live inference**
+  - Key checks now use live inference and surface provider error details.
+- **Expanded onboarding with AI provider key setup**
+  - BYOK onboarding now includes AI provider key setup.
+- **Exposed billing and provider key settings pages**
+  - The settings area now links to billing and AI provider key management pages.
+- **Listed extracted features through MCP**
+  - MCP clients can now list identified features.
+- **Fetched feature details through MCP**
+  - MCP clients can now fetch feature details.
 
 ## 2026-07-17
 
