@@ -83,13 +83,13 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Tighten connection setup and cleanup**
   - It sharpens the guidance for Linear, Google Drive, cloud storage, source deletion, and GitLab connection steps so the documented flow matches the app.
 
-- **Expand the Library guide**
+- **Expanded the Library guide**
   - It now explains what the Library is, how attached instructions shape Publication output, how the list view works, and where to find related guidance.
 
-- **Clarify the instruction slots reference**
+- **Clarified the instruction slots reference**
   - It now lists the slot values, shows which instruction appears in the app, and explains how shared style and formatting guidance applies across Documentation, Release Notes, and Changelog.
 
-- **Simplify the Notion setup guide**
+- **Simplified the Notion setup guide**
   - It now matches the current setup flow by showing Add Source, Notion, Integration Key, and Save Changes in order.
 
 ## 2026-07-17
