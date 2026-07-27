@@ -4,6 +4,13 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-27
+
+### 🚀 New Features
+
+- **Manage AI provider keys from Settings**
+  - Doc Holiday now lets organizations add, list, test, set active, and delete provider keys from the settings page.
+
 ## 2026-07-17
 
 ### 🚀 New Features
