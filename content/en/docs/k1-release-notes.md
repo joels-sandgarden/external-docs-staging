@@ -8,6 +8,25 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
+- **Add trial payment fallback**
+  - Stripe checkout now ends a trial when no payment method is available.
+- **Require payment methods only when needed**
+  - Stripe checkout now asks for a payment method only when the flow requires one.
+- **Open OSS applications**
+  - Organizations can apply for OSS access, and approved organizations gain the right billing access.
+- **Add Anthropic keys for BYOK**
+  - BYOK organizations can save Anthropic keys and route inference through Claude models.
+- **Add Gemini keys for BYOK**
+  - BYOK organizations can save Gemini keys and route inference through Gemini-backed models.
+- **Add Groq keys for BYOK**
+  - BYOK organizations can save Groq keys and send eligible traffic through Groq.
+- **Add Cerebras keys for BYOK**
+  - BYOK organizations can save Cerebras keys and route inference through Cerebras-backed models.
+- **Enable Bedrock GPT-5.6 in the annotator**
+  - Flagged annotator runs can use the Bedrock GPT-5.6 configuration.
+- **Keep model and prompt choices aligned**
+  - Agent setup now keeps the selected model and prompt template paired.
+
 - **Clarify the Concepts reference**
   - The page now explains Organization, Publication, Sources, the Library, and Work History in clearer customer-facing language.
 - **Expand the Sources explanation**
