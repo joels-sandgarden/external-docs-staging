@@ -33,13 +33,13 @@ description: "User-visible changes to Doc Holiday, newest first."
   - Organizations can now configure Cerebras for default traffic and BYOK routing, and Cerebras requests now avoid unsupported fields so provider-specific workflows stay compatible.
 
 - **Updated writer support for Bedrock GPT-5.6**
-  - When the Bedrock GPT-5.6 flag is enabled, the writer now uses the GPT-5.6 Terra prompt and model settings with client-side compaction tuned to that model.
+  - The Bedrock GPT-5.6 flag now makes the writer use the GPT-5.6 Terra prompt and model settings with client-side compaction tuned to that model.
 
 - **Refined Explorer support for Bedrock GPT-5.6**
-  - When the Bedrock GPT-5.6 flag is enabled, the Explorer now uses the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
+  - The Bedrock GPT-5.6 flag now makes the Explorer use the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
 
 - **Improved Director support for Bedrock GPT-5.6**
-  - When the Bedrock GPT-5.6 flag is enabled, the Director now uses the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
+  - The Bedrock GPT-5.6 flag now makes the Director use the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
 
 ### ✨ Enhancements
 
