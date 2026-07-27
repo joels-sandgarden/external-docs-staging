@@ -96,9 +96,9 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### ✨ Enhancements
 
-- **Personalize email greetings with first names**
-  - When a first name exists, outgoing email greetings now use it.
-- **Add OSS attribution footers**
+- **Use first names in email greetings**
+  - Outgoing email greetings now use a first name when one is available.
+- **Add attribution footers to OSS markdown**
   - OSS markdown edits now include a single attribution footer.
 - **Use Bedrock GPT-5.6 for the director**
   - Flagged director runs can use the Bedrock GPT-5.6 configuration.
@@ -106,9 +106,9 @@ description: "User-visible changes to Doc Holiday, newest first."
   - Flagged explorer runs can use the Bedrock GPT-5.6 configuration.
 - **Use Bedrock GPT-5.6 for the writer**
   - Flagged writer runs can use the Bedrock GPT-5.6 configuration.
-- **Lower GPT-5.6 reasoning effort**
-  - Flagged director, explorer, and writer runs now use the lighter reasoning setting.
-- **Refresh the Go dependency set**
+- **Use a lighter GPT-5.6 reasoning setting**
+  - Flagged director, explorer, and writer runs now use the medium reasoning setting.
+- **Refresh Go dependencies**
   - Builds now use the refreshed Go dependency graph and vendor tree.
 
 - **Tighten the Concepts page wording**
