@@ -13,7 +13,7 @@ The tools fall into two groups: **request** tools that submit new work, and **re
 | Tool | Purpose | Arguments |
 | --- | --- | --- |
 | `doc_holiday_request_documentation` | Submit a documentation prompt for a publication and get the handle back immediately. Omit `conversationId` to start a new conversation; pass it to add the prompt to an existing one. | `publicationId` (required), `prompt` (required), `conversationId`, `labels[]` |
-| `doc_holiday_request_work` | Post a work request to an existing conversation — adds a work-requested comment with your message and returns it as a handle to track. | `conversationId` (required), `body` (required), `labels[]` |
+| `doc_holiday_request_work` | Post a work request to an existing conversation — adds a work-requested comment with the message and returns it as a handle to track. | `conversationId` (required), `body` (required), `labels[]` |
 
 ## Read tools
 
