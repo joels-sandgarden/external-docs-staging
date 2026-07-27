@@ -4,6 +4,27 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-27
+
+### 🚀 New Features
+
+- **Clarify the Concepts reference**
+  - The page now explains Organization, Publication, Sources, the Library, and Work History in clearer customer-facing language.
+- **Expand the Sources explanation**
+  - The page now explains provider and child Source relationships, health behavior, External Documentation, and key terms more clearly.
+- **Refine the Publications guide**
+  - The page now defines Inputs and Targets, explains output types, and describes how health status affects the workflow.
+- **Add the Work History page**
+  - The page now covers lifecycle stages, multiple passes, entry views, and filtering in one place.
+- **Document supported connection types**
+  - The reference now lists supported Source types, parent requirements, trigger identifiers, and hierarchy notes.
+- **Add the GitHub setup guide**
+  - The guide now walks through GitHub App installation, repository Sources, token fallback, health checks, and troubleshooting.
+- **Add the GitLab setup guide**
+  - The guide now covers token setup, project Sources, multi-project tokens, and health verification.
+- **Add the Bitbucket setup guide**
+  - The guide now explains trigger behavior, workspace token options, repository and project setup, and verification.
+
 ## 2026-07-17
 
 ### 🚀 New Features
