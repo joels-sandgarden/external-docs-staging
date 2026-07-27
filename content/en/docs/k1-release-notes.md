@@ -39,15 +39,15 @@ description: "User-visible changes to Doc Holiday, newest first."
   - It covers AWS S3 and Azure Blob Storage as read-only context Sources with health verification.
 
 - **Manage the connections guide**
-  - The guide now covers health checks, remediation, edits, deletions, and dependency guidance.
+  - It covers health checks, remediation, edits, deletions, and dependency guidance.
 - **Map the workflow overview page**
-  - The page now explains intake, planning, drafting, review, and pull request stages from start to finish.
+  - It explains intake, planning, drafting, review, and pull request stages from start to finish.
 - **Walk through the quickstart tutorial**
-  - The tutorial now walks through the end-to-end onboarding flow from sign in through publish.
+  - It walks through the end-to-end onboarding flow from sign in through publish.
 - **Note the Notion setup guide**
-  - The guide now covers Notion as a read-only context Source and shows how to verify it.
+  - It covers Notion as a read-only context Source and shows how to verify it.
 - **Reference the Output Types page**
-  - The page now explains Documentation, Release Notes, and Changelog output types along with their instructions.
+  - It explains Documentation, Release Notes, and Changelog output types along with their instructions.
 
 ### ✨ Enhancements
 
