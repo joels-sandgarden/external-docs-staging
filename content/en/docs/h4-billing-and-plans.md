@@ -4,13 +4,13 @@ url: "docs/billing-and-plans"
 description: "Plans, billing, and what each plan includes."
 ---
 
-Open **Settings → Billing** to review the available plans, manage a Bring Your Own Key subscription, and check whether billing stays current. The page shows the plan cards for the current billing options, the checkout flow for starting BYOK, and the billing portal for updating subscription details. Admins on the Bring Your Own Key and Open Source plans can access it; Enterprise billing still runs through the account team.
+The Billing page under **Settings → Billing** shows the available plans, the checkout flow for starting Bring Your Own Key, the billing portal for updating subscription details, and whether billing stays current. Admins on the Bring Your Own Key and Open Source plans can access it; Enterprise billing still runs through the account team.
 
 ![The Billing page with the three plan cards](/screenshots/billing-and-plans/tier-cards.png)
 
 ## Open Source Plan
 
-Our Open Source Plan is free for public open-source projects and uses the organization's own OpenAI key to power AI features. See [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
+The Open Source Plan is free for public open-source projects and uses the organization's own OpenAI key to power AI features. See [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
 
 ## Bring Your Own Key
 
@@ -22,4 +22,4 @@ Bring Your Own Key organizations complete a billing step during onboarding befor
 
 ## Enterprise
 
-Please book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo. Enterprise inference remains managed for the organization.
+Enterprise customers book a demo at https://scheduler.zoom.us/elizabeth-zalman/doc_holiday_demo. Enterprise inference remains managed for the organization.
