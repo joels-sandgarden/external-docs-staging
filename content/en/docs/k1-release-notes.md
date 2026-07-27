@@ -11,6 +11,9 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Manage AI provider keys from Settings**
   - Doc Holiday now lets organizations add, list, test, set active, and delete provider keys from the settings page.
 
+- **Keep BYOK billing current**
+  - BYOK organizations now see billing related onboarding screens and steps, and they must keep billing current to continue some work.
+
 ## 2026-07-17
 
 ### 🚀 New Features
