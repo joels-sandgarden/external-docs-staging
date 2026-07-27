@@ -14,15 +14,15 @@ description: "User-visible changes to Doc Holiday, newest first."
   - The page now explains provider and child Source relationships, health behavior, External Documentation, and key terms more clearly.
 - **Refine the Publications guide**
   - The page now defines Inputs and Targets, explains output types, and describes how health status affects the workflow.
-- **Add the Work History page**
+- **Describe the Work History page**
   - The page now covers lifecycle stages, multiple passes, entry views, and filtering in one place.
 - **Document supported connection types**
   - The reference now lists supported Source types, parent requirements, trigger identifiers, and hierarchy notes.
-- **Add the GitHub setup guide**
+- **Install the GitHub setup guide**
   - The guide now walks through GitHub App installation, repository Sources, token fallback, health checks, and troubleshooting.
-- **Add the GitLab setup guide**
+- **Configure the GitLab setup guide**
   - The guide now covers token setup, project Sources, multi-project tokens, and health verification.
-- **Add the Bitbucket setup guide**
+- **Set up the Bitbucket guide**
   - The guide now explains trigger behavior, workspace token options, repository and project setup, and verification.
 
 - **Add the first Publication onboarding guide**
