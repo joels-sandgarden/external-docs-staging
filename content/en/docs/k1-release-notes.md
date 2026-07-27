@@ -64,6 +64,18 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Update BYOK billing pages**
   - Billing pages now give BYOK organizations the setup details they need.
 
+- **Improved feature-flag scoping for dashboard routes**
+  - Dashboard pages still receive feature-flag context, while other routes now stay on the default app setup.
+
+- **Refined agent model and prompt selection**
+  - The annotator, director, explorer, merge summarizer, and writer now keep each model paired with its matching prompt, which prevents mismatched configurations.
+
+- **Updated Bedrock GPT-5.6 reasoning effort**
+  - The director, Explorer, and writer now use Medium reasoning effort on the Bedrock GPT-5.6 path, which reduces overhead for that model.
+
+- **Updated bundled Go dependencies**
+  - Builds now use the refreshed Go dependency set and regenerated vendored code.
+
 ### 🐛 Bug Fixes
 
 - **Restore direct navigation to public routes**
