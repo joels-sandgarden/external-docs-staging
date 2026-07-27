@@ -16,7 +16,7 @@ The Apply dialog asks for project name, public repo URL, and description. After 
 
 ## Bring Your Own Key
 
-Bring Your Own Key costs $100/month. It includes a free trial, and you manage billing in the billing portal.
+Bring Your Own Key costs $100/month and includes a free trial. The billing portal manages the subscription.
 
 The billing page shows when the trial is close to ending so teams can update billing before new work stops.
 
