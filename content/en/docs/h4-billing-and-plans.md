@@ -10,7 +10,7 @@ The Billing page under **Settings → Billing** shows the available plans, the c
 
 ## Open Source Plan
 
-The Open Source Plan is free for public open-source projects and uses the organization's own AI provider key to power AI features. Markdown files edited on the Open Source Plan include a Doc Holiday attribution footer, and the footer appears once rather than duplicating on later edits. See [Add your AI provider key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
+The Open Source Plan is free for public open-source projects and uses the organization's own AI provider key to power AI features. Markdown files edited on the Open Source Plan include a Doc Holiday attribution footer, and the footer stays in place without duplicating on later edits. See [Add your AI provider key](./b6-add-your-openai-key.md) for setup and [AI provider keys](./h3-ai-provider-keys.md) for key management.
 
 ## Bring Your Own Key
 
@@ -18,7 +18,7 @@ Bring Your Own Key costs $100 per month. It includes a free trial, and admins st
 
 The billing portal handles later changes such as payment updates, invoices, and subscription changes. When billing falls behind or the subscription ends, Doc Holiday keeps the workspace visible but pauses new requests until billing returns to current status.
 
-Bring Your Own Key organizations complete a billing step during onboarding before they can start new work. After that step, admins add provider keys in [the AI provider keys page](./h3-ai-provider-keys.md).
+Bring Your Own Key organizations complete a billing step during onboarding before they can start new work. After that step, admins add provider keys in [AI provider keys](./h3-ai-provider-keys.md).
 
 ## Enterprise
 
