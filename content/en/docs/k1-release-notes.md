@@ -181,6 +181,11 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🐛 Bug Fixes
 
+- **Fix superuser organization paging**
+  - Superuser organization paging now uses the same next cursor field across the UI and hook.
+- **Limit feature flag context to the dashboard**
+  - Feature flag context now initializes only inside the dashboard route group.
+
 - **Resolved release merge lookups for squash and rebase merges**
   - Release documentation scheduling now finds merged pull requests even when only the merge commit SHA is recorded.
 - **Connected merge commit SHAs to change records**
