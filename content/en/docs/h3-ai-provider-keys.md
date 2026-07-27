@@ -1,10 +1,10 @@
 ---
 title: AI Provider Keys
 url: "docs/ai-provider-keys"
-description: "Manage provider-scoped AI provider keys, validation, failover, and rotation."
+description: "Manage AI provider keys by provider, including validation, failover, and rotation."
 ---
 
-Use this page to manage the AI provider keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. The page shows the providers that the organization supports, including OpenAI, Anthropic, Gemini, Groq, and Cerebras. Each key belongs to the provider selected when it is added, and Doc Holiday handles active and failover behavior within that provider. The page applies to organizations on the Bring Your Own Key and Open Source plans. See [Billing and plans](./h4-billing-and-plans.md) for plan coverage.
+Use this page to manage the AI provider keys that power an organization’s writing runs. The app page title is **AI Provider Keys**. The page shows the providers the organization supports, including OpenAI, Anthropic, Gemini, Groq, and Cerebras. Each key belongs to the provider selected when it is added, and Doc Holiday handles active and failover behavior for that provider. The page applies to organizations on the Bring Your Own Key and Open Source plans. See [Billing and plans](./h4-billing-and-plans.md) for plan coverage.
 
 ![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
 
@@ -33,12 +33,12 @@ Doc Holiday never uses a key from a different provider.
 2. Select **Set Active** on it.
 3. Delete the old key.
 
-Doc Holiday applies key changes immediately, including to work already in flight.
+Doc Holiday applies key changes immediately, including work already in flight.
 
 ## Test and delete a key
 
 1. Open the overflow menu on any key card and select **Test** when needed.
-2. Check the result. Doc Holiday shows **Key is valid** when the key passes and **Key test failed** when it does not.
+2. Check the result. Doc Holiday shows **Key is valid** when the key works and **Key test failed** when it does not.
 3. Open the overflow menu again and select **Delete** to remove a key.
 4. Confirm **Delete AI provider key?**. The dialog also offers **Cancel**. Doc Holiday deletes the stored key and removes the secret.
 
