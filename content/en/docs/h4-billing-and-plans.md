@@ -14,13 +14,13 @@ Our Open Source Plan is free for public open source projects and runs on the org
 
 Open Source organizations can apply for OSS access from the Billing page. The application asks for the project name, public repository URL, and description, and Doc Holiday sends the decision by email.
 
-Approved OSS organizations can access Billing and keep their routing behavior aligned with the OSS plan.
+Approved OSS organizations can access Billing and keep account routing aligned with the OSS plan.
 
 ## Bring Your Own Key
 
 Bring Your Own Key costs $100/month. Eligible organizations can start with a free trial, and Stripe only collects a payment method when it needs one. If no payment method is on file when the trial ends, Stripe ends the trial subscription. Billing stays under the organization's account portal.
 
-If billing is not current, Doc Holiday pauses gated flows until billing returns to current status.
+Doc Holiday pauses gated flows while billing is not current.
 
 Bring Your Own Key eligibility depends on customer type. The Billing page shows the plan only when the organization qualifies.
 
