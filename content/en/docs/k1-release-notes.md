@@ -53,15 +53,15 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 - **Tighten the Concepts page wording**
   - The page now reads more clearly while keeping the core concepts intact.
-- **Refine the GitHub setup guidance**
+- **Polish the GitHub setup guidance**
   - The guide now explains verification steps and fallback behavior more clearly.
 - **Clarify the Sources relationships**
   - The page now explains provider and Source relationships and health behavior with less ambiguity.
 - **Update the Publications terminology**
   - The guide now clarifies Inputs and Targets mapping, Changelog naming, and how unhealthy states affect the workflow.
-- **Clarify Work History filters**
+- **Sharpen Work History filters**
   - The page now explains the summary search box and other filters more clearly.
-- **Refine connection type naming**
+- **Standardize connection type naming**
   - The reference now explains provider and token pairings and Source relationships with more consistent terminology.
 
 ## 2026-07-17
