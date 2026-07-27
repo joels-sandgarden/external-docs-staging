@@ -26,20 +26,20 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Added OSS attribution watermarking for markdown files**
   - OSS organizations now receive an attribution footer on eligible markdown files edited during a director step, and files that already include the watermark stay unchanged.
 
-- **Added Groq provider support**
-  - Organizations can now configure Groq for default traffic and BYOK routing, giving Groq-backed orgs a path for flows that previously depended on OpenAI.
+- **Expanded Groq provider support**
+  - Organizations can now configure Groq for default traffic and BYOK routing, and Groq requests now avoid unsupported fields so multi-turn runs fail less often.
 
-- **Added Cerebras provider support**
-  - Organizations can now configure Cerebras for default traffic and BYOK routing, and Cerebras keys now map to the supported model profile automatically.
+- **Extended Cerebras provider support**
+  - Organizations can now configure Cerebras for default traffic and BYOK routing, and Cerebras requests now avoid unsupported fields so provider-specific workflows stay compatible.
 
-- **Added Bedrock GPT-5.6 support to the writer**
-  - When the Bedrock GPT-5.6 flag is enabled, the writer now uses the GPT-5.6 prompt and model settings with client-side compaction tuned to that model.
+- **Updated writer support for Bedrock GPT-5.6**
+  - When the Bedrock GPT-5.6 flag is enabled, the writer now uses the GPT-5.6 Terra prompt and model settings with client-side compaction tuned to that model.
 
-- **Added Bedrock GPT-5.6 support to the Explorer**
-  - When the Bedrock GPT-5.6 flag is enabled, the Explorer now uses the GPT-5.6 prompt and model settings with Bedrock-specific compaction.
+- **Refined Explorer support for Bedrock GPT-5.6**
+  - When the Bedrock GPT-5.6 flag is enabled, the Explorer now uses the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
 
-- **Added Bedrock GPT-5.6 support to the Director**
-  - When the Bedrock GPT-5.6 flag is enabled, the Director now uses the GPT-5.6 prompt and model settings with Bedrock-specific compaction.
+- **Improved Director support for Bedrock GPT-5.6**
+  - When the Bedrock GPT-5.6 flag is enabled, the Director now uses the GPT-5.6 Terra prompt and model settings with Bedrock-specific compaction.
 
 ### ✨ Enhancements
 
@@ -64,16 +64,16 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Update BYOK billing pages**
   - Billing pages now give BYOK organizations the setup details they need.
 
-- **Improved feature-flag scoping for dashboard routes**
+- **Enhanced feature-flag scoping for dashboard routes**
   - Dashboard pages still receive feature-flag context, while other routes now stay on the default app setup.
 
-- **Refined agent model and prompt selection**
+- **Cleaner model and prompt pairing across agents**
   - The annotator, director, explorer, merge summarizer, and writer now keep each model paired with its matching prompt, which prevents mismatched configurations.
 
-- **Updated Bedrock GPT-5.6 reasoning effort**
+- **More efficient Bedrock GPT-5.6 reasoning effort**
   - The director, Explorer, and writer now use Medium reasoning effort on the Bedrock GPT-5.6 path, which reduces overhead for that model.
 
-- **Updated bundled Go dependencies**
+- **Refreshed bundled Go dependencies**
   - Builds now use the refreshed Go dependency set and regenerated vendored code.
 
 ### 🐛 Bug Fixes
