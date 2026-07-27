@@ -10,7 +10,7 @@ Open **Settings → Billing** to review the available plans and what each one in
 
 ## Open Source Plan
 
-Our Open Source Plan is free for public open-source projects and runs on the organization's own provider key for inference. See [Add your key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
+Our Open Source Plan is free for public open-source projects and runs on the organization's own provider key for inference. See [Add a key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
 
 The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
 
@@ -22,7 +22,7 @@ If billing is not current, Doc Holiday pauses gated flows until the subscription
 
 Bring Your Own Key eligibility depends on customer type. The Billing page shows the plan only when the organization qualifies.
 
-Use [Add your key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for key setup and management.
+Use [Add a key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for key setup and management.
 
 ## Enterprise
 
