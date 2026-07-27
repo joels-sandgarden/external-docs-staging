@@ -8,29 +8,53 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
-- **Manage AI provider keys in Settings**
-  - Organizations can now add, list, test, set active, and delete provider keys from Settings.
+- **Select from multiple AI providers**
+  - Settings now lets organizations choose the provider for each saved key.
 
-- **Keep BYOK billing current**
-  - BYOK organizations now see billing screens and onboarding steps, and they must keep billing current to continue using BYOK workflows.
+- **Add provider keys in Settings**
+  - Organizations can add new provider keys from Settings.
+
+- **List saved provider keys**
+  - Settings now shows saved keys for each configured provider.
+
+- **Set an active provider key**
+  - Organizations can mark one saved key as the active provider key.
+
+- **Delete provider keys in Settings**
+  - Organizations can remove provider keys they no longer use.
 
 ### ✨ Enhancements
 
-- **Validate BYOK keys for inference**
-  - Doc Holiday now checks that BYOK provider keys can run inference before it accepts them.
+- **Show provider-specific hints and icons**
+  - The provider key flow now displays hints and icons for each provider.
 
-- **Clarify provider error messages**
-  - Doc Holiday now surfaces clearer BYOK provider errors when validation or inference fails.
+- **Validate BYOK keys for inference**
+  - Doc Holiday now confirms that a BYOK key can run inference before it accepts the key.
+
+- **Clarify BYOK provider errors**
+  - Doc Holiday now shows clearer errors when BYOK validation or inference fails.
+
+- **Support free-trial BYOK onboarding**
+  - BYOK onboarding now includes free-trial flows.
+
+- **Require billing to stay current for BYOK**
+  - BYOK organizations now need current billing to keep using BYOK workflows.
+
+- **Support OSS tier applications**
+  - Billing and onboarding now include OSS tier application flows.
+
+- **Update BYOK billing pages**
+  - Billing pages now surface the information BYOK organizations need during setup.
 
 ### 🐛 Bug Fixes
 
-- **Restore public route handling**
-  - Doc Holiday now resolves login, signup, and organization selection paths correctly when opened directly.
+- **Restore direct navigation to public routes**
+  - Login, signup, and organization selection now open correctly when a route loads directly.
 
 - **Show the correct publication share error title**
   - The publication share error dialog now shows the correct title.
 
-- **Fix the instruction form submit button**
+- **Restore the instruction form submit button**
   - The instruction form submit button now submits the form again.
 
 ## 2026-07-17
