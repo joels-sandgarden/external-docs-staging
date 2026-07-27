@@ -8,19 +8,19 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
-- **Added attribution blocks to OSS markdown edits**
+ - **Appended attribution blocks to OSS markdown edits**
   - OSS plan organizations now append a Doc Holiday attribution block to edited markdown files.
-- **Scoped feature flag context to the dashboard**
+ - **Restricted feature flag context to the dashboard**
   - Feature flag context now appears only inside the dashboard area.
-- **Added Groq as a BYOK provider**
+ - **Added Groq as a BYOK provider**
   - Groq now appears as a supported AI provider for BYOK and default provider settings, with key validation and request routing.
-- **Enabled Bedrock GPT-5.6 for Writer**
+ - **Enabled Bedrock GPT-5.6 for Writer**
   - Writer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
-- **Enabled Bedrock GPT-5.6 for Explorer**
+ - **Extended Bedrock GPT-5.6 to Explorer**
   - Explorer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
-- **Enabled Bedrock GPT-5.6 for Director**
+ - **Adopted Bedrock GPT-5.6 for Director**
   - Director can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
-- **Added Cerebras as a BYOK provider**
+ - **Introduced Cerebras as a BYOK provider**
   - Cerebras now appears as a supported AI provider for BYOK with key validation and request routing.
 
 - **Added a billing page**
