@@ -4,6 +4,23 @@ url: "docs/release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 
+## 2026-07-27
+
+### 🚀 New Features
+
+- **Added a billing page**
+  - BYOK organizations now manage plans and subscriptions from a dedicated billing page.
+- **Enabled Stripe checkout and portal flows**
+  - BYOK organizations can now complete checkout and open the customer portal from the app.
+- **Displayed billing status and plan details**
+  - The app now shows current billing status and plan details for BYOK organizations.
+- **Included a billing step in onboarding**
+  - BYOK onboarding now includes billing setup before the next step.
+- **Prevented BYOK work when billing is not current**
+  - The app now blocks BYOK work when a subscription is not current.
+- **Managed organization AI provider keys**
+  - Organizations can now register, test, activate, list, and delete AI provider keys.
+
 ## 2026-07-17
 
 ### 🚀 New Features
