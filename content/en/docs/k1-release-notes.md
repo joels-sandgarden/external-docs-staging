@@ -12,15 +12,15 @@ description: "User-visible changes to Doc Holiday, newest first."
   - Organizations can now add, list, test, set active, and delete provider keys from Settings.
 
 - **Keep BYOK billing current**
-  - BYOK organizations now see billing screens and onboarding steps, and they must keep billing current to continue using BYOK features.
+  - BYOK organizations now see billing screens and onboarding steps, and they must keep billing current to continue using BYOK workflows.
 
 ### ✨ Enhancements
 
 - **Validate BYOK keys for inference**
-  - Doc Holiday now confirms BYOK provider keys can run inference before it accepts them.
+  - Doc Holiday now checks that BYOK provider keys can run inference before it accepts them.
 
 - **Clarify provider error messages**
-  - Doc Holiday now shows clearer BYOK provider errors when validation or inference fails.
+  - Doc Holiday now surfaces clearer BYOK provider errors when validation or inference fails.
 
 ### 🐛 Bug Fixes
 
