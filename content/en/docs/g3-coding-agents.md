@@ -1,7 +1,7 @@
 ---
 title: Coding Agents
 url: "docs/coding-agents"
-description: "Three ways a coding agent works with Doc Holiday: the plugin, the public MCP server, or the API."
+description: "Three ways a coding agent works with Doc Holiday: the plugin, the public MCP server, or the REST API."
 ---
 
 Doc Holiday keeps documentation aligned with the code as it ships, and coding agents — the assistants and CLIs a team already runs — can request that work directly.
