@@ -10,9 +10,9 @@ Open **Settings → Billing** to see the available plans, trial status, and bill
 
 ## Open Source Plan
 
-Our Open Source Plan is free for public open-source projects and runs on your own OpenAI key for inference. See [Add your OpenAI key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
+Our Open Source Plan is free for public open source projects and runs on your own AI provider key for inference. See [Add Your AI Provider Key](./b6-add-your-openai-key.md) and [AI provider keys](./h3-ai-provider-keys.md) for setup context.
 
-The Apply dialog asks for project name, public repo URL, and description. Doc Holiday sends the decision by email.
+The Apply dialog asks for project name, public repo URL, and description. After submission, a superuser reviews the application and sends the decision by email.
 
 ## Bring Your Own Key
 
