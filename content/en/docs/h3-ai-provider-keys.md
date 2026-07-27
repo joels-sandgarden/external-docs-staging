@@ -19,11 +19,11 @@ If no keys exist, the page shows **No AI Provider Keys yet**.
 
 ## Manage active and failover keys
 
-The active key card shows the **Active** badge. Every key card menu includes **Test** and **Delete**. Inactive key card menus also include **Set Active**.
+Each provider has its own active key. The active key card shows the **Active** badge. Every key card menu includes **Test** and **Delete**. Inactive key card menus also include **Set Active**.
 
-1. The first OpenAI key becomes active automatically.
-2. Open a key card and select **Set Active** to move the active badge to that key. Doc Holiday demotes the previous active key to failover.
-3. If your provider rejects the active key, Doc Holiday fails over to another stored key within the same request. If every key fails, the work errors.
+1. The first saved key for a provider becomes active automatically.
+2. Open a key card and select **Set Active** to move the active badge to that key for the same provider.
+3. If the active key fails, Doc Holiday uses another saved key for that provider. If every key fails, the work errors.
 
 Doc Holiday only ever uses keys your organization has added — there is no fallback to any other key.
 
