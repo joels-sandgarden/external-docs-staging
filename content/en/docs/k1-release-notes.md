@@ -8,30 +8,30 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
-- **Manage AI provider keys from Settings**
-  - Doc Holiday now lets organizations add, list, test, set active, and delete provider keys from the settings page.
+- **Manage AI provider keys in Settings**
+  - Organizations can now add, list, test, set active, and delete provider keys from Settings.
 
 - **Keep BYOK billing current**
-  - BYOK organizations now see billing related onboarding screens and steps, and they must keep billing current to continue some work.
+  - BYOK organizations now see billing screens and onboarding steps, and they must keep billing current to continue using BYOK features.
 
 ### ✨ Enhancements
 
 - **Validate BYOK keys for inference**
-  - Doc Holiday now confirms that a BYOK provider key can run inference before it accepts the key.
+  - Doc Holiday now confirms BYOK provider keys can run inference before it accepts them.
 
 - **Clarify provider error messages**
-  - Doc Holiday now surfaces clearer BYOK provider errors when validation or inference fails.
+  - Doc Holiday now shows clearer BYOK provider errors when validation or inference fails.
 
 ### 🐛 Bug Fixes
 
 - **Restore public route handling**
-  - Doc Holiday now resolves login, signup, and organization selection paths correctly when people open them directly.
+  - Doc Holiday now resolves login, signup, and organization selection paths correctly when opened directly.
 
 - **Show the correct publication share error title**
-  - The share error dialog now shows the correct title.
+  - The publication share error dialog now shows the correct title.
 
 - **Fix the instruction form submit button**
-  - The instruction form submit button now works again.
+  - The instruction form submit button now submits the form again.
 
 ## 2026-07-17
 
