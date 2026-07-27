@@ -86,6 +86,9 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Expand the Library guide**
   - It now explains what the Library is, how attached instructions shape Publication output, how the list view works, and where to find related guidance.
 
+- **Clarify the instruction slots reference**
+  - It now lists the slot values, shows which instruction appears in the app, and explains how shared style and formatting guidance applies across Documentation, Release Notes, and Changelog.
+
 ## 2026-07-17
 
 ### 🚀 New Features
