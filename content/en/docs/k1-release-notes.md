@@ -49,19 +49,19 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Reference the Output Types page**
   - It explains Documentation, Release Notes, and Changelog output types along with their instructions.
 
-- **Expand publishing system guidance**
-  - It explains which publishing systems doc.holiday supports and how to choose a fallback when the preferred option is unavailable.
-- **Introduce publication management help**
+- **Clarify publishing system selection**
+  - It explains which publishing systems doc.holiday supports and when to switch to a fallback.
+- **Streamline publication management**
   - It covers editing, sharing, checking health, and deleting Publications from the management screen.
-- **Define Library instruction precedence**
-  - It explains how the Library works, how instruction slots are selected, and which instruction applies when more than one rule matches.
-- **Describe request and review workflows**
+- **Explain Library instruction precedence**
+  - It shows how the Library works, how instruction slots are selected, and which instruction applies when more than one rule matches.
+- **Add request and review workflows**
   - It shows how to request work in the app and how to review and revise Work History entries.
-- **Round out integration guides**
+- **Expand delivery and notification guides**
   - It adds guidance for GitHub Action, GitLab CI/CD, coding agents, and Slack notifications so teams can route documentation work through their existing tools.
-- **Cover administration and governance**
+- **Broaden administration and billing guidance**
   - It adds user management, audit log, AI provider keys, and billing and plans guidance for account owners.
-- **Add API and prompting references**
+- **Support API and prompting references**
   - It documents the instruction library API, audit log API, trigger and event types, and prompting guidance for advanced workflows.
 
 ### ✨ Enhancements
@@ -80,8 +80,8 @@ description: "User-visible changes to Doc Holiday, newest first."
   - It explains provider and token pairings and Source relationships with more consistent terminology.
 - **Refine onboarding and key setup**
   - It clarifies admin-only Publication creation, trigger wording, OpenAI key verification, and the first setup flow.
-- **Clarify connection setup and cleanup**
-  - It tightens the guidance for Linear, Google Drive, cloud storage, source deletion, and GitLab connection steps so the documented flow matches the app.
+- **Tighten connection setup and cleanup**
+  - It sharpens the guidance for Linear, Google Drive, cloud storage, source deletion, and GitLab connection steps so the documented flow matches the app.
 
 ## 2026-07-17
 
