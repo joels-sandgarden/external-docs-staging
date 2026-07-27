@@ -8,6 +8,15 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### 🚀 New Features
 
+- **Added attribution blocks to OSS markdown edits**
+  - OSS plan organizations now append a Doc Holiday attribution block to edited markdown files.
+- **Scoped feature flag context to the dashboard**
+  - Feature flag context now appears only inside the dashboard area.
+- **Added Groq as a BYOK provider**
+  - Groq now appears as a supported AI provider for BYOK and default provider settings, with key validation and request routing.
+- **Enabled Bedrock GPT-5.6 for Writer**
+  - Writer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
+
 - **Added a billing page**
   - BYOK organizations now manage plans and subscriptions from a dedicated billing page.
 - **Enabled Stripe checkout and portal flows**
