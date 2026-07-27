@@ -83,6 +83,9 @@ description: "User-visible changes to Doc Holiday, newest first."
 - **Tighten connection setup and cleanup**
   - It sharpens the guidance for Linear, Google Drive, cloud storage, source deletion, and GitLab connection steps so the documented flow matches the app.
 
+- **Expand the Library guide**
+  - It now explains what the Library is, how attached instructions shape Publication output, how the list view works, and where to find related guidance.
+
 ## 2026-07-17
 
 ### 🚀 New Features
