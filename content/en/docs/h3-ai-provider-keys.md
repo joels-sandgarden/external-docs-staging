@@ -44,5 +44,5 @@ Key changes apply immediately, even to work already in flight.
 
 ## Next
 
-- Start setup in [Add your OpenAI key](./b6-add-your-openai-key.md).
-- Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise inference.
+- Start setup in [Add Your AI Provider Key](./b6-add-your-openai-key.md).
+- Review [Billing and plans](./h4-billing-and-plans.md) for plan coverage and Enterprise provider access.
