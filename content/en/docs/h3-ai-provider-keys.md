@@ -4,7 +4,7 @@ url: "docs/ai-provider-keys"
 description: "Manage the AI provider keys Doc Holiday uses for writing runs."
 ---
 
-The page helps admins manage the AI provider keys that power an organization’s writing runs. The page title is **AI Provider Keys**. Supported providers include OpenAI, Groq, and Cerebras. The page applies to organizations on the Bring Your Own Key and Open Source plans. Bring Your Own Key organizations finish billing during onboarding, then add provider keys here before they start new work. Enterprise customers manage inference through the account team; see [Billing and plans](./h4-billing-and-plans.md).
+The page helps admins manage AI provider keys for an organization’s writing runs. Supported providers today are OpenAI, Groq, and Cerebras. The page applies to organizations on the Bring Your Own Key and Open Source plans. Bring Your Own Key organizations finish billing during onboarding, then add provider keys here before they start new work. Enterprise customers manage inference through the account team; see [Billing and plans](./h4-billing-and-plans.md).
 
 ![The AI Provider Keys page with two keys: one Active and Healthy, one Unhealthy](/screenshots/add-your-openai-key/keys-page.png)
 
@@ -25,7 +25,7 @@ The active key card shows the **Active** badge. Every key card menu includes **T
 2. Admins open a key card and select **Set Active** to move the **Active** badge to that key. Doc Holiday keeps the previous active key as failover.
 3. If the active key stops working, Doc Holiday tries another stored key during the request. If every key fails, the request fails and the page shows the provider problem.
 
-Doc Holiday only uses keys that the organization has added. It never falls back to any other key.
+Doc Holiday only uses keys that the organization has added. It never falls back to another key.
 
 ## Rotate a key
 
