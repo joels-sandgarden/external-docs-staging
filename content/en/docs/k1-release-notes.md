@@ -16,6 +16,12 @@ description: "User-visible changes to Doc Holiday, newest first."
   - Groq now appears as a supported AI provider for BYOK and default provider settings, with key validation and request routing.
 - **Enabled Bedrock GPT-5.6 for Writer**
   - Writer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
+- **Enabled Bedrock GPT-5.6 for Explorer**
+  - Explorer can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
+- **Enabled Bedrock GPT-5.6 for Director**
+  - Director can now run on Bedrock GPT-5.6 when the feature flag is enabled, using a dedicated prompt and tuned compaction.
+- **Added Cerebras as a BYOK provider**
+  - Cerebras now appears as a supported AI provider for BYOK with key validation and request routing.
 
 - **Added a billing page**
   - BYOK organizations now manage plans and subscriptions from a dedicated billing page.
