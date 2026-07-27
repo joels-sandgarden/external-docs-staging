@@ -140,9 +140,9 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 ### ⚠️ Breaking Changes
 
-- **Blocked BYOK conversations without current billing**
+- **Enforced current billing for BYOK conversations**
   - Conversation creation and comment work requests now fail with a billing-required error when BYOK is enabled but the subscription is not current.
-- **Shifted BYOK access to `org.customerType`**
+- **Moved BYOK access to `org.customerType`**
   - BYOK access to OSS flows and inference key routing now depend on `org.customerType` instead of the feature flag.
 
 ### 🐛 Bug Fixes
