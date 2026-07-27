@@ -5,6 +5,7 @@ description: "The doc_holiday_* MCP tools the plugin registers, and their argume
 ---
 
 The Doc Holiday plugin registers a set of MCP tools your coding agent uses to drive the documentation service — listing your publications, submitting work, and tracking each request. Every tool name is prefixed `doc_holiday_`. The tools require an API key configured for your organization; the first call prompts a one-time sign-in.
+This page covers the plugin-registered `doc_holiday_*` tools, not the public `/mcp` endpoint.
 
 The tools fall into two groups: **request** tools that submit new work, and **read** tools that report on your publications and work. Listing tools use passthrough pagination — pass `pageSize` and `next`, and read `nextPageToken` from the result.
 
@@ -29,6 +30,7 @@ The tools fall into two groups: **request** tools that submit new work, and **re
 
 ## Related
 
+- [Public MCP Server](/mcp) — the direct external integration path.
 - [Install the Doc Holiday plugin](./g5-install-plugin.md) — how these tools get registered.
 - [Plan and generate docs with skills](./g6-plan-generate-with-skills.md) — the skills that produce the prompts these tools submit.
 - [Work History API](./j4-api-work-history.md) — the same operations over plain REST.
