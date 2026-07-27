@@ -149,7 +149,7 @@ description: "User-visible changes to Doc Holiday, newest first."
 
 - **Resolved release merge lookups for squash and rebase merges**
   - Release documentation scheduling now finds merged pull requests even when only the merge commit SHA is recorded.
-- **Relinked merge commit SHAs to change records**
+- **Connected merge commit SHAs to change records**
   - Merge commit SHAs now point to the correct change record, which improves merge summary and release resolution.
 - **Recovered duplicate-input sessions**
   - Sessions that hit a duplicate item error can now recover once and continue.
