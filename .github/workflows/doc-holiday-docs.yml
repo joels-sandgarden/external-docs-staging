@@ -1,0 +1,29 @@
+# Doc Holiday dogfoods itself here: this job asks Doc Holiday to regenerate the
+# actual docs CONTENT (pages under content/en/docs/) from recent product
+# changes. Sibling of doc-holiday-release-notes.yml. Ported from the original
+# doc-holiday-docs.yml (this repo IS sandgardenhq/external-docs).
+#
+# Kept manual-dispatch only (cron commented out), matching the original.
+#
+# PREREQUISITES (server-side, not controlled by this file) — same as the
+# release-notes workflow: the "External Docs" publication already targets this
+# repo; its OUTPUT path must write pages under `content/en/docs/` (the Hugo
+# layout), and a `DOC_HOLIDAY_TOKEN` secret must be present.
+
+name: Doc Holiday — Daily Documentation
+
+on:
+  workflow_dispatch:
+#   schedule:
+#     # 11:00 UTC daily = 7am EDT / 6am EST (drifts 1h in winter)
+#     - cron: "0 11 * * *"
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sandgardenhq/doc-holiday-action@v3
+        with:
+          api-token: ${{ secrets.DOC_HOLIDAY_TOKEN }}
+          publication: "External Docs"
+          body: "Review product changes from the last 24 hours only and update the documentation to reflect them. Do not include changes from before this window. Add or revise pages as needed."

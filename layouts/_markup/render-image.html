@@ -1,7 +1,7 @@
 {{- /*
   Image render hook: site-rooted destinations (e.g. /screenshots/...) get the
   baseURL subpath prepended via relURL, so images resolve both on localhost and
-  under the /external-docs-staging/ project subpath on GitHub Pages.
+  under the baseURL path prefix (e.g. /docs/ when served at doc.holiday/docs).
 */ -}}
 {{- $u := urls.Parse .Destination -}}
 {{- $src := .Destination -}}

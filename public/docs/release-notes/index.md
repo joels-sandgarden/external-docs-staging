@@ -1,6 +1,28 @@
 # Release Notes
 
 
+## 2026-07-24
+
+### 🚀 New Features
+
+- **Allow optional payment collection for trial checkout**
+  - Trial checkout lets customers start without a payment method and cancels trials that end without one.
+- **Accept applications for OSS access**
+  - Applicants can apply in Billing and validate public repositories, while superusers can review, approve or reject applications, filter by customer type, and notify applicants and internal teams.
+- **Show AI provider options and key guidance**
+  - The provider key page displays provider icons and explains key formats.
+- **Use Anthropic keys for supported Claude models**
+  - Doc Holiday validates Anthropic keys and uses supported Claude models.
+- **Use Gemini keys for supported models**
+  - Doc Holiday validates Gemini keys and routes supported models. It prioritizes Anthropic when organizations configure both services.
+- **Use Groq keys for supported workloads**
+  - Doc Holiday validates Groq keys and routes supported workloads only when organizations do not configure OpenAI, Anthropic, or Gemini services.
+
+### ✨ Enhancements
+
+- **Update open documentation changes after files are excluded**
+  - File exclusions now immediately update the open documentation change.
+
 ## 2026-07-17
 
 ### 🚀 New Features

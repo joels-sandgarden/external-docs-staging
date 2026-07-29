@@ -63,7 +63,7 @@ params:
     startYear: ~
     presentYear: 2026
     repo:
-      main: https://github.com/joels-sandgarden/external-docs-staging
+      main: https://github.com/sandgardenhq/external-docs
     themeColor:
       light: '#ffffff'
       dark: '#14161a'

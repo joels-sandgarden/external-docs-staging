@@ -1,0 +1,32 @@
+# Doc Holiday dogfoods itself here: this job asks Doc Holiday to generate the
+# weekly release-notes entry for this docs site. Ported from the original
+# doc-holiday-release-notes.yml (this repo IS sandgardenhq/external-docs).
+#
+# PREREQUISITES (server-side, not controlled by this file):
+#   1. The "External Docs" Doc Holiday publication already targets this repo.
+#      Its OUTPUT path must be updated from the old flat `content/release-notes.md`
+#      to `content/en/docs/k1-release-notes.md` (newest entry prepended under the
+#      top frontmatter), matching this site's Hugo layout.
+#   2. A `DOC_HOLIDAY_TOKEN` repo secret with access to that publication.
+#
+# NOTE: this site splits release notes into k1-release-notes.md (recent) and
+# k1b-release-notes-archive.md (pre-June-2026). The generator only appends to
+# the recent file; periodically move aged entries into the archive by hand.
+
+name: Doc Holiday — Weekly Release Notes
+
+on:
+  schedule:
+    # Fridays at 11:00 UTC = 7am EDT / 6am EST (drifts 1h in winter)
+    - cron: "0 11 * * 5"
+  workflow_dispatch:
+
+jobs:
+  generate-release-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sandgardenhq/doc-holiday-action@v3
+        with:
+          api-token: ${{ secrets.DOC_HOLIDAY_TOKEN }}
+          publication: "External Docs"
+          body: "Generate release notes covering changes shipped in the past week."
