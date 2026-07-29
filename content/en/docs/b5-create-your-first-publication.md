@@ -1,6 +1,6 @@
 ---
 title: Create Your First Publication
-url: "docs/create-your-first-publication"
+url: "create-your-first-publication"
 description: "Set up your first Publication: Sources, docs destination, output types."
 ---
 

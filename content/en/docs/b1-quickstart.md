@@ -1,6 +1,6 @@
 ---
 title: Quickstart
-url: "docs/quickstart"
+url: "quickstart"
 description: "Zero to your first merged Doc-Holiday-written doc."
 ---
 

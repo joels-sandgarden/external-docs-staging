@@ -1,6 +1,6 @@
 ---
 title: Audit Log API
-url: "docs/audit-log-api"
+url: "audit-log-api"
 description: "Query audit events over the REST API."
 ---
 

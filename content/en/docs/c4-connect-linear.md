@@ -1,6 +1,6 @@
 ---
 title: Connect Linear
-url: "docs/connect-linear"
+url: "connect-linear"
 description: "Let Linear issues and comments trigger documentation work."
 ---
 

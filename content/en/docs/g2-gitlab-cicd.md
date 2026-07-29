@@ -1,6 +1,6 @@
 ---
 title: GitLab Pipelines
-url: "docs/gitlab-pipelines"
+url: "gitlab-pipelines"
 description: "Invoke Doc Holiday from GitLab CI/CD pipelines."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Billing and Plans
-url: "docs/billing-and-plans"
+url: "billing-and-plans"
 description: "Plans, billing, and what each plan includes."
 ---
 

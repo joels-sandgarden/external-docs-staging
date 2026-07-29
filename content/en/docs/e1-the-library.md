@@ -1,6 +1,6 @@
 ---
 title: The Library
-url: "docs/the-library"
+url: "the-library"
 description: "Instructions, slots, global vs scoped, and precedence."
 ---
 

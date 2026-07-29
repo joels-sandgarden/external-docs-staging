@@ -1,6 +1,6 @@
 ---
 title: Writing Style Guides
-url: "docs/writing-style-guides"
+url: "writing-style-guides"
 description: "Make everything Doc Holiday writes sound like your team."
 ---
 

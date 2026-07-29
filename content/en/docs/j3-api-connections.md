@@ -1,6 +1,6 @@
 ---
 title: Connections API
-url: "docs/connections-api"
+url: "connections-api"
 description: "Manage Sources and providers over the REST API."
 ---
 

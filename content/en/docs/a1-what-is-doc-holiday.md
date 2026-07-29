@@ -1,6 +1,6 @@
 ---
 title: What Is Doc Holiday
-url: "docs/what-is-doc-holiday"
+url: "what-is-doc-holiday"
 description: "Documentation drift, and the product that closes it continuously."
 ---
 

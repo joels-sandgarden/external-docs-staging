@@ -1,6 +1,6 @@
 ---
 title: Manage Connections
-url: "docs/manage-connections"
+url: "manage-connections"
 description: "Check health, restore access, edit details, or remove a Source or provider."
 ---
 

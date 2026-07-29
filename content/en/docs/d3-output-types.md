@@ -1,6 +1,6 @@
 ---
 title: Output Types
-url: "docs/output-types"
+url: "output-types"
 description: "Documentation, release notes, and changelogs — what each is for."
 ---
 

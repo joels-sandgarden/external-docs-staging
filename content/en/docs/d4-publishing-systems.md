@@ -1,6 +1,6 @@
 ---
 title: Publishing Systems
-url: "docs/publishing-systems"
+url: "publishing-systems"
 description: "Supported docs frameworks and what Doc Holiday expects of a docs repo."
 ---
 

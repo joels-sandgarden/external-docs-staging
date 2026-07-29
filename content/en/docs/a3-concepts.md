@@ -1,6 +1,6 @@
 ---
 title: Concepts
-url: "docs/concepts"
+url: "concepts"
 description: "The shared vocabulary: Publication, Source, the Library, and Work History."
 ---
 

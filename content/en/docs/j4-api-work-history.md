@@ -1,6 +1,6 @@
 ---
 title: Work History API
-url: "docs/work-history-api"
+url: "work-history-api"
 description: "Create and follow work requests over the REST API."
 ---
 

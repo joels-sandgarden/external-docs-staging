@@ -1,6 +1,6 @@
 ---
 title: Request Docs via the API
-url: "docs/request-docs-via-the-api"
+url: "request-docs-via-the-api"
 description: "File a documentation request from any agent with one REST call."
 ---
 

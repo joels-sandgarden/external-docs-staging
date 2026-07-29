@@ -1,6 +1,6 @@
 ---
 title: Connect Google Drive
-url: "docs/connect-google-drive"
+url: "connect-google-drive"
 description: "Supply background material to Doc Holiday from Google Drive."
 ---
 

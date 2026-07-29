@@ -1,6 +1,6 @@
 ---
 title: Connection Types
-url: "docs/connection-types"
+url: "connection-types"
 description: "Reference: every connection type, its role, and its triggers."
 ---
 

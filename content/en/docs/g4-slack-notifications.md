@@ -1,6 +1,6 @@
 ---
 title: Slack Notifications
-url: "docs/slack-notifications"
+url: "slack-notifications"
 description: "Send Doc Holiday notifications to Slack."
 ---
 

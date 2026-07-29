@@ -1,6 +1,6 @@
 ---
 title: Connect Cloud Storage
-url: "docs/connect-cloud-storage"
+url: "connect-cloud-storage"
 description: "Read-only context from S3 or Azure Blob buckets and containers."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting and FAQ
-url: "docs/troubleshooting-and-faq"
+url: "troubleshooting-and-faq"
 description: "Symptom-first answers to the problems that actually come up."
 ---
 

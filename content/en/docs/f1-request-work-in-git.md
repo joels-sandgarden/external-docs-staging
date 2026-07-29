@@ -1,6 +1,6 @@
 ---
 title: Request Work in Git
-url: "docs/request-work-in-git"
+url: "request-work-in-git"
 description: "Mention @doc.holiday in the PR or issue thread you are already using."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Glossary
-url: "docs/glossary"
+url: "glossary"
 description: "Doc Holiday's terms, defined once."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: MCP Tools
-url: "docs/mcp-tools"
+url: "mcp-tools"
 description: "The doc_holiday_* MCP tools the plugin registers, and their arguments."
 ---
 

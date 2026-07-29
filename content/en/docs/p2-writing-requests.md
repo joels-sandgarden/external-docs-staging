@@ -1,6 +1,6 @@
 ---
 title: Writing Requests
-url: "docs/writing-requests"
+url: "writing-requests"
 description: "The craft of asking for exactly the page you want."
 ---
 

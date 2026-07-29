@@ -1,6 +1,6 @@
 ---
 title: Connect GitLab
-url: "docs/connect-gitlab"
+url: "connect-gitlab"
 description: "Connect GitLab projects as Sources; Doc Holiday opens merge requests there."
 ---
 

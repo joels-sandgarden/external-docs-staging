@@ -1,6 +1,6 @@
 ---
 title: Fully Automated Setup
-url: "docs/fully-automated-setup"
+url: "fully-automated-setup"
 description: "Set Doc Holiday up once — triggers, standing instructions, and the full prompts to paste."
 ---
 

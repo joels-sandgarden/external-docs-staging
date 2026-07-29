@@ -1,6 +1,6 @@
 ---
 title: Release Notes
-url: "docs/release-notes"
+url: "release-notes"
 description: "User-visible changes to Doc Holiday, newest first."
 ---
 

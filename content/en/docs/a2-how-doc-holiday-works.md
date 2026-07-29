@@ -1,6 +1,6 @@
 ---
 title: How Doc Holiday Works
-url: "docs/how-doc-holiday-works"
+url: "how-doc-holiday-works"
 description: "The user-seat loop: request → plan → draft from source → review → pull request."
 ---
 

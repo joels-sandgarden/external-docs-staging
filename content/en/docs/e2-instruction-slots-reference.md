@@ -1,6 +1,6 @@
 ---
 title: Instruction Slots Reference
-url: "docs/instruction-slots-reference"
+url: "instruction-slots-reference"
 description: "The five instruction slots and where each is applied."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Instruction Library API
-url: "docs/instruction-library-api"
+url: "instruction-library-api"
 description: "Manage Library instructions over the REST API."
 ---
 

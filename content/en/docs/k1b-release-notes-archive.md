@@ -1,6 +1,6 @@
 ---
 title: Release Notes Archive
-url: "docs/release-notes-archive"
+url: "release-notes-archive"
 description: "Entries prior to June 2026, preserved as published."
 ---
 

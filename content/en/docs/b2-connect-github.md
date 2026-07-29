@@ -1,6 +1,6 @@
 ---
 title: Connect GitHub
-url: "docs/connect-github"
+url: "connect-github"
 description: "Install the GitHub Application and connect repositories to Doc Holiday."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: AI Provider Keys
-url: "docs/ai-provider-keys"
+url: "ai-provider-keys"
 description: "Add, test, and rotate the keys Doc Holiday uses; active-key behavior."
 ---
 

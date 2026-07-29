@@ -1,6 +1,6 @@
 ---
 title: Request Work in the App
-url: "docs/request-work-in-the-app"
+url: "request-work-in-the-app"
 description: "Start and steer documentation work from the app."
 ---
 

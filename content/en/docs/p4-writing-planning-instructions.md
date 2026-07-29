@@ -1,6 +1,6 @@
 ---
 title: Writing Planning Instructions
-url: "docs/writing-planning-instructions"
+url: "writing-planning-instructions"
 description: "Shape what Doc Holiday decides to work on before it writes."
 ---
 

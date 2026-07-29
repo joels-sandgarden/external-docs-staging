@@ -1,6 +1,6 @@
 ---
 title: Add Your OpenAI Key
-url: "docs/add-your-openai-key"
+url: "add-your-openai-key"
 description: "Add and test the OpenAI key Doc Holiday uses for your organization."
 ---
 

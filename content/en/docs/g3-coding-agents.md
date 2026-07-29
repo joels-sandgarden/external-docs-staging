@@ -1,6 +1,6 @@
 ---
 title: Coding Agents
-url: "docs/coding-agents"
+url: "coding-agents"
 description: "Two ways a coding agent works with Doc Holiday: the plugin, or the API."
 ---
 

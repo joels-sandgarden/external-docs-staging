@@ -1,6 +1,6 @@
 ---
 title: Publications
-url: "docs/publications"
+url: "publications"
 description: "What a Publication defines and controls."
 ---
 

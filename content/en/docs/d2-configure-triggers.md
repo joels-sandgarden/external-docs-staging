@@ -1,6 +1,6 @@
 ---
 title: Configure Triggers
-url: "docs/configure-triggers"
+url: "configure-triggers"
 description: "Control when Doc Holiday reacts on its own."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Users API
-url: "docs/users-api"
+url: "users-api"
 description: "Manage users over the REST API."
 ---
 

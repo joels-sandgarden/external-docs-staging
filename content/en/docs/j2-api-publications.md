@@ -1,6 +1,6 @@
 ---
 title: Publications API
-url: "docs/publications-api"
+url: "publications-api"
 description: "Manage Publications over the REST API."
 ---
 

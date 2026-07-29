@@ -1,6 +1,6 @@
 ---
 title: API Overview
-url: "docs/api-overview"
+url: "api-overview"
 description: "Auth, base URL, and the shape of the Doc Holiday REST API."
 ---
 

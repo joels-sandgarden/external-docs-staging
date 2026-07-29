@@ -1,6 +1,6 @@
 ---
 title: Prompting Guide
-url: "docs/prompting-guide"
+url: "prompting-guide"
 description: "Standing instructions vs per-request prompts, and how they compose."
 ---
 

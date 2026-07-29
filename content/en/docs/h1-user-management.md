@@ -1,6 +1,6 @@
 ---
 title: User Management
-url: "docs/user-management"
+url: "user-management"
 description: "Invites, roles, and publication access."
 ---
 

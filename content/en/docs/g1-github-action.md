@@ -1,6 +1,6 @@
 ---
 title: GitHub Action
-url: "docs/github-action"
+url: "github-action"
 description: "Run Doc Holiday from a GitHub Actions workflow, with real YAML."
 ---
 

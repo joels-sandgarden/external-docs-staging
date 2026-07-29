@@ -1,6 +1,6 @@
 ---
 title: Work History States
-url: "docs/work-history-states"
+url: "work-history-states"
 description: "Every state a work request can be in, and what moves it."
 ---
 

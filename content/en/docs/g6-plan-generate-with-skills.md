@@ -1,6 +1,6 @@
 ---
 title: Plan and Generate Docs with Skills
-url: "docs/plan-and-generate-docs-with-skills"
+url: "plan-and-generate-docs-with-skills"
 description: "The three skills that take a codebase to a planned, generated docs site."
 ---
 

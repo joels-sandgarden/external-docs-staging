@@ -1,6 +1,6 @@
 ---
 title: Trigger and Event Types
-url: "docs/trigger-and-event-types"
+url: "trigger-and-event-types"
 description: "Every trigger and event type, enumerated."
 ---
 

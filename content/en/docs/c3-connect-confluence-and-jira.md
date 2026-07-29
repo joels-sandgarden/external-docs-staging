@@ -1,6 +1,6 @@
 ---
 title: Connect Confluence and Jira
-url: "docs/connect-confluence-and-jira"
+url: "connect-confluence-and-jira"
 description: "Confluence as read-only context; Jira via the app-backed or read-only path."
 ---
 

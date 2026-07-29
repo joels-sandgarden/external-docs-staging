@@ -1,7 +1,7 @@
-# Site config for the Doc Holiday documentation STAGING site, ported from the dspy-docs skeleton.
-# baseURL is a placeholder until a Cloudflare Pages project / domain exists;
-# `hugo server` ignores it locally.
-baseURL: https://joels-sandgarden.github.io/external-docs-staging/
+# Site config for the Doc Holiday documentation site (sandgardenhq/external-docs),
+# ported from the dspy-docs skeleton. Served at doc.holiday/docs via Cloudflare
+# Pages (Netlify proxies /docs/* there); `hugo server` ignores baseURL locally.
+baseURL: https://doc.holiday/docs/
 
 theme: E25DX
 
@@ -92,7 +92,7 @@ menus:
         icon: home
     - identifier: docs
       name: Docs
-      url: /docs/what-is-doc-holiday/
+      url: /what-is-doc-holiday/
       weight: 2
       params:
         icon: menu_book

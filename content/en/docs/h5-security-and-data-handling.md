@@ -1,6 +1,6 @@
 ---
 title: Security and Data Handling
-url: "docs/security-and-data-handling"
+url: "security-and-data-handling"
 description: "SOC 2 Type II certified, no code retention, and what Doc Holiday never does."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Audit Log
-url: "docs/audit-log"
+url: "audit-log"
 description: "The event catalog and where to find it."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Prompt Patterns
-url: "docs/prompt-patterns"
+url: "prompt-patterns"
 description: "Request skeletons for common documentation jobs."
 ---
 

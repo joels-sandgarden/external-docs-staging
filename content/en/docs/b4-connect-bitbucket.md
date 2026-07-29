@@ -1,6 +1,6 @@
 ---
 title: Connect Bitbucket
-url: "docs/connect-bitbucket"
+url: "connect-bitbucket"
 description: "Connect Bitbucket via a workspace token provider or per-project tokens."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Review and Revise
-url: "docs/review-and-revise"
+url: "review-and-revise"
 description: "Diffs, comments, follow-up passes, and approving work into a pull request."
 ---
 

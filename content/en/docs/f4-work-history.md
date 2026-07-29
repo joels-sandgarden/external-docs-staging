@@ -1,6 +1,6 @@
 ---
 title: Work History
-url: "docs/work-history"
+url: "work-history"
 description: "The record of every request and its lifecycle."
 ---
 

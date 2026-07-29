@@ -1,6 +1,6 @@
 ---
 title: Sources
-url: "docs/sources"
+url: "sources"
 description: "What Doc Holiday reads and writes: connection roles, freshness, and health."
 ---
 

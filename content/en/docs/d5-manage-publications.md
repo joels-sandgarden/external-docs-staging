@@ -1,6 +1,6 @@
 ---
 title: Manage Publications
-url: "docs/manage-publications"
+url: "manage-publications"
 description: "Edit a Publication, control access, and delete safely."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Connect Notion
-url: "docs/connect-notion"
+url: "connect-notion"
 description: "Share Notion pages with an integration so Doc Holiday can read them."
 ---
 

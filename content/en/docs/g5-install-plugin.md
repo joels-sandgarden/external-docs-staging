@@ -1,6 +1,6 @@
 ---
 title: Install the Doc Holiday Plugin
-url: "docs/install-the-doc-holiday-plugin"
+url: "install-the-doc-holiday-plugin"
 description: "Install the Doc Holiday plugin in Claude Code, Codex, OpenCode, or Cursor."
 ---
 
